@@ -1,0 +1,27 @@
+[
+  {
+    "file": "audio/orion-relief/OMTH1.mp3",
+    "duration": 5.799,
+    "sha256": "63941a2554f508d21990e159ac997550d18e864bee5f8097eb4cda57c0d58801"
+  },
+  {
+    "file": "audio/orion-relief/OMTH2.mp3",
+    "duration": 9.874,
+    "sha256": "1eb43ed1ecbcffa8a19b62574ac30f945a913abecc940d537cfb95ba028d98b4"
+  },
+  {
+    "file": "audio/orion-relief/OMTH3.mp3",
+    "duration": 9.169,
+    "sha256": "b37af5b6d0a3e27b96694739d86c5edf59a09c27e29f9056dcf67f9322d06f18"
+  },
+  {
+    "file": "audio/orion-relief/OMTH4.mp3",
+    "duration": 9.326,
+    "sha256": "84df51a6e3e59dd91a9a83dd6001fb322e9c6bed9c83a90473dc5e7b84c953d5"
+  },
+  {
+    "file": "audio/orion-relief/OMTH5.mp3",
+    "duration": 9.874,
+    "sha256": "d48267e3d29c4538cc21288af64af7abcacb4ab9caa33a7696219f1d5719b95f"
+  }
+]

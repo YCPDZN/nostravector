@@ -1,0 +1,31 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+const meta=JSON.parse(fs.readFileSync(__dirname+'/hawthorne_audio.json','utf8')),quotes=JSON.parse(fs.readFileSync(__dirname+'/hawthorne_quotes.json','utf8'));assert.equal(meta.length,10);
+meta.forEach((q,i)=>{assert.equal(q.file,`audio/hawthorne/TH${i+1}.mp3`);assert.ok(q.duration>0);const hash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');assert.equal(hash(__dirname+'/'+q.file),hash(`C:/Users/HOME/Documents/NOSTRAVECTOR/CHAPTER 3 - SOL/TH${i+1}.mp3`));});
+let blocked=false,holdPlay=false,clock=1000;const pending=[],clips=[];
+class Audio{constructor(src){this.src=src;this.duration=meta[clips.length].duration;this.time=0;this.readyState=1;this.paused=true;this.ended=false;clips.push(this);}get currentTime(){return this.time;}set currentTime(t){this.time=t;this.ended=false;}pause(){this.paused=true;}play(){if(blocked)return Promise.reject(Error('Blocked'));this.paused=false;return holdPlay?new Promise(resolve=>pending.push(resolve)):Promise.resolve();}}
+const state={space:{phase:'flight',body:'moon',system:'sol',visited:['moon']}},war={stage:'war',thomasAlive:true},listeners={};
+const ctx=vm.createContext({console,Audio,Math,Number,JSON,Map,Set,gameActive:true,gamePaused:false,polarState:state,cleanHUDRoot:{hidden:false},performance:{now:()=>clock},window:{},document:{hidden:false,addEventListener:(type,fn)=>listeners[type]=fn},NVEris:{ensure:()=>({solWar:war})},NVSolWar:{ensure:()=>war,restore:raw=>({...raw}),active:w=>w.stage==='war'},NVSpace:{step:()=>({player:0,friend:0})},savePolarWorld:()=>JSON.parse(JSON.stringify(war.moonTransmission))});const run=code=>vm.runInContext(code,ctx);
+run(fs.readFileSync(__dirname+'/hawthorne_transmission_core.js','utf8').replace('__HAWTHORNE_QUOTES__',JSON.stringify(quotes)));
+const speech=fs.readFileSync(__dirname+'/antarctica_speech.js','utf8');run(speech.slice(0,speech.indexOf('let jamesLipPose=')));
+run('const acoustic={envelope:{rms:[.6,0],spoken:[1/NVHawthorneTransmission.QUOTES[0].length,.9],hopSeconds:1}};prepareJamesAcoustics=()=>acoustic;resumeJamesAcoustics=()=>{};NVHawthorneTransmission.ensure(polarState).started=true;');
+run(fs.readFileSync(__dirname+'/hawthorne_recordings.js','utf8').replace('__HAWTHORNE_VOICES__',JSON.stringify(meta.map(q=>({...q,source:q.file})))));
+const settle=async()=>{await Promise.resolve();await Promise.resolve();await Promise.resolve();};
+(async()=>{
+ run('updateHawthorneVoice();');await settle();assert.equal(clips.filter(a=>!a.paused).length,1);assert.equal(run('hawthorneVoice.index'),0);assert.ok(run('hawthorneLipPose().open')>0);clips[0].currentTime=1;assert.equal(run('hawthorneLipPose().open'),0,'Acoustic silence closes the mouth.');
+ clips[0].currentTime=.1;run('hawthorneVoice.muted=true;');assert.equal(run('hawthorneLipPose().open'),0);run('hawthorneVoice.muted=false;');
+ clips[0].currentTime=6.5;run('gamePaused=true;updateHawthorneVoice();');assert.equal(clips[0].paused,true);assert.equal(run('hawthorneLipPose().open'),0);assert.equal(war.moonTransmission.voiceTime,6.5);run('gamePaused=false;updateHawthorneVoice();');await settle();assert.equal(clips[0].paused,false);assert.equal(clips[0].currentTime,6.5);
+ ctx.document.hidden=true;listeners.visibilitychange();assert.equal(clips[0].paused,true);ctx.document.hidden=false;listeners.visibilitychange();await settle();assert.equal(clips[0].paused,false);
+ clips[0].currentTime=7.25;assert.equal(run('savePolarWorld(true).voiceTime'),7.25,'A manual save captures the current playback offset.');
+ // Recorded speech advances all ten paragraphs without suspending exploration.
+ for(let i=0;i<10;i++){assert.equal(run('hawthorneVoice.index'),i);assert.equal(clips.filter(a=>!a.paused).length,1);clips[i].currentTime=clips[i].duration;clips[i].ended=true;clips[i].paused=true;run('updateHawthorneVoice();');clock+=901;run('updateHawthorneVoice();');await settle();}
+ assert.equal(war.moonTransmission.finished,true);assert.equal(clips.every(a=>a.paused),true);assert.equal(ctx.gamePaused,false);
+ run('warDummy=0;stopHawthorneVoice();');war.moonTransmission=run('NVHawthorneTransmission.restore({started:true,line:3,voiceTime:8.75})');run('updateHawthorneVoice();');await settle();assert.equal(clips[3].currentTime,8.75);assert.equal(run('hawthorneVoice.index'),3);
+ run('stopHawthorneVoice();');war.moonTransmission.voiceTime=4.5;clips[3].readyState=0;run('updateHawthorneVoice();');assert.equal(war.moonTransmission.voiceTime,4.5);clips[3].readyState=1;clips[3].onloadedmetadata();await settle();assert.equal(clips[3].currentTime,4.5);
+ run('stopHawthorneVoice();');blocked=true;run('updateHawthorneVoice();');await settle();assert.equal(run('hawthorneVoice.blocked'),true);assert.equal(run('hawthorneLipPose().open'),0);blocked=false;run('playHawthorneVoice();');await settle();assert.equal(run('hawthorneVoice.blocked'),false);assert.equal(clips[3].paused,false);
+ clips[3].onerror();run('updateHawthorneVoice();');assert.equal(run('hawthorneVoice.error'),true);assert.equal(war.moonTransmission.line,3,'A failed clip leaves NEXT available instead of skipping text.');run('NVHawthorneTransmission.next(polarState);updateHawthorneVoice();');await settle();assert.equal(run('hawthorneVoice.index'),4);assert.equal(clips[3].paused,true);
+ // A late play promise from a skipped paragraph cannot steal the next clip.
+ run('stopHawthorneVoice();');holdPlay=true;run('updateHawthorneVoice();NVHawthorneTransmission.next(polarState);updateHawthorneVoice();');assert.equal(pending.length,2);pending[0]();await settle();assert.equal(clips[4].paused,true);assert.equal(clips[5].paused,false);pending[1]();await settle();holdPlay=false;
+ ctx.gameActive=false;run('updateHawthorneVoice();');assert.equal(clips.every(a=>a.paused),true);
+ assert.equal(run('NVHawthorneTransmission.restore({voiceTime:Infinity}).voiceTime'),0);
+ console.log('Passed original TH1–TH10 files, ordered recorded dialogue, acoustic lip sync/silence/mute, pause and hidden-tab resume, all ten auto advances, exact manual offset, metadata seek, autoplay retry, missing clip fallback, stale promise isolation and exit cleanup.');
+})().catch(error=>{console.error(error);process.exitCode=1;});

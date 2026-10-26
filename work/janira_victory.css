@@ -1,0 +1,10 @@
+#janiraVictory{position:absolute;inset:0;z-index:210;background:#090615;color:#eee8ff;overflow:hidden}
+#janiraVictory[hidden]{display:none!important}
+#janiraVictoryCanvas{position:absolute;inset:0;width:100%;height:100%}
+#janiraVictory:before,#janiraVictory:after{content:"";position:absolute;left:0;right:0;height:5vh;background:#04030a;z-index:1;pointer-events:none}
+#janiraVictory:before{top:0}#janiraVictory:after{bottom:0}
+.janira-victory-location{position:absolute;left:5vw;top:8vh;z-index:2;font:10px/1.8 Consolas,monospace;letter-spacing:2px;color:#ceb6ff}
+.janira-victory-location strong{display:block;font-size:20px;color:#fff1cb}
+#janiraVictoryLine{font:17px/1.6 Georgia,serif;min-height:3em;margin:14px 0 20px}
+#janiraVictoryCount{font:11px Consolas,monospace;color:#c2a8ef;white-space:nowrap}
+@media(max-width:650px){#janiraVictoryLine{font-size:14px;max-height:28vh;overflow:auto}.janira-victory-location{top:7vh;font-size:9px}.janira-victory-location strong{font-size:16px}}

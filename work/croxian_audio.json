@@ -1,0 +1,32 @@
+[
+  {
+    "line": 0,
+    "file": "audio/croxian/CM1.mp3",
+    "duration": 10.266,
+    "sha256": "b8cbf572b0dd0a629b0a863eede63dfdda70897b1e5d0900f8f197ce09d92e81"
+  },
+  {
+    "line": 1,
+    "file": "audio/croxian/CM2.mp3",
+    "duration": 10.371,
+    "sha256": "ab2646552d0340e6ae7466d1afcc9b34fa154a5abc21b5aeaafc32531c60fe4f"
+  },
+  {
+    "line": 2,
+    "file": "audio/croxian/CM3.mp3",
+    "duration": 12.042,
+    "sha256": "ac4433956528deaef1469718a7f7491f75f03973c98b4af898aa734dab0b52ca"
+  },
+  {
+    "line": 3,
+    "file": "audio/croxian/CM4.mp3",
+    "duration": 12.199,
+    "sha256": "5f4661e6a9c1ebe0dc23a9651d6f3e58edd1ead2a2b5cbd4828c71949e858ab9"
+  },
+  {
+    "line": 4,
+    "file": "audio/croxian/CM5.mp3",
+    "duration": 10.031,
+    "sha256": "5a8780856e31e079bc6059d16fa7ffa35102dafdad130156bccb5d638f60d90d"
+  }
+]

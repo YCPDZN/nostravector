@@ -1,0 +1,159 @@
+/* Shared chapter layout: panels flow in reserved areas instead of covering controls. */
+#cleanHUD {
+  --hud-gap: 14px;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: var(--hud-gap);
+  padding: 20px;
+  overflow: hidden;
+}
+#hudHeader { display:flex; align-items:flex-start; justify-content:space-between; gap:18px; min-width:0; }
+#hudLocationSlot { min-width:0; max-width:32%; }
+#cleanHUD .polar-top { position:static!important; inset:auto!important; max-width:none!important; width:auto; }
+#cleanHUD .polar-top h2 { margin:4px 0!important; font-size:18px!important; overflow-wrap:anywhere; }
+#cleanHUD .polar-kicker { font-size:8px; letter-spacing:1px; }
+#cleanHUD #hudToolbar { position:static; inset:auto; transform:none; max-width:68%; justify-content:flex-end; gap:6px; flex-wrap:wrap; }
+#cleanHUD #hudToolbar button { min-height:32px; max-width:180px; font-size:8px!important; letter-spacing:.5px!important; padding:8px 10px!important; }
+#hudBody { display:grid; grid-template-columns:230px minmax(60px,1fr) minmax(260px,320px); gap:var(--hud-gap); min-height:0; min-width:0; }
+#hudBottom { display:grid; grid-template-columns:250px minmax(0,1fr) 190px; gap:var(--hud-gap); align-items:end; min-width:0; }
+#cleanHUD #hudLeftDock { position:static!important; inset:auto!important; width:auto!important; max-height:none!important; min-height:0; overflow:auto; align-self:start; height:100%; gap:9px; padding-right:2px; }
+#hudAimDock { min-width:0; min-height:0; position:relative; pointer-events:none; }
+#hudRightDock { min-width:0; min-height:0; display:flex; flex-direction:column; gap:10px; overflow:auto; align-items:stretch; scrollbar-width:thin; padding-right:2px; pointer-events:none; }
+#hudRightDock:empty { pointer-events:none; }
+#cleanHUD #hudRightDock > * { flex:none; max-width:100%; box-sizing:border-box; }
+#cleanHUD #hudRightDock > #hawthorneComms,
+#cleanHUD #hudRightDock > #constructionGuide,
+#cleanHUD #hudRightDock > #hudTools {
+  position:static!important; inset:auto!important; transform:none!important;
+  width:100%!important; max-width:none!important; max-height:none!important;
+  margin:0!important; pointer-events:auto;
+}
+#cleanHUD #hudRightDock > #hudTools { padding:12px; }
+#cleanHUD #hudRightDock > #constructionGuide { padding:12px; font-size:10px; }
+#cleanHUD #hudRightDock > #hawthorneComms { display:flex; flex-direction:column; min-height:0; max-height:100%!important; font-size:10px; box-shadow:0 8px 24px #0004; }
+#hawthorneComms header, #hawthorneComms footer { flex:none; }
+#hawthorneCommsBody { flex:1 1 auto; min-height:0; }
+#hudTools > header { position:sticky; top:0; z-index:2; background:#081722; }
+#hawthorneComms header, #hawthorneComms footer { position:static!important; inset:auto!important; transform:none!important; flex-wrap:wrap; padding:9px 10px; gap:7px; }
+#hawthorneComms header span { min-width:0; overflow-wrap:anywhere; }
+#hawthorneComms footer > small { flex-basis:100%; }
+#hawthorneCommsBody { grid-template-columns:72px minmax(0,1fr); padding:10px; gap:10px; max-height:220px; }
+#hawthornePortrait { width:72px; height:104px; }
+#hawthorneComms p { font-size:10px; line-height:1.6; overflow-wrap:anywhere; }
+#hawthorneComms .polar-button { min-height:30px; }
+#cleanHUD #hudRightDock > #nowPlaying { position:static!important; inset:auto!important; transform:none!important; width:100%; max-width:none!important; padding:8px 10px!important; margin:0; }
+#cleanHUD #hudRightDock > #nowPlaying:not([hidden]) { display:block!important; }
+#cleanHUD #hudRightDock > #nowPlaying #nowPlayingTitle { font-size:9px!important; overflow-wrap:anywhere; }
+#cleanHUD #hudAlerts { position:static!important; inset:auto!important; transform:none!important; width:100%!important; max-height:40%; overflow:auto; gap:6px; }
+#cleanHUD #hudAlerts > [id] { font-size:9px!important; padding:8px 10px!important; overflow-wrap:anywhere; }
+#cleanHUD #hudAlerts h2 { font-size:13px; margin:5px 0; }
+#cleanHUD #hudAlerts p { font-size:10px; margin:5px 0; }
+#cleanHUD #hudAlerts .polar-button { font-size:8px; padding:7px 9px; }
+#cleanHUD #missionWaypoint { top:auto; bottom:0; max-width:170px; }
+#cleanHUD #hudAimDock #spaceTransit { left:50%; bottom:76px; width:min(350px,100%); font-size:9px; }
+#cleanHUD #hudVitalsDock { position:static!important; inset:auto!important; transform:none!important; width:auto!important; max-height:230px; overflow:auto; padding:12px; }
+#cleanHUD #hudContextDock { position:static!important; inset:auto!important; transform:none!important; max-width:none!important; min-width:0; display:flex; flex-direction:column; align-items:center; gap:8px; }
+#cleanHUD #hudContextDock #hudInteract { max-width:100%; white-space:normal; font-size:9px; padding:10px 12px; min-height:36px; }
+#cleanHUD #hudContextDock #pontifexCombat { position:static!important; inset:auto!important; transform:none!important; width:min(360px,100%); padding:10px 12px; margin:0; }
+#cleanHUD #hudMapDock { min-width:0; }
+#antarctica #hudMapDock #earthMinimap, #antarctica #hudMapDock #planetMinimap { position:static!important; inset:auto!important; transform:none!important; width:100%!important; padding:9px!important; margin:0!important; }
+#cleanHUD #hudMapDock #earthMinimap svg { width:100%; height:auto; display:block; }
+#cleanHUD #hudMapDock #planetMinimap canvas { width:100%; height:auto; }
+#cleanHUD #hudLeftDock > #ferryDeparture { position:static; inset:auto; width:100%; padding:12px; background:var(--hud-panel); border:1px solid var(--hud-line); }
+#cleanHUD #hudLeftDock > #ferryDeparture h2 { font-size:16px; margin:6px 0; }
+#cleanHUD #hudLeftDock > #ferryDeparture p { font-size:10px; line-height:1.5; }
+#cleanHUD #hudLeftDock .space-actions { flex-wrap:wrap; }
+#cleanHUD #hudLeftDock .space-actions button { flex:1 1 auto; min-height:30px; }
+#antarctica .touch-movement { display:none; }
+@media(pointer:coarse) {
+  #cleanHUD #hudContextDock .touch-movement { display:block; position:static; inset:auto; width:auto; margin:0; }
+  #cleanHUD #hudContextDock .touch-movement button { width:34px; height:34px; padding:0; }
+}
+/* Dialogues and menus share a readable card with scrollable content. */
+#antarctica .james-dialogue, #antarctica .betrayal-dialogue, #antarctica .dream-caption {
+  left:50%; bottom:20px; transform:translateX(-50%); width:min(780px,calc(100% - 40px));
+  padding:18px 22px; max-height:calc(100% - 110px); overflow:auto; box-sizing:border-box;
+}
+#antarctica .james-dialogue p, #antarctica .betrayal-dialogue p, #antarctica .dream-caption p { font-size:18px; line-height:1.55; max-height:26vh; overflow:auto; margin:12px 0; }
+#antarctica .dialogue-identity, #antarctica .conversation-actions, #antarctica .betrayal-actions, #antarctica .hak-voice-controls { flex-wrap:wrap; gap:9px; }
+#antarctica .james-dialogue button, #antarctica .betrayal-dialogue button, #antarctica .dream-caption button { min-height:34px; font-size:9px; padding:9px 12px; }
+#antarctica :is(.james-dialogue,#hudAlerts) :is(#enableJamesVoice,#jamesVoiceStatus) { position:static!important; inset:auto!important; transform:none!important; margin:8px 6px 0 0; font-size:9px; }
+#antarctica:has(#worldPauseSheet:not([hidden])) :is(.james-dialogue,.betrayal-dialogue,.dream-caption,.hazard-card) { visibility:hidden; }
+#antarctica .world-sheet { padding:16px; }
+#antarctica .world-sheet-card { max-height:calc(100dvh - 32px)!important; overflow:auto; padding:22px; }
+#antarctica #constructionWorkshop { max-height:calc(100% - 32px); width:min(580px,calc(100% - 32px)); padding:20px; }
+#antarctica .hazard-card { max-height:calc(100dvh - 110px); overflow:auto; padding:18px 22px; }
+#antarctica #solArgument section { max-height:35%; overflow:auto; margin:12px 0; padding:14px 18px; }
+@media(max-width:1000px) {
+  #cleanHUD { padding:14px; --hud-gap:10px; }
+  #hudBody { grid-template-columns:200px minmax(30px,1fr) 260px; }
+  #hudBottom { grid-template-columns:215px minmax(0,1fr) 165px; }
+  #hudLocationSlot { max-width:30%; }
+  #cleanHUD .polar-top h2 { font-size:15px!important; }
+  #cleanHUD #hudToolbar button { padding:7px 8px!important; }
+  #hawthorneCommsBody { grid-template-columns:60px minmax(0,1fr); max-height:190px; }
+  #hawthornePortrait { width:60px; height:90px; }
+}
+@media(max-width:700px) {
+  #cleanHUD { padding:10px; --hud-gap:8px; }
+  #hudHeader { flex-direction:column; gap:8px; }
+  #hudLocationSlot { max-width:100%; }
+  #cleanHUD #hudToolbar { max-width:none; width:100%; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); }
+  #cleanHUD #hudToolbar button { max-width:none; width:100%; min-width:0; font-size:7px!important; overflow-wrap:anywhere; }
+  #hudBody { grid-template-columns:minmax(130px,.85fr) minmax(160px,1fr); grid-template-rows:minmax(0,1fr) auto; }
+  #hudLeftDock { grid-column:1; grid-row:1; }
+  #hudRightDock { grid-column:2; grid-row:1; }
+  #hudAimDock { grid-column:1 / -1; grid-row:2; }
+  #cleanHUD #hudAlerts { max-height:70px; }
+  #cleanHUD #missionWaypoint { position:static!important; inset:auto!important; transform:none!important; margin:4px auto 0; max-width:100%; }
+  #cleanHUD #missionWaypoint .waypoint-arrow { font-size:16px; }
+  #cleanHUD #hudAimDock #spaceTransit { position:static; inset:auto; transform:none; margin:8px auto; }
+  #cleanHUD #missionWaypoint strong, #cleanHUD #missionWaypoint small { font-size:8px; }
+  #hudBottom { grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
+  #hudMapDock { display:none; }
+  #cleanHUD #hudVitalsDock { padding:9px; max-height:160px; }
+  #cleanHUD #hudContextDock #pontifexCombat { padding:8px; }
+  #cleanHUD #hudContextDock #pontifexCombat strong { font-size:9px; }
+  #hawthorneCommsBody { display:block; max-height:170px; padding:9px; }
+  #hawthornePortrait { float:left; width:48px; height:68px; margin:0 8px 6px 0; }
+  #hawthorneComms p { font-size:9px; }
+  #cleanHUD #hudMission p { font-size:8px; }
+  #antarctica .james-dialogue, #antarctica .betrayal-dialogue, #antarctica .dream-caption { bottom:10px; width:calc(100% - 20px); padding:13px; }
+  #antarctica .james-dialogue p, #antarctica .betrayal-dialogue p, #antarctica .dream-caption p { font-size:14px; max-height:30vh; }
+  #antarctica .world-sheet-card { padding:15px; }
+}
+@media(max-height:550px) and (min-width:701px) {
+  #cleanHUD { padding:10px; --hud-gap:8px; }
+  #hudBody { grid-template-columns:195px minmax(30px,1fr) 250px; }
+  #hudBottom { grid-template-columns:215px minmax(0,1fr) 140px; }
+  #cleanHUD #hudVitalsDock { max-height:130px; }
+  #antarctica #hudMapDock #planetMapBiome, #antarctica #hudMapDock #planetMapCoords, #antarctica #hudMapDock #planetMapLegend { display:none; }
+  #hawthorneCommsBody { max-height:110px; }
+  #hawthornePortrait { height:80px; width:55px; }
+  #cleanHUD .polar-location { display:none; }
+}
+
+/* Compact ship vitals: two aligned readings, no nested action buttons or scrolling. */
+#cleanHUD #hudVitalsDock:has(.space-telemetry:not([hidden])) { max-height:none; overflow:visible; padding:11px 12px; border-radius:5px; background:linear-gradient(135deg,#071620ee,#0c2028e8); border-color:#91c8d13b; }
+#cleanHUD #hudVitalsDock .space-telemetry { display:grid; gap:7px; }
+#cleanHUD #hudVitalsDock .space-stat-row { display:flex; align-items:center; justify-content:space-between; gap:10px; margin:0!important; min-height:17px; }
+#cleanHUD #hudVitalsDock .space-stat-row span { font:8px/1.3 Consolas,monospace; letter-spacing:1px; color:#9cbac8; }
+#cleanHUD #hudVitalsDock .space-stat-row strong { font:15px/1.1 Consolas,monospace; letter-spacing:0; font-variant-numeric:tabular-nums; color:#e3f3f5; }
+#cleanHUD #hudVitalsDock #shipHullValue { font-size:18px; color:#a6e6d8; }
+#cleanHUD #hudVitalsDock .space-telemetry progress { display:block; width:100%; height:4px; margin:0; border-radius:2px; overflow:hidden; }
+#cleanHUD #hudVitalsDock #spaceStaminaWrap { display:grid; gap:5px; border-top:1px solid #8bc1d11c; padding-top:7px; }
+#cleanHUD #hudVitalsDock #spaceStaminaValue { font-size:12px; color:#c4dfeb; }
+#cleanHUD #hudVitalsDock #spaceSpeedWrap { border-top:1px solid #8bc1d11c; padding-top:7px; }
+#cleanHUD #hudVitalsDock #hudIntegrity:not(:empty) { display:block; margin-top:8px; padding-top:7px; border-top:1px solid #8bc1d11c; font:8px/1.4 Consolas,monospace; color:#aac4ce; }
+#cleanHUD #hudVitalsDock .space-telemetry[data-hull-state="damaged"] #shipHullValue { color:#edc17f; }
+#cleanHUD #hudVitalsDock .space-telemetry[data-hull-state="critical"] #shipHullValue { color:#ff8e81; }
+#cleanHUD #hudVitalsDock .space-telemetry[data-hull-state="critical"] #shipHull::-webkit-progress-value { background:#ff8e81; }
+#cleanHUD #hudTools .space-actions { display:flex; flex-wrap:wrap; gap:6px; margin-top:9px; }
+#cleanHUD #hudTools .space-actions button { flex:1; min-height:30px; margin:0; font-size:8px; padding:7px; }
+@media(max-width:700px), (max-height:550px) {
+ #cleanHUD #hudVitalsDock:has(.space-telemetry:not([hidden])) { padding:9px 10px; }
+ #cleanHUD #hudVitalsDock .space-telemetry { gap:5px; }
+ #cleanHUD #hudVitalsDock .space-stat-row span { font-size:7px; letter-spacing:.6px; }
+ #cleanHUD #hudVitalsDock #shipHullValue { font-size:16px; }
+ #cleanHUD #hudVitalsDock #hudIntegrity:not(:empty) { margin-top:5px; padding-top:5px; font-size:7px; }
+}

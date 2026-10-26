@@ -1,0 +1,238 @@
+[
+  {
+    "branch": "rude",
+    "line": 0,
+    "file": "audio/williams/JOSIAHWRUDE.mp3",
+    "duration": 9.326,
+    "sha256": "aa62567813ce533fdb4b44edc48d81caf0c924b89a879568204488318f9148b5"
+  },
+  {
+    "branch": "sarcastic",
+    "line": 0,
+    "file": "audio/williams/JOSIAHWSARCASTIC.mp3",
+    "duration": 9.718,
+    "sha256": "5d4a9217f6a3fb8d22144a96c2090ec4b77d57e9ac56e1a08795618abae8f787"
+  },
+  {
+    "branch": "sympathetic",
+    "line": 0,
+    "file": "audio/williams/JOSIAHWRSYMPATHETIC.mp3",
+    "duration": 10.762,
+    "sha256": "4f2208ed9a218aa4396a820488270bfaf1728a07b07c29d30c64b1a754b3bb2d"
+  },
+  {
+    "branch": "sympathetic",
+    "line": 1,
+    "file": "audio/williams/JOSIAHWRSYMPATHETIC2.mp3",
+    "duration": 14.028,
+    "sha256": "37de6334df5fa473eba49f64dc38a8eeb58e5d8af9bdf174813cac1e083908bc"
+  },
+  {
+    "branch": "sympathetic",
+    "line": 2,
+    "file": "audio/williams/JOSIAHWRSYMPATHETIC3.mp3",
+    "duration": 11.807,
+    "sha256": "ddf9fe821118cd86f1431f64aa5dcf95e2ccea025172dfaf07b320fd0539926b"
+  },
+  {
+    "branch": "ignorant",
+    "line": 0,
+    "file": "audio/williams/JOSIAHWIGNORANT.mp3",
+    "duration": 8.202,
+    "sha256": "78dfa497c8c88989ce363725a8d52cf7c399b7e8571bfbcc3e0f1b8e4e083d4d"
+  },
+  {
+    "branch": "intro",
+    "line": 0,
+    "file": "audio/williams/JOSIAHWILLIAMS1.mp3",
+    "duration": 13.401,
+    "sha256": "ee839ea585576c4c181c917d67738b27290d00e79827bc897c06848384f2be2d"
+  },
+  {
+    "branch": "intro",
+    "line": 1,
+    "file": "audio/williams/JOSIAHWILLIAMS2.mp3",
+    "duration": 17.789,
+    "sha256": "a5ce099b45815ee89318c5bbeb5e627f482bec1ab14f1065c1a56242aa5962a9"
+  },
+  {
+    "branch": "intro",
+    "line": 2,
+    "file": "audio/williams/JOSIAHWILLIAMS3.mp3",
+    "duration": 17.633,
+    "sha256": "5ca02d586178e200b22ec463b48ea34676e028a5531a0676b543c389e5490968"
+  },
+  {
+    "branch": "intro",
+    "line": 3,
+    "file": "audio/williams/JOSIAHWILLIAMS4.mp3",
+    "duration": 18.991,
+    "sha256": "85ed0cb9e3e9a379f5b7d858aba7ca08a2659f89692110dc3fbed3b2db47a2c0"
+  },
+  {
+    "branch": "intro",
+    "line": 4,
+    "file": "audio/williams/JOSIAHWILLIAMS5.mp3",
+    "duration": 17.789,
+    "sha256": "c2347532c6d97dd70fa1be8a552f4d8aca32a49edcf2a9b8625fccb5f6deff06"
+  },
+  {
+    "branch": "chapter3",
+    "line": 0,
+    "file": "audio/williams/JOSIAHWILLIAMSCHAPTER3.mp3",
+    "duration": 3.971,
+    "sha256": "5b624a042b876f61870e621e8bb4e0ecd5cf3581c80c5c956b2aa287b15c2196"
+  },
+  {
+    "branch": "gareth",
+    "line": 0,
+    "file": "audio/williams/GW1.mp3",
+    "duration": 6.766,
+    "sha256": "23757186d8d152fba34002fee46d55b401ba1a94cfcca3f7d7c5130c31044210",
+    "speaker": "gareth"
+  },
+  {
+    "branch": "gareth",
+    "line": 1,
+    "file": "audio/williams/GW2.mp3",
+    "duration": 6.113,
+    "sha256": "20648de6d007d8f5e17cd4a5356f648196a7cf8ee06e39ca57ab0a66cffba482",
+    "speaker": "josiah"
+  },
+  {
+    "branch": "gareth",
+    "line": 2,
+    "file": "audio/williams/GW3.mp3",
+    "duration": 9.091,
+    "sha256": "e90fc7ed646f9c5852c6a44c2e7535a3f579517556deec2b220e03aa49e2a273",
+    "speaker": "gareth"
+  },
+  {
+    "branch": "gareth",
+    "line": 3,
+    "file": "audio/williams/GW4.mp3",
+    "duration": 4.754,
+    "sha256": "50484125d54169cde6e0a4979b477331f5d367ad846bfc06e527dc4c06e3e2b1",
+    "speaker": "josiah"
+  },
+  {
+    "branch": "gareth",
+    "line": 4,
+    "file": "audio/williams/GW5.mp3",
+    "duration": 7.628,
+    "sha256": "90c64279bfa8338ddb42a7dad8ffd75246e32cde602619cb7556439144b668ee",
+    "speaker": "gareth"
+  },
+  {
+    "branch": "gareth",
+    "line": 5,
+    "file": "audio/williams/GW6.mp3",
+    "duration": 4.598,
+    "sha256": "5f04804ee7a50c3360ee2ee93e317bf5b892b7116a537b86595bf0b8567d3f64",
+    "speaker": "josiah"
+  },
+  {
+    "branch": "gareth",
+    "line": 6,
+    "file": "audio/williams/GW7.mp3",
+    "duration": 10.371,
+    "sha256": "91db6d66c12c09e6f1eec3004cce91c4ba275a834631c9a4928eff5048ba08e7",
+    "speaker": "gareth"
+  },
+  {
+    "branch": "gareth",
+    "line": 7,
+    "file": "audio/williams/GW8.mp3",
+    "duration": 7.158,
+    "sha256": "f1f422432cb637c44eec2e556c374658e3832d88ae534d31b18e623dbc77af52",
+    "speaker": "josiah"
+  },
+  {
+    "branch": "gareth",
+    "line": 8,
+    "file": "audio/williams/GW9.mp3",
+    "duration": 4.989,
+    "sha256": "f2a5040b3f69709702c26ef2f8413ec4959f306e22231ca74422a28fd8a17502",
+    "speaker": "gareth"
+  },
+  {
+    "branch": "gareth",
+    "line": 9,
+    "file": "audio/williams/GW10.mp3",
+    "duration": 8.359,
+    "sha256": "46f84c28b7e8331b80d38f8af92c822000b1be939e51ebb511089d842d1cd578",
+    "speaker": "josiah"
+  },
+  {
+    "branch": "gareth",
+    "line": 10,
+    "file": "audio/williams/GW11.mp3",
+    "duration": 8.359,
+    "sha256": "27ec12e1351e4f72a7089f8cf2b14c6946d3ac9363068e88501ec5bc169a1bdc",
+    "speaker": "gareth"
+  },
+  {
+    "branch": "gareth",
+    "line": 11,
+    "file": "audio/williams/GW12.mp3",
+    "duration": 8.673,
+    "sha256": "4370d0a13bca343d864560841c078fa9c6c5e8ba0f11588a208ff66f1937788e",
+    "speaker": "josiah"
+  },
+  {
+    "branch": "richards",
+    "line": 0,
+    "file": "audio/williams/JOSIAHVSJWILLIAMS1.mp3",
+    "duration": 9.639,
+    "sha256": "7fff6141102ada9c70fc4f554374d391ba936a0c7df4f14872f243d18191cf87",
+    "speaker": "richards"
+  },
+  {
+    "branch": "richards",
+    "line": 1,
+    "file": "audio/williams/JOSIAHVSJWILLIAMS2.mp3",
+    "duration": 9.247,
+    "sha256": "bc7dbb77c8d0aaf5509ec0215d702e465903672dfe678e9c2dbfc3bf2357bf29",
+    "speaker": "richards"
+  },
+  {
+    "branch": "richards",
+    "line": 2,
+    "file": "audio/williams/JOSIAHVSJWILLIAMS3.mp3",
+    "duration": 9.639,
+    "sha256": "a4a16d167960909b06de461839ed970b70b58a41090c3fc0ba796b9d7a39147e",
+    "speaker": "richards"
+  },
+  {
+    "branch": "richards",
+    "line": 3,
+    "file": "audio/williams/JOSIAHVSJWILLIAMS4.mp3",
+    "duration": 8.986,
+    "sha256": "708daaeae0e0a9cfa95c98ba32a6498d59f4b5d99fe7a44ae9b96162264deed8",
+    "speaker": "richards"
+  },
+  {
+    "branch": "richards",
+    "line": 4,
+    "file": "audio/williams/JOSIAHVSJWILLIAMS5.mp3",
+    "duration": 8.908,
+    "sha256": "103e273b2482d85269ec90277926efe449423ffa14350c5a98319dddccd525c1",
+    "speaker": "richards"
+  },
+  {
+    "branch": "enlistment",
+    "line": 0,
+    "file": "audio/williams/JW1.mp3",
+    "duration": 12.669,
+    "sha256": "d6e8cbd0f0c4882d8586d4848a79ea6406398075525a7a1f1ba2f6c6655e9f1b",
+    "speaker": "josiah"
+  },
+  {
+    "branch": "enlistment",
+    "line": 1,
+    "file": "audio/williams/JW2.mp3",
+    "duration": 14.211,
+    "sha256": "ebc8480ee2480b8956c6cec579df5fa7f80456c497ef79d602e6d9eacf9af512",
+    "speaker": "josiah"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "scenario": "space",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 20,
+        "y": 20,
+        "right": 1346,
+        "bottom": 94
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 20,
+        "y": 108,
+        "right": 250,
+        "bottom": 559.703125
+      },
+      {
+        "id": "hudAlerts",
+        "x": 264,
+        "y": 108,
+        "right": 1012,
+        "bottom": 139.5
+      },
+      {
+        "id": "hawthorneComms",
+        "x": 1026,
+        "y": 108,
+        "right": 1344,
+        "bottom": 435.0625
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 20,
+        "y": 573.703125,
+        "right": 270,
+        "bottom": 748
+      }
+    ],
+    "failures": []
+  }
+]

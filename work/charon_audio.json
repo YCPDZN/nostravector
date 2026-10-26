@@ -1,0 +1,92 @@
+[
+  {
+    "kind": "briefing",
+    "line": 1,
+    "file": "audio/charon/KH1.mp3",
+    "duration": 12.591
+  },
+  {
+    "kind": "briefing",
+    "line": 2,
+    "file": "audio/charon/KH2.mp3",
+    "duration": 12.826
+  },
+  {
+    "kind": "briefing",
+    "line": 3,
+    "file": "audio/charon/KH3.mp3",
+    "duration": 11.651
+  },
+  {
+    "kind": "briefing",
+    "line": 4,
+    "file": "audio/charon/KH4.mp3",
+    "duration": 11.964
+  },
+  {
+    "kind": "briefing",
+    "line": 5,
+    "file": "audio/charon/KH5.mp3",
+    "duration": 11.311
+  },
+  {
+    "kind": "robot",
+    "line": 1,
+    "file": "audio/charon/CHARON1.mp3",
+    "duration": 10.109
+  },
+  {
+    "kind": "robot",
+    "line": 2,
+    "file": "audio/charon/CHARON2.mp3",
+    "duration": 11.651
+  },
+  {
+    "kind": "robot",
+    "line": 3,
+    "file": "audio/charon/CHARON3.mp3",
+    "duration": 15.073
+  },
+  {
+    "kind": "robot",
+    "line": 4,
+    "file": "audio/charon/CHARON4.mp3",
+    "duration": 13.401
+  },
+  {
+    "kind": "robot",
+    "line": 5,
+    "file": "audio/charon/CHARON5.mp3",
+    "duration": 13.949
+  },
+  {
+    "kind": "robot",
+    "line": 6,
+    "file": "audio/charon/CHARON6.mp3",
+    "duration": 13.714
+  },
+  {
+    "kind": "robot",
+    "line": 7,
+    "file": "audio/charon/CHARON7.mp3",
+    "duration": 14.367
+  },
+  {
+    "kind": "robot",
+    "line": 8,
+    "file": "audio/charon/CHARON8.mp3",
+    "duration": 11.651
+  },
+  {
+    "kind": "robot",
+    "line": 9,
+    "file": "audio/charon/CHARON9.mp3",
+    "duration": 14.028
+  },
+  {
+    "kind": "robot",
+    "line": 10,
+    "file": "audio/charon/CHARON10.mp3",
+    "duration": 13.322
+  }
+]

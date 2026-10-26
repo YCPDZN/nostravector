@@ -1,0 +1,32 @@
+[
+  {
+    "line": 0,
+    "file": "audio/hak-aridaxx/HAKARIDAXX1.mp3",
+    "duration": 14.759,
+    "sha256": "0ebe6363717ddc1a60f095c610079c22d3c4f17d0c9feb55d3055b4f58ece22a"
+  },
+  {
+    "line": 1,
+    "file": "audio/hak-aridaxx/HAKARIDAXX2.mp3",
+    "duration": 14.916,
+    "sha256": "36cd706913de1d3e3e7bdcac50a07ac5b351da6e9cc58d08ee2f3032acdfcb2c"
+  },
+  {
+    "line": 2,
+    "file": "audio/hak-aridaxx/HAKARIDAXX3.mp3",
+    "duration": 12.434,
+    "sha256": "7c341acf3043854dff1d7a5a03e3077f56a55e32367a47ba3b84182cd41ac407"
+  },
+  {
+    "line": 3,
+    "file": "audio/hak-aridaxx/HAKARIDAXX4.mp3",
+    "duration": 12.591,
+    "sha256": "8d31e0b2021352cc4bcb287837d5b48cc97080895cf1bd29123c20a5e3e0127d"
+  },
+  {
+    "line": 4,
+    "file": "audio/hak-aridaxx/HAKARIDAXX5.mp3",
+    "duration": 12.826,
+    "sha256": "73dede83e8ddbb5e3707de33776a9363cf9e80ef139bfb68ee3d505510c7749a"
+  }
+]

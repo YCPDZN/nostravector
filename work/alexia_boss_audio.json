@@ -1,0 +1,72 @@
+[
+  {
+    "line": 0,
+    "text": "So the Wanderer finally comes to Eris. Tell me, did Vishara send you to reclaim her throne, or merely to remind me how dearly everyone loves her?",
+    "file": "audio/alexia-boss/ALEXIA1.mp3",
+    "duration": 10.684,
+    "sha256": "4d73ed23675b30a59667081c660943a76ee77858c7795a948fea68a4e6c95c3b"
+  },
+  {
+    "line": 1,
+    "text": "For a billion years, this court spoke her name as though it were another word for destiny. I was expected to stand beside her, smile, and call that a life.",
+    "file": "audio/alexia-boss/ALEXIA2.mp3",
+    "duration": 10.919,
+    "sha256": "58aa0f96ca671771e01eecedc7e3d7a90a38577616f8de96b52690fd5088c19e"
+  },
+  {
+    "line": 2,
+    "text": "Hawthorne offered me something my own family never would: authority without asking my sister for permission. I knew exactly what his offer would cost.",
+    "file": "audio/alexia-boss/ALEXIA3.mp3",
+    "duration": 9.953,
+    "sha256": "001864d4a1c72e3b64e16edf0a9aad788f2174507893eda5f3fb95544d2ce79f"
+  },
+  {
+    "line": 3,
+    "text": "Do not mistake our alliance for devotion. Thomas needed my worlds, and I needed his fleets. Neither of us came to the table looking for a friend.",
+    "file": "audio/alexia-boss/ALEXIA4.mp3",
+    "duration": 9.953,
+    "sha256": "da861118568332b8832fdbd0ff805f4fb9859b47b6cf348b8fe3ace67be74e61"
+  },
+  {
+    "line": 4,
+    "text": "You liberated Janira Prime, and now you imagine every occupied world is waiting to fall at your feet. Eris is not another victory you can collect on your way to Mercury.",
+    "file": "audio/alexia-boss/ALEXIA5.mp3",
+    "duration": 10.684,
+    "sha256": "0ab5b04f03de51a6d2c6b1bc77c6970cc74c9c4a3941bcdc6c640197681faa7f"
+  },
+  {
+    "line": 5,
+    "text": "Vishara calls me a traitor because it is easier than admitting I made a choice she could not control. She would rather lose a sister than share a throne.",
+    "file": "audio/alexia-boss/ALEXIA6.mp3",
+    "duration": 9.718,
+    "sha256": "37836cf6a224e103623f6e7b2800f67217c64a19080f91858cdbe86789b745e5"
+  },
+  {
+    "line": 6,
+    "text": "And Nyrexia? Another name for you to hold over me. Whatever road she chose, she was never going to live her life beneath this court’s expectations. Why was I supposed to?",
+    "file": "audio/alexia-boss/ALEXIA7.mp3",
+    "duration": 11.233,
+    "sha256": "0ee64fb5569cb3aa1cefbd98859145ad94fa92b9f12110510bcbcb69d3fbb0c9"
+  },
+  {
+    "line": 7,
+    "text": "Hawthorne is cornered. His generals know it. His soldiers know it. But if you think that makes me harmless, come closer and discover what I can still take from you.",
+    "file": "audio/alexia-boss/ALEXIA8.mp3",
+    "duration": 10.762,
+    "sha256": "119c3a6116d5774a36453df1a6b4a9e985c07f7854aa8cb1e5dca3b5c04a75d1"
+  },
+  {
+    "line": 8,
+    "text": "No more speeches about rightful rulers. No more promises that everything will be forgiven if I kneel. If you want to reach Mercury, you will have to get past me first!",
+    "file": "audio/alexia-boss/ALEXIA9.mp3",
+    "duration": 10.684,
+    "sha256": "a209b75b771364c79e06b7ccb4c9a6744ffe8b9c19dd7d4b15a28bf6207f6f26"
+  },
+  {
+    "line": 9,
+    "text": "Enough. Take the throne back to Vishara. Put me in a cell if it makes your victory feel cleaner. But when you face Hawthorne, remember this: desperate rulers do not surrender their power quietly.",
+    "file": "audio/alexia-boss/ALEXIA10.mp3",
+    "duration": 12.826,
+    "sha256": "8f867e9dc11c2a8c9bc84cbba17be91e69c5417141d21edb727879c5fefbafc8"
+  }
+]

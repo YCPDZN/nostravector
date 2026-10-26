@@ -1,0 +1,75 @@
+[
+  {
+    "route": "good",
+    "shot": 0,
+    "speaker": "zark",
+    "file": "audio/pre-beam/FINALBOSSPREBEAM1.mp3",
+    "duration": 9.718,
+    "sha256": "a9d2dd30b737c004ef8d6d07c68f7410cf66372900754864fe0491de94ee2ddd"
+  },
+  {
+    "route": "good",
+    "shot": 1,
+    "speaker": "james",
+    "file": "audio/pre-beam/FINALBOSSPREBEAM2.mp3",
+    "duration": 7.549,
+    "sha256": "ec88d737715504d69b69897839ba99a85b58bbab5f7fa0e93bac62d0d7b9f29f"
+  },
+  {
+    "route": "good",
+    "shot": 2,
+    "speaker": "croxian",
+    "file": "audio/pre-beam/FINALBOSSPREBEAM3.mp3",
+    "duration": 6.766,
+    "sha256": "e88bd78c6ea87bb233f1e632741258829271f903e9827edd49dbdfb651bca267"
+  },
+  {
+    "route": "good",
+    "shot": 3,
+    "speaker": "malia",
+    "file": "audio/pre-beam/FINALBOSSPREBEAM4.mp3",
+    "duration": 7.079,
+    "sha256": "1e5e6d3478fbaf421c5e393a278ac15f7644479089d3ca7574ba5c5fd6088c3c"
+  },
+  {
+    "route": "good",
+    "shot": 4,
+    "speaker": "orion",
+    "file": "audio/pre-beam/FINALBOSSPREBEAM5.mp3",
+    "duration": 7.079,
+    "sha256": "95124b4f76b20a75f690cc5787406c5bad206905d4899b21db60d5c5fcad4ef4"
+  },
+  {
+    "route": "good",
+    "shot": 5,
+    "speaker": "nyrexia",
+    "file": "audio/pre-beam/FINALBOSSPREBEAM6.mp3",
+    "duration": 8.124,
+    "sha256": "c9f05795666c189e99694ba95afccd5601352dc0629316c378a2bf5313423d3c"
+  },
+  {
+    "route": "good",
+    "shot": 6,
+    "speaker": "williams",
+    "file": "audio/pre-beam/FINALBOSSPREBEAM7.mp3",
+    "duration": 6.609,
+    "sha256": "5f7d20eec9053f7d049eb5a627af8f6bf4cb1f92426ddacd6382dad2030d566e"
+  },
+  {
+    "route": "good",
+    "shot": 7,
+    "speaker": "tyrotaronus",
+    "file": "audio/pre-beam/FINALBOSSPREBEAM8.mp3",
+    "duration": 9.169,
+    "sha256": "9a0e9dda020d87b44e5894a92deac4493aaf3ea84e9fe55158e02376a2a34732"
+  },
+  {
+    "route": "beam-failure",
+    "shot": -1,
+    "speaker": "zark",
+    "file": "audio/pre-beam/LORD ZARK FAILED QTE.mp3",
+    "duration": 10.762,
+    "sha256": "75b2d52e73cd033d5f6ed41e0ebba38943e0547f5590a16e7ce5308de1219848",
+    "text": "HAHAHAHA! ALL THAT POWER, AND YOU STILL FAILED! YOUR FRIENDS CANNOT SAVE YOU FROM EVERY WORLD YOU LEFT BEHIND!"
+  }
+]

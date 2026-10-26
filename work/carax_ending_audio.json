@@ -1,0 +1,482 @@
+[
+  {
+    "route": "good",
+    "shot": 0,
+    "speaker": "zark",
+    "file": "audio/carax-endings/GOODENDING1.mp3",
+    "duration": 6.034,
+    "sha256": "156df6f05b742022ce616e079c13157f84cbded5268ccd0c8aab13a656b702f5"
+  },
+  {
+    "route": "good",
+    "shot": 1,
+    "speaker": "archamus",
+    "file": "audio/carax-endings/GOODENDING2.mp3",
+    "duration": 8.908,
+    "sha256": "e54386b23cb7c8688b30723115c10bc634266a96a111182bf34f058d37b49ff4"
+  },
+  {
+    "route": "good",
+    "shot": 3,
+    "speaker": "archamus",
+    "file": "audio/carax-endings/GOODENDING3.mp3",
+    "duration": 10.188,
+    "sha256": "d059f79a2af281c00fae691ccd958f8d7a0c754f5dca4edf2fd0de102a03837f"
+  },
+  {
+    "route": "neutral",
+    "shot": 0,
+    "speaker": "zark",
+    "file": "audio/carax-endings/NEUTRALENDING1.mp3",
+    "duration": 4.206,
+    "sha256": "341911134b90a14c462b01bd8d61373cd9f3a79778ee6833e9608770dd1f64e7"
+  },
+  {
+    "route": "neutral",
+    "shot": 1,
+    "speaker": "archamus",
+    "file": "audio/carax-endings/NEUTRALENDING2.mp3",
+    "duration": 10.188,
+    "sha256": "beada8f460da7e1b4ebad84aee2813427c6b12c121d24de05fd719663c1722ce"
+  },
+  {
+    "route": "neutral",
+    "shot": 3,
+    "speaker": "archamus",
+    "file": "audio/carax-endings/NEUTRALENDING3.mp3",
+    "duration": 9.482,
+    "sha256": "67348e03d27f62c33ddf4ac8e4897eb0a40dbd4ac8e665dce25248a5e0dc763e"
+  },
+  {
+    "route": "bad",
+    "shot": 0,
+    "speaker": "zark",
+    "file": "audio/carax-endings/BADENDING1.mp3",
+    "duration": 4.911,
+    "sha256": "8515c0a98bdd21c87da792d0c4aa22bf15fa81d0423039ad09272c09dd08b6c9"
+  },
+  {
+    "route": "bad",
+    "shot": 2,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDING2.mp3",
+    "duration": 8.281,
+    "sha256": "d7fbd06df0095d74b6fd238d1fe5fd9ffbb730f21dde8acbff547b895d09964e"
+  },
+  {
+    "route": "bad",
+    "shot": 3,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDING3.mp3",
+    "duration": 4.754,
+    "sha256": "d15c17dd433138414cb2ad3fd1e19d8b3e5f175a2db5d2b7ce563879967d40c8"
+  },
+  {
+    "route": "shared",
+    "shot": -1,
+    "speaker": "archamus",
+    "file": "audio/carax-endings/GOOD AND NEUTRAL.mp3",
+    "duration": 5.407,
+    "sha256": "1c8802bfd17eebfa9cdab40b3fa589b8a85593d55c12b3a3ee956fd22b18f560"
+  },
+  {
+    "route": "bad",
+    "shot": 4,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDINGORION1.mp3",
+    "duration": 3.709,
+    "sha256": "5c87b40cd75ab81be32e0d45ae7ba0da14a8e5c926693359dd8cca6f93162bf8"
+  },
+  {
+    "route": "bad",
+    "shot": 5,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDINGORION2.mp3",
+    "duration": 3.631,
+    "sha256": "f9e48f9b097ee016ede451dc38e53f64a8f2f04d3c858d53c8812f180d48a18e"
+  },
+  {
+    "route": "bad",
+    "shot": 6,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDINGORION3.mp3",
+    "duration": 4.441,
+    "sha256": "d2b7498bf807a1c7da959d1d2f0deaeb2b40370df2603186941d39c7ac3bbe71"
+  },
+  {
+    "route": "bad",
+    "shot": 7,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDINGORION4.mp3",
+    "duration": 4.284,
+    "sha256": "bd8135831c5b963a31cf1babcdc01051681dc82a7c0e9c54fd4f7146263a83e3"
+  },
+  {
+    "route": "bad",
+    "shot": 8,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDINGORION5.mp3",
+    "duration": 3.396,
+    "sha256": "e73c0b5d520ee12b1e13e7c15605f3529465f3c0b0acab5284045850ffa60cfe"
+  },
+  {
+    "route": "bad",
+    "shot": 9,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDINGORION6.mp3",
+    "duration": 4.206,
+    "sha256": "66c1a19b90acdcd9c7c4d60a69e9d5363eac1bca30eafecf952814f29e3b70b8"
+  },
+  {
+    "route": "bad",
+    "shot": 10,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDINGORION7.mp3",
+    "duration": 4.676,
+    "sha256": "cf622aaeefe3b6691571df9145c2610d7f77ca069a79da6a58c2f2f6f1430aaf"
+  },
+  {
+    "route": "bad",
+    "shot": 11,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDINGORION8.mp3",
+    "duration": 4.284,
+    "sha256": "d4523aa9099cb855b2592dc1a451b3270738b93ea4c46fb4588773b151bfaa00"
+  },
+  {
+    "route": "bad",
+    "shot": 12,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDINGORION9.mp3",
+    "duration": 3.631,
+    "sha256": "1eef1802065f8bb1bdb8f5db84f7cd7f7bde7f2098c8f2bea0f05daf10b955dc"
+  },
+  {
+    "route": "bad",
+    "shot": 13,
+    "speaker": "hostile-orion",
+    "file": "audio/carax-endings/BADENDINGORION10.mp3",
+    "duration": 6.922,
+    "sha256": "cf51380579c1586983a6272ba567b891873f04723ae2503123f5d2dc963fd0b9"
+  },
+  {
+    "route": "bad-zark",
+    "shot": 0,
+    "speaker": "zark",
+    "file": "audio/carax-endings/BADENDINGZARK1.mp3",
+    "duration": 6.034,
+    "sha256": "4ee077f594cadcc3f493a649a6495fdd4d370d2b5fd68b6577f345663ccb0d2a"
+  },
+  {
+    "route": "bad-zark",
+    "shot": 1,
+    "speaker": "zark",
+    "file": "audio/carax-endings/BADENDINGZARK2.mp3",
+    "duration": 5.799,
+    "sha256": "a33c7fd7fe2d0238a5296cbd19f8126bad4584b0307035475d9422b5071703f6"
+  },
+  {
+    "route": "bad-zark",
+    "shot": 2,
+    "speaker": "zark",
+    "file": "audio/carax-endings/BADENDINGZARK3.mp3",
+    "duration": 6.034,
+    "sha256": "e50f211d74b45a9157def60b5ddf725635b9b60fe2e7a16df7432eccc14b3f07"
+  },
+  {
+    "route": "bad-zark",
+    "shot": 3,
+    "speaker": "zark",
+    "file": "audio/carax-endings/BADENDINGZARK4.mp3",
+    "duration": 5.721,
+    "sha256": "4114572d734a6835d0fcd44de53ec340fdff36ea7c8f1f15c03113f744726ed1"
+  },
+  {
+    "route": "bad-zark",
+    "shot": 4,
+    "speaker": "zark",
+    "file": "audio/carax-endings/BADENDINGZARK5.mp3",
+    "duration": 4.676,
+    "sha256": "0ac0cd7e312808c4f244daabcb252e2305f6ac2f88e9674422569b7d16626cd9"
+  },
+  {
+    "route": "bad-zark",
+    "shot": 5,
+    "speaker": "zark",
+    "file": "audio/carax-endings/BADENDINGZARK6.mp3",
+    "duration": 5.799,
+    "sha256": "e4e69e898daddab8c857024606101499b4426065c206685a95313f5613d8f044"
+  },
+  {
+    "route": "bad-zark",
+    "shot": 6,
+    "speaker": "zark",
+    "file": "audio/carax-endings/BADENDINGZARK7.mp3",
+    "duration": 5.146,
+    "sha256": "02cd63249c8493ed4d1ae9bbcd70ce4e66ed252891427718fffebe1e8c2579f3"
+  },
+  {
+    "route": "bad-zark",
+    "shot": 7,
+    "speaker": "zark",
+    "file": "audio/carax-endings/BADENDINGZARK8.mp3",
+    "duration": 6.687,
+    "sha256": "1c617944ddfe3f3517a8d99331a3aebabc6c86ee7e9f11bfd0d08041b3871d08"
+  },
+  {
+    "route": "bad-zark",
+    "shot": 8,
+    "speaker": "zark",
+    "file": "audio/carax-endings/BADENDINGZARK9.mp3",
+    "duration": 5.564,
+    "sha256": "ce4a61b3749f8ffe14c4162cbf38b63b27ba306caa72a21eb4b4acffb21b8ba1"
+  },
+  {
+    "route": "bad-zark",
+    "shot": 9,
+    "speaker": "zark",
+    "file": "audio/carax-endings/BADENDINGZARK10.mp3",
+    "duration": 7.549,
+    "sha256": "fcb70eddfc262de7bcc58b9975e7d38c07489cb9f329e4ccf27c7c4ed1e47578"
+  },
+  {
+    "route": "bad-josiah",
+    "shot": 2,
+    "speaker": "josiah",
+    "file": "audio/carax-endings/BADENDINGJOSIAH1.mp3",
+    "duration": 5.878,
+    "sha256": "dcbac3721c474a3f0c2e3a473b1d05153ba46530cccbf2328c314e0b2223310e"
+  },
+  {
+    "route": "bad-josiah",
+    "shot": 3,
+    "speaker": "josiah",
+    "file": "audio/carax-endings/BADENDINGJOSIAH2.mp3",
+    "duration": 6.922,
+    "sha256": "f19e7e658c22e5396635b59e82f5b4c89e7c40ae859c8a4ca01251120e8cb00f"
+  },
+  {
+    "route": "bad-josiah",
+    "shot": 4,
+    "speaker": "josiah",
+    "file": "audio/carax-endings/BADENDINGJOSIAH3.mp3",
+    "duration": 7.079,
+    "sha256": "d4a459095a8a7fdad0c1082a6b1849c639b6da9e683ba00292d23cfa2dfa7190"
+  },
+  {
+    "route": "bad-josiah",
+    "shot": 5,
+    "speaker": "josiah",
+    "file": "audio/carax-endings/BADENDINGJOSIAH4.mp3",
+    "duration": 8.124,
+    "sha256": "513fb96a0699fff9d28dde4e30770f749625f6ffa6966c5e246ca2f05d35dd23"
+  },
+  {
+    "route": "bad-josiah",
+    "shot": 6,
+    "speaker": "josiah",
+    "file": "audio/carax-endings/BADENDINGJOSIAH5.mp3",
+    "duration": 5.721,
+    "sha256": "7ab0a86876daa1151499066d28c7a2ff65673139ecd1d0ddd290e77fecf61c00"
+  },
+  {
+    "route": "bad-josiah",
+    "shot": 7,
+    "speaker": "josiah",
+    "file": "audio/carax-endings/BADENDINGJOSIAH6.mp3",
+    "duration": 6.531,
+    "sha256": "5075c04b8f4994fc657117610defc6a666ec96a95d60b0598f678e1a9952d9ef"
+  },
+  {
+    "route": "bad-josiah",
+    "shot": 8,
+    "speaker": "josiah",
+    "file": "audio/carax-endings/BADENDINGJOSIAH7.mp3",
+    "duration": 7.079,
+    "sha256": "662fecbaea0b6845152510fca6c3b7df799a4cec64b4ffd7e4ad673e4ca31207"
+  },
+  {
+    "route": "bad-josiah",
+    "shot": 9,
+    "speaker": "josiah",
+    "file": "audio/carax-endings/BADENDINGJOSIAH8.mp3",
+    "duration": 6.113,
+    "sha256": "012788cc3201a20e42109c2a044b5b5685ad84c8c6850e13e815cb2331ac670a"
+  },
+  {
+    "route": "bad-josiah",
+    "shot": 10,
+    "speaker": "josiah",
+    "file": "audio/carax-endings/BADENDINGJOSIAH9.mp3",
+    "duration": 5.956,
+    "sha256": "67836e7e4732d131b50941ff4dc555991bfa8e64f00a039f2382005b95779397"
+  },
+  {
+    "route": "bad-josiah",
+    "shot": 11,
+    "speaker": "josiah",
+    "file": "audio/carax-endings/BADENDINGJOSIAH10.mp3",
+    "duration": 5.956,
+    "sha256": "ae3b89f0a22c63d4e9278e2e7184085db8b8396b5d70d6f7b24fefb4c4a8be6a"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 1,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS1.mp3",
+    "duration": 6.609,
+    "sha256": "634b94047e315d80531039d00c1e0a3176d8ee4f6f9e2f849597bcadd2829bfd"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 2,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS2.mp3",
+    "duration": 10.188,
+    "sha256": "f9ce6e3e38307d671917d0a88987107ff569c1d1dcc4b43540a5232753ff1834"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 3,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS3.mp3",
+    "duration": 8.986,
+    "sha256": "933b5e6c8135f092183b18438500c0f10a71e89973fed0f3531b8314feb72285"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 4,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS4.mp3",
+    "duration": 8.202,
+    "sha256": "196fb20a0e4ad70962fc0f7e4f7f00468aa4b4ef3bd2ed2dc4319904c3df99ae"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 5,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS5.mp3",
+    "duration": 11.389,
+    "sha256": "442bc22a6f244714a5be4180bf0a04c1e6e563627b330f932db115c148221a03"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 6,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS6.mp3",
+    "duration": 11.076,
+    "sha256": "7eab9c85c930402e714e2e636e4a465849843c8051bc5202eb29c3e95a686dd3"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 7,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS7.mp3",
+    "duration": 9.169,
+    "sha256": "1c0e1b38f47ea246c5b5691db542872cee7b5c488c3ceeee867f3e6b81f60f9e"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 8,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS8.mp3",
+    "duration": 11.233,
+    "sha256": "918d67bc86a939ba037666a18cd030ed2e5cf4472a968521680a18637f603e57"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 9,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS9.mp3",
+    "duration": 9.169,
+    "sha256": "80840c514c678ebfb076231da4fe31dfcb864291c3c459b429a4b065b1e9bf23"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 10,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS10.mp3",
+    "duration": 10.919,
+    "sha256": "f72fc52c316724c3d78db82c162f7c064328e0f309f5cd144ff8afb676c20ff5"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 11,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS11.mp3",
+    "duration": 10.371,
+    "sha256": "8c91df916ff87b0908fceb2f522804c15c41cb105022835cac176ac8703a7b40"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 12,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS12.mp3",
+    "duration": 12.931,
+    "sha256": "1040a5f931a484c6d22691e4095dfb6059d78067beac6deea4cbd0ebd5644ee8"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 13,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS13.mp3",
+    "duration": 16.274,
+    "sha256": "8d8fe71d6d9f09796061c5d6e2a96565eb69603846a4ec60b562a58db5214365"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 14,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS14.mp3",
+    "duration": 10.998,
+    "sha256": "99c487d6fe54aeaef5b9df979b88b05249911965373ec05352c7c6cfeeac4341"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 15,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS15.mp3",
+    "duration": 9.639,
+    "sha256": "6b6c507f3ebe4698703eb144a83244b769c73584a31ada170331c958fff40d19"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 16,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS16.mp3",
+    "duration": 6.531,
+    "sha256": "600fabd9b09a3bcd81b31ef6624b9dac2a70a48f548e8c0cc9a73394d40ff2f3"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 17,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS17.mp3",
+    "duration": 9.639,
+    "sha256": "6761e73b96d5cab7381b968c52e1380442750366e789dc0dcdf8a3f4d2375b97"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 18,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS18.mp3",
+    "duration": 9.718,
+    "sha256": "a95f05b5a8bf15f98e7ac91a36de20335d425e3be0b2b6d1ebe36e16196d513d"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 19,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS19.mp3",
+    "duration": 10.919,
+    "sha256": "2afec8584b8d9c142110e0c4a0a666acbab59909b89bd81d4129d2c5615a77d6"
+  },
+  {
+    "route": "bad-tyrotaronus",
+    "shot": 20,
+    "speaker": "tyrotaronus",
+    "file": "audio/carax-endings/BADENDINGTYROTARONUS20.mp3",
+    "duration": 7.889,
+    "sha256": "4d723c99c4f750c78c802050f1bdca6db8a8ba8e4e4d403c05f4752348f87f3a"
+  }
+]

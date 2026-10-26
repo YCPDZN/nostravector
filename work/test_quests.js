@@ -1,0 +1,25 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const c=vm.createContext({console,Math,Number,JSON,Set,Map});
+for(const file of ['antarctica_core.js','antarctica_betrayal_core.js','africa_core.js','sol_catalog.js','planet_landscapes.js','space_core.js','world_flight.js','eris_core.js','construction_core.js','quests_core.js'])vm.runInContext(fs.readFileSync(__dirname+'/'+file,'utf8'),c);
+const run=code=>vm.runInContext(code,c),status=id=>run(`NVQuests.list(s).find(q=>q.id==='${id}').status`);
+run('let s=NVAntarctica.fresh(17);');assert.equal(status('wake'),'active');assert.equal(status('station'),'locked');assert.equal(status('orion'),'locked');
+run('s.jamesIntroductionDone=true;NVQuests.update(s);');assert.equal(status('wake'),'completed');assert.equal(status('station'),'active');
+run("s.ferryEscaped=true;s.africaStarted=true;s.africaStage='complete';s.spaceshipFound=true;s.space=NVSpace.fresh();s.space.phase='flight';NVQuests.update(s);");
+assert.equal(run("NVQuests.list(s).filter(q=>q.chapter===1&&q.status==='completed').length"),8);assert.equal(status('africa'),'completed');assert.equal(status('ship'),'completed');assert.equal(status('escape-earth'),'completed');assert.equal(status('orion'),'active');
+run("s.friendQuest='recruited';NVQuests.update(s);");assert.equal(status('orion'),'completed');
+run("s.space.phase='cockpit';s.space.body='earth';");assert.equal(status('escape-earth'),'completed','Completed quest must not revert after returning to Earth');
+run("s.eris.construction={...NVConstruction.fresh(),tools:true,stage:9};NVQuests.update(s);let snapshot=NVAntarctica.snapshot(s);let loaded=NVEris.restore(snapshot.eris);");
+assert.equal(run('loaded.quests.completed.length'),16);assert.equal(run('loaded.construction.stage'),9);
+run('let second=NVAntarctica.fresh(32);');assert.equal(run('NVQuests.list(second).filter(q=>q.status===\'completed\').length'),0,'Character histories must be independent');
+assert.equal(run('NVEris.restore(null).quests.completed.length'),0);
+assert.equal(run("NVQuests.restore({completed:['wake','wake','fake']}).completed.length"),1);
+assert.equal(status('base'),'completed');
+run("NVQuests.definitions.push({id:'late-chapter4',chapter:4,title:'Later mission',done:()=>false,available:()=>true});s.eris.quests={tracked:'late-chapter4',completed:['wake','late-chapter4','late-chapter4','unknown']};let later=NVAntarctica.snapshot(s);let laterLoaded=NVEris.restore(later.eris);");
+assert.equal(run('laterLoaded.quests.tracked'),'late-chapter4','Tracking survives a save/load for missions registered by later chapters');
+assert.equal(run('JSON.stringify(laterLoaded.quests.completed)'),JSON.stringify(['wake','late-chapter4']));
+assert.equal(run("NVQuests.restore({tracked:'unknown'}).tracked"),'main');
+console.log('Passed chapter 1/2 history, active/locked/optional statuses, permanent completion, Moon tutorial quests, manual snapshots, independent characters and legacy save migration.');
+
+run('s.eris.quests={completed:[]};s.eris.construction={...NVConstruction.fresh(),stage:3,built:[{type:"foundation",body:"mars"}]};');assert.equal(status('base'),'completed');
+run('s.eris.construction.built=[];s.eris.bases=[{body:"moon",x:44,z:55}];');assert.equal(status('base'),'completed');
+console.log('Passed immediate quest completion for a foundation on any world or a field base.');

@@ -1,0 +1,13 @@
+const A=require('./antarctica_core.js'),assert=require('node:assert/strict');
+const s=A.fresh(123);Object.assign(s,{hazardStage:'complete',superBlizzard:true,x:0,z:A.STATION.z});
+A.hazardStep(s,299);assert.equal(s.superBlizzard,true);assert.equal(s.stormRemaining,1);
+A.hazardStep(s,1);assert.equal(s.superBlizzard,false);assert.equal(s.nextBlizzardRemaining,300);assert.equal(s.supplyDialoguePending,true);assert.equal(s.stormClearCount,1);
+Object.assign(s,{supplyDialoguePending:false,supplyDialogueDone:true,suppliesPlanKnown:true});
+A.hazardStep(s,299);assert.equal(s.superBlizzard,false);assert.equal(s.nextBlizzardRemaining,1);
+const checkpoint=A.snapshot(s);assert.deepEqual(A.snapshot(A.restored({antarctica:checkpoint},'cycle')),checkpoint);
+A.hazardStep(s,1);assert.equal(s.superBlizzard,true);assert.equal(s.stormRemaining,300);assert.equal(s.blizzardCycle,1);
+A.hazardStep(s,300);assert.equal(s.superBlizzard,false);assert.equal(s.supplyDialoguePending,false,'The first supply briefing should not interrupt every subsequent weather cycle.');
+A.hazardStep(s,300);assert.equal(s.blizzardCycle,2);assert.equal(s.superBlizzard,true);
+const t=A.fresh(123);Object.assign(t,{hazardStage:'complete',superBlizzard:true,x:0,z:A.STATION.z});A.hazardStep(t,600);assert.equal(t.superBlizzard,true);assert.equal(t.stormRemaining,300);assert.equal(t.blizzardCycle,1,'A complete ten-minute interval starts the next storm.');
+const legacy=A.restored({antarctica:{hazardStage:'complete',superBlizzard:false,stationDialogueDone:true,stormRemaining:0}},'legacy');assert.equal(legacy.supplyDialoguePending,true);assert.equal(legacy.nextBlizzardRemaining,300);
+console.log('Passed: five-minute storm, five-minute clear window, exact ten-minute recurrence, repeated cycles, manual checkpoint round-trip and legacy clear-weather briefing.');

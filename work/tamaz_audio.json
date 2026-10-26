@@ -1,0 +1,32 @@
+[
+  {
+    "line": 0,
+    "file": "audio/tyrotaronus-tamaz/TAMAZ1.mp3",
+    "duration": 10.527,
+    "sha256": "ef164418ab1c3bd63012b50510b0f2d9b80f24e7e4047f23ea35b8b79e70aca8"
+  },
+  {
+    "line": 1,
+    "file": "audio/tyrotaronus-tamaz/TAMAZ2.mp3",
+    "duration": 11.389,
+    "sha256": "a24ac02bfa4687103f7ddc49b679bec9346b52570e0934337ab773edfb8ccd61"
+  },
+  {
+    "line": 2,
+    "file": "audio/tyrotaronus-tamaz/TAMAZ3.mp3",
+    "duration": 12.931,
+    "sha256": "7ecdde8e964b6f8651bcfe14571f0ae5f97398b7ed9ef4f7e8176e91c4342bc5"
+  },
+  {
+    "line": 3,
+    "file": "audio/tyrotaronus-tamaz/TAMAZ4.mp3",
+    "duration": 17.789,
+    "sha256": "03805d48018c97896129296861903f8e029f19ddb1d28ce8cfeb7ad15a5475f7"
+  },
+  {
+    "line": 4,
+    "file": "audio/tyrotaronus-tamaz/TAMAZ5.mp3",
+    "duration": 24.842,
+    "sha256": "56f0572c5faf3cfb267831be3c226b51e1caf130f00918a465430ebec2e12ed4"
+  }
+]

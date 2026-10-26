@@ -1,0 +1,137 @@
+[
+  {
+    "scenario": "africa",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 380,
+        "bottom": 99
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 107,
+        "right": 176.3125,
+        "bottom": 636.5
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 702.5,
+        "right": 191,
+        "bottom": 834
+      },
+      {
+        "id": "hudContextDock",
+        "x": 199,
+        "y": 714,
+        "right": 380,
+        "bottom": 834
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "space",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 380,
+        "bottom": 137
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 145,
+        "right": 176.3125,
+        "bottom": 576.5
+      },
+      {
+        "id": "hudAlerts",
+        "x": 10,
+        "y": 584.5,
+        "right": 380,
+        "bottom": 616
+      },
+      {
+        "id": "hawthorneComms",
+        "x": 184.3125,
+        "y": 145,
+        "right": 378,
+        "bottom": 468.5625
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 674,
+        "right": 191,
+        "bottom": 834
+      },
+      {
+        "id": "hudContextDock",
+        "x": 199,
+        "y": 758,
+        "right": 380,
+        "bottom": 834
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "construction",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 380,
+        "bottom": 137
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 145,
+        "right": 176.3125,
+        "bottom": 608
+      },
+      {
+        "id": "constructionGuide",
+        "x": 184.3125,
+        "y": 145,
+        "right": 378,
+        "bottom": 358.3125
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 674,
+        "right": 191,
+        "bottom": 834
+      },
+      {
+        "id": "hudContextDock",
+        "x": 199,
+        "y": 758,
+        "right": 380,
+        "bottom": 834
+      }
+    ],
+    "failures": []
+  }
+]

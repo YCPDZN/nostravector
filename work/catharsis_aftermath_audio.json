@@ -1,0 +1,62 @@
+[
+  {
+    "line": 0,
+    "file": "audio/catharsis-aftermath/CATHARSISDEMONIC1.mp3",
+    "duration": 14.602,
+    "sha256": "8cf5dfac448bab5ebee7b1282721b482219d1d844e96e05e2b065a2d840b3ab5"
+  },
+  {
+    "line": 1,
+    "file": "audio/catharsis-aftermath/CATHARSISDEMONIC2.mp3",
+    "duration": 15.229,
+    "sha256": "197f9ac115380301be625a06ad344528859e5a1a0665759eda7461a01b5d4d72"
+  },
+  {
+    "line": 2,
+    "file": "audio/catharsis-aftermath/CATHARSISDEMONIC3.mp3",
+    "duration": 15.961,
+    "sha256": "f074c3b3c9788288e763e9ae5b8f7203083835a5ae9dbdb745a79f8550fc45c5"
+  },
+  {
+    "line": 3,
+    "file": "audio/catharsis-aftermath/CATHARSISDEMONIC4.mp3",
+    "duration": 18.051,
+    "sha256": "2e792b8ec762a03716a7512eb6146e1f75cc1bf9b83cd64dd12b3ef0a58bb48f"
+  },
+  {
+    "line": 4,
+    "file": "audio/catharsis-aftermath/CATHARSISDEMONIC5.mp3",
+    "duration": 15.569,
+    "sha256": "e4f1c8ba81e90c85aaf84367f2a21a13f49f83a65033bd1d73c3e6b3578d920f"
+  },
+  {
+    "line": 5,
+    "file": "audio/catharsis-aftermath/CATHARSISDEMONIC6.mp3",
+    "duration": 17.946,
+    "sha256": "687219c0470f331c77e1c7f3f08d55e34881344282ef24c0001dc675c7528aa1"
+  },
+  {
+    "line": 6,
+    "file": "audio/catharsis-aftermath/CATHARSISDEMONIC7.mp3",
+    "duration": 15.882,
+    "sha256": "3029df50c1155c3fbddc83252247df2397d22c20309dca25eed2281641373d88"
+  },
+  {
+    "line": 7,
+    "file": "audio/catharsis-aftermath/CATHARSISDEMONIC8.mp3",
+    "duration": 17.711,
+    "sha256": "5b58841924317ba6606277ece3155c3b2185879416380c07ce58327cdbf4bd19"
+  },
+  {
+    "line": 8,
+    "file": "audio/catharsis-aftermath/CATHARSISDEMONIC9.mp3",
+    "duration": 15.647,
+    "sha256": "66047cbb5a96e49496cdcc9bd782ce084bb2ff06bfbca4c7fbb0d3d8df904944"
+  },
+  {
+    "line": 9,
+    "file": "audio/catharsis-aftermath/CATHARSISDEMONIC10.mp3",
+    "duration": 18.207,
+    "sha256": "236d1eebf49c7b4a91ef03d2c9b4f055eb6afe1f9780c75c7f453c04c18bbc7d"
+  }
+]

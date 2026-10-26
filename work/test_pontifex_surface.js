@@ -1,0 +1,22 @@
+const fs=require('node:fs');const source=fs.readFileSync(__dirname+'/test_antarctica_runtime.js','utf8');const harness=source.slice(0,source.indexOf('run("creatingCharacter=true;'));
+const checks=String.raw`
+gl.uniform3fv=(name,data)=>assert.ok(Array.from(data).every(Number.isFinite),'Finite '+name+': '+JSON.stringify(data));
+for(const f of ['world_flight.js','galaxy_core.js','cluster_core.js','eris_core.js','sol_war_core.js','pontifex_core.js','pontifex_model.js','pontifex_renderer.js','construction_core.js','occupation_bases.js'])run(fs.readFileSync(root+'/'+f,'utf8'));
+const viewer=fs.readFileSync(root+'/../outputs/NOSTRAVECTOR_3D_Viewer.html','utf8');context.parts=JSON.parse(viewer.match(/const parts=(.*?);\r?\nconst canvas/s)[1]);
+run(custom.slice(custom.indexOf('const originalColors='),custom.indexOf('function syncMenuWanderer()')));
+run(fs.readFileSync(root+'/africa_renderer.js','utf8').replace('__ORION_PARTS__',fs.readFileSync(root+'/orion_parts.json','utf8')).replace('__ORION_HELMET_PARTS__',fs.readFileSync(root+'/orion_helmet_parts.json','utf8')).replace('__AFRICA_SAND__','AA=='));
+for(const f of ['space_surface.js','render_math.js','ecology_renderer.js'])run(fs.readFileSync(root+'/'+f,'utf8'));
+run(fs.readFileSync(root+'/antarctica_renderer.js','utf8').replace('__SURFACE_SKY__',fs.readFileSync(root+'/surface_sky.glsl','utf8')).replace('__PLANET_MATERIAL__',fs.readFileSync(root+'/planet_material.glsl','utf8')));
+run('polarState=NVAntarctica.fresh(124);polarState.jamesIntroductionDone=true;polarState.africaStarted=true;polarState.africaStage="complete";polarState.jamesGone=true;polarState.ferryEscaped=true;polarState.betrayalStage="complete";polarState.space=NVSpace.fresh();polarState.space.phase="landed";polarState.space.body="mars";polarState.space.target="mars";polarRenderer=createPolarRenderer();const anim={playerPhase:0,jamesPhase:0,playerSpeed:0,jamesSpeed:0};polarRenderer(polarState,0,anim);');
+const baseline=drawCount;
+run('let q=NVPontifex.ensure(polarState);Object.assign(q,{alive:true,generation:1,hp:24000,body:"mars",mode:"windup",action:"slam",timer:.6,site:{x:5,z:8,lat:0,lon:0,global:false}});polarRenderer(polarState,1,anim);');
+assert.ok(drawCount-baseline>401,'The actual surface pipeline renders all detailed boss meshes and hazards.');
+run('q.mode="recovery";q.timer=1;q.shotFlash=.15;polarRenderer(polarState,2,anim);');const warmBuffers=bufferCount;
+run('q.mode="windup";q.action="lance";q.timer=.6;q.aim={x:8,z:9};polarRenderer(polarState,2.2,anim);q.mode="release";q.timer=.2;polarRenderer(polarState,2.3,anim);');
+assert.equal(bufferCount,warmBuffers,'Boss animations reuse cached GPU geometry.');
+run('polarState.space.geo={global:true,lat:0,lon:0};polarState.space.landingX=120000;polarState.space.landingZ=-85000;polarState.space.landingElevation=12;polarState.x=120000;polarState.z=-85000;q.site=null;q.mode="pursuit";q.speed=4;q.gait=2;NVPontifex.local(polarState);q.offset={x:-78,z:72};polarRenderer(polarState,3,anim);q.alive=false;q.hp=0;q.mode="dead";q.deathTime=4;polarRenderer(polarState,4,anim);');
+assert.ok(matrixCount>400,'Actual world matrices include the full boss rig.');
+run('polarState=NVAntarctica.fresh(125);polarRenderer(polarState,0,anim);');assert.equal(run('polarState.space'),null,'Fresh chapter one renders safely without a ship or boss.');
+console.log('Passed actual surface renderer with detailed boss, telegraphs, player aim/bolt, cached GPU meshes, distant globe coordinates, death collapse and fresh chapter-one intro.');
+`;
+new Function('require','__dirname',harness+'\n'+checks)(require,__dirname);

@@ -1,0 +1,23 @@
+const fs=require('node:fs'),source=fs.readFileSync(__dirname+'/test_pontifex_runtime.js','utf8'),marker='const checks=String.raw`',start=source.indexOf(marker),setup=source.slice(0,start),prefix=source.slice(start+marker.length,source.indexOf('// A fresh character',start));
+const checks=String.raw`
+const spaceGame=fs.readFileSync(root+'/space_game.js','utf8');
+for(const [a,b] of [['function boardingSpaceship','function spaceInput'],['function spaceInput','function tickSpace'],['function updateSpaceHUD','function renderSpaceWorld']])run(spaceGame.slice(spaceGame.indexOf(a),spaceGame.indexOf(b)));
+run('function updatePlanetMap(){}');
+run('creatingCharacter=true;writeGameSave({...DEFAULT_WANDERER,name:"Builder"});creatingCharacter=false;savedWanderer=savedGame.wanderer;startAntarctica();Object.assign(polarState,{jamesIntroductionDone:true,jamesGone:true,africaStarted:true,africaStage:"complete",ferryEscaped:true,bedRested:true,bedBuilt:true,betrayalStage:"complete",dreamDone:true});polarState.space=NVSpace.fresh();polarState.space.phase="landed";polarState.space.body="moon";polarState.space.landingX=0;polarState.space.landingZ=0;polarState.x=0;polarState.z=0;let c=NVConstruction.ensure(polarState);c.started=true;let crate=NVConstruction.toolCrate(polarState);crate.x=0;crate.z=0;updatePolarHUD();');
+assert.equal(element('#constructionGuide').hidden,true,'Tutorial is closed by default.');assert.equal(element('#constructionAccess').hidden,false,'Ground toolbar visibility');assert.ok(element('#hudToolbar').children.includes(element('#constructionAccess')),'Construction belongs to the top toolbar.');
+assert.equal(run('hudInteractionSource.id'),element('#boardGroundShip').id,'Boarding wins even beside an available tool crate.');
+element('#constructionAccess').onclick();assert.equal(element('#constructionGuide').hidden,false,'Opening the tutorial without tools');element('#constructionAccess').onclick();assert.equal(element('#constructionGuide').hidden,true);
+dispatch(context.document,'keydown',{code:'KeyF'});assert.equal(run('polarState.space.phase'),'cockpit');assert.equal(element('#constructionAccess').hidden,true);
+run('NVSpace.disembark(polarState);polarState.x=100;polarState.z=100;c.tools=true;c.stage=3;updatePolarHUD();');assert.equal(element('#hudInteract').hidden,true,'Construction cannot become the persistent interaction prompt.');
+element('#constructionAccess').onclick();assert.equal(run('constructionOpen'),true);assert.equal(run('gamePaused'),true);assert.equal(element('#constructionWorkshop').hidden,false,'Opening the workshop with tools');
+dispatch(context.document,'keydown',{code:'KeyF'});assert.equal(run('constructionOpen'),true,'Boarding still requires proximity.');
+dispatch(context.document,'keydown',{code:'Escape'});assert.equal(run('constructionOpen'),false);
+run('polarState.x=0;polarState.z=0;updatePolarHUD();');element('#constructionAccess').onclick();dispatch(context.document,'keydown',{code:'KeyF',target:{tagName:'INPUT'}});assert.equal(run('constructionOpen'),true,'Typing into a field cannot board.');
+dispatch(context.document,'keydown',{code:'KeyF'});assert.equal(run('constructionOpen'),false);assert.equal(run('gamePaused'),false);assert.equal(run('polarState.space.phase'),'cockpit');assert.equal(element('#constructionWorkshop').hidden,true);
+dispatch(context.document,'keydown',{code:'Space'});assert.equal(run('polarState.space.phase'),'ascent','Space starts the animated takeoff.');run('for(let i=0;i<100&&polarState.space.phase==="ascent";i++)NVSpace.step(polarState,.1);');assert.equal(run('polarState.space.phase'),'atmosphere');run('polarState.space.phase="flight";updatePolarHUD();');assert.equal(element('#constructionAccess').hidden,true);assert.equal(element('#constructionGuide').hidden,true);
+console.log('Passed top construction button, on-demand tutorial, ship prompt priority, F boarding, workshop escape/boarding, proximity, typing and space visibility.');
+run('polarState.space.target="deimos";polarState.space.position=NVSol.byId.deimos.position.map((v,i)=>v+(i===2?NVSol.byId.deimos.radius+200:0));NVSpace.cruise(polarState);updatePolarHUD();');assert.equal(element('#spaceLand').disabled,false);assert.equal(element('#enterAtmosphere').disabled,false,'Both visible entry buttons permit 200-FU approaches.');
+dispatch(context.document,'keydown',{code:'KeyL'});assert.equal(run('polarState.space.phase'),'descent');assert.equal(run('polarState.space.autopilot'),false);
+`;
+const execute=setup+'\nconst runtimeChecks='+JSON.stringify(prefix+checks)+';\nnew Function(\'require\',\'__dirname\',harness+\'\\n\'+runtimeChecks)(require,__dirname);';
+new Function('require','__dirname',execute)(require,__dirname);

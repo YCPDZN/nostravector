@@ -1,0 +1,10 @@
+from pathlib import Path
+f=Path(__file__).resolve().parent/'antarctica_game.js';s=f.read_text(encoding='utf-8')
+s=s.replace("s=polarState,scale=3.8,center={x:(s.x+NVAntarctica.STATION.x)/2,z:(s.z+NVAntarctica.STATION.z)/2};const range=Math.max(1950,Math.hypot(s.x,s.z-NVAntarctica.STATION.z)*1.4)", "s=polarState,destination=polarDestination(s),center={x:(s.x+destination.x)/2,z:(s.z+destination.z)/2};const range=Math.max(s.stationFound?1000:1950,Math.hypot(s.x-destination.x,s.z-destination.z)*2.4)")
+s=s.replace("function marker(x,z,color,label){", "function marker(x,z,color,label,offset=[13,-8]){")
+s=s.replace("ctx.fillText(label,p[0]+13,p[1]-8);", "ctx.strokeStyle=color+'99';ctx.beginPath();ctx.moveTo(p[0],p[1]);ctx.lineTo(p[0]+offset[0]-4,p[1]+offset[1]-3);ctx.stroke();ctx.fillText(label,p[0]+offset[0],p[1]+offset[1]);")
+s=s.replace("'#f5f8fa','RESEARCH STATION');", "'#f5f8fa','RESEARCH STATION',[17,-25]);")
+s=s.replace("'#edc68e','JAMES');", "'#edc68e','JAMES',[17,12]);")
+s=s.replace("'#8ce0ee','YOU');", "'#8ce0ee','YOU',[17,33]);")
+s=s.replace("'#f4a55d','POLAR ROVER');", "'#f4a55d','POLAR ROVER',[-120,-8]);")
+f.write_text(s,encoding='utf-8')

@@ -1,0 +1,142 @@
+[
+  {
+    "language": "alien",
+    "line": 0,
+    "file": "audio/catharsis-transmission/CATHARSIS1.mp3",
+    "duration": 4.049,
+    "sha256": "cbfb8ed1b89dbaa34cd26594a44b897cc2a2daede8171ca3b00ea6871bd8c466"
+  },
+  {
+    "language": "alien",
+    "line": 1,
+    "file": "audio/catharsis-transmission/CATHARSIS2.mp3",
+    "duration": 3.709,
+    "sha256": "9b2f7076ebcabbd09af2fc07f8445e16c66c99e80f80d8db4cd431ab5a10977b"
+  },
+  {
+    "language": "alien",
+    "line": 2,
+    "file": "audio/catharsis-transmission/CATHARSIS3.mp3",
+    "duration": 4.519,
+    "sha256": "6374c8d2f1e007b2ef8b75824d4fd819a0d40b7dfb440fac35a269aeb7efd182"
+  },
+  {
+    "language": "alien",
+    "line": 3,
+    "file": "audio/catharsis-transmission/CATHARSIS4.mp3",
+    "duration": 5.564,
+    "sha256": "def50173fa97514b1a72549eab4576b94b48b9eccfeb60be6d615be747bb5d4c"
+  },
+  {
+    "language": "alien",
+    "line": 4,
+    "file": "audio/catharsis-transmission/CATHARSIS5.mp3",
+    "duration": 4.362,
+    "sha256": "e8e800f1e7f0d23ae28eee6216b9b84756832fd9eb39d9af9bfd2d92f5752911"
+  },
+  {
+    "language": "alien",
+    "line": 5,
+    "file": "audio/catharsis-transmission/CATHARSIS6.mp3",
+    "duration": 4.127,
+    "sha256": "cb410ab6d3912516090dbd7117e3a12926124a25d47718491ac30dce7189a1fe"
+  },
+  {
+    "language": "alien",
+    "line": 6,
+    "file": "audio/catharsis-transmission/CATHARSIS7.mp3",
+    "duration": 4.049,
+    "sha256": "bc0f37cf286179e8db6cfa7a26ccc1b0a1309fccfc88aeccebe56d9535515666"
+  },
+  {
+    "language": "alien",
+    "line": 7,
+    "file": "audio/catharsis-transmission/CATHARSIS8.mp3",
+    "duration": 4.441,
+    "sha256": "48f1f3986cfeee8bde4832075a63361852960a1db895a0ac1d2cac5085b098cb"
+  },
+  {
+    "language": "alien",
+    "line": 8,
+    "file": "audio/catharsis-transmission/CATHARSIS9.mp3",
+    "duration": 3.631,
+    "sha256": "410eea76027c3f5aa38780884020590cc92d5e9750f0fb3618fc7873d53c6add"
+  },
+  {
+    "language": "alien",
+    "line": 9,
+    "file": "audio/catharsis-transmission/CATHARSIS10.mp3",
+    "duration": 8.359,
+    "sha256": "29dcf17c3ec1f58feb6df71733a555bdc0406bcdeb9930e223b12570678fea6e"
+  },
+  {
+    "language": "english",
+    "line": 0,
+    "file": "audio/catharsis-transmission/CATHARSISENGLISH1.mp3",
+    "duration": 4.206,
+    "sha256": "6fa236b1c7af75877b5f5ac930135f67fedfb23e80744e40e91339b31572e141"
+  },
+  {
+    "language": "english",
+    "line": 1,
+    "file": "audio/catharsis-transmission/CATHARSISENGLISH2.mp3",
+    "duration": 5.564,
+    "sha256": "a686132e6e1c82a256f7d6ecdae264a1b482606c85b3a604c574d6d29cc0c071"
+  },
+  {
+    "language": "english",
+    "line": 2,
+    "file": "audio/catharsis-transmission/CATHARSISENGLISH3.mp3",
+    "duration": 4.441,
+    "sha256": "89ec9ecbb2ca59f275da5e4a9cfe5e648ed1f037d43cb8be61d6376d9ab3fe81"
+  },
+  {
+    "language": "english",
+    "line": 3,
+    "file": "audio/catharsis-transmission/CATHARSISENGLISH4.mp3",
+    "duration": 5.407,
+    "sha256": "2135004931eb2734c4c59dbe743248c4c839ae9891ab05fc2260c652490e265a"
+  },
+  {
+    "language": "english",
+    "line": 4,
+    "file": "audio/catharsis-transmission/CATHARSISENGLISH5.mp3",
+    "duration": 5.068,
+    "sha256": "6684e7b01f742d4c8c9c0965e0731c45871bde5906b642830e04cc3725dca499"
+  },
+  {
+    "language": "english",
+    "line": 5,
+    "file": "audio/catharsis-transmission/CATHARSISENGLISH6.mp3",
+    "duration": 4.989,
+    "sha256": "572905e7e8b82c2adfa6d06b393f70fb011dbf067d062137f67e53cafd1b01a2"
+  },
+  {
+    "language": "english",
+    "line": 6,
+    "file": "audio/catharsis-transmission/CATHARSISENGLISH7.mp3",
+    "duration": 5.146,
+    "sha256": "c9c53d053291a0140e7360a254131d8cb559e338e8db2881a5d37d489066a9de"
+  },
+  {
+    "language": "english",
+    "line": 7,
+    "file": "audio/catharsis-transmission/CATHARSISENGLISH8.mp3",
+    "duration": 4.989,
+    "sha256": "14a51109aea43a646fcb97236b5c27f3c9a8ce76072913cc0ae388d234d40037"
+  },
+  {
+    "language": "english",
+    "line": 8,
+    "file": "audio/catharsis-transmission/CATHARSISENGLISH9.mp3",
+    "duration": 4.441,
+    "sha256": "038d8a8e23e2eb7ed9de2c271de73781625e317c0ab09908dbd3dae9b0770302"
+  },
+  {
+    "language": "english",
+    "line": 9,
+    "file": "audio/catharsis-transmission/CATHARSISENGLISH10.mp3",
+    "duration": 6.113,
+    "sha256": "48651fd2a89da777927671dc25eb5465c5ee35deec92f142ac6de7dbb34c2c02"
+  }
+]

@@ -1,0 +1,22 @@
+const NVGrekEmpire=(()=>{
+ const FACTION='GREK',ALERT='ALERT: THE GREK EMPIRE HAS APPEARED AT THE GALACTIC CORE!',SYSTEMS=NVCluster.generated.filter(q=>NVCluster.meta[q.id].grekCore).map(q=>q.id);
+ const revealed=s=>NVSiegeOfSol.raw(s)?.finale?.grekRevealed===true;
+ const core=id=>SYSTEMS.includes(id);
+ function reveal(s){const q=NVSolEpilogue.ensure(s);if(q.stage!=='done'||q.grekRevealed)return false;q.grekRevealed=true;q.grekAlertRemaining=14;NVEris.ensure(s).playerFaction.relationships.GREK='ALLIED';NVDiplomacy.sync(s);return true;}
+ function tick(s,dt){const q=NVSolEpilogue.ensure(s);if(revealed(s)&&Number.isFinite(dt)&&dt>0)q.grekAlertRemaining=Math.max(0,(q.grekAlertRemaining||0)-Math.min(.2,dt));}
+ return{FACTION,ALERT,SYSTEMS,revealed,core,reveal,tick};
+})();
+const grekEmpireFaction=NVEris.faction;NVEris.faction=(s,id)=>{const old=grekEmpireFaction(s,id),b=NVSol.byId[id];return NVGrekEmpire.revealed(s)&&NVGrekEmpire.core(b?.system)&&!b.stellar&&old!=='CUSTOM'&&!old.startsWith('UPLIFT_')?'GREK':old;};
+const grekEmpireRelation=NVDiplomacy.relation;NVDiplomacy.relation=(s,f)=>f==='GREK'?(NVGrekEmpire.revealed(s)?'ALLIED':'NEUTRAL'):grekEmpireRelation(s,f);
+const grekEmpireName=NVDiplomacy.name;NVDiplomacy.name=(s,f)=>f==='GREK'?'GREK EMPIRE':grekEmpireName(s,f);
+const grekEmpireSystem=NVDiplomacy.system;NVDiplomacy.system=(s,id)=>{const old=grekEmpireSystem(s,id);return NVGrekEmpire.revealed(s)&&NVGrekEmpire.core(id)?{...old,status:'ALLIED',color:NVDiplomacy.COLORS.ALLIED,war:false,allied:true,factions:[...new Set([...old.factions,'GREK'])]}:old;};
+const grekEmpireLabel=factionLabel;factionLabel=f=>f==='GREK'?'FACTION: GREK EMPIRE':grekEmpireLabel(f);
+const grekEmpireColor=planetControlColor;planetControlColor=f=>f==='GREK'?'#66e69a':grekEmpireColor(f);
+const grekEmpirePalette=NVOccupation.palette;NVOccupation.palette=(s,f)=>f==='GREK'?[[.13,.28,.18],[.77,.64,.29]]:grekEmpirePalette(s,f);
+const grekAtlasBox=document.createElement('section');grekAtlasBox.id='atlasGrekFactionBox';grekAtlasBox.className='atlas-player-faction';grekAtlasBox.hidden=true;grekAtlasBox.setAttribute('aria-label','Grek Empire territory');grekAtlasBox.style.setProperty('--atlas-faction-color','#66e69a');grekAtlasBox.innerHTML='<small>ALLIED / GALACTIC CORE</small><strong>GREK EMPIRE</strong><small class="atlas-faction-count"></small>';$('#solChartDetails').prepend(grekAtlasBox);
+const grekEmpireAtlas=refreshSolChart;refreshSolChart=()=>{grekEmpireAtlas();if(!polarState)return;grekAtlasBox.hidden=!NVGrekEmpire.revealed(polarState)||!NVGrekEmpire.core(NVGalaxy.system(polarState));if(!grekAtlasBox.hidden)grekAtlasBox.querySelector('.atlas-faction-count').textContent=NVGalaxy.worlds(polarState).filter(b=>NVEris.faction(polarState,b.id)==='GREK').length+' CONTROLLED WORLDS / 10 CORE SYSTEMS';};
+const grekEmpireCard=document.createElement('section');grekEmpireCard.id='grekEmpireCard';grekEmpireCard.className='atlas-player-faction';grekEmpireCard.hidden=true;grekEmpireCard.style.setProperty('--atlas-faction-color','#66e69a');grekEmpireCard.innerHTML='<small>ALLIED / GALACTIC CORE</small><strong>GREK EMPIRE</strong><small>10 STAR SYSTEMS</small><p></p>';$('#empireSheet .empire-card').append(grekEmpireCard);
+const grekEmpireRefresh=refreshEmpire;refreshEmpire=()=>{grekEmpireRefresh();grekEmpireCard.hidden=!NVGrekEmpire.revealed(polarState);if(!grekEmpireCard.hidden)grekEmpireCard.querySelector('p').textContent=NVGrekEmpire.SYSTEMS.map(id=>NVCluster.meta[id].name).join(' · ');};
+const grekEmpireGalaxy=refreshGalaxy;refreshGalaxy=()=>{grekEmpireGalaxy();if(!NVGrekEmpire.revealed(polarState)||!NVGrekEmpire.core(galaxySelected))return;$('#galaxyFaction').textContent='FACTION: GREK EMPIRE / ALLIED';$('#galaxyFaction').dataset.relationship='ALLIED';$('#galaxyFaction').style.color=NVDiplomacy.COLORS.ALLIED;$('#galaxyNote').textContent='One of ten systems surrounding the galactic core, under the control of the Grek Empire. Their people are allied with your faction.';};
+const grekEmpireHUD=updatePolarHUD;updatePolarHUD=()=>{grekEmpireHUD();if(!gameActive||!polarState)return;NVGrekEmpire.reveal(polarState);const q=NVSolEpilogue.ensure(polarState);if(q.grekAlertRemaining>0&&!gamePaused&&!document.hidden&&!solEpilogueOpen){solWarNotice.hidden=false;solWarNotice.textContent=NVGrekEmpire.ALERT;}};
+const grekEmpireStep=stepEcology;stepEcology=dt=>{grekEmpireStep(dt);if(gameActive&&!gamePaused&&!document.hidden)NVGrekEmpire.tick(polarState,dt);};

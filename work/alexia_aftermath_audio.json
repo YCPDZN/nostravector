@@ -1,0 +1,92 @@
+[
+  {
+    "line": 0,
+    "speaker": "ALEXIA ERISCONOS",
+    "kind": "alexia",
+    "text": "NO! DO NOT LOOK AT ME LIKE THAT, VISHARA! NOT YOU! NOT AFTER EVERYTHING I DID TO ESCAPE THAT LOOK!",
+    "file": "audio/alexia-aftermath/ALEXIADEFEATED1.mp3",
+    "duration": 7.158,
+    "sha256": "f04e3eeedfd511f6d20162f3d5b002365a2da4863abab128ebb5f67248865ea0"
+  },
+  {
+    "line": 1,
+    "speaker": "ALEXIA ERISCONOS",
+    "kind": "alexia",
+    "text": "I HAD THE THRONE! I HAD THE FLEETS! FOR ONCE, THEY SPOKE MY NAME WITHOUT ASKING WHERE MY SISTER WAS! AND NOW YOU HAVE COME TO TAKE EVEN THAT FROM ME!",
+    "file": "audio/alexia-aftermath/ALEXIADEFEATED2.mp3",
+    "duration": 10.031,
+    "sha256": "7226f8654212cf70281f5f6d7eebc1cf0e5d8e5365f541311f054eb17a2482ea"
+  },
+  {
+    "line": 2,
+    "speaker": "ALEXIA ERISCONOS",
+    "kind": "alexia",
+    "text": "HAWTHORNE PROMISED ME I WOULD NEVER HAVE TO STAND IN YOUR SHADOW AGAIN! I GAVE HIM OUR WORLDS! I GAVE HIM EVERYTHING, AND HE LEFT ME HERE TO LOSE IT ALONE!",
+    "file": "audio/alexia-aftermath/ALEXIADEFEATED3.mp3",
+    "duration": 10.109,
+    "sha256": "314ced2b0dbf8d6faaab432d99ad3edfd5a35ab8bec0e9e2c5c7093999e02349"
+  },
+  {
+    "line": 3,
+    "speaker": "ALEXIA ERISCONOS",
+    "kind": "alexia",
+    "text": "SAY SOMETHING! SCREAM AT ME! TELL ME YOU HATE ME! I CANNOT BEAR YOU STANDING THERE AS THOUGH I AM ALREADY NOTHING TO YOU!",
+    "file": "audio/alexia-aftermath/ALEXIADEFEATED4.mp3",
+    "duration": 8.673,
+    "sha256": "77cb79faddd418a3d3e0514a5d63efd92a991d2369751ac5b194b684ea21b949"
+  },
+  {
+    "line": 4,
+    "speaker": "ALEXIA ERISCONOS",
+    "kind": "alexia",
+    "text": "I AM YOUR SISTER! YOU CANNOT JUST CUT ME OUT OF YOUR LIFE! PLEASE, VISHARA! PLEASE! DO NOT LET THIS BE ALL THAT IS LEFT OF ME!",
+    "file": "audio/alexia-aftermath/ALEXIADEFEATED5.mp3",
+    "duration": 11.154,
+    "sha256": "a509d2026151bf47e2a4aca68225da7207c9f6900cd7750aff56e75ee7b4a6cc"
+  },
+  {
+    "line": 5,
+    "speaker": "VISHARA ERISCONOS",
+    "kind": "queen",
+    "text": "YOU SOLD OUR PEOPLE TO HAWTHORNE, YOU SELFISH BITCH! YOU TURNED OUR HOME INTO HIS PRISON AND EXPECT ME TO COMFORT YOU BECAUSE YOU LOST YOUR THRONE? I DISOWN YOU, ALEXIA! YOU ARE NO SISTER OF MINE! GUARDS, TAKE HER AWAY! GET OUT OF MY SIGHT!",
+    "file": "audio/alexia-aftermath/ALEXIADEFEATED6.mp3",
+    "duration": 15.569,
+    "sha256": "a52ee29e8707dbd5f1ff6d831a9c9c17bfd540cf60e41e531f43e327d2b5adda"
+  },
+  {
+    "line": 6,
+    "speaker": "VISHARA ERISCONOS",
+    "kind": "queen",
+    "text": "DO NOT DARE ASK ME TO REMEMBER THAT WE ARE FAMILY! OUR PEOPLE HAD FAMILIES TOO! THE GUARDS WHO REFUSED YOUR ORDERS! THE PRISONERS WHO NEVER CAME HOME! DID YOU REMEMBER THEM WHEN YOU HANDED HAWTHORNE THE KEYS?",
+    "file": "audio/alexia-aftermath/ALEXIADEFEATED7.mp3",
+    "duration": 13.401,
+    "sha256": "b0cd8828aa18566baf4cdc06ce2b21810ae7b1f4a3c49be75ed087011ada9d4e"
+  },
+  {
+    "line": 7,
+    "speaker": "VISHARA ERISCONOS",
+    "kind": "queen",
+    "text": "I WOULD HAVE LISTENED TO YOUR ANGER! I WOULD HAVE FACED WHAT I DID WRONG! BUT YOU DID NOT COME TO ME AS A SISTER! YOU CAME WITH A BEAM AT MY BACK AND AN EMPIRE READY TO PUT CHAINS AROUND OUR WORLD!",
+    "file": "audio/alexia-aftermath/ALEXIADEFEATED8.mp3",
+    "duration": 12.199,
+    "sha256": "b3ff396c1790d4dd725cb9ca12a5d93a901df2af75f1647cfbbaf3ad1cfaee9e"
+  },
+  {
+    "line": 8,
+    "speaker": "VISHARA ERISCONOS",
+    "kind": "queen",
+    "text": "YOU WILL LIVE, ALEXIA! YOU WILL SIT IN YOUR CELL WHILE THE PEOPLE YOU BETRAYED REBUILD WHAT YOU HELPED DESTROY! THERE WILL BE NO THRONE, NO PARDON, AND NO HAWTHORNE COMING TO SAVE YOU!",
+    "file": "audio/alexia-aftermath/ALEXIADEFEATED9.mp3",
+    "duration": 11.964,
+    "sha256": "ab2c65f3e2945c3cdcbf0476befcba07b93286b87c983c346eeabc63297867c5"
+  },
+  {
+    "line": 9,
+    "speaker": "VISHARA ERISCONOS",
+    "kind": "queen",
+    "text": "TAKE HER OUT OF THIS COURT! I WILL NOT HEAR ANOTHER EXCUSE! WANDERER, ERIS WILL STAND WITH YOU AGAIN. NOW GO TO MERCURY, AND MAKE SURE HAWTHORNE NEVER DOES THIS TO ANOTHER WORLD!",
+    "file": "audio/alexia-aftermath/ALEXIADEFEATED10.mp3",
+    "duration": 11.729,
+    "sha256": "1696e4a668d744739dabe442e12ef4dfe7a608b1ed3ee280cd2a84d16b23bc05"
+  }
+]

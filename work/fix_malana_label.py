@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/archiostal_game.js');s=p.read_text(encoding='utf-8');s=s.replace("if(galaxySelected==='malana'){$('#galaxyBodies')", "if(galaxySelected==='malana'){const allied=NVGrekEmpire.revealed(polarState);$('#galaxyFaction').textContent='GREK EMPIRE / '+(allied?'ALLIED':'NEUTRAL');$('#galaxyFaction').dataset.relationship=allied?'ALLIED':'NEUTRAL';$('#galaxyBodies')");p.write_text(s,encoding='utf-8')

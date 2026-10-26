@@ -1,0 +1,28 @@
+from pathlib import Path
+root=Path(__file__).resolve().parents[1];work=root/'work'
+def edit(name,old,new):
+    p=work/name;s=p.read_text(encoding='utf-8');assert old in s,(name,old[:90]);p.write_text(s.replace(old,new,1),encoding='utf-8')
+edit('sol_catalog.js','  const byId=',"  moon('dysnomia','Dysnomia','eris','Ice moon',350,0,[.39,.41,.44],'ice',{interpretation:true,terrain:[.36,.38,.42],note:'Eris’s moon, under Erisian control. Dark, cratered ice; surface appearance and gameplay scale are artistic interpretations.'});\n  const byId=")
+edit('antarctica_core.js','return{ecology:null,seed','return{eris:null,ecology:null,seed')
+edit('antarctica_core.js',"    return s;\n  }\n  function snapshot", "    if(typeof NVEris!=='undefined')s.eris=NVEris.restore(w.eris);\n    return s;\n  }\n  function snapshot")
+edit('antarctica_core.js','function snapshot(s){return{ecology:',"function snapshot(s){return{eris:typeof NVEris!=='undefined'?NVEris.snapshot(s):s.eris,ecology:")
+edit('antarctica_game.js','  updateJamesLipPose(dt);',"  if(typeof stepEris==='function'&&!gamePaused&&!document.hidden)stepEris(dt);\n  updateJamesLipPose(dt);")
+edit('antarctica_game.js',"if(!gameActive)return;if(typeof ecologyInput", "if(!gameActive)return;if(typeof erisInput==='function'&&erisInput(e))return;if(typeof ecologyInput")
+edit('menu_location.js',"africa:!!polarState.africaStarted", "africa:!!polarState.africaStarted,eris:typeof NVEris!=='undefined'?NVEris.snapshot(polarState):null")
+edit('menu_location.js',"africa:!!saved?.africaStarted", "africa:!!saved?.africaStarted,eris:saved?.eris||null")
+edit('antarctica_renderer.js',"  const ecologyScenery=", "  const erisScenery=typeof createErisScenery==='function'?createErisScenery({M,draw,object,character,mesh,sphere:speakingMouth,ground:terrainGround}):null;\n  const ecologyScenery=")
+edit('antarctica_renderer.js','    if(ecologyScenery)ecologyScenery(s,time);','    if(ecologyScenery)ecologyScenery(s,time);\n    if(erisScenery)erisScenery(s,time);')
+edit('antarctica_renderer.js','let eye,target;if(scene){',"let eye,target;if(typeof erisConversation!=='undefined'&&erisConversation){const n=erisConversation.npc,y=terrainGround(n.x,n.z,s.seed);target=[n.x,y+1.23,n.z];eye=[n.x+Math.sin(n.yaw)*2.6+.25,y+1.52,n.z+Math.cos(n.yaw)*2.6];}else if(scene){")
+edit('planet_landscapes.js','    return h+grain;',"    const citadel=id==='eris'?clamp(Math.max(Math.abs(x)-34,Math.abs(z-70)-36)/24,0,1):1;return (h+grain)*citadel;")
+edit('planet_landscapes.js',"if(Math.hypot(x,z)<27||", "if((id==='eris'&&Math.abs(x)<36&&Math.abs(z-70)<38)||Math.hypot(x,z)<27||")
+edit('world_flight_game.js',"{name:'Original landing region',lat:0,lon:0}];", "{name:p.body==='eris'?'Citadel el Erisconos':'Original landing region',lat:0,lon:0}];")
+edit('planet_map.js',"if(!under)marker(p.landingX", "if(typeof NVEris!=='undefined'&&!under){if(b.id==='eris')marker(0,70,'#f2dbc0','CITADEL',5);const n=NVEris.npc(s);if(n)marker(n.x,n.z,'#dcc6fb',n.kind==='cameo'?'????':'QUEEN',3);for(const base of NVEris.ensure(s).bases)if(base.body===b.id)marker(base.x,base.z,'#b4f0ad','BASE',3);}\n  if(!under)marker(p.landingX")
+# The imperial vessel is visible in orbit throughout the Earth–Eris transit.
+edit('space_renderer.js','    for(const r of NVSpace.rocks)',"    if(typeof NVEris!=='undefined'&&NVEris.sandbox(s)){const route=NVEris.route(s);if(route.from){const from=NVSol.byId[route.from],to=NVSol.byId[route.to],pos=from.position.map((v,i)=>v+(to.position[i]-v)*route.fraction-origin[i]),root=M.t(...pos);draw(orb,M.mul(root,M.scale(2.1,.8,6)),[.88,.91,.96],null,.25);for(const side of [-1,1]){draw(orb,M.mul(root,M.mul(M.t(side*3.4,0,1),M.scale(3,.15,2.2))),[.58,.71,.84],null,.3);draw(orb,M.mul(root,M.mul(M.t(side*2,0,5),M.scale(.5,.5,.3))),[.32,.80,1],null,.9);}}}\n    for(const r of NVSpace.rocks)")
+edit('build_menu.py',"js+='\\n'+(work/'ecology_core.js').read_text(encoding='utf-8')", "js+='\\n'+(work/'ecology_core.js').read_text(encoding='utf-8')\njs+='\\n'+(work/'eris_core.js').read_text(encoding='utf-8')")
+edit('build_menu.py',"js+='\\n'+(work/'space_surface.js')", "js+='\\n'+(work/'eris_renderer.js').read_text(encoding='utf-8').replace('__VISHARA_PARTS__',(work/'vishara_parts.json').read_text(encoding='utf-8'))\njs+='\\n'+(work/'space_surface.js')")
+edit('build_menu.py',"js+='\\n'+(work/'ecology_game.js').read_text(encoding='utf-8')", "js+='\\n'+(work/'ecology_game.js').read_text(encoding='utf-8')\njs+='\\n'+(work/'eris_game.js').read_text(encoding='utf-8')")
+edit('build_menu.py',"+(work/'ecology.html').read_text(encoding='utf-8')", "+(work/'ecology.html').read_text(encoding='utf-8')+(work/'eris.html').read_text(encoding='utf-8')")
+edit('build_menu.py',"+(work/'ecology.css').read_text(encoding='utf-8')", "+(work/'ecology.css').read_text(encoding='utf-8')+(work/'eris.css').read_text(encoding='utf-8')")
+edit('package_menu.py',"with zipfile.ZipFile(out/'NOSTRAVECTOR_Main_Menu.zip'", "sources+=['eris_core.js','eris_game.js','eris_renderer.js','eris.css','eris.html','vishara_parts.json','build_vishara.py','integrate_eris.py','test_eris.js','build_eris_preview.py']\nfiles+=['NOSTRAVECTOR_Vishara_Erisconos.glb','NOSTRAVECTOR_Eris_Citadel_Preview.png','NOSTRAVECTOR_Vishara_Preview.png']\nassert '__VISHARA_PARTS__' not in html and 'const NVEris=' in html\nwith zipfile.ZipFile(out/'NOSTRAVECTOR_Main_Menu.zip'")
+print('Integrated Eris factions, travel, model, terrain, minimap, UI and manual snapshots.')

@@ -1,0 +1,62 @@
+[
+  {
+    "line": 0,
+    "file": "audio/orion-grief/CMD1.mp3",
+    "duration": 15.961,
+    "sha256": "452039e71e62f0fcf8365d0711c339a5ed3fbff6a1d37838792d1ace28537cf7"
+  },
+  {
+    "line": 1,
+    "file": "audio/orion-grief/CMD2.mp3",
+    "duration": 11.651,
+    "sha256": "eed39b25d079bfd85ed946322289102432b898d115db900e3f4fae5544a81306"
+  },
+  {
+    "line": 2,
+    "file": "audio/orion-grief/CMD3.mp3",
+    "duration": 14.446,
+    "sha256": "086958aa2086482f7032ead98cefecacd2ccb1d4fba677d3ea502ede57897dfe"
+  },
+  {
+    "line": 3,
+    "file": "audio/orion-grief/CMD4.mp3",
+    "duration": 13.558,
+    "sha256": "fa9cd3f1bb8b930c020d090fef00e24417a74b34dcbeb8bd654c759bf41ed65e"
+  },
+  {
+    "line": 4,
+    "file": "audio/orion-grief/CMD5.mp3",
+    "duration": 14.211,
+    "sha256": "7079a366f9180d035834cf1dc87798d9f86d4f9d5e8ad32d7c7ad153e2ef6f4a"
+  },
+  {
+    "line": 5,
+    "file": "audio/orion-grief/CMD6.mp3",
+    "duration": 13.087,
+    "sha256": "3533d3e21c888b04798cddd9bb2c2bcce702d6a44dc047dd0d1e339c3e1cd7e3"
+  },
+  {
+    "line": 6,
+    "file": "audio/orion-grief/CMD7.mp3",
+    "duration": 13.949,
+    "sha256": "48aedf490769c13723a02572ef02368282ea974ab9d72485a7981728649c621e"
+  },
+  {
+    "line": 7,
+    "file": "audio/orion-grief/CMD8.mp3",
+    "duration": 11.729,
+    "sha256": "13fec7c0caefc8bcf1170ad18fbb8d74f7e188b2771a42f91d35518c34c33066"
+  },
+  {
+    "line": 8,
+    "file": "audio/orion-grief/CMD9.mp3",
+    "duration": 13.322,
+    "sha256": "0db78f58cf2def72ad05e5937490b41046b87b4be81c309d4bc079e9566f6b51"
+  },
+  {
+    "line": 9,
+    "file": "audio/orion-grief/CMD10.mp3",
+    "duration": 17.006,
+    "sha256": "1725240ee192e935333ce15bd9757140ae86f032272d28dc79f5d58e533e9204"
+  }
+]

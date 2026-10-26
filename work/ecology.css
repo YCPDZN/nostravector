@@ -1,0 +1,31 @@
+#ecologyHUD{position:absolute;right:26px;bottom:112px;width:270px;padding:15px;background:rgba(5,21,29,.88);border:1px solid #76c4bd4f;color:#d6eeed;z-index:9;font-family:Consolas,monospace;pointer-events:auto;backdrop-filter:blur(8px)}
+.ecology-heading{display:flex;flex-direction:column;gap:6px}.ecology-heading span{font-size:9px;letter-spacing:2px;color:#8cf0cf}.ecology-heading strong{font-size:12px;letter-spacing:1px;font-weight:500}#ecologySignals{font-size:10px;line-height:1.5;margin:8px 0;color:#aed0d0;min-height:30px}.ecology-health{display:flex;justify-content:space-between;font-size:9px;letter-spacing:1px}#ecologyHealth{width:100%;height:4px;accent-color:#70dfb7;margin:6px 0 9px}.ecology-buttons{display:flex;flex-wrap:wrap;gap:5px}#ecologyHUD .polar-button{font-size:8px;padding:9px 7px;min-height:30px;letter-spacing:.8px}#ecologyHUD small{display:block;font-size:8px;line-height:1.5;color:#a6bebd;margin-top:7px}#enterOceanHabitat{width:100%;margin-top:9px;border-color:#68d5c0!important}#ecologyHUD[data-threat="true"]{border-color:#ec835d}#ecologyHUD[data-threat="true"] #ecologySignals{color:#ffc09f}#ecologyNotice{position:absolute;top:100px;left:50%;transform:translateX(-50%);max-width:580px;width:max-content;background:#0c282ced;border:1px solid #77d3b6;color:#e1f9ed;padding:11px 18px;text-align:center;font:10px Consolas,monospace;letter-spacing:1px;z-index:13;pointer-events:none}
+#speciesGuide{position:absolute;inset:4vh 5vw;z-index:45;padding:28px;background:#081b24f5;border:1px solid #79a9ae;color:#e3f2f2;overflow:auto;box-shadow:0 0 0 50px #0008;font-family:Consolas,monospace}.species-guide-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.species-guide-top h2{font-family:Georgia,serif;font-size:clamp(25px,3vw,42px);font-weight:400;letter-spacing:3px;margin:14px 0}.species-guide-top p,.species-guide-tip,.species-guide-save{font-size:11px;color:#adceca;line-height:1.7}.species-guide-tip{max-width:760px;padding:10px 0 16px}#speciesCards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}.species-card{border:1px solid #6a9b9952;padding:18px;background:linear-gradient(140deg,#193d3f80,#0d212a80)}.species-card h3{margin:10px 0;font:23px Georgia,serif;letter-spacing:1px;color:#f0f6e9}.species-card small{font-size:9px;letter-spacing:1.4px;color:#9cdabf}.species-card p{font-size:11px;line-height:1.75;color:#b8d1cc}.species-card[data-behavior="predator"] small{color:#f3a27d}.species-card[data-known="false"]{opacity:.65}.species-card .species-anatomy{color:#89aaa9;border-top:1px solid #6a9b993b;padding-top:10px}.species-guide-save{margin-top:22px;color:#9aada7}
+@media(max-width:900px){#ecologyHUD{right:14px;bottom:100px;width:224px;padding:10px}#ecologyNotice{max-width:80vw;top:115px;font-size:9px}#speciesGuide{inset:2vh 2vw;padding:17px}.species-guide-top{gap:10px}}
+@media(max-height:650px){#ecologyHUD{bottom:74px}#ecologySignals{min-height:0;margin:5px 0}.ecology-health,#ecologyHealth,#ecologyPulseInfo{display:none}}
+
+#antarctica.space-surface .space-crew{bottom:38px;right:26px;max-width:270px}
+#planetMinimap small:last-child{font-size:7px}
+
+.ecology-buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+#ecologyHUD .ecology-buttons .polar-button{font-size:7px;padding:8px 4px;white-space:normal;line-height:1.4}
+#ecologyHUD{bottom:92px}
+#antarctica.space-surface .space-crew{top:76px;bottom:auto;font-size:9px;max-width:270px}
+#antarctica.space-surface .space-crew strong{font-size:12px;margin:4px 0}
+#antarctica.space-surface[data-under-ice="true"] #ecologyHUD{bottom:48px}
+
+#antarctica:not(.space-surface) #ecologyHUD{left:4%;right:auto;top:345px;bottom:auto;width:285px;padding:9px 11px}
+#antarctica:not(.space-surface) .ecology-heading{flex-direction:row;justify-content:space-between;gap:5px}
+#antarctica:not(.space-surface) .ecology-heading span,#antarctica:not(.space-surface) .ecology-heading strong{font-size:8px;letter-spacing:.7px}
+#antarctica:not(.space-surface) #ecologySignals{min-height:0;margin:5px 0;font-size:9px;line-height:1.4}
+#antarctica:not(.space-surface) #ecologyPulseInfo{display:none}
+#antarctica:not(.space-surface) #ecologyHealth{margin:3px 0 5px}
+#antarctica:not(.space-surface) .polar-vitals{padding:16px}
+@media(max-height:650px){#antarctica:not(.space-surface) #ecologyHUD{top:315px;padding:7px 10px}#antarctica:not(.space-surface) .polar-objective{padding:14px;top:125px}#antarctica:not(.space-surface) .polar-vitals{padding:10px;bottom:0}.ecology-heading strong{font-size:10px}}
+
+#antarctica.space-surface .space-route-card{padding:14px 18px}
+#antarctica.space-surface .space-route-card h3{margin:9px 0 6px;font-size:25px}
+#antarctica.space-surface .space-rule{margin:12px 0}
+#antarctica.space-surface .space-route-card small{font-size:9px;line-height:1.45;margin:7px 0}
+#antarctica.space-surface .space-route-card .space-actions{margin-top:8px}
+#antarctica.space-surface .space-route-card .space-actions button{padding:8px 12px;font-size:8px}

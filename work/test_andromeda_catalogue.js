@@ -1,0 +1,8 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const c={structuredClone,chapter5Unlocked:()=>false,NVSol:{byId:{'cluster-01-p2':{}}},NVCluster:{meta:{'sagittarius-a':{}},anchors:{'cluster-01':{},'sagittarius-a':{}},bodyLists:{}},NVGalaxy:{systems:[]},NVLandscapes:{profiles:{}},SOL_MAPS:{}};vm.createContext(c);vm.runInContext(fs.readFileSync('work/andromeda.js','utf8').split('// The bridge')[0]+';globalThis.a=NVAndromeda;',c);
+const ids=c.a.systems,all=ids.flatMap(id=>c.NVCluster.bodyLists[id]),counts=new Set();assert.equal(ids.length,100);assert.equal(new Set(all.map(b=>b.id)).size,all.length);
+for(const [i,id]of ids.entries()){const planets=c.NVCluster.bodyLists[id].filter(b=>!b.parent);assert(planets.length>=1&&planets.length<=5);counts.add(planets.length);assert.equal(planets.filter(b=>b.category==='Paradise planet').length,i%8===0?1:0);for(const b of c.NVCluster.bodyLists[id])assert.equal(b.system,id);}
+assert.equal(counts.size,5);assert.equal(all.filter(b=>b.category==='Paradise planet').length,13);
+for(let i=1;i<=5;i++)for(let j=1;j<=20;j++)assert(c.NVSol.byId['andromeda-'+String(i).padStart(2,'0')+'-p'+j],'Every legacy world ID remains valid');
+const seen=new Set(['m31-core']),queue=['m31-core'];while(queue.length){const a=queue.shift(),m=c.NVCluster.meta[a];for(const id of ids)if(!seen.has(id)&&Math.hypot(...c.NVCluster.meta[id].coords.map((v,i)=>v-m.coords[i]))<=72){seen.add(id);queue.push(id);}}assert.equal(seen.size,101);
+console.log('Passed 100 connected systems, all 1–5 planet counts, 13 rare paradise worlds, unique IDs, correct membership, and preservation of all 100 legacy world IDs. Total worlds including retained moons: '+all.length+'.');

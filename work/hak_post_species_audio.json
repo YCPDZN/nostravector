@@ -1,0 +1,20 @@
+[
+  {
+    "line": 0,
+    "file": "audio/hak-post-species/HAKPOSTSPECIES1.mp3",
+    "duration": 12.199,
+    "sha256": "5cdf50612ccc346ed85e5ec244c6db460e27f07b327ebca388a644dfd840e9c3"
+  },
+  {
+    "line": 1,
+    "file": "audio/hak-post-species/HAKPOSTSPECIES2.mp3",
+    "duration": 11.886,
+    "sha256": "c2575efd77e8b229f5f5c94bb915f71905bfedad488a77446af60b86dd0e55f6"
+  },
+  {
+    "line": 2,
+    "file": "audio/hak-post-species/HAKPOSTSPECIES3.mp3",
+    "duration": 14.028,
+    "sha256": "cf9eb17508aadd7d80039b943af47c0a6bc3ed9686230d7c7b938ce50e9380ea"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "line": 1,
+    "file": "audio/imperia-orders/HAWTHORNE1.mp3",
+    "duration": 18.599
+  },
+  {
+    "line": 2,
+    "file": "audio/imperia-orders/HAWTHORNE2.mp3",
+    "duration": 15.882
+  },
+  {
+    "line": 3,
+    "file": "audio/imperia-orders/HAWTHORNE3.mp3",
+    "duration": 16.927
+  },
+  {
+    "line": 4,
+    "file": "audio/imperia-orders/HAWTHORNE4.mp3",
+    "duration": 18.129
+  },
+  {
+    "line": 5,
+    "file": "audio/imperia-orders/HAWTHORNE5.mp3",
+    "duration": 16.588
+  }
+]

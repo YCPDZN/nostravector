@@ -1,0 +1,62 @@
+[
+  {
+    "line": 0,
+    "file": "audio/hawthorne-rage/HB1.mp3",
+    "duration": 10.919,
+    "sha256": "12693e0a1da78fee030dff7de7f65ced5d2ee1ad77f9b28bb9c69ebfbfb38a34"
+  },
+  {
+    "line": 1,
+    "file": "audio/hawthorne-rage/HB2.mp3",
+    "duration": 13.087,
+    "sha256": "78af078949247358ef684aed861f28b1f323f0c7b2d03f1f31c55a4c2300159c"
+  },
+  {
+    "line": 2,
+    "file": "audio/hawthorne-rage/HB3.mp3",
+    "duration": 10.449,
+    "sha256": "d4be5f1d9b7d15a6ff31fc9f7d63b9f66e1be05ac6d935e6bea705557e85378f"
+  },
+  {
+    "line": 3,
+    "file": "audio/hawthorne-rage/HB4.mp3",
+    "duration": 12.121,
+    "sha256": "225c019e864106b15a8390f064465bf284e5da0290a771e751c073e4c99919d8"
+  },
+  {
+    "line": 4,
+    "file": "audio/hawthorne-rage/HB5.mp3",
+    "duration": 9.561,
+    "sha256": "6c57f694a122eb16fe24765c32434e38cf8f1a732aa04de5bda8ea8247c8be10"
+  },
+  {
+    "line": 5,
+    "file": "audio/hawthorne-rage/HB6.mp3",
+    "duration": 10.841,
+    "sha256": "1cf473b117ec2f6aa037ab4c24c15c8ffe11a9ff10c33bbf69cb04e267c8a425"
+  },
+  {
+    "line": 6,
+    "file": "audio/hawthorne-rage/HB7.mp3",
+    "duration": 9.953,
+    "sha256": "5cd75c0977ee86176c8e71ed27731b78c2eae5d2f4c8e1917dce1316a4ffaaf7"
+  },
+  {
+    "line": 7,
+    "file": "audio/hawthorne-rage/HB8.mp3",
+    "duration": 13.009,
+    "sha256": "0ad59898bce9100106b6e6084a80757698a7f3e74a95555cfd8f8c7f9040f721"
+  },
+  {
+    "line": 8,
+    "file": "audio/hawthorne-rage/HB9.mp3",
+    "duration": 10.188,
+    "sha256": "2163e08bedd72d762e07a42ce32f1e52c9ec54c80508101aa53d55ef13739e14"
+  },
+  {
+    "line": 9,
+    "file": "audio/hawthorne-rage/HB10.mp3",
+    "duration": 11.729,
+    "sha256": "6bc5115d55c2cc10727cc816320a87d61da6b46f6f8b0a38f9b2693cd44ca440"
+  }
+]

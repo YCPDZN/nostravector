@@ -1,0 +1,37 @@
+const assert=require('node:assert/strict'),path=require('node:path'),{pathToFileURL}=require('node:url');
+const {chromium}=require('C:/Users/HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+(async()=>{const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});try{
+ const p=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];p.on('pageerror',e=>errors.push(e.stack));
+ await p.addInitScript(()=>{requestAnimationFrame=()=>0;setInterval=()=>0;const NativeAudio=Audio;window.Audio=function(src){const a=new NativeAudio(src);Object.defineProperty(a,'preload',{get:()=>a.getAttribute('preload')||'none',set:v=>a.setAttribute('preload',v==='metadata'?'none':v)});return a;};});
+ await p.goto(pathToFileURL(path.resolve('outputs/NOSTRAVECTOR_Main_Menu.html')).href,{waitUntil:'domcontentloaded',timeout:120000});
+ await p.evaluate(async()=>{
+  creatingCharacter=true;writeGameSave({...DEFAULT_WANDERER,name:'BC Combat QA'},{chapter:3});creatingCharacter=false;updateGameProgress(chapterRestartProgress(savedGame,3));
+  startAntarctica();const s=polarState;stopJamesVoice();jamesConversation.active=false;s.jamesIntroductionDone=true;s.jamesGone=true;$('#jamesDialogue').hidden=true;$('#wakeupShade').style.opacity=0;
+  Object.assign(s.space,{body:'mars',target:'mars',system:'sol',phase:'landed',geo:null,landingX:1000,landingZ:1000,landingElevation:0});s.x=70;s.z=100;s.cameraYaw=0;s.cameraPitch=.18;
+  const q=NVKhazglar.ensure(s);q.introDone=true;q.siegeStage='done';const b=NVKhazglar.battle(s);b.guardCooldown=100;
+  for(const [i,a]of b.soldiers.entries()){a.x=(i%6-2)*4;a.z=-28-Math.floor(i/6)*4;a.hp=1000;}
+  for(const m of NVProjectBC.models){await NVGLB.load(m.asset);const n=NVCustomCrew.create(s,{name:m.name,model:NVProjectBC.metadata(m),species:NVSpecies.preset('aquatic')}).npc;NVGovernance.setRole(s,n.id,'follow');}
+  NVCustomCrew.followStep(s,.1);for(const [i,pos]of [...NVCustomCrew.followerPoses(s).values()].entries()){pos.x=64+i*4;pos.z=98;pos.yaw=0;pos.speed=0;}
+  gamePaused=false;updatePolarHUD();
+ });
+ const before=await p.evaluate(()=>localStorage.getItem(CHARACTER_SAVES_KEY));
+ const combat=await p.evaluate(()=>{const s=polarState;for(let i=0;i<8;i++){NVKhazglar.combatStep(s,.1);NVBCCombat.step(s,.1);}updatePolarHUD();renderSpaceWorld(s,1,{playerPhase:0,jamesPhase:0,playerSpeed:0,jamesSpeed:0});return{damage:NVKhazglar.battle(s).soldiers.some(a=>a.hp<1000),chains:NVBCCombat.state(s).effects.filter(e=>e.type==='chain').map(e=>e.kind),caption:$('#projectBCCombatCaption').textContent,queued:NVBCCombat.state(s).queue.map(c=>c.text),error:polarCanvas.getContext('webgl').getError()};});
+ assert(combat.damage);assert(combat.chains.includes('josiah')&&combat.chains.includes('peter'));assert([combat.caption,...combat.queued].some(text=>text.includes('grave')));assert.equal(combat.error,0);
+ const anchored=await p.evaluate(()=>{const s=polarState,n=NVCustomCrew.followers(s).find(n=>NVBCCombat.kind(n)==='josiah'),pos=NVCustomCrew.followerPoses(s).get(n.id),before={x:pos.x,z:pos.z};s.x+=8;NVCustomCrew.step(s,.1);s.x-=8;return pos.x===before.x&&pos.z===before.z;});assert(anchored,'Casting must anchor the real follower movement loop.');
+ // Every authored attack pose preserves all imported geometry and rig pivots.
+ const rig=await p.evaluate(()=>{const s=polarState,result=[];for(const n of NVCustomCrew.followers(s)){const parts=NVCustomCrew.parts(n);let rigid=true,changed=false;for(const mode of NVBCCombat.kind(n)==='gareth'?['pistols','trip']:['chains',...(NVBCCombat.kind(n)==='josiah'?['heaven']:[])]){const idle=NVCompanionMotion.pose(parts,n.id,1),a=NVCompanionMotion.pose(parts,n.id,1,0,0,{mode,elapsed:mode==='heaven'?.9:.6});for(const piece of parts){const m=NVCompanionMotion.part(a,piece),v=NVCompanionMotion.part(idle,piece);if(JSON.stringify(m)!==JSON.stringify(v))changed=true;const det=m[0]*(m[5]*m[10]-m[9]*m[6])-m[4]*(m[1]*m[10]-m[9]*m[2])+m[8]*(m[1]*m[6]-m[5]*m[2]);if(!m.every(Number.isFinite)||Math.abs(det-1)>1e-5)rigid=false;}}result.push({name:n.name,rigid,changed});}return result;});
+ assert(rig.every(r=>r.rigid&&r.changed),JSON.stringify(rig));
+ await p.screenshot({path:'outputs/NOSTRAVECTOR_Project_BC_Chains.png'});
+ const heaven=await p.evaluate(()=>{const s=polarState,n=NVCustomCrew.followers(s).find(n=>NVBCCombat.kind(n)==='josiah'),a=NVBCCombat.actor(s,n);a.mode='idle';a.cooldown=0;a.attacks=2;NVBCCombat.step(s,.1);a.elapsed=.9;renderSpaceWorld(s,2,{playerPhase:0,jamesPhase:0,playerSpeed:0,jamesSpeed:0});updatePolarHUD();return{mode:a.mode,text:$('#projectBCCombatCaption').textContent,error:polarCanvas.getContext('webgl').getError()};});
+ assert.equal(heaven.mode,'heaven');assert(heaven.text.includes('ALMIGHTY HEAVEN'));assert.equal(heaven.error,0);
+ await p.screenshot({path:'outputs/NOSTRAVECTOR_Project_BC_Almighty_Heaven.png'});
+ const trip=await p.evaluate(()=>{const s=polarState,n=NVCustomCrew.followers(s).find(n=>NVBCCombat.kind(n)==='gareth'),a=NVBCCombat.actor(s,n);a.mode='idle';NVBCCombat.trip(s,n);a.elapsed=.6;renderSpaceWorld(s,3,{playerPhase:0,jamesPhase:0,playerSpeed:0,jamesSpeed:0});updatePolarHUD();const text=$('#projectBCCombatCaption').textContent;for(let i=0;i<20;i++)NVBCCombat.step(s,.1);return{text,recovered:a.mode!=='trip'};});
+ assert(trip.text.includes("OW! I'M OKAY!"));assert(trip.recovered);
+ assert.equal(await p.evaluate(()=>localStorage.getItem(CHARACTER_SAVES_KEY)),before);
+ // Restraints stop real enemy movement/attacks and expire normally.
+ const root=await p.evaluate(()=>{const s=polarState,a=NVKhazglar.battle(s).soldiers[0];a.hp=100;a.mode='windup';a.timer=.01;const pos=NVKhazglar.location(s);a.x=s.x-pos.x;a.z=s.z-pos.z;const hp=NVKhazglar.battle(s).hp;NVBCCombat.restrain(a,1);for(let i=0;i<5;i++)NVKhazglar.combatStep(s,.1);const safe=NVKhazglar.battle(s).hp===hp&&a.speed===0;for(let i=0;i<10;i++)NVKhazglar.combatStep(s,.1);return{safe,expired:!NVBCCombat.bound(a)};});assert(root.safe&&root.expired);
+ // A hostile base uses the same 3D guards as the renderer; allied bases do not.
+ const patrol=await p.evaluate(()=>{const s=polarState;s.space.body=s.space.target='mercury';s.x=90;s.z=-100;NVEris.ensure(s).playerFaction.relationships.TERRA='WAR';NVSolWar.ensure(s).throneDeclarationApplied=true;NVSolWar.ensure(s).stage='war';NVCustomCrew.followStep(s,.1);NVBCCombat.step(s,.1);const guards=NVBCCombat.targets(s).filter(t=>t.type==='patrol');const before=guards.reduce((n,t)=>n+t.enemy.hp,0);for(let i=0;i<25;i++)NVBCCombat.step(s,.1);renderSpaceWorld(s,5,{playerPhase:0,jamesPhase:0,playerSpeed:0,jamesSpeed:0});return{count:guards.length,before,after:guards.reduce((n,t)=>n+t.enemy.hp,0),error:polarCanvas.getContext('webgl').getError()};});assert.equal(patrol.count,12);assert(patrol.after<patrol.before);assert.equal(patrol.error,0);
+ await p.evaluate(()=>{savePolarWorld(true);exitPolar();startAntarctica();});assert.equal(await p.evaluate(()=>NVCustomCrew.crew(polarState).length),4);assert.deepEqual(errors,[]);
+ console.log('Passed real GLB attack/trip poses and WebGL rendering, both chain colours, Josiah shockwave/shout, Gareth dual pistols/recovery, restraints stopping real attacks, hostile base guards, HUD captions, four saved companions and manual-only saving.');
+ }finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});

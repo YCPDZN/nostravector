@@ -1,0 +1,28 @@
+// His identity remains concealed during the ferry encounter.
+const HAK_QUOTES=[
+ 'James showed you how dangerous trust can be. Yet you escaped him, and the stars have not finished with you.',
+ 'I reside in Janira Proxima, the neighbouring star system beyond Sol. Seek me there.',
+ 'Look for a purple world beneath unfamiliar skies. Its fields of violet grass will guide you to my home.',
+ 'Your little solar system is only the beginning. Find a ship, learn its limits, and prepare for the journey between stars.',
+ 'You need not know my name yet. Remember Janira Proxima. When you are ready, come to me—and discover why I called you.'
+];
+const HAK_VOICES=__HAK_VOICES__;
+const hakClips=HAK_VOICES.map(q=>{const a=new Audio(q.source);a.preload='none';a.volume=.95;return a;});
+const hakVoice={index:-1,token:0,blocked:false,error:false,muted:false,paused:false,tail:0};
+function stopHakVoice(){hakVoice.token++;hakClips.forEach(a=>a.pause());hakVoice.index=-1;hakVoice.tail=0;}
+function playHakVoice(){const g=hakVoice,a=hakClips[g.index],token=g.token;if(!a||!gameActive||gamePaused||polarState?.africaStage!=='visitor')return;prepareJamesAcoustics(a);resumeJamesAcoustics();a.volume=g.muted?0:.95;try{const result=a.play();if(result?.then)result.then(()=>{if(token!==g.token||!gameActive||gamePaused||polarState?.africaStage!=='visitor'){a.pause();return;}g.blocked=false;}).catch(()=>{if(token===g.token)g.blocked=true;});}catch(e){g.blocked=true;}}
+function startHakVoice(i){stopHakVoice();const g=hakVoice;g.index=i;g.error=false;g.blocked=false;g.paused=gamePaused;const a=hakClips[i],token=g.token;a.currentTime=0;a.onerror=()=>{if(token===g.token){g.error=true;g.blocked=false;}};playHakVoice();}
+function hakLipPose(){const a=hakClips[hakVoice.index],closed={open:0,round:0};if(!a||a.paused||a.ended||gamePaused||document.hidden||hakVoice.blocked||hakVoice.error||hakVoice.muted)return closed;const entry=prepareJamesAcoustics(a),duration=Number.isFinite(a.duration)?a.duration:HAK_VOICES[hakVoice.index].duration;let energy=0,progress=a.currentTime/duration;if(entry.envelope){const i=Math.min(entry.envelope.rms.length-1,Math.floor(a.currentTime/entry.envelope.hopSeconds));energy=entry.envelope.rms[i];progress=entry.envelope.spoken[i];}else if(entry.analyser){entry.analyser.getByteTimeDomainData(entry.samples);let sum=0;for(const v of entry.samples)sum+=((v-128)/128)**2;energy=Math.min(1,Math.sqrt(sum/entry.samples.length)*7);}if(energy<.075)return closed;const pose=calculateJamesViseme(HAK_QUOTES[hakVoice.index],progress,energy);return{open:pose.jaw,round:pose.round};}
+const hakEncounter=document.createElement('div');hakEncounter.id='hakEncounter';hakEncounter.hidden=true;
+hakEncounter.innerHTML='<canvas id="hakCanvas" aria-label="A mysterious blue-skinned, long-haired traveller in a purple grass meadow"></canvas><div class="hak-sky-label">AN UNKNOWN WORLD / A VISION BEYOND SOL</div><section class="hak-dialogue"><span>???? <small id="hakNumber"></small></span><p id="hakLine"></p><div class="hak-voice-controls"><small id="hakVoiceStatus"></small><button id="playHakVoice" class="polar-button" hidden>PLAY VOICE</button><button id="muteHakVoice" class="polar-button">VOICE ON</button></div><button id="nextHak" class="polar-button">NEXT / ENTER</button></section>';
+$('#antarctica').append(hakEncounter);let hakRender=null;
+function advanceHak(){if(!gameActive||gamePaused||polarState?.africaStage!=='visitor')return;stopHakVoice();const i=Math.min(4,Math.floor(polarState.africaTime));if(i===4)NVAfrica.arrive(polarState);else polarState.africaTime=i+1;updatePolarHUD();polarCanvas.focus();}
+$('#nextHak').onclick=advanceHak;
+$('#playHakVoice').onclick=playHakVoice;$('#muteHakVoice').onclick=()=>{hakVoice.muted=!hakVoice.muted;const a=hakClips[hakVoice.index];if(a)a.volume=hakVoice.muted?0:.95;updatePolarHUD();};
+const hakJourney=tickAfricaJourney;tickAfricaJourney=dt=>{if(polarState?.africaStage!=='visitor'){hakJourney(dt);return;}polarKeys.clear();polarAutoWalk=false;polarSprint=false;const a=hakClips[hakVoice.index];if(a?.ended&&!gamePaused){hakVoice.tail+=dt;if(hakVoice.tail>=1.1)advanceHak();}};
+const hakHUD=updatePolarHUD;updatePolarHUD=()=>{hakHUD();const active=gameActive&&polarState?.africaStage==='visitor';hakEncounter.hidden=!active;if(!active){if(hakVoice.index!==-1)stopHakVoice();return;}const i=Math.min(4,Math.floor(polarState.africaTime));if(hakVoice.index!==i)startHakVoice(i);if(hakVoice.paused!==gamePaused){hakVoice.paused=gamePaused;if(gamePaused)hakClips[i].pause();else if(!hakClips[i].ended&&!hakVoice.error)playHakVoice();}$('#playHakVoice').hidden=!hakVoice.blocked||hakVoice.error;$('#muteHakVoice').textContent=hakVoice.muted?'VOICE OFF':'VOICE ON';$('#muteHakVoice').setAttribute('aria-pressed',String(hakVoice.muted));$('#hakVoiceStatus').textContent=hakVoice.error?'VOICE UNAVAILABLE / CAPTIONS ACTIVE':hakVoice.blocked?'CLICK PLAY VOICE':hakVoice.muted?'VOICE MUTED':'RECORDED VOICE';$('#hakLine').textContent=HAK_QUOTES[i];$('#hakNumber').textContent=String(i+1).padStart(2,'0')+' / 05';$('#nextHak').textContent=i===4?'CONTINUE / ENTER':'NEXT / ENTER';$('#nextHak').disabled=gamePaused;$('#africaTransition').hidden=true;
+ if(!hakRender)try{hakRender=createGrekRenderer($('#hakCanvas'),HakModel);}catch(e){console.error('Visitor model:',e);}
+ if(hakRender){const t=performance.now()/1000;hakRender(t,hakLipPose(),gamePaused);}
+};
+const hakExit=exitPolar;exitPolar=()=>{stopHakVoice();hakEncounter.hidden=true;hakExit();};
+document.addEventListener('keydown',e=>{if(gameActive&&polarState?.africaStage==='visitor'&&['Enter','Space'].includes(e.code)){e.preventDefault();e.stopImmediatePropagation();if(!e.repeat)advanceHak();}},true);

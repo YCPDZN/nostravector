@@ -1,0 +1,107 @@
+[
+  {
+    "boss": 0,
+    "quote": 0,
+    "file": "audio/nightmare-voices/FINALBOSSORION1.mp3",
+    "duration": 5.329,
+    "sha256": "94cbc980b75f731101a9781254f451a128d1ddcbf5e5b4a4635ce3b40f6977f2"
+  },
+  {
+    "boss": 0,
+    "quote": 1,
+    "file": "audio/nightmare-voices/FINALBOSSORION2.mp3",
+    "duration": 5.721,
+    "sha256": "4b5ef0e9f6353b29bc98a8576e9703cbb7211ef40ab7f1bbddf996e6e8b6623e"
+  },
+  {
+    "boss": 0,
+    "quote": 2,
+    "file": "audio/nightmare-voices/FINALBOSSORION3.mp3",
+    "duration": 5.642,
+    "sha256": "6af4a63ff9d58ddd0f8dacbda4765f8d6da44a2fac31c8337d6ff350862bbecc"
+  },
+  {
+    "boss": 0,
+    "quote": 3,
+    "file": "audio/nightmare-voices/FINALBOSSORION4.mp3",
+    "duration": 4.676,
+    "sha256": "01cd87808a2d131359e585bebfa0318e67fa2e6897a17432c67b71ea3a91958e"
+  },
+  {
+    "boss": 0,
+    "quote": 4,
+    "file": "audio/nightmare-voices/FINALBOSSORION5.mp3",
+    "duration": 3.161,
+    "sha256": "bcaeb50dc59f92faad2dfaf0b5a7419b6a1ead3e13a9d8344b8cb068398210e3"
+  },
+  {
+    "boss": 1,
+    "quote": 0,
+    "file": "audio/nightmare-voices/FINALBOSSTYROTARONUS1.mp3",
+    "duration": 5.146,
+    "sha256": "c41040c972127945a8b3020acb11231159e2c1db897976cdf0a0aa5a90b76d92"
+  },
+  {
+    "boss": 1,
+    "quote": 1,
+    "file": "audio/nightmare-voices/FINALBOSSTYROTARONUS2.mp3",
+    "duration": 6.687,
+    "sha256": "b7a6feb36c8823c69a0894e0eb9650936f7c199ea51ed8117811ef37a852c276"
+  },
+  {
+    "boss": 1,
+    "quote": 2,
+    "file": "audio/nightmare-voices/FINALBOSSTYROTARONUS3.mp3",
+    "duration": 6.269,
+    "sha256": "8b91ce83ab2f7dae83fd94d5bc0252f446d799f6003df1b43f598677131f45d5"
+  },
+  {
+    "boss": 1,
+    "quote": 3,
+    "file": "audio/nightmare-voices/FINALBOSSTYROTARONUS4.mp3",
+    "duration": 3.866,
+    "sha256": "1ea11718d712d70a56041380895d862ec89063e94c85370322ff3a35e0cd4496"
+  },
+  {
+    "boss": 1,
+    "quote": 4,
+    "file": "audio/nightmare-voices/FINALBOSSTYROTARONUS5.mp3",
+    "duration": 4.833,
+    "sha256": "bdddaa76490624ebd36e073aee0f5752891c6a165fc3808340ffd233a03b23ec"
+  },
+  {
+    "boss": 2,
+    "quote": 0,
+    "file": "audio/nightmare-voices/FINALBOSSJOSIAH1.mp3",
+    "duration": 5.407,
+    "sha256": "7926bd9a26aa1c5ea1ba9c954956af8020f20b6a9406aa2ac3d5f934df47cd1a"
+  },
+  {
+    "boss": 2,
+    "quote": 1,
+    "file": "audio/nightmare-voices/FINALBOSSJOSIAH2.mp3",
+    "duration": 7.236,
+    "sha256": "47032827b75012a0b1d99b0d4ea1815252b6e44237f1b8410bb34c79285ba9bd"
+  },
+  {
+    "boss": 2,
+    "quote": 2,
+    "file": "audio/nightmare-voices/FINALBOSSJOSIAH3.mp3",
+    "duration": 5.642,
+    "sha256": "9e74171b26f4e4d5440393a2238e3d722227704c96159f47c2c9a5ce95f8a61d"
+  },
+  {
+    "boss": 2,
+    "quote": 3,
+    "file": "audio/nightmare-voices/FINALBOSSJOSIAH4.mp3",
+    "duration": 5.799,
+    "sha256": "6ba4620b3fb100e29750947d5cf54fe590d383daeb5a78178ad0fb63f0a170d1"
+  },
+  {
+    "boss": 2,
+    "quote": 4,
+    "file": "audio/nightmare-voices/FINALBOSSJOSIAH5.mp3",
+    "duration": 6.113,
+    "sha256": "261f7f178901549c423e16710e2201137347b881e433626ba3925a6e51ae1ebe"
+  }
+]

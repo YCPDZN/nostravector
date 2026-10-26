@@ -1,0 +1,15 @@
+function createBCCombatScenery({object,mesh,M,draw,ground}){
+ const cube=mesh({p:[[-.5,-.5,-.5],[.5,-.5,-.5],[.5,.5,-.5],[-.5,.5,-.5],[-.5,-.5,.5],[.5,-.5,.5],[.5,.5,.5],[-.5,.5,.5]],n:[[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]],f:[0,2,1,0,3,2,4,5,6,4,6,7,0,1,5,0,5,4,3,7,6,3,6,2,0,4,7,0,7,3,1,2,6,1,6,5]});
+ function box(root,pos,scale,color,emission=0){draw(cube,M.mul(root,M.mul(M.t(...pos),M.scale(...scale))),color,0,emission);}
+ const models=new WeakMap();
+ function wrists(parts){if(models.has(parts))return models.get(parts);const rig=NVCompanionMotion.rig(parts),out=[];for(const side of [-1,1]){let best=null,score=-Infinity;for(const p of parts){const g=rig.groups.get(p);if(g?.kind!=='arm'||g.side!==side)continue;const weight=/hand|finger|wrist/i.test(p.name||'')?10:0,d=weight+Math.hypot(...g.center.map((v,i)=>v-(g.pivot?.[i]||0)));if(d>score){score=d;best={part:p,at:g.center};}}if(best)out.push({...best,side});}models.set(parts,out);return out;}
+ function weapons(s,n,parts,root,motion){if(NVBCCombat.kind(n)!=='gareth')return;const a=NVBCCombat.pose(s,n.id);for(const wrist of wrists(parts)){const hand=M.mul(root,NVCompanionMotion.part(motion,wrist.part)),[x,y,z]=wrist.at;box(hand,[x,y-.11,z],[.095,.32,.12],[.10,.13,.17]);box(hand,[x,y-.015,z+.09],[.075,.095,.17],[.22,.25,.29]);box(hand,[x,y-.08,z-.07],[.065,.27,.035],[.52,.58,.64]);const shot=a?.mode==='pistols'&&[.18,.39].some((when,i)=>(i?1:-1)===wrist.side&&a.elapsed>=when&&a.elapsed<when+.12);if(shot)box(hand,[x,y-.32,z],[.14,.18,.14],[1,.7,.2],1);}}
+ function link(x,y,z,angle,color,alternate){const root=M.mul(M.t(x,y,z),M.mul(M.ry(angle),alternate?M.rx(Math.PI/2):M.t(0,0,0)));for(const [p,d]of [[[0,.07,0],[.18,.035,.045]],[[0,-.07,0],[.18,.035,.045]],[[-.09,0,0],[.035,.14,.045]],[[.09,0,0],[.035,.14,.045]]])box(root,p,d,color,color[0]>.5?.4:.06);}
+ function effects(s){const q=NVBCCombat.state(s);for(const e of q.effects){const p=e.from,y=ground(p.x,p.z,s.seed),gold=e.kind==='josiah',color=gold?[1,.73,.14]:[.065,.045,.10];if(e.type==='wave'){const radius=e.age*20;for(let i=0;i<56;i++){const a=i/56*Math.PI*2,x=p.x+Math.sin(a)*radius,z=p.z+Math.cos(a)*radius;object(x,ground(x,z,s.seed)+.15,z,.35,.08,1.1,[1,.82,.3],a,Math.max(.1,1-e.age));}continue;}
+   const t=e.to;if(!t)continue;const ty=ground(t.x,t.z,s.seed)+1,dx=t.x-p.x,dz=t.z-p.z,d=Math.hypot(dx,dz),angle=Math.atan2(dx,dz);
+   if(e.type==='bullet'){const progress=Math.min(1,e.age/.1),x=p.x+dx*progress,z=p.z+dz*progress;object(x,y+1.1+(ty-y-1.1)*progress,z,.055,.055,.65,[1,.77,.27],angle,1);continue;}
+   if(e.age<.8){const count=Math.min(45,Math.max(6,Math.floor(d*2)));for(let i=0;i<count;i++){const f=i/count;link(p.x+dx*f,y+1.15+(ty-y-1.15)*f-Math.sin(f*Math.PI)*.3,p.z+dz*f,angle,color,i%2);}}
+   if(NVBCCombat.bound(e.enemy))for(let j=0;j<2;j++)for(let i=0;i<18;i++){const a=i/18*Math.PI*2+e.age*.3;link(t.x+Math.sin(a)*.55,ty+j*.42-.25,t.z+Math.cos(a)*.55,a,color,i%2);}
+  }}
+ return{weapons,effects};
+}

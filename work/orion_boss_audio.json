@@ -1,0 +1,394 @@
+[
+  {
+    "phase": 1,
+    "line": 0,
+    "file": "audio/orion-boss/BFOM1.mp3",
+    "duration": 9.404,
+    "sha256": "671fde2b73bf263b6b2af563f328a5a026d50689b2d9458b0a2dc1b350a18118"
+  },
+  {
+    "phase": 1,
+    "line": 1,
+    "file": "audio/orion-boss/BFOM2.mp3",
+    "duration": 9.561,
+    "sha256": "5e86f8c1d693181cf6d033d4873e463b0262cfb5b0f484e3c439f25a45198f4e"
+  },
+  {
+    "phase": 1,
+    "line": 2,
+    "file": "audio/orion-boss/BFOM3.mp3",
+    "duration": 7.079,
+    "sha256": "b5cc29f0e0d9f9314c791eab7cbe27d36c51f0d952d6ed4e57fa834a9b597ae5"
+  },
+  {
+    "phase": 1,
+    "line": 3,
+    "file": "audio/orion-boss/BFOM4.mp3",
+    "duration": 8.281,
+    "sha256": "d75380ff359abb60c632b8e7542572818ef3d6673fac180277857c56e2c6a3b4"
+  },
+  {
+    "phase": 1,
+    "line": 4,
+    "file": "audio/orion-boss/BFOM5.mp3",
+    "duration": 9.326,
+    "sha256": "b32bd9917d0a46880bc6df9412e2a89ef6edff9c9241432915eca6001d7885ff"
+  },
+  {
+    "phase": 1,
+    "line": 5,
+    "file": "audio/orion-boss/BFOM6.mp3",
+    "duration": 8.594,
+    "sha256": "de968e58aba19b55292e328f099a99d745cb5dee0523f2c8b3633d78a439355b"
+  },
+  {
+    "phase": 1,
+    "line": 6,
+    "file": "audio/orion-boss/BFOM7.mp3",
+    "duration": 8.124,
+    "sha256": "0c16e770a560c20d36956c5b549f076cdd8e8093f4fad4abb0803ad46714f1e4"
+  },
+  {
+    "phase": 1,
+    "line": 7,
+    "file": "audio/orion-boss/BFOM8.mp3",
+    "duration": 7.079,
+    "sha256": "2c40b4df9cff10263cb84c0d6ebe02297b703a7da5979567c33686de54bd53b9"
+  },
+  {
+    "phase": 1,
+    "line": 8,
+    "file": "audio/orion-boss/BFOM9.mp3",
+    "duration": 7.079,
+    "sha256": "22ea12f69bca789b8a22f45b6c8c42d5a51bba26a25fc1cb3ebb2594fb1006b4"
+  },
+  {
+    "phase": 1,
+    "line": 9,
+    "file": "audio/orion-boss/BFOM10.mp3",
+    "duration": 9.404,
+    "sha256": "799f4870afe09ee8220ae006f4acd628ddca22dcb4d9c0ce24a51e73e69ec064"
+  },
+  {
+    "phase": 2,
+    "line": 0,
+    "file": "audio/orion-boss/BFOMP21.mp3",
+    "duration": 5.799,
+    "sha256": "0e10a166200183697093ff462931a83ba462acf47c5d5483fbdc709b2e614a13"
+  },
+  {
+    "phase": 2,
+    "line": 1,
+    "file": "audio/orion-boss/BFOMP22.mp3",
+    "duration": 5.329,
+    "sha256": "33a771285e05b0dc9a14f466e05c943941decedde496a450f3181ff142e5cb82"
+  },
+  {
+    "phase": 2,
+    "line": 2,
+    "file": "audio/orion-boss/BFOMP23.mp3",
+    "duration": 4.754,
+    "sha256": "e3a0fa60711a0e67dd0c9462a9f98f9562cf03c180d6a0910e79c0fe05157df0"
+  },
+  {
+    "phase": 2,
+    "line": 3,
+    "file": "audio/orion-boss/BFOMP24.mp3",
+    "duration": 5.878,
+    "sha256": "678d1d45450d9a49464a9f1441f7bc3a75322d42894f8c0011d1f58f073f9d03"
+  },
+  {
+    "phase": 2,
+    "line": 4,
+    "file": "audio/orion-boss/BFOMP25.mp3",
+    "duration": 5.564,
+    "sha256": "c080ca07160d0eb1d4dd3de8602ed668ce4694d77165c28cec3cd834c2c1c246"
+  },
+  {
+    "phase": 2,
+    "line": 5,
+    "file": "audio/orion-boss/BFOMP26.mp3",
+    "duration": 5.564,
+    "sha256": "b23f61cb99f905a629affb61610f7299f7eac8a44f0faa9db05d0e74d67df5bd"
+  },
+  {
+    "phase": 2,
+    "line": 6,
+    "file": "audio/orion-boss/BFOMP27.mp3",
+    "duration": 5.642,
+    "sha256": "0fdc495ac212fc8f6e13283125e273b2ef88a0613215d057c0bf3e78232fad6a"
+  },
+  {
+    "phase": 2,
+    "line": 7,
+    "file": "audio/orion-boss/BFOMP28.mp3",
+    "duration": 7.158,
+    "sha256": "7c025f2bff0c0ed4d4baee1c59b5bb39a41da73bb32d64658956e9bf6f1ff470"
+  },
+  {
+    "phase": 2,
+    "line": 8,
+    "file": "audio/orion-boss/BFOMP29.mp3",
+    "duration": 6.687,
+    "sha256": "d7eff7f22f59a6d4a888ca3ad62bc361da3693a433ffe78a7b7848b5f6045060"
+  },
+  {
+    "phase": 2,
+    "line": 9,
+    "file": "audio/orion-boss/BFOMP210.mp3",
+    "duration": 7.001,
+    "sha256": "34846de840251d26e393897fe168348e5c351e109f5aa48bf53b29f8bb3682f4"
+  },
+  {
+    "phase": 2,
+    "line": 10,
+    "file": "audio/orion-boss/BFOMP211.mp3",
+    "duration": 6.034,
+    "sha256": "82f5786b39fa6ca9992ff596c387107abd271e4f5efa89f745dbe959d3a55505"
+  },
+  {
+    "phase": 2,
+    "line": 11,
+    "file": "audio/orion-boss/BFOMP212.mp3",
+    "duration": 7.628,
+    "sha256": "89efc474f6a3de5e7507c600ebc6ff99210270a739080a1f772dda16b96d1543"
+  },
+  {
+    "phase": 2,
+    "line": 12,
+    "file": "audio/orion-boss/BFOMP213.mp3",
+    "duration": 6.687,
+    "sha256": "3a869bc8365036277c41bdeb1557e067f89fc4669cabbdf7ee4e8e9ec91167f4"
+  },
+  {
+    "phase": 2,
+    "line": 13,
+    "file": "audio/orion-boss/BFOMP214.mp3",
+    "duration": 6.113,
+    "sha256": "17e5918c4248e1156b3701f4c7987e27d9b1e66ef416f9f25e6435304ccb9b82"
+  },
+  {
+    "phase": 2,
+    "line": 14,
+    "file": "audio/orion-boss/BFOMP215.mp3",
+    "duration": 8.359,
+    "sha256": "cf162fcae15899ded6efd76e1cbfd294be7bd77f3ff1f800e4ac2fce7918a109"
+  },
+  {
+    "phase": 3,
+    "line": 0,
+    "file": "audio/orion-boss/BFOMP31.mp3",
+    "duration": 8.046,
+    "sha256": "c46b171f0b5916a7e10e3f734992fefa9d3b6d0dd8dc79a65ea3b2f21f407a5e"
+  },
+  {
+    "phase": 3,
+    "line": 1,
+    "file": "audio/orion-boss/BFOMP32.mp3",
+    "duration": 7.889,
+    "sha256": "4a460dd3b630a13db2108d6514324569fc05630602f2953684e9d064c80ea0be"
+  },
+  {
+    "phase": 3,
+    "line": 2,
+    "file": "audio/orion-boss/BFOMP33.mp3",
+    "duration": 8.124,
+    "sha256": "adc12f6f45d2595367c60592131173d3752d1fe8aa192175ac23ad777342ae67"
+  },
+  {
+    "phase": 3,
+    "line": 3,
+    "file": "audio/orion-boss/BFOMP34.mp3",
+    "duration": 6.844,
+    "sha256": "84716b1e62de9def2bd5a2cb2c1d390a35a987dbd38935165882b0e1ceba793a"
+  },
+  {
+    "phase": 3,
+    "line": 4,
+    "file": "audio/orion-boss/BFOMP35.mp3",
+    "duration": 7.811,
+    "sha256": "7055d2884c252bf6f25fd012c7b4b068d863a9cb76bcbce70d75d23b24c545f5"
+  },
+  {
+    "phase": 3,
+    "line": 5,
+    "file": "audio/orion-boss/BFOMP36.mp3",
+    "duration": 7.967,
+    "sha256": "51da44fd9abfc7baf511394de74784adfdd9aa2f5b2ac3757fed8d0fe5f175f4"
+  },
+  {
+    "phase": 3,
+    "line": 6,
+    "file": "audio/orion-boss/BFOMP37.mp3",
+    "duration": 7.628,
+    "sha256": "ab6e0f2e77d7b2a4ba85fedbd67f2fe5323cda187f1e620a39588c830bdfc418"
+  },
+  {
+    "phase": 3,
+    "line": 7,
+    "file": "audio/orion-boss/BFOMP38.mp3",
+    "duration": 7.967,
+    "sha256": "b6ed201d47e7db725dee5246635648e4c5177e6d9b791e9e256cc124775adb9f"
+  },
+  {
+    "phase": 3,
+    "line": 8,
+    "file": "audio/orion-boss/BFOMP39.mp3",
+    "duration": 7.811,
+    "sha256": "74a899d6b880140f3c71e31d2e115eb72c9a9bec897ea72360ad50e02cc44ba9"
+  },
+  {
+    "phase": 3,
+    "line": 9,
+    "file": "audio/orion-boss/BFOMP310.mp3",
+    "duration": 7.236,
+    "sha256": "24db71a45a43185e9db2dc6e2edad9d1e009e5739d4490b1d676ce630d6a283d"
+  },
+  {
+    "phase": 3,
+    "line": 10,
+    "file": "audio/orion-boss/BFOMP311.mp3",
+    "duration": 6.766,
+    "sha256": "44fd64aae2f167a73673645c6abc71b0e76cd56bf8b7edb052fa65dceb38cada"
+  },
+  {
+    "phase": 3,
+    "line": 11,
+    "file": "audio/orion-boss/BFOMP312.mp3",
+    "duration": 6.844,
+    "sha256": "35e9fffc017c8f4dc0ddb0c4e1cda87cd8ed2650a0150980a7e959aac3ac2c15"
+  },
+  {
+    "phase": 3,
+    "line": 12,
+    "file": "audio/orion-boss/BFOMP313.mp3",
+    "duration": 7.393,
+    "sha256": "85e7e3282648f86a96aa0c7ccf3e8784ea05c0914d032b699177cb15dd8bba0b"
+  },
+  {
+    "phase": 3,
+    "line": 13,
+    "file": "audio/orion-boss/BFOMP314.mp3",
+    "duration": 6.348,
+    "sha256": "2860aa735433273e1169e4c295f9c0c7e17ad3aef30eb1d95ec2333f68c08cd3"
+  },
+  {
+    "phase": 3,
+    "line": 14,
+    "file": "audio/orion-boss/BFOMP315.mp3",
+    "duration": 6.609,
+    "sha256": "61f0dbf2c603a9ca3fcd31e8ae688e3d63642b22b5db6f793912ebf230465d90"
+  },
+  {
+    "phase": 3,
+    "line": 15,
+    "file": "audio/orion-boss/BFOMP316.mp3",
+    "duration": 5.721,
+    "sha256": "934e1a9972947912ef2e91406b93988fd77b1262dd82d1d9bc398ec4b36fc0cb"
+  },
+  {
+    "phase": 3,
+    "line": 16,
+    "file": "audio/orion-boss/BFOMP317.mp3",
+    "duration": 5.956,
+    "sha256": "5fb87f61337aac250d011e9818cfd3671525a68c096d263cd5235d382d198d6a"
+  },
+  {
+    "phase": 3,
+    "line": 17,
+    "file": "audio/orion-boss/BFOMP318.mp3",
+    "duration": 4.206,
+    "sha256": "3691b18b271fdd17da9b0ec081c595d1321ea7d72e60697088355e6f341da908"
+  },
+  {
+    "phase": 3,
+    "line": 18,
+    "file": "audio/orion-boss/BFOMP319.mp3",
+    "duration": 7.158,
+    "sha256": "7354fa322343542e12775f8e9192c1393fb80cc0d6970220dfa290d9503186fa"
+  },
+  {
+    "phase": 3,
+    "line": 19,
+    "file": "audio/orion-boss/BFOMP320.mp3",
+    "duration": 5.642,
+    "sha256": "9391b79155560d0791c251eb46bdd9a7a98d5e9551e8af3926abcdef37586164"
+  },
+  {
+    "phase": 3,
+    "line": 20,
+    "file": "audio/orion-boss/BFOMP321.mp3",
+    "duration": 5.251,
+    "sha256": "da45bb4386c8759bce7bd8aca8a6d791c19dde509107cc614c7e6313991f47c1"
+  },
+  {
+    "phase": 3,
+    "line": 21,
+    "file": "audio/orion-boss/BFOMP322.mp3",
+    "duration": 5.407,
+    "sha256": "598b6dc1adc7a447fb462d4f6bb6cd89dec497e7bb53356587684173468274d6"
+  },
+  {
+    "phase": 3,
+    "line": 22,
+    "file": "audio/orion-boss/BFOMP323.mp3",
+    "duration": 6.034,
+    "sha256": "92cf6ecded1f1d646213a1f26ed15a101787b19f47baa197853d82797d88a94b"
+  },
+  {
+    "phase": 3,
+    "line": 23,
+    "file": "audio/orion-boss/BFOMP324.mp3",
+    "duration": 7.549,
+    "sha256": "5f1ce6f74a75d9e76232be6219a618fed728bfcb85b229d890a641c158b4ec04"
+  },
+  {
+    "phase": 3,
+    "line": 24,
+    "file": "audio/orion-boss/BFOMP325.mp3",
+    "duration": 6.191,
+    "sha256": "5241416f9789581bb0358d3a954d5d55557cf915367f4f3c08b9f30627045d5d"
+  },
+  {
+    "phase": 3,
+    "line": 25,
+    "file": "audio/orion-boss/BFOMP326.mp3",
+    "duration": 4.911,
+    "sha256": "d99508a9ca0b7ded236f90745fbfb6363b31d5ea1e9e8ad22f3b3cdd3fbf8e77"
+  },
+  {
+    "phase": 3,
+    "line": 26,
+    "file": "audio/orion-boss/BFOMP327.mp3",
+    "duration": 7.079,
+    "sha256": "e5f490ee21ea38648ca4beb70152fe457b27ef1904705f2f27c0afb3b836f116"
+  },
+  {
+    "phase": 3,
+    "line": 27,
+    "file": "audio/orion-boss/BFOMP328.mp3",
+    "duration": 7.001,
+    "sha256": "2a6f2d4779dcf8c920fef491e994375d533d94c5e1a79ac1c4ed33b91e9a563e"
+  },
+  {
+    "phase": 3,
+    "line": 28,
+    "file": "audio/orion-boss/BFOMP329.mp3",
+    "duration": 7.236,
+    "sha256": "34be6af4dd3484463cddacb14d640a79a3a5a94b4e941f84dc0118a09b0c5cca"
+  },
+  {
+    "phase": 3,
+    "line": 29,
+    "file": "audio/orion-boss/BFOMP330.mp3",
+    "duration": 8.986,
+    "sha256": "bd6a4a59111b4d59fe1b642e684df03ddb5c967447a59c5e36b1a79fb43f6bd4"
+  },
+  {
+    "phase": 4,
+    "line": 0,
+    "file": "audio/orion-boss/ORION DEATH QUOTE.mp3",
+    "duration": 6.426,
+    "sha256": "d6d3a48145323cef2e5df71ad4d51c55671eca9d0706965050ef0a7c0f7e3687"
+  }
+]

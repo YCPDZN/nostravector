@@ -1,0 +1,22 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const context=vm.createContext({Math,JSON,Number,Map,Set}),run=s=>vm.runInContext(s,context);
+for(const f of ['antarctica_core.js','antarctica_betrayal_core.js','africa_core.js','sol_catalog.js','planet_landscapes.js','space_core.js','world_flight.js','galaxy_core.js','cluster_core.js','ecology_core.js','eris_core.js','sol_war_core.js','khazglar_core.js','quests_core.js','khazglar_reward_core.js','frozen_weather_core.js','ship_interior_core.js'])run(fs.readFileSync('work/'+f,'utf8'));
+run("let s=NVAntarctica.fresh(530);s.africaStarted=true;s.africaStage='complete';s.space=NVSpace.fresh();s.space.shipId=NVShipReward.ID;s.space.phase='cockpit';s.space.body='mars';s.space.target='mars';s.space.landingX=10;s.space.landingZ=60;let q=NVShipInterior.ensure(s)");
+assert(run('NVShipInterior.enter(s,true)'));assert.equal(run('q.deck'),1);assert.equal(run('NVShipInterior.crew(s).length'),1);
+run("s.friendQuest='recruited'");assert.equal(run('NVShipInterior.crew(s).length'),2);run('s.eris=NVEris.ensure(s);s.eris.nyrexia={recruited:true}');assert.equal(run('NVShipInterior.crew(s).length'),3);run("s.friendQuest='available'");assert.equal(run('NVShipInterior.crew(s).length'),2);
+run('Object.assign(q,{deck:0,x:4.6,z:8.2,y:0,yaw:0});for(let i=0;i<69;i++)NVShipInterior.step(s,.05,{forward:1});');assert.equal(run('q.deck'),1);assert.equal(run('q.y'),4);
+run('Object.assign(q,{deck:1,x:-4.6,z:8.2,y:4,yaw:0});for(let i=0;i<69;i++)NVShipInterior.step(s,.05,{forward:1});');assert.equal(run('q.deck'),2);assert.equal(run('q.y'),8);
+run('q.yaw=Math.PI;for(let i=0;i<70;i++)NVShipInterior.step(s,.05,{forward:1})');assert.equal(run('q.deck'),1);
+run('Object.assign(q,{deck:1,x:0,z:4})');assert(run('NVShipInterior.blocked(s,-4.6,4)'));assert(run('NVShipInterior.blocked(s,6,0)'));assert(run('NVShipInterior.blocked(s,0,-8)'));
+run('Object.assign(q,{deck:2,x:0,z:-12,y:8});');assert(run('NVShipInterior.pilot(s)'));assert(!run('NVShipInterior.active(s)'));
+run("s.space.phase='flight';s.space.position=[123,456,789];NVShipInterior.enter(s);NVShipInterior.step(s,.05,{forward:1});let position=s.space.position.slice();NVSpace.step(s,.05,{});");assert.equal(run('JSON.stringify(s.space.position)'),run('JSON.stringify(position)'));assert(!run('NVShipReward.fire(s)'));
+run('let raw=JSON.parse(JSON.stringify(s.space));s.space=NVSpace.restore(raw,s)');assert(run('NVShipInterior.active(s)'));assert.equal(run('s.space.interior.deck'),2);
+run("Object.assign(s.space.interior,{deck:1,x:-4,z:-2,y:4})");assert(!run('NVShipInterior.leave(s)'));run("s.space.phase='cockpit'");assert(run('NVShipInterior.leave(s)'));assert.equal(run('s.space.phase'),'landed');
+const raw=fs.readFileSync('work/ship_interior_model.js','utf8'),model=JSON.parse(raw.slice(raw.indexOf('=')+1,raw.lastIndexOf(';')));assert(model.meshes.length>500);for(const p of model.meshes){assert(p.p.every(Number.isFinite));assert(p.n.every(Number.isFinite));assert(p.indices.every(i=>i>=0&&i<p.p.length/3));}const glb=fs.readFileSync('outputs/NOSTRAVECTOR_Vanguard_Interior.glb');assert.equal(glb.readUInt32LE(0),0x46546c67);assert.equal(glb.readUInt32LE(8),glb.length);
+console.log('Passed conditional crew, both staircases, descent, walls/furniture/side-entry collision, helm, sealed airlock, exterior checkpoint isolation, restore and native interior geometry.');
+
+run(fs.readFileSync('work/menu_party.js','utf8').split('const menuPartySession')[0]);
+assert.equal(run("NVShipReward.restore({claimed:true,charonDecision:'decline',kiznaRecruited:true}).kiznaRecruited"),true);
+assert.equal(run("NVShipReward.restore({claimed:true,charonDecision:'accept',charonRecruited:true,kiznaRecruited:true}).kiznaRecruited"),false);
+assert.equal(run("NVShipReward.restore({claimed:true,kiznaRecruited:true}).kiznaRecruited"),false);
+run("NVShipReward.ensure(s).charonDecision='decline';NVShipReward.ensure(s).charonRecruited=false;NVShipReward.ensure(s).kiznaRecruited=true");assert(run("NVParty.list(s).some(n=>n.id==='kizna')"));assert(run("NVShipInterior.crew(s).some(n=>n.id==='kizna')"));run("NVShipReward.ensure(s).charonDecision='accept';NVShipReward.ensure(s).charonRecruited=true");assert(!run("NVParty.list(s).some(n=>n.id==='kizna')"));assert(!run("NVShipInterior.crew(s).some(n=>n.id==='kizna')"));console.log('Passed Kizna restore/party/interior exclusivity, declined-Charon route and invalid-state filtering.');

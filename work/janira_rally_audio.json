@@ -1,0 +1,92 @@
+[
+  {
+    "line": 0,
+    "file": "audio/janira-rally/HKC1.mp3",
+    "duration": 14.681,
+    "sha256": "8f27819d53cd1af779622f37acbaa6a00d8d09b0510779ef01fcaa9d161643d5"
+  },
+  {
+    "line": 1,
+    "file": "audio/janira-rally/HKC2.mp3",
+    "duration": 17.319,
+    "sha256": "02d3395e6c79903dfc1d21ec9f69fa7ad40e85597e3d0a246de391e864a09ca5"
+  },
+  {
+    "line": 2,
+    "file": "audio/janira-rally/HKC3.mp3",
+    "duration": 16.927,
+    "sha256": "d54cd01806db8da15129c76c43f45900be8f97502e5d0f84a6b79630e4c41c42"
+  },
+  {
+    "line": 3,
+    "file": "audio/janira-rally/HKC4.mp3",
+    "duration": 15.804,
+    "sha256": "c334c703d0e7444ea3a956e2dbbe02a945365f536856b40ad0554440ab3e5ac0"
+  },
+  {
+    "line": 4,
+    "file": "audio/janira-rally/HKC5.mp3",
+    "duration": 15.308,
+    "sha256": "f368a5787e0ceb7b819d21128ce93160e1d32a7a1ab97eedefaef9953e9c8ebe"
+  },
+  {
+    "line": 5,
+    "file": "audio/janira-rally/HKC6.mp3",
+    "duration": 18.051,
+    "sha256": "ca1f88f7f4a93074cd55dcf31e3e1b094236a1130314eca44f77528a5b04278e"
+  },
+  {
+    "line": 6,
+    "file": "audio/janira-rally/HKC7.mp3",
+    "duration": 13.636,
+    "sha256": "c2089c1d88ee79e758836313605ca0e0ed3e0ff0c74403fd82cc7991b7e3eae9"
+  },
+  {
+    "line": 7,
+    "file": "audio/janira-rally/HKC8.mp3",
+    "duration": 15.882,
+    "sha256": "eb562c0e0a3a7cdd40ef02085d06bebbd87dfcafa92af1a63516eca036715da5"
+  },
+  {
+    "line": 8,
+    "file": "audio/janira-rally/HKC9.mp3",
+    "duration": 15.308,
+    "sha256": "c235402e2d7c3f3b01cc067aa5e03999f70406e7dbcbdaf4a181facaf7cbb1a6"
+  },
+  {
+    "line": 9,
+    "file": "audio/janira-rally/HKC10.mp3",
+    "duration": 15.804,
+    "sha256": "912274ecac750ce2e380d2108f04dab56960b5eaccf36972536b31437a37992c"
+  },
+  {
+    "line": 10,
+    "file": "audio/janira-rally/HKC11.mp3",
+    "duration": 16.771,
+    "sha256": "618283506800b022beac9a16a69f2de9933a4b59abf071affab536a90c8281be"
+  },
+  {
+    "line": 11,
+    "file": "audio/janira-rally/HKC12.mp3",
+    "duration": 14.994,
+    "sha256": "a217bb3e6f6dbc2ae62d5feb1808a258f310572cab99fe8c1ff30609c69d616b"
+  },
+  {
+    "line": 12,
+    "file": "audio/janira-rally/HKC13.mp3",
+    "duration": 15.229,
+    "sha256": "93c92357b1a4d7ac4c01d76843085c5033da1aadaae7dbd40f6a8f5d4686ce76"
+  },
+  {
+    "line": 13,
+    "file": "audio/janira-rally/HKC14.mp3",
+    "duration": 14.838,
+    "sha256": "8289ce30122913fbc2779fa1a377933ba4a36f754fbc5c656f9bc49132e46284"
+  },
+  {
+    "line": 14,
+    "file": "audio/janira-rally/HKC15.mp3",
+    "duration": 15.229,
+    "sha256": "673048ae23b55855976417a21d3da50a8e569ff2396c3319c933d09dd7b5b30a"
+  }
+]

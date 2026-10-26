@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('work/test_mascar_rampage_browser.js');s=p.read_text(encoding='utf-8').replace("if(count===0)fail.push('capture');", "if(count!==0)fail.push('capture while present');").replace("if(r.system==='sol')fail.push('departure');", "if(r.system==='sol')fail.push('departure');NVMascarRampage.capture(s);if(!NVOrionEmpire.ensure(s).owners.length)fail.push('off-system capture');");p.write_text(s,encoding='utf-8')
+p=Path('work/test_battle_performance_browser.js');s=p.read_text(encoding='utf-8').replace("v.stage='hunt';v.form=2;", "v.stage='hunt';v.target=NVVengefulMascar.site({body:'earth',system:'sol',x:0,z:0,lat:0,lon:0,landingX:0,landingZ:0});v.form=2;");p.write_text(s,encoding='utf-8')

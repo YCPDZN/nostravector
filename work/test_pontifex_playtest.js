@@ -1,0 +1,28 @@
+const fs=require('node:fs');const source=fs.readFileSync(__dirname+'/test_pontifex_runtime.js','utf8');
+const marker='const checks=String.raw`',start=source.indexOf(marker),setup=source.slice(0,start),prefix=source.slice(start+marker.length,source.indexOf('// A fresh character',start));
+const checks=String.raw`
+run(fs.readFileSync(root+'/chapter_restart.js','utf8'));run(fs.readFileSync(root+'/pontifex_playtest.js','utf8'));
+const emptyStorage=JSON.stringify([...storage]),emptyRoster=run('JSON.stringify(characterSaves)');
+assert.equal(run('savedGame'),null);assert.equal(run('pontifexDebugBar.hidden'),true);
+run('pontifexPlaytestButton.onclick();');
+assert.equal(run('gameActive'),true);assert.equal(run('polarState.space.body'),'mercury');assert.equal(run('polarState.space.phase'),'landed');assert.equal(run('polarState.jamesIntroductionDone'),true);
+assert.equal(run('NVPontifex.ensure(polarState).alive'),true);assert.equal(run('NVPontifex.local(polarState).distance'),16);assert.equal(run('pontifexCombat.hidden'),false);assert.equal(run('pontifexDebugBar.hidden'),false);assert.equal(element('#saveWorld').disabled,true);
+run('firePontifex();');assert.equal(run('NVPontifex.ensure(polarState).hp'),23460);
+run('savePolarWorld(true);');element('#saveWorld').onclick();assert.equal(JSON.stringify([...storage]),emptyStorage);assert.equal(run('JSON.stringify(characterSaves)'),emptyRoster);
+run('NVPontifex.damage(polarState,1e9,"player");NVEris.step(polarState,30);');assert.equal(run('NVPontifex.ensure(polarState).generation'),1);assert.equal(run('NVPontifex.ensure(polarState).alive'),false);
+element('#restartPontifexDebug').onclick();assert.equal(run('NVPontifex.ensure(polarState).hp'),24000);assert.equal(run('NVEcology.ensure(polarState).health'),100);assert.equal(run('NVPontifex.local(polarState).distance'),16);
+run('pausePolar(true);');element('#worldToMenu').onclick();
+assert.equal(run('savedGame'),null);assert.equal(run('polarState'),null);assert.equal(run('pontifexDebugSession'),null);assert.equal(run('pontifexDebugBar.hidden'),true);assert.equal(element('#primaryGameLabel').textContent,'NEW GAME');assert.equal(JSON.stringify([...storage]),emptyStorage);
+assert.equal(run('menuLocationSession.size'),0);assert.equal(run('menuPartySession.size'),0);
+run('creatingCharacter=true;writeGameSave({...DEFAULT_WANDERER,name:"Real Wanderer"});creatingCharacter=false;savedWanderer=savedGame.wanderer;const realSavedGame=savedGame,realWanderer=savedWanderer;const realActiveID=activeCharacterId;const realProgress=JSON.stringify(savedGame.progress);');
+const realStorage=JSON.stringify([...storage]),realRoster=run('JSON.stringify(characterSaves)');
+run('pontifexPlaytestButton.onclick();');assert.equal(run('savedWanderer.name'),'Real Wanderer');assert.notEqual(run('savedGame.id'),run('realActiveID'));assert.equal(run('activeCharacterId'),run('realActiveID'));
+run('firePontifex();pausePolar(true);savePolarWorld(true);');element('#exitPontifexDebug').onclick();
+assert.equal(run('savedGame===realSavedGame'),true);assert.equal(run('savedWanderer===realWanderer'),true);assert.equal(run('JSON.stringify(savedGame.progress)'),run('realProgress'));assert.equal(run('JSON.stringify(characterSaves)'),realRoster);assert.equal(JSON.stringify([...storage]),realStorage);assert.equal(element('#primaryGameLabel').textContent,'CONTINUE');assert.equal(element('#saveWorld').disabled,undefined);
+run('continueSavedGame();');assert.equal(run('polarState.jamesIntroductionDone'),false);assert.equal(run('pontifexDebugSession'),null);assert.equal(run('pontifexCombat.hidden'),true);
+assert.equal(run('startPontifexPlaytest()'),false);
+run('advanceJames();savePolarWorld(true);');assert.notEqual(JSON.stringify([...storage]),realStorage);
+console.log('Passed immediate boss arena, actual attacks, restart/defeat, isolated simulation, disabled debug saving, unchanged saved roster, restored menu and normal manual saving.');
+`;
+const execute=setup+'\nconst playtestChecks='+JSON.stringify(prefix+checks)+';\nnew Function(\'require\',\'__dirname\',harness+\'\\n\'+playtestChecks)(require,__dirname);';
+new Function('require','__dirname',execute)(require,__dirname);

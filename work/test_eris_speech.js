@@ -1,0 +1,14 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const game=fs.readFileSync(__dirname+'/eris_game.js','utf8'),speech=fs.readFileSync(__dirname+'/antarctica_speech.js','utf8');
+const ctx=vm.createContext({Date,document:{hidden:false}});
+vm.runInContext('let gameActive=true,erisConversation=null;'+speech.slice(speech.indexOf('function calculateJamesViseme'),speech.indexOf('let jamesLipPose'))+game.slice(game.indexOf('function erisLipPose'),game.indexOf('function erisPlayable')),ctx);
+const run=s=>vm.runInContext(s,ctx);
+run("erisConversation={npc:{kind:'queen'},lines:['A world awaits you.'],index:0,lineStarted:1000}");
+assert(run("erisLipPose('queen',1010).jaw")>0);
+assert.equal(run("erisLipPose('assistant',1010).jaw"),0);
+assert.equal(run("erisLipPose('queen',10000).jaw"),0);
+run("erisConversation.npc.kind='assistant'");
+assert(run("erisLipPose('assistant',1010).jaw")>0);
+run('document.hidden=true');assert.equal(run("erisLipPose('assistant',1010).jaw"),0);
+run('document.hidden=false;erisConversation=null');assert.equal(run("erisLipPose('queen',1010).jaw"),0);
+console.log('Passed court speech: active speaker only, visemes, end-of-line closure, hidden-page and idle closure.');

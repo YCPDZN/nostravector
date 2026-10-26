@@ -1,0 +1,9 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),crypto=require('node:crypto'),path=require('node:path');
+const records=require('./janira_rally_audio.json');assert.equal(records.length,15);
+for(const [i,r]of records.entries()){assert.equal(r.line,i);assert(r.file.endsWith('/HKC'+(i+1)+'.mp3'));assert(r.duration>1);const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');assert.equal(hash(path.join('work',r.file)),r.sha256);assert.equal(hash(path.join('C:/Users/HOME/Documents/NOSTRAVECTOR/siege of janira','HKC'+(i+1)+'.mp3')),r.sha256);}
+const c=vm.createContext({Math,Number}),speech=fs.readFileSync('work/antarctica_speech.js','utf8'),source=fs.readFileSync('work/janira_rally_recordings.js','utf8');
+vm.runInContext(speech.slice(speech.indexOf('function calculateJamesViseme'),speech.indexOf('let jamesLipPose')),c);
+vm.runInContext(source.slice(source.indexOf('function janiraRallyRecordedViseme'),source.indexOf('const NVJaniraRallyVoice')),c);
+function pose(patch={},text='aaaa'){c.a={paused:false,ended:false,currentTime:.1,duration:1,...patch};c.entry={envelope:{rms:[0,.8,.9,0],spoken:[0,.2,.7,1],hopSeconds:.1}};c.text=text;return vm.runInContext('janiraRallyRecordedViseme(a,entry,text)',c);}
+assert(pose().jaw>.5);assert.equal(pose({},'uuuu').round,1);assert.equal(pose({},'eeee').teeth,1);assert.equal(pose({},'mmmm').jaw,0);assert.equal(pose({currentTime:0}).jaw,0);assert.equal(pose({currentTime:.31}).jaw,0);assert.equal(pose({paused:true}).jaw,0);assert.equal(pose({ended:true}).jaw,0);c.a.paused=false;assert.equal(vm.runInContext('janiraRallyRecordedViseme(a,entry,text,true).jaw',c),0);
+console.log('Passed HKC1–15 order, supplied-file checksums, durations, James-style recorded visemes, closed consonants, silence, pause, mute and ended speech.');

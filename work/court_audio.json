@@ -1,0 +1,177 @@
+[
+  {
+    "group": "queen",
+    "index": 0,
+    "file": "court-audio/VISHARA1.mp3"
+  },
+  {
+    "group": "queen",
+    "index": 1,
+    "file": "court-audio/VISHARA2.mp3"
+  },
+  {
+    "group": "queen",
+    "index": 2,
+    "file": "court-audio/VISHARA3.mp3"
+  },
+  {
+    "group": "queen",
+    "index": 3,
+    "file": "court-audio/VISHARA4.mp3"
+  },
+  {
+    "group": "queen",
+    "index": 4,
+    "file": "court-audio/VISHARA5.mp3"
+  },
+  {
+    "group": "present",
+    "index": 0,
+    "file": "court-audio/ATTENDANTVISHARAPRESENT1.mp3"
+  },
+  {
+    "group": "present",
+    "index": 1,
+    "file": "court-audio/ATTENDANTVISHARAPRESENT2.mp3"
+  },
+  {
+    "group": "away",
+    "index": 0,
+    "file": "court-audio/ATTENDANTVISHARAAWAY1.mp3"
+  },
+  {
+    "group": "away",
+    "index": 1,
+    "file": "court-audio/ATTENDANTVISHARAAWAY2.mp3"
+  },
+  {
+    "group": "away",
+    "index": 2,
+    "file": "court-audio/ATTENDANTVISHARAAWAY3.mp3"
+  },
+  {
+    "group": "nyrexia",
+    "index": 0,
+    "file": "court-audio/NYREXIA1.mp3"
+  },
+  {
+    "group": "nyrexia",
+    "index": 1,
+    "file": "court-audio/NYREXIA2.mp3"
+  },
+  {
+    "group": "nyrexia",
+    "index": 2,
+    "file": "court-audio/NYREXIA3.mp3"
+  },
+  {
+    "group": "nyrexia",
+    "index": 3,
+    "file": "court-audio/NYREXIA4.mp3"
+  },
+  {
+    "group": "nyrexia",
+    "index": 4,
+    "file": "court-audio/NYREXIA5.mp3"
+  },
+  {
+    "group": "alexia",
+    "index": 0,
+    "file": "court-audio/ALEXIA1.mp3"
+  },
+  {
+    "group": "alexia",
+    "index": 1,
+    "file": "court-audio/ALEXIA2.mp3"
+  },
+  {
+    "group": "alexia",
+    "index": 2,
+    "file": "court-audio/ALEXIA3.mp3"
+  },
+  {
+    "group": "alexia",
+    "index": 3,
+    "file": "court-audio/ALEXIA4.mp3"
+  },
+  {
+    "group": "alexia",
+    "index": 4,
+    "file": "court-audio/ALEXIA5.mp3"
+  },
+  {
+    "group": "janira-hak",
+    "index": 0,
+    "file": "court-audio/KHC1.mp3"
+  },
+  {
+    "group": "janira-hak",
+    "index": 1,
+    "file": "court-audio/KHC2.mp3"
+  },
+  {
+    "group": "janira-hak",
+    "index": 2,
+    "file": "court-audio/KHC3.mp3"
+  },
+  {
+    "group": "janira-hak",
+    "index": 3,
+    "file": "court-audio/KHC4.mp3"
+  },
+  {
+    "group": "janira-hak",
+    "index": 4,
+    "file": "court-audio/KHC5.mp3"
+  },
+  {
+    "group": "janira-queen",
+    "index": 0,
+    "file": "court-audio/KVE1.mp3"
+  },
+  {
+    "group": "janira-queen",
+    "index": 1,
+    "file": "court-audio/KVE2.mp3"
+  },
+  {
+    "group": "janira-queen",
+    "index": 2,
+    "file": "court-audio/KVE3.mp3"
+  },
+  {
+    "group": "janira-queen",
+    "index": 3,
+    "file": "court-audio/KVE4.mp3"
+  },
+  {
+    "group": "janira-queen",
+    "index": 4,
+    "file": "court-audio/KVE5.mp3"
+  },
+  {
+    "group": "janira-expansion",
+    "index": 0,
+    "file": "court-audio/CH4HC1.mp3"
+  },
+  {
+    "group": "janira-expansion",
+    "index": 1,
+    "file": "court-audio/CH4HC2.mp3"
+  },
+  {
+    "group": "janira-expansion",
+    "index": 2,
+    "file": "court-audio/CH4HC3.mp3"
+  },
+  {
+    "group": "janira-expansion",
+    "index": 3,
+    "file": "court-audio/CH4HC4.mp3"
+  },
+  {
+    "group": "janira-expansion",
+    "index": 4,
+    "file": "court-audio/CH4HC5.mp3"
+  }
+]

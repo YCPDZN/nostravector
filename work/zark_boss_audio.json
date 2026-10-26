@@ -1,0 +1,32 @@
+[
+  {
+    "line": 0,
+    "file": "audio/lord-zark-boss/ZARKBOSSFIGHT1.mp3",
+    "duration": 6.191,
+    "sha256": "63a9963a3bf93cf97a7b824ffd3b3863103585ce441fd3c847606481ca5884e3"
+  },
+  {
+    "line": 1,
+    "file": "audio/lord-zark-boss/ZARKBOSSFIGHT2.mp3",
+    "duration": 7.471,
+    "sha256": "8bf78868d72cd0cbc146c2631730ec4441512b1dbab74aefd2be8c94368b7864"
+  },
+  {
+    "line": 2,
+    "file": "audio/lord-zark-boss/ZARKBOSSFIGHT3.mp3",
+    "duration": 6.348,
+    "sha256": "aefd7dd106e7cb5eb4950d4919ed48e61fea6cddd7c9e7598bb54bcddd186f39"
+  },
+  {
+    "line": 3,
+    "file": "audio/lord-zark-boss/ZARKBOSSFIGHT4.mp3",
+    "duration": 6.609,
+    "sha256": "fb0131f6661e2fbea4351249e946af8d406ad8a4c0d155ae4e3040ca2dd08d31"
+  },
+  {
+    "line": 4,
+    "file": "audio/lord-zark-boss/ZARKBOSSFIGHT5.mp3",
+    "duration": 8.124,
+    "sha256": "78f4d77189ea66e114df6d5d949d72eedf490c9c5d9d26e7601d972bae12e0ef"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "kind": "intro",
+    "line": 1,
+    "file": "audio/brown-return/JBR1.mp3",
+    "duration": 8.908
+  },
+  {
+    "kind": "intro",
+    "line": 2,
+    "file": "audio/brown-return/JBR2.mp3",
+    "duration": 8.594
+  },
+  {
+    "kind": "intro",
+    "line": 3,
+    "file": "audio/brown-return/JBR3.mp3",
+    "duration": 10.371
+  },
+  {
+    "kind": "intro",
+    "line": 4,
+    "file": "audio/brown-return/JBR4.mp3",
+    "duration": 9.169
+  },
+  {
+    "kind": "intro",
+    "line": 5,
+    "file": "audio/brown-return/JBR5.mp3",
+    "duration": 8.673
+  },
+  {
+    "kind": "battle",
+    "line": 1,
+    "file": "audio/brown-return/JBRBF1.mp3",
+    "duration": 3.866
+  },
+  {
+    "kind": "battle",
+    "line": 2,
+    "file": "audio/brown-return/JBRBF2.mp3",
+    "duration": 4.049
+  },
+  {
+    "kind": "battle",
+    "line": 3,
+    "file": "audio/brown-return/JBRBF3.mp3",
+    "duration": 4.989
+  },
+  {
+    "kind": "battle",
+    "line": 4,
+    "file": "audio/brown-return/JBRBF4.mp3",
+    "duration": 4.362
+  },
+  {
+    "kind": "battle",
+    "line": 5,
+    "file": "audio/brown-return/JBRBF5.mp3",
+    "duration": 3.631
+  },
+  {
+    "kind": "battle",
+    "line": 6,
+    "file": "audio/brown-return/JBRBF6.mp3",
+    "duration": 3.396
+  },
+  {
+    "kind": "battle",
+    "line": 7,
+    "file": "audio/brown-return/JBRBF7.mp3",
+    "duration": 3.474
+  },
+  {
+    "kind": "battle",
+    "line": 8,
+    "file": "audio/brown-return/JBRBF8.mp3",
+    "duration": 4.362
+  },
+  {
+    "kind": "battle",
+    "line": 9,
+    "file": "audio/brown-return/JBRBF9.mp3",
+    "duration": 4.519
+  },
+  {
+    "kind": "battle",
+    "line": 10,
+    "file": "audio/brown-return/JBRBF10.mp3",
+    "duration": 4.049
+  },
+  {
+    "kind": "post",
+    "line": 1,
+    "file": "audio/brown-return/POSTJB1.mp3",
+    "duration": 10.684
+  }
+]

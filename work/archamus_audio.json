@@ -1,0 +1,317 @@
+[
+  {
+    "chapter": 3,
+    "line": 0,
+    "file": "audio/archamus/ARCHAMUS CHAPTER 3.mp3",
+    "duration": 9.247,
+    "sha256": "9d900ad150e2932850764b0ee064cf8dc4c915f27b20dcc445013c35505b3ff8"
+  },
+  {
+    "chapter": 4,
+    "line": 0,
+    "file": "audio/archamus/ARCHAMUSCH4DIALOGUE1.mp3",
+    "duration": 13.401,
+    "sha256": "77fce95b1ae34cdd32a7bd5ae0afc4cf472e044ef5e7052e241255d22916d97d"
+  },
+  {
+    "chapter": 4,
+    "line": 1,
+    "file": "audio/archamus/ARCHAMUSCH4DIALOGUE2.mp3",
+    "duration": 13.322,
+    "sha256": "8746767dbcb02dc83d484c88c42c46b273077f9699adfe0e907680ebbdecf988"
+  },
+  {
+    "chapter": 4,
+    "line": 2,
+    "file": "audio/archamus/ARCHAMUSCH4DIALOGUE3.mp3",
+    "duration": 15.073,
+    "sha256": "f6de7abbe9a3d444e7be768049e93aaf736779d7dce73f25721dd8300b8598ca"
+  },
+  {
+    "chapter": 4,
+    "line": 3,
+    "file": "audio/archamus/ARCHAMUSCH4DIALOGUE4.mp3",
+    "duration": 15.961,
+    "sha256": "7ba4bf3100220557e61933eba48c27a5fb6128f45acfe94285dce2ed18ec6c73"
+  },
+  {
+    "chapter": 4,
+    "line": 4,
+    "file": "audio/archamus/ARCHAMUSCH4DIALOGUE5.mp3",
+    "duration": 13.714,
+    "sha256": "a32b89a63f27e8e83d0bf86508f34bbda69b7b289d67288757c0b9bca8d61ea0"
+  },
+  {
+    "chapter": 4,
+    "line": 5,
+    "file": "audio/archamus/ARCHAMUSCH4DIALOGUE6.mp3",
+    "duration": 12.434,
+    "sha256": "72359bbaeae83ee49edcfd5beb077e9a6290d6a85ffe077e54fa24a83878729e"
+  },
+  {
+    "chapter": 4,
+    "line": 6,
+    "file": "audio/archamus/ARCHAMUSCH4DIALOGUE7.mp3",
+    "duration": 12.591,
+    "sha256": "a5b411c37fd0f189e699862360d174bfd3813a1faaf9f560c20087f0fa7c15b8"
+  },
+  {
+    "chapter": 4,
+    "line": 7,
+    "file": "audio/archamus/ARCHAMUSCH4DIALOGUE8.mp3",
+    "duration": 13.558,
+    "sha256": "f3e3ee5a159e3d1f3dfd93c4a3ca4449c32fa7f0b2c811db6f395b0d5f7c00b4"
+  },
+  {
+    "chapter": 4,
+    "line": 8,
+    "file": "audio/archamus/ARCHAMUSCH4DIALOGUE9.mp3",
+    "duration": 14.838,
+    "sha256": "dff0a6089c232d29850c4e27d7b0d5742267e87ce3332e657e5e12e94a9b38d2"
+  },
+  {
+    "chapter": 4,
+    "line": 9,
+    "file": "audio/archamus/ARCHAMUSCH4DIALOGUE10.mp3",
+    "duration": 13.793,
+    "sha256": "c83c4a04b456ddfa1fe19610bc772247c205288e8d3fbb019e3620950de13c1d"
+  },
+  {
+    "chapter": 0,
+    "line": 0,
+    "file": "audio/archamus/ARCHAMUSVSJOSIAH1.mp3",
+    "duration": 12.931,
+    "sha256": "1b840b7828dbbd250d2cd45e35a60098db7408267729674645147d8da2d72315"
+  },
+  {
+    "chapter": 0,
+    "line": 1,
+    "file": "audio/archamus/ARCHAMUSVSJOSIAH2.mp3",
+    "duration": 5.564,
+    "sha256": "2c793baee4bd96a86a18089259e673df98559ebe29687876cd223de61381bfb8"
+  },
+  {
+    "chapter": 0,
+    "line": 2,
+    "file": "audio/archamus/ARCHAMUSVSJOSIAH3.mp3",
+    "duration": 11.154,
+    "sha256": "f1e203358d0468beeb385203bd16bba89f3e8c566c6d4000720541e9a316b609"
+  },
+  {
+    "chapter": 0,
+    "line": 3,
+    "file": "audio/archamus/ARCHAMUSVSJOSIAH4.mp3",
+    "duration": 7.158,
+    "sha256": "a8145dc3c6c2ea6c36122859f5b224a05fb27aa227492318cd2e987650c247bb"
+  },
+  {
+    "chapter": 0,
+    "line": 4,
+    "file": "audio/archamus/ARCHAMUSVSJOSIAH5.mp3",
+    "duration": 8.673,
+    "sha256": "79cca9dd552fe5bd2dea105afaafbc29eb397ea61977dea1113078408326701e"
+  },
+  {
+    "chapter": 0,
+    "line": 5,
+    "file": "audio/archamus/ARCHAMUSVSJOSIAH6.mp3",
+    "duration": 6.191,
+    "sha256": "8403c368a2ec1fe7a63fc774745c659a36dd68a19dbddd9c6bc1a3d2ffd6bac5"
+  },
+  {
+    "chapter": 0,
+    "line": 6,
+    "file": "audio/archamus/ARCHAMUSVSJOSIAH7.mp3",
+    "duration": 14.446,
+    "sha256": "b219ab7b2c94c80dff97630421ecc70a158a994071b61c4f2842495a55ac5365"
+  },
+  {
+    "chapter": 0,
+    "line": 7,
+    "file": "audio/archamus/ARCHAMUSVSJOSIAH8.mp3",
+    "duration": 17.789,
+    "sha256": "cad6e5460209024054a62ba72a4aa4ec8c17fdd6a623a5b34ec89838bd2803f0"
+  },
+  {
+    "chapter": 0,
+    "line": 8,
+    "file": "audio/archamus/ARCHAMUSVSJOSIAH9.mp3",
+    "duration": 19.226,
+    "sha256": "a992b28b217888494bf24e63152c8237ee093d8e079d0d38d9407d348961719f"
+  },
+  {
+    "chapter": 0,
+    "line": 9,
+    "file": "audio/archamus/ARCHAMUSVSJOSIAH10.mp3",
+    "duration": 15.804,
+    "sha256": "bf11a1775537f12786c519abd878ad134cd3418d6355827fccbdddb5d036c014"
+  },
+  {
+    "chapter": 4,
+    "line": 0,
+    "file": "audio/archamus/CATHARCHAMUS1.mp3",
+    "duration": 13.558,
+    "sha256": "f7626dc4710538ead965e31391586cee28767d9f25a4c0cdd817f421e5f4a775",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 1,
+    "file": "audio/archamus/CATHARCHAMUS2.mp3",
+    "duration": 15.073,
+    "sha256": "b8c6729c9df43650317eaae4665b6614ae4a99f47663156ddf529693a25b7afd",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 2,
+    "file": "audio/archamus/CATHARCHAMUS3.mp3",
+    "duration": 15.229,
+    "sha256": "0710cfb54d32117c967803c91f14323fc0bd83c93493873fa5a3f313f687c035",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 3,
+    "file": "audio/archamus/CATHARCHAMUS4.mp3",
+    "duration": 14.524,
+    "sha256": "ea03222a3f24b6434f96f0300e94e1198713acff93b1204363a30cc754a8052b",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 4,
+    "file": "audio/archamus/CATHARCHAMUS5.mp3",
+    "duration": 14.602,
+    "sha256": "ed5176bc2e2f8b65eba8e058fd30d7dce38b8dbd23c024809034bbf2add69afc",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 5,
+    "file": "audio/archamus/CATHARCHAMUS6.mp3",
+    "duration": 16.849,
+    "sha256": "39a7759fb3d47bc8ab45f6cd7bdb3e86969ae78faa7738ce84d1abb5fedb1685",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 6,
+    "file": "audio/archamus/CATHARCHAMUS7.mp3",
+    "duration": 15.151,
+    "sha256": "654f899c00c2154606a1e9bb856fb1502c35521a166e9cef79f94ee54971f0d1",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 7,
+    "file": "audio/archamus/CATHARCHAMUS8.mp3",
+    "duration": 16.771,
+    "sha256": "3e5b2679bfa42bebdbdbccf39d81acc6460d14ef2a0d0f044748606c7b4a3516",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 8,
+    "file": "audio/archamus/CATHARCHAMUS9.mp3",
+    "duration": 15.569,
+    "sha256": "f68fa54fd58386ec6fe09a6cde97df2f46c43cc6e95cacada3db5ba84e1b6c7e",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 9,
+    "file": "audio/archamus/CATHARCHAMUS10.mp3",
+    "duration": 17.398,
+    "sha256": "06083c63485e7c607d0710631dcdb223c9bc5157984199d1657226285f0fdeee",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 10,
+    "file": "audio/archamus/CATHARCHAMUS11.mp3",
+    "duration": 19.409,
+    "sha256": "b3e83b0f3b95e066246506d7483890bdc64c4af7fab3b6b72e6470c155528144",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 11,
+    "file": "audio/archamus/CATHARCHAMUS12.mp3",
+    "duration": 16.431,
+    "sha256": "ddf8eeb6d4eb9dc427022005ce9c43e948334ba4302bc1e1c348bc0fc74b75f2",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 12,
+    "file": "audio/archamus/CATHARCHAMUS13.mp3",
+    "duration": 17.398,
+    "sha256": "9e347711f25fb5ecf042380a6d80324d8d7c1e57d13c374fc65f5152037ae505",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 13,
+    "file": "audio/archamus/CATHARCHAMUS14.mp3",
+    "duration": 16.431,
+    "sha256": "8714a7daa7199a6232b8a7e12f9e22ac7892eec83ae5a7b85dab7081e72fa462",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 14,
+    "file": "audio/archamus/CATHARCHAMUS15.mp3",
+    "duration": 17.319,
+    "sha256": "bbf0fdc8753b03cf8926918cb6d27ea53924a34ef8506b8499961721a6e8f9e2",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 15,
+    "file": "audio/archamus/CATHARCHAMUS16.mp3",
+    "duration": 16.118,
+    "sha256": "15036b37531885abfa72eebd777d28a9abb1bbf5e796353be09d3e98eb872c65",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 16,
+    "file": "audio/archamus/CATHARCHAMUS17.mp3",
+    "duration": 16.039,
+    "sha256": "e8e6a5323c7705e38d21559e38f4401effc697e4c0741eedbdcec22962df24f1",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 17,
+    "file": "audio/archamus/CATHARCHAMUS18.mp3",
+    "duration": 18.678,
+    "sha256": "887efef263b6356033e1830f4c64a26db3bae0cb1d27ddebd0ddf453e72c6dd6",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 18,
+    "file": "audio/archamus/CATHARCHAMUS19.mp3",
+    "duration": 16.509,
+    "sha256": "0218d53540e4993c660183b080ff60cece466c61dbe85a5bd350fb870d24062c",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 19,
+    "file": "audio/archamus/CATHARCHAMUS20.mp3",
+    "duration": 16.274,
+    "sha256": "0a3a983a54412678b4a074687bfa11664f96438a31073d1a6e2df1df1bf1557a",
+    "scene": "catharsis"
+  },
+  {
+    "chapter": 4,
+    "line": 0,
+    "file": "audio/archamus/ARCHAMUSFINDEUROPE.mp3",
+    "duration": 13.166,
+    "sha256": "7f77261b9aa18262ec07a91b1e86a681aed50aa268271159376350bd5c59acdf",
+    "scene": "earth-contact"
+  }
+]

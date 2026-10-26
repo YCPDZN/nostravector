@@ -1,0 +1,12 @@
+const NVBrownStory=(()=>{
+ const STAGES=['landing','discovery','time','reconstruction','awakening','done'];
+ const fresh=()=>({stage:'pending',time:0,earthTaken:false,brownCreated:false,brownDefeated:false,questStarted:false,tritonReached:false});
+ function restore(raw){const q=fresh();if(!raw)return q;q.stage=STAGES.includes(raw.stage)?raw.stage:'pending';q.time=Math.max(0,Math.min(60,Number(raw.time)||0));for(const k of ['earthTaken','brownCreated','brownDefeated','questStarted','tritonReached'])q[k]=raw[k]===true;return q;}
+ const ensure=s=>{const w=NVSolWar.ensure(s);return w.brownStory||(w.brownStory=fresh());};
+ function ready(s){return s.eris?.moonLoss?.triggered===true&&ensure(s).stage!=='done';}
+ function begin(s){const q=ensure(s);if(!ready(s))return false;if(q.stage==='pending'){q.stage='landing';q.time=0;q.earthTaken=true;const e=NVEris.ensure(s),w=NVSolWar.ensure(s);if(typeof NVGovernance==='undefined'||!NVGovernance.protectedWorld(s,'earth')){e.playerFaction.claims=e.playerFaction.claims.filter(id=>id!=='earth');w.owners.earth='TERRA';}w.owners.pluto='HUMAN';delete w.sieges.earth;delete w.sieges.pluto;w.controlHistory.earth=[...new Set([...(w.controlHistory.earth||[]),'HUMAN','TERRA'])];w.controlHistory.pluto=[...new Set([...(w.controlHistory.pluto||[]),'HUMAN'])];NVOccupation.sync(s);}return true;}
+ function createBrown(s){const story=ensure(s);if(story.brownCreated)return;const w=NVSolWar.ensure(s),previous=NVPontifex.ensure(s),q=NVPontifex.fresh();Object.assign(q,{identity:'james-brown',name:'James Brown / Pontifex Maximus',alive:true,generation:Math.max(1,previous.generation),kills:previous.kills,maxHp:32000,hp:32000,body:'earth',sourceCaptain:'James Brown',sourceShip:-1,createdAt:w.battleTime,track:true,site:{x:0,z:NVAntarctica.STATION.z-65,lat:-78,lon:20,global:true},notice:'JAMES BROWN HAS BEEN RECONSTRUCTED AS THE FIRST PONTIFEX MAXIMUS. SIGNAL: ANTARCTICA / EARTH.',noticeTime:25});w.pontifex=q;story.brownCreated=true;}
+ function next(s){const q=ensure(s);if(q.stage==='pending'||q.stage==='done')return false;const i=STAGES.indexOf(q.stage);q.stage=STAGES[i+1];q.time=0;if(q.stage==='awakening')createBrown(s);return true;}
+ return{STAGES,fresh,restore,ensure,ready,begin,next,createBrown};
+})();
+const brownWarRestore=NVSolWar.restore;NVSolWar.restore=raw=>{const w=brownWarRestore(raw);w.brownStory=NVBrownStory.restore(raw?.brownStory);return w;};

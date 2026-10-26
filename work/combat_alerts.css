@@ -1,0 +1,35 @@
+/* Combat broadcasts share the original yellow faction-alert palette in every era. */
+#antarctica {
+  --combat-alert-panel: #111e30ec;
+  --combat-alert-edge: #c7b386;
+  --combat-alert-text: #f4e3c4;
+}
+#antarctica :is(#spaceNotice, #empireNotice, #ecologyNotice, #solWarNotice,
+  #pontifexNotice, #catharsisCoreWarning, #spaceBeltWarning),
+#antarctica #solFallPanel[data-stage="alert"] > section {
+  box-sizing: border-box;
+  background: var(--combat-alert-panel)!important;
+  border: 1px solid var(--combat-alert-edge)!important;
+  border-top: 3px solid var(--combat-alert-edge)!important;
+  color: var(--combat-alert-text)!important;
+  box-shadow: 0 8px 24px #0004;
+  text-align: center;
+  font-family: Consolas, monospace!important;
+  line-height: 1.6!important;
+  overflow-wrap: anywhere;
+}
+#antarctica #solFallPanel[data-stage="alert"] :is(#solFallText, #solFallSpeaker, #solFallCount),
+#antarctica #hudAlerts > #solAlertRetry {
+  color: var(--combat-alert-text)!important;
+}
+#antarctica #hudAlerts > #solAlertRetry,
+#antarctica #solFallPanel[data-stage="alert"] .polar-button {
+  background: var(--combat-alert-panel)!important;
+  border: 1px solid var(--combat-alert-edge)!important;
+  color: var(--combat-alert-text)!important;
+}
+#antarctica #hudAlerts > #solAlertRetry:is(:hover, :focus-visible),
+#antarctica #solFallPanel[data-stage="alert"] .polar-button:is(:hover, :focus-visible) {
+  background: #403926!important;
+  outline-color: var(--combat-alert-edge);
+}

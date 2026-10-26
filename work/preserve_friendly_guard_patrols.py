@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/faction_infantry_renderer.js');s=p.read_text(encoding='utf-8');old="const combat=typeof NVBCCombat!=='undefined'?NVBCCombat.patrol(s,q,i,time):null;if(combat?.hp<=0)continue;";new="const soldier=typeof NVBCCombat!=='undefined'?NVBCCombat.patrol(s,q,i,time):null,combat=NVDiplomacy.relation(s,q.faction)==='WAR'?soldier:null;if(soldier?.hp<=0)continue;";assert old in s;s=s.replace(old,new);p.write_text(s,encoding='utf-8')

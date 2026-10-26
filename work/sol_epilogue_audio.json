@@ -1,0 +1,58 @@
+[
+  {
+    "stage": "hawthorne",
+    "line": 0,
+    "file": "audio/sol-epilogue/THB1.mp3",
+    "duration": 7.967,
+    "sha256": "c44d0118c14c026a92ce81613d3b0c2ff83e3ee221d36e2ff7c90356f1d105c5"
+  },
+  {
+    "stage": "hawthorne",
+    "line": 1,
+    "file": "audio/sol-epilogue/THB2.mp3",
+    "duration": 7.314,
+    "sha256": "f6987cddf368a56073f46e898ab75f1f6134136cf8612103ebb7a927032c09fb"
+  },
+  {
+    "stage": "hawthorne",
+    "line": 2,
+    "file": "audio/sol-epilogue/THB3.mp3",
+    "duration": 8.438,
+    "sha256": "f949dfb3f299be0464897c19c4ab9cca480a017b7af2a6600ef8eaa12454d93d"
+  },
+  {
+    "stage": "hawthorne",
+    "line": 3,
+    "file": "audio/sol-epilogue/THB4.mp3",
+    "duration": 6.348,
+    "sha256": "6b908f88675155c10017f6e5dfb2945407eff287492e23ed61a0092c6b426b67"
+  },
+  {
+    "stage": "hawthorne",
+    "line": 4,
+    "file": "audio/sol-epilogue/THB5.mp3",
+    "duration": 6.348,
+    "sha256": "5d685f4778bb6a987dba5abb8ca811c79ccc4895122411cf943a8438157656bd"
+  },
+  {
+    "stage": "stranger",
+    "line": 0,
+    "file": "audio/sol-epilogue/GREK1.mp3",
+    "duration": 8.908,
+    "sha256": "66c08bcb4b222cdea8c9ab31e19bce4cc867e82a330f49750c5e92b47f2ac786"
+  },
+  {
+    "stage": "stranger",
+    "line": 1,
+    "file": "audio/sol-epilogue/GREK2.mp3",
+    "duration": 8.986,
+    "sha256": "b1f63e13216b6dcf94c11e6edc40b6fb3cdfde8e49ecf62a035cb854605beeb8"
+  },
+  {
+    "stage": "stranger",
+    "line": 2,
+    "file": "audio/sol-epilogue/GREK3.mp3",
+    "duration": 2.273,
+    "sha256": "abdca16df17c6c9e46213feb4c12c5e721655fb23c2b190422deb7ba3bbd44a2"
+  }
+]

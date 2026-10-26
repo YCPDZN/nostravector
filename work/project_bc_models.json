@@ -1,0 +1,50 @@
+[
+  {
+    "id": "gareth-williams",
+    "asset": "glb-project-bc-gareth-williams",
+    "name": "Gareth Williams",
+    "file": "Gareth Williams.glb",
+    "variant": "Original outfit",
+    "height": 1.9,
+    "motion": "bc-gareth",
+    "description": "Dual pistols, five Uxbridge Top Shotter taunts, and an occasional stumble with a quick recovery.",
+    "triangles": 59793,
+    "path": "project-bc/Gareth Williams.glb"
+  },
+  {
+    "id": "gareth-tank-top",
+    "asset": "glb-project-bc-gareth-tank-top",
+    "name": "Gareth Williams",
+    "file": "Gareth Williams - Tank Top.glb",
+    "variant": "Tank Top",
+    "height": 1.9,
+    "motion": "bc-gareth",
+    "description": "Dual pistols, five Uxbridge Top Shotter taunts, and an occasional stumble with a quick recovery.",
+    "triangles": 46380,
+    "path": "project-bc/Gareth Williams - Tank Top.glb"
+  },
+  {
+    "id": "josiah-richards",
+    "asset": "glb-project-bc-josiah-richards",
+    "name": "Josiah Richards",
+    "file": "Josiah Richards.glb",
+    "variant": "Original outfit",
+    "height": 1.85,
+    "motion": "bc-josiah",
+    "description": "Golden chains trap enemies; raises both hands to unleash ALMIGHTY HEAVEN. Five combat taunts.",
+    "triangles": 48588,
+    "path": "project-bc/Josiah Richards.glb"
+  },
+  {
+    "id": "peter-chambers",
+    "asset": "glb-project-bc-peter-chambers",
+    "name": "Peter Chambers",
+    "file": "Peter Chambers.glb",
+    "variant": "Original outfit",
+    "height": 1.92,
+    "motion": "bc-peter",
+    "description": "Black chains bind enemies with a deliberate casting animation. Five combat taunts.",
+    "triangles": 53316,
+    "path": "project-bc/Peter Chambers.glb"
+  }
+]

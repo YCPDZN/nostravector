@@ -1,0 +1,25 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const c=vm.createContext({console,Math,Number,JSON,Set,Map});
+for(const file of ['antarctica_core.js','antarctica_betrayal_core.js','africa_core.js','sol_catalog.js','planet_landscapes.js','space_core.js'])vm.runInContext(fs.readFileSync(__dirname+'/'+file,'utf8'),c);
+const run=code=>vm.runInContext(code,c);
+run(`let s=NVAntarctica.fresh(17);s.africaStarted=true;s.africaStage='complete';s.space=NVSpace.fresh();s.space.body='mercury';s.space.target='sedna';s.space.phase='flight';s.space.position=NVSpace.routeEnd(NVSol.byId.mercury);`);
+assert.equal(run('NVSpace.cruise(s)'),true);
+const starterDuration=run('s.space.flightDuration');assert.ok(starterDuration>600,'Mercury to outer system must exceed ten minutes');
+run('s.space.driveLevel=3;NVSpace.cruise(s);');assert.ok(Math.abs(run('s.space.flightDuration')-starterDuration/8)<.001);
+run("s.space.driveLevel=0;s.space.phase='cockpit';s.inventory.scrap=55;");
+assert.equal(run('NVSpace.upgradeDrive(s)'),true);assert.equal(run('s.inventory.scrap'),47);
+assert.equal(run('NVSpace.upgradeDrive(s)'),true);assert.equal(run('s.inventory.scrap'),31);
+assert.equal(run('NVSpace.upgradeDrive(s)'),false,'Cannot spend unavailable scrap');assert.equal(run('NVSpace.driveLevel(s.space)'),2);
+run('s.inventory.scrap=32;');assert.equal(run('NVSpace.upgradeDrive(s)'),true);assert.equal(run('s.inventory.scrap'),0);
+assert.equal(run('NVSpace.upgradeDrive(s)'),false,'No repeated maximum upgrade');
+run("s.space.driveLevel=0;s.inventory.scrap=100;s.space.phase='flight';");assert.equal(run('NVSpace.upgradeDrive(s)'),false,'No upgrades while flying');
+run("s.space.phase='landed';s.x=s.space.landingX+100;");assert.equal(run('NVSpace.upgradeDrive(s)'),false,'Must be beside ship');
+run('s.x=s.space.landingX;s.z=s.space.landingZ;');assert.equal(run('NVSpace.upgradeDrive(s)'),true);
+run("s.space.phase='flight';NVSpace.cruise(s);s.space.elapsed=123;let snapshot=NVSpace.clone(s.space);let restored=NVSpace.restore(snapshot,s);");
+assert.equal(run('restored.driveLevel'),1);assert.equal(run('restored.elapsed'),123);assert.equal(run('restored.flightDuration'),run('snapshot.flightDuration'));assert.ok(run('restored.flightDuration')>120,'Long flight saves must not truncate');
+run('delete snapshot.driveVersion;delete snapshot.driveLevel;snapshot.flightDuration=55;restored=NVSpace.restore(snapshot,s);');
+assert.equal(run('restored.driveLevel'),0);assert.equal(run('restored.elapsed'),0);assert.ok(run('restored.flightDuration')>600,'Legacy guided flight adopts distance-based travel');
+// Guided travel cannot exceed the upgraded maximum; resume preserves its duration.
+run("s.space.driveLevel=3;s.space.position=NVSpace.routeEnd(NVSol.byId.mercury);s.space.hull=100;s.space.phase='flight';NVSpace.cruise(s);NVSpace.step(s,.1);");
+assert.ok(run('s.space.speed')<=run('NVSpace.driveSpeed(s.space)')*1.001);
+console.log('Passed >10-minute starter crossing, 2/4/8x upgrades, costs and ship proximity, long-flight save restoration, legacy migration and guided speed limit. Starter Mercury–Sedna: '+Math.round(starterDuration)+' seconds.');

@@ -1,0 +1,30 @@
+[
+  {
+    "file": "audio/hazards/SUIT.mp3",
+    "duration": 3.709
+  },
+  {
+    "file": "audio/hazards/NARRATOR1.mp3",
+    "duration": 7.158
+  },
+  {
+    "file": "audio/hazards/NARRATOR2.mp3",
+    "duration": 9.561
+  },
+  {
+    "file": "audio/hazards/NARRATOR3.mp3",
+    "duration": 8.594
+  },
+  {
+    "file": "audio/hazards/NARRATOR4.mp3",
+    "duration": 10.527
+  },
+  {
+    "file": "audio/hazards/NARRATOR5.mp3",
+    "duration": 9.326
+  },
+  {
+    "file": "audio/hazards/SUIT2.mp3",
+    "duration": 3.709
+  }
+]

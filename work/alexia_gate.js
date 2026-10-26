@@ -1,0 +1,32 @@
+// Required Chapter 3 confrontation. Hoisted readiness is safe during saved-menu bootstrap.
+var NVAlexiaGate=(()=>{
+ const QUOTES=[
+  'So the Wanderer finally comes to Eris. Tell me, did Vishara send you to reclaim her throne, or merely to remind me how dearly everyone loves her?',
+  'For a billion years, this court spoke her name as though it were another word for destiny. I was expected to stand beside her, smile, and call that a life.',
+  'Hawthorne offered me something my own family never would: authority without asking my sister for permission. I knew exactly what his offer would cost.',
+  'Do not mistake our alliance for devotion. Thomas needed my worlds, and I needed his fleets. Neither of us came to the table looking for a friend.',
+  'You liberated Janira Prime, and now you imagine every occupied world is waiting to fall at your feet. Eris is not another victory you can collect on your way to Mercury.',
+  'Vishara calls me a traitor because it is easier than admitting I made a choice she could not control. She would rather lose a sister than share a throne.',
+  'And Nyrexia? Another name for you to hold over me. Whatever road she chose, she was never going to live her life beneath this court’s expectations. Why was I supposed to?',
+  'Hawthorne is cornered. His generals know it. His soldiers know it. But if you think that makes me harmless, come closer and discover what I can still take from you.',
+  'No more speeches about rightful rulers. No more promises that everything will be forgiven if I kneel. If you want to reach Mercury, you will have to get past me first!',
+  'Enough. Take the throne back to Vishara. Put me in a cell if it makes your victory feel cleaner. But when you face Hawthorne, remember this: desperate rulers do not surrender their power quietly.'
+ ];
+ const pending=s=>NVSiegeOfSol.raw(s)?.stage==='war'&&!NVSiegeOfSol.raw(s)?.confronted&&NVChapter3Access.chapter(s)===3&&s.eris?.leaderBosses?.alexia?.stage!=='defeated';
+ function defeat(s){const q=NVSiegeOfSol.ensure(s);NVSiegeOfSol.restoreEris(s);q.alexiaImprisoned=true;NVQuests.update(s);NVSpace.notice(s.space,'ALEXIA ERISCONOS DEFEATED / IMPRISONED · NEXT: CONFRONT HAWTHORNE ON MERCURY.');}
+ function waypoint(s){if(!pending(s))return null;const p=s.space,label='Confront Alexia Erisconos · Eris / Citadel El Erisconos';if((p.system||'sol')!=='sol')return ['landed','cockpit','off'].includes(p.phase)?{x:p.landingX||0,z:p.landingZ||0,label:'Return to ship · Head to Eris'}:{galaxy:true,system:'sol',label};if(p.body==='eris'&&p.phase==='landed')return{x:9,z:67,label};if(['landed','cockpit','off'].includes(p.phase))return{x:p.landingX||0,z:p.landingZ||0,label:'Return to ship · Head to Eris'};const b=NVSol.byId.eris;return{space:true,position:b.position,radius:b.radius,label};}
+ return{QUOTES,pending,defeat,waypoint};
+})();
+const alexiaMission={id:'alexia-final',chapter:3,title:'Confront Alexia Erisconos',description:'Before facing Hawthorne, travel to Eris and defeat Alexia at Citadel El Erisconos. Her surrender clears the way to Mercury.',done:s=>s.eris?.leaderBosses?.alexia?.stage==='defeated'||NVSiegeOfSol.raw(s)?.confronted===true,available:s=>NVSiegeOfSol.started(s)};
+// The journal uses the same saved boss outcome as the objective and Hawthorne gate.
+NVQuests.definitions.push(alexiaMission);
+const alexiaWaypoint=missionWaypointTarget;missionWaypointTarget=s=>NVAlexiaGate.waypoint(s)||alexiaWaypoint(s);
+const alexiaSites=NVSurfaceNavigation.sites;NVSurfaceNavigation.sites=s=>{const list=alexiaSites(s);if(!NVAlexiaGate.pending(s))return list;return list.filter(n=>n.id!=='hawthorne-final').concat({id:'alexia-final',body:'eris',label:'Alexia Erisconos · Citadel El Erisconos',geo:{lat:-67/24000,lon:9/24000},approach:{lat:-20/24000,lon:9/24000},color:[.35,.8,1]});};
+const alexiaSpeech=document.createElement('section');alexiaSpeech.id='alexiaBattleSpeech';alexiaSpeech.hidden=true;alexiaSpeech.setAttribute('aria-live','polite');alexiaSpeech.innerHTML='<small>ALEXIA ERISCONOS</small><p></p>';$('#hudContextDock').append(alexiaSpeech);
+const alexiaStyle=document.createElement('style');alexiaStyle.textContent='#alexiaBattleSpeech{padding:12px;border:1px solid var(--gold,#efb979);background:#101a26ed;color:#e5eff3;font:12px/1.6 Consolas}#alexiaBattleSpeech[hidden]{display:none}#alexiaBattleSpeech small{color:#efb979}#alexiaBattleSpeech p{margin:8px 0 0}';document.head.append(alexiaStyle);
+const alexiaHUD=updatePolarHUD;updatePolarHUD=()=>{alexiaHUD();alexiaSpeech.hidden=true;if(!gameActive||!polarState||gamePaused)return;const s=polarState;if(!NVAlexiaGate.pending(s)){if(s.eris?.leaderBosses?.alexia?.stage==='defeated'&&NVSiegeOfSol.raw(s)?.noticeTime>0&&NVSiegeOfSol.raw(s)?.notice?.startsWith('ALEXIA ERISCONOS DEFEATED')){alexiaSpeech.hidden=false;alexiaSpeech.querySelector('p').textContent=NVAlexiaGate.QUOTES[9];}return;}NVSiegeOfSol.ensure(s).alexiaImprisoned=false;$('#hudMissionKicker').textContent='CHAPTER 3 / THE SIEGE OF SOL';$('#hudMissionTitle').textContent='CONFRONT ALEXIA ON ERIS';$('#hudMissionText').textContent='Defeat Alexia Erisconos at Citadel El Erisconos before confronting Hawthorne on Mercury.';$('#hudMissionMeta').textContent='ERIS FIRST · MERCURY AFTER ALEXIA’S DEFEAT';const t=NVFactionLeaders.local(s).find(t=>t.id==='alexia');if(t&&Math.hypot(t.x-s.x,t.z-s.z)<70){alexiaSpeech.hidden=false;alexiaSpeech.querySelector('p').textContent=NVAlexiaGate.QUOTES[Math.min(8,Math.floor(t.enemy.clock/9))];}};
+const alexiaVictoryNotice=NVSpace.notice;NVSpace.notice=(p,text)=>{alexiaVictoryNotice(p,text);if(gameActive&&polarState?.space===p&&text.startsWith('ALEXIA ERISCONOS DEFEATED')){alexiaSpeech.hidden=false;alexiaSpeech.querySelector('p').textContent=NVAlexiaGate.QUOTES[9];}};
+const alexiaGalaxy=refreshGalaxy;refreshGalaxy=()=>{alexiaGalaxy();if(gameActive&&NVAlexiaGate.pending(polarState)&&galaxySelected==='sol')$('#galaxyNote').textContent='Confront Alexia Erisconos on Eris first. Hawthorne’s final confrontation on Mercury unlocks after her defeat.';};
+// Story imprisonment removes her peaceful court appearance after the fight.
+const alexiaCourtNPCs=NVErisFamily.npcs;NVErisFamily.npcs=s=>alexiaCourtNPCs(s).filter(n=>n.kind!=='alexia'||!NVAlexiaGate.pending(s)&&!NVSiegeOfSol.raw(s)?.alexiaImprisoned);
+const alexiaRequired=NVFieldCommand.storyRequired;NVFieldCommand.storyRequired=(s,id)=>id==='eris'&&NVAlexiaGate.pending(s)||alexiaRequired(s,id);

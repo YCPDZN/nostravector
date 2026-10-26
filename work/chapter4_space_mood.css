@@ -1,0 +1,30 @@
+#antarctica.space-aftermath #cleanHUD{--hud-panel:#130b14eb;--hud-line:#ac59664a}
+#antarctica.space-aftermath #hudMission,#antarctica.space-aftermath #hudTools,#antarctica.space-aftermath #hudVitalsDock{background:#100b13e8;border-color:#a35a694d;box-shadow:0 8px 32px #0007}
+#antarctica.space-aftermath #hudMissionKicker,#antarctica.space-aftermath #hudMissionMeta{color:#c58e9a}
+#antarctica.space-aftermath #hudToolbar .polar-button,#antarctica.space-aftermath #hudInteract{color:#f0c8d1;border-color:#a35a6966;background:#200d19dc}
+#antarctica.space-aftermath #hudToolbar .polar-button:hover,#antarctica.space-aftermath #hudInteract:hover{background:#542036e6}
+
+/* Story-scoped interface palette. Maps and faction colours are never filtered. */
+body[data-gameplay-era=chapter4]{--after-panel:#130b14f5;--after-edge:#97506577;--after-text:#eddee5;--after-muted:#be9eae;--after-accent:#ed9ead}
+body[data-gameplay-era=chapter4] #cleanHUD{--hud-panel:#130b14eb;--hud-line:#97506555}
+body[data-gameplay-era=chapter4] :is(#galaxySheet,#solChart,#surfaceAtlas,#questJournal,#constructionWorkshop,#shipCrewBoard){background:radial-gradient(ellipse at 10% 0%,#4b152333,transparent 60%),linear-gradient(135deg,#170a13fa,#08080efa);color:var(--after-text);border-color:var(--after-edge);box-shadow:0 18px 75px #0009}
+body[data-gameplay-era=chapter4] :is(.world-sheet-card,#governorPanel>section,#customCrewPanel>section,#imperiaInnerCircle>section,#factionNaming>section){background:linear-gradient(135deg,#1b0e18fa,#09090ffa);color:var(--after-text);border-color:var(--after-edge);box-shadow:0 18px 75px #0009}
+body[data-gameplay-era=chapter4] :is(.world-sheet,#governorPanel,#customCrewPanel,#factionNaming){background-color:#08040cce}
+body[data-gameplay-era=chapter4] :is(.cluster-detail,.cluster-directory,.cluster-nearby,#clusterCommandLog,.surface-atlas-grid aside,#hudMission,#hudTools,#hudVitalsDock,.space-telemetry,.space-route-card,#shipCrewCards>section,#governorMembers>section,#interiorCrewRoster){background:#150d17e8;border-color:var(--after-edge)}
+body[data-gameplay-era=chapter4] :is(#galaxySheet header,#solChart header,#surfaceAtlas header,#shipInterior>header,#shipInterior>footer,#shipInterior>aside){border-color:var(--after-edge);background-color:#120a14e6}
+body[data-gameplay-era=chapter4] :is(#clusterSearch,#clusterCommand,.surface-atlas-grid input,#constructionWorkshop select,#governorPanel select,#customCrewPanel input,#customCrewPanel select){background:#210f1c;color:#f2dfe8;border-color:#a1657877;caret-color:#f7bcc9}
+body[data-gameplay-era=chapter4] :is(#clusterDirectory button,#clusterNearbyCards button,#surfaceAtlasRegions button,#questJournal nav button){background-color:#20101ce8}
+body[data-gameplay-era=chapter4] :is(#galaxySheet,#solChart,#surfaceAtlas,#questJournal,#constructionWorkshop,#governorPanel,#shipCrewBoard,#inventorySheet,#worldPauseSheet,#hudToolbar,#hudTools,#shipInterior) .polar-button{background:#27121fe8;border-color:#a1657877;color:#f0d4df}
+body[data-gameplay-era=chapter4] :is(#galaxySheet,#solChart,#surfaceAtlas,#questJournal,#constructionWorkshop,#governorPanel,#shipCrewBoard,#inventorySheet,#worldPauseSheet,#hudToolbar,#hudTools,#shipInterior) .polar-button:hover{background:#512336;border-color:#e78ca1}
+body[data-gameplay-era=chapter4] :is(#clusterDirectory button,#questJournal nav button)[aria-pressed=true]{background:#482035;color:#ffe8ef}
+body[data-gameplay-era=chapter4] :is(#clusterSystemStats,#galaxyNote,#galaxyBodies,#galaxyStarType,#galaxyCurrent,#clusterTelemetry,.cluster-label,.cluster-command-help,.cluster-directory label,#clusterCommandForm label,#surfaceAtlasHelp,.surface-atlas-grid aside p,.surface-atlas-grid aside small,#solChartNote,#solCruiseHint,#questCharacter,#questTotals,#questJournal article p,#hudMissionText,.polar-kicker){color:var(--after-muted)}
+body[data-gameplay-era=chapter4] :is(#hudMissionKicker,#hudMissionMeta,#questJournal h3,#galaxySheet h2,#solChart h2,#surfaceAtlas h2,#questJournal h2,.cluster-map-key){color:var(--after-accent)}
+body[data-gameplay-era=chapter4] #questJournal article{background:#2c172333}
+body[data-gameplay-era=chapter4] :is(#milkyMap,#solChartCanvas,#surfaceAtlasCanvas){border-color:#a1657855}
+body[data-gameplay-era=chapter4] .atlas-player-faction{background:#160d18}
+body[data-gameplay-era=chapter4] #galaxySheet .cluster-view{background:#08050c}
+body[data-gameplay-era=chapter4] #galaxySheet .cluster-map-key{background:#140b16d9}
+body[data-gameplay-era=chapter4] #galaxySheet .cluster-star:is(:hover,:focus-visible,[aria-pressed=true],[data-current=true]),body[data-gameplay-era=chapter4] #galaxySheet .cluster-star:is(:hover,:focus-visible,[aria-pressed=true],[data-current=true])>span{background:#240f1cdd}
+body[data-gameplay-era=chapter4] #galaxyWarpView{background:radial-gradient(ellipse,#180e1c 2%,#571a36 28%,#07070e 65%)}
+body[data-gameplay-era=chapter4] .warp-tunnel{background:repeating-conic-gradient(from 0deg at 50% 50%,transparent 0deg 8deg,#eeb6cb80 8.2deg 8.45deg,transparent 8.7deg 16deg)}
+body[data-menu-era=chapter4] #questJournal{background:linear-gradient(135deg,#170a13fa,#08080efa);border-color:#97506577;color:#eddee5}

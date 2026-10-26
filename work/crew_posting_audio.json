@@ -1,0 +1,212 @@
+[
+  {
+    "profile": "orion",
+    "line": 0,
+    "file": "audio/crew-posting/ORION 1.mp3",
+    "duration": 9.718,
+    "sha256": "8d009b314c2b937c8cfb7e56e8de5c2931cb16c6502e0f84644aed2b6e665a90"
+  },
+  {
+    "profile": "orion",
+    "line": 1,
+    "file": "audio/crew-posting/ORION 2.mp3",
+    "duration": 4.989,
+    "sha256": "1990af4d97d006214d68b9fbce492734d9537487012a73876491ef5d42caed3c"
+  },
+  {
+    "profile": "khazglar",
+    "line": 0,
+    "file": "audio/crew-posting/KHAZGLAR 1.mp3",
+    "duration": 8.202,
+    "sha256": "3b1a8cea58dbd1b091bbe12146c1b0b8dd0f4c912f2ca750305af1354b2c4faf"
+  },
+  {
+    "profile": "khazglar",
+    "line": 1,
+    "file": "audio/crew-posting/KHAZGLAR 2.mp3",
+    "duration": 5.878,
+    "sha256": "30f0fb2dc8ca9a761128a803a72899f4c714c8de438dc262dd8c977e702bd655"
+  },
+  {
+    "profile": "williams",
+    "line": 0,
+    "file": "audio/crew-posting/JOSIAH WILLIAMS 1.mp3",
+    "duration": 8.046,
+    "sha256": "a8707243dc527b5cc91f232a41caba859a9f083eccde2f1685974d02d49f774e"
+  },
+  {
+    "profile": "williams",
+    "line": 1,
+    "file": "audio/crew-posting/JOSIAH WILLIAMS 2.mp3",
+    "duration": 6.269,
+    "sha256": "cdef1e9a5aff92b949ea80fd2bcb70da2958cb861275510804e4964f333ce94a"
+  },
+  {
+    "profile": "nyrexia",
+    "line": 0,
+    "file": "audio/crew-posting/NYREXIA ERISCONOS 1.mp3",
+    "duration": 7.811,
+    "sha256": "fa992e9acb2bf957193731904bfd3bcb705523d7180e6d81ed57e3f7a34dc49f"
+  },
+  {
+    "profile": "nyrexia",
+    "line": 1,
+    "file": "audio/crew-posting/NYREXIA ERISCONOS 2.mp3",
+    "duration": 4.519,
+    "sha256": "bc79a667cb76e1b49387c2ebe35c120636cd5727df8567086fe68b20b5956694"
+  },
+  {
+    "profile": "charon",
+    "line": 0,
+    "file": "audio/crew-posting/CHARON 1.mp3",
+    "duration": 8.751,
+    "sha256": "412c5b6a60bb3af8d19801989285b371db908d9081dc9a5194b54aed315e2c80"
+  },
+  {
+    "profile": "charon",
+    "line": 1,
+    "file": "audio/crew-posting/CHARON 2.mp3",
+    "duration": 6.348,
+    "sha256": "89c27dcb7443b467f765ffa1f31d94bc78c5c43a93f75eca3978c640a0e3c00d"
+  },
+  {
+    "profile": "kizna",
+    "line": 0,
+    "file": "audio/crew-posting/KIZNA 1.mp3",
+    "duration": 8.751,
+    "sha256": "584542a6a3f33e084a438ead8e0296b5a783abe7f8d8e59bb5c27aa25abf1e04"
+  },
+  {
+    "profile": "kizna",
+    "line": 1,
+    "file": "audio/crew-posting/KIZNA 2.mp3",
+    "duration": 7.889,
+    "sha256": "6e2e8d1834960eff666eb987e41bd5658234d0bf46c78c4874ae3ca661788126"
+  },
+  {
+    "profile": "james",
+    "line": 0,
+    "file": "audio/crew-posting/JAMES 1.mp3",
+    "duration": 7.314,
+    "sha256": "efb88b12baef6c6dc7f0db431cc1444b7d74519fd48893de41d2f2fa31763363"
+  },
+  {
+    "profile": "james",
+    "line": 1,
+    "file": "audio/crew-posting/JAMES 2.mp3",
+    "duration": 4.598,
+    "sha256": "88a4dd6586926d1436c21a856d6f6a84ab3b8f48e9e0fac7dec574990c0b7f04"
+  },
+  {
+    "profile": "croxian",
+    "line": 0,
+    "file": "audio/crew-posting/CROXIAN 1.mp3",
+    "duration": 6.766,
+    "sha256": "8f0910dae34de00b1e77644a4bc53bd205f6383538320e81f32ac9af9d1272e0"
+  },
+  {
+    "profile": "croxian",
+    "line": 1,
+    "file": "audio/crew-posting/CROXIAN 2.mp3",
+    "duration": 4.754,
+    "sha256": "cdb8effe47193d2d545465bdd38bacfbcdfec6af8b59576e5961ba28ff530283"
+  },
+  {
+    "profile": "malia",
+    "line": 0,
+    "file": "audio/crew-posting/MALIA 1.mp3",
+    "duration": 7.393,
+    "sha256": "45ddff68e0eb1a5e9b740164c952442cbf18ad88de47457cbbced2b8568dc292"
+  },
+  {
+    "profile": "malia",
+    "line": 1,
+    "file": "audio/crew-posting/MALIA 2.mp3",
+    "duration": 3.709,
+    "sha256": "07fe12a457545e6338d2473231b054cccd3dd006a85f9c28813c5a070b94b36a"
+  },
+  {
+    "profile": "josiah",
+    "line": 0,
+    "file": "audio/crew-posting/JOSIAH RICHARDS 1.mp3",
+    "duration": 7.628,
+    "sha256": "a945430a1b3713e1d3b2420757fbe927dbd182386c93d997298452ccceaa3507"
+  },
+  {
+    "profile": "josiah",
+    "line": 1,
+    "file": "audio/crew-posting/JOSIAH RICHARDS 2.mp3",
+    "duration": 6.191,
+    "sha256": "38b2d70438f21acd56b2f0bd95ea43389d644daa0250ab295f67e97c3c32a58c"
+  },
+  {
+    "profile": "peter",
+    "line": 0,
+    "file": "audio/crew-posting/PETER CHAMBERS 1.mp3",
+    "duration": 7.001,
+    "sha256": "2cbfae7f3064d8d4bad89036a33858f754f365aa0a1c823285d91c48b1a3be1b"
+  },
+  {
+    "profile": "peter",
+    "line": 1,
+    "file": "audio/crew-posting/PETER CHAMBERS 2.mp3",
+    "duration": 5.878,
+    "sha256": "2d99c4e9cf57adc28d940426fb49691c23af4590522a6c308b0bf269dd8a5913"
+  },
+  {
+    "profile": "gareth",
+    "line": 0,
+    "file": "audio/crew-posting/GARETH WILLIAMS 1.mp3",
+    "duration": 6.922,
+    "sha256": "a10898fde5bb209412917b22faa12f17a327f8856c1fcb4ad973aae62a639386"
+  },
+  {
+    "profile": "gareth",
+    "line": 1,
+    "file": "audio/crew-posting/GARETH WILLIAMS 2.mp3",
+    "duration": 6.766,
+    "sha256": "46c9c2b66ed5e80399eeaa3c0c071b5f2f4b2fa0fe6cf91c65191e563e49da8d"
+  },
+  {
+    "profile": "pontifex",
+    "line": 0,
+    "file": "audio/crew-posting/PONTIFEX 1.mp3",
+    "duration": 7.549,
+    "sha256": "e86de2c6b6fd614882faad046df74cd1898f5dbbf38a8b812e6f7107fdd92393"
+  },
+  {
+    "profile": "pontifex",
+    "line": 1,
+    "file": "audio/crew-posting/PONTIFEX 2.mp3",
+    "duration": 5.486,
+    "sha256": "47b12cfe92ca7910cca48a8ef883aa71c624d2e94de4462bdaaa658c65843c69"
+  },
+  {
+    "profile": "custom",
+    "line": 0,
+    "file": "audio/crew-posting/CUSTOM 1.mp3",
+    "duration": 6.609,
+    "sha256": "d6c8becd2fdf8c6909b958665c35d52fcfc8e252879a703a160dbf7795ae7d36"
+  },
+  {
+    "profile": "custom",
+    "line": 1,
+    "file": "audio/crew-posting/CUSTOM 2.mp3",
+    "duration": 6.269,
+    "sha256": "807ef6b9dd3c0b126a0776739611a02ecb1f800c6f1d5edf75c1b042bf8ed9a3"
+  },
+  {
+    "profile": "tyrotaronus",
+    "line": 0,
+    "file": "audio/crew-posting/TYROTARONUSANOTHERFACTION1.mp3",
+    "duration": 12.931,
+    "sha256": "8b7cce5acce585f7c072edc35c56e24aea0ebec54bcf052287f436ba58ffcce9"
+  },
+  {
+    "profile": "tyrotaronus",
+    "line": 1,
+    "file": "audio/crew-posting/TYROTARONUSANOTHERFACTION2.mp3",
+    "duration": 12.042,
+    "sha256": "f0cd9054398beab4c44eba4f8f57036690a0f0be298ca184f7379a291771aff9"
+  }
+]

@@ -1,0 +1,45 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const source=fs.readFileSync('work/williams_recordings.js','utf8'),speech=fs.readFileSync('work/antarctica_speech.js','utf8');
+let now=1000;const audio={paused:false,ended:false,currentTime:0,duration:1,pause(){this.paused=true},play(){this.paused=false;return Promise.resolve()}};
+const envelope={rms:[1,1,1,1,0],spoken:[0,.25,.5,.75,1],hopSeconds:.1};
+const controls=new Map(),context=vm.createContext({Math,Number,Object,Promise,Audio:function(){return audio},performance:{now:()=>now},document:{hidden:false,addEventListener(){}},gameActive:true,polarState:{},prepareJamesAcoustics:()=>({envelope}),resumeJamesAcoustics(){},$:id=>{if(!controls.has(id))controls.set(id,{setAttribute(){}});return controls.get(id)},nextWilliams(){}});
+const run=s=>vm.runInContext(s,context);
+run(speech.slice(speech.indexOf('function calculateJamesViseme'),speech.indexOf('let jamesLipPose')));
+run("let williamsConversation={world:polarState,phase:'speech',intro:true,index:0,lines:['aoem']};");
+run(source.slice(0,source.indexOf("$('#williamsVoice').onclick")).replace('__WILLIAMS_AUDIO__',JSON.stringify([{branch:'intro',line:0,duration:1,source:'test'}])));
+run('NVWilliamsVoice.begin()');
+const sample=time=>{audio.currentTime=time;now+=100;return run('NVWilliamsVoice.pose()')};
+assert(sample(0).jaw>.29);assert(sample(0).jaw>.8);
+let pose=sample(.1);assert.equal(pose.round,1);assert.equal(pose.width,.7);
+pose=sample(.2);assert.equal(pose.width,1.13);assert.equal(pose.teeth,1);
+assert.equal(sample(.31).jaw,0);assert.equal(sample(.41).jaw,0);
+sample(0);audio.paused=true;assert.equal(run('NVWilliamsVoice.pose().jaw'),0);audio.paused=false;
+sample(0);run('NVWilliamsVoice.state.muted=true');assert.equal(run('NVWilliamsVoice.pose().jaw'),0);run('NVWilliamsVoice.state.muted=false');
+sample(0);audio.ended=true;assert.equal(run('NVWilliamsVoice.pose().jaw'),0);audio.ended=false;
+run("williamsConversation.phase='wheel'");assert.equal(run('NVWilliamsVoice.index()'),-1);assert.equal(run('NVWilliamsVoice.pose().jaw'),0);
+// Verify the in-world renderer replaces both rest lips with one Chapter 1 mouth.
+const scene=fs.readFileSync('work/josiah_williams.js','utf8'),text=fs.readFileSync('work/williams_model.js','utf8');
+const model=JSON.parse(text.slice(text.indexOf('=')+1,text.lastIndexOf(';'))),drawn=[],mouths=[];
+const M={mul:(...args)=>({mul:args}),t:(...args)=>({t:args}),rx:(...args)=>({rx:args}),ry:(...args)=>({ry:args}),scale:(...args)=>({scale:args})};
+let lip={jaw:.8,width:.7,round:1,teeth:0},reads=0;
+const renderer=vm.createContext({Math,WilliamsModel:model,NVJosiahWilliams:{distance:()=>4,present:()=>true,local:()=>({x:0,z:0})},NVEcology:{ground:()=>0},NVWilliamsVoice:{pose:()=>{reads++;return lip}},polarCanvas:{dataset:{}},options:{M,mesh:q=>q,draw:(p,pose)=>drawn.push({name:p.name,bone:p.bone,pose}),object(){},facePart:(p,pose,shape)=>mouths.push({p,pose,shape})}});
+vm.runInContext(scene.slice(scene.indexOf('function createWilliamsScenery'),scene.indexOf('const williamsScenery')),renderer);
+vm.runInContext('const render=createWilliamsScenery(options);render({},0)',renderer);
+assert.equal(reads,1);assert.equal(mouths.length,1);assert.equal(mouths[0].p.name,'Mouth neutral');assert.equal(mouths[0].shape,lip);
+assert(!drawn.some(p=>/Closed (upper|lower) lip/.test(p.name)));
+const jaw=drawn.find(p=>p.name==='Angular human jaw'),beard=drawn.find(p=>p.name.startsWith('Full brown beard'));
+assert.equal(jaw.pose,beard.pose);assert.deepEqual(jaw.pose.mul[1].t,[0,-.024*1.7*lip.jaw,.003*1.7*lip.round]);
+assert(!drawn.find(p=>p.name==='Human cranium').pose.mul[1].t);
+drawn.length=mouths.length=0;lip={jaw:0,width:1,round:0,teeth:0};vm.runInContext('render({},0)',renderer);
+assert.equal(mouths.length,0);assert.equal(drawn.filter(p=>/Closed (upper|lower) lip/.test(p.name)).length,2);
+assert(fs.readFileSync('work/antarctica_renderer.js','utf8').includes('mesh,facePart:jamesFacePart}):null'));
+console.log('Passed Chapter 1 rounded/wide/closed visemes, smoothing, silence/mute/pause/end reset, one shared mouth replacing the closed lips, matching chin/beard movement and one acoustic sample per rendered frame.');
+
+// Imported Gareth's neutral lip is replaced once; only GPU vertices move and reset afterward.
+const imported=[{name:'lip',rig:{kind:'head'},c:[.11697,.0648,.04666],p:[[-.09,1.3,.18],[.09,1.32,.21]],geometry:{pb:'mouth'}},{name:'skin',rig:{kind:'head'},c:[.84,.55,.29],p:[[0,1.28,.2],[.1,1.45,.2]],geometry:{pb:'skin'}},{name:'suit',c:[.1,.1,.1],p:[[0,.4,0]],geometry:{pb:'suit'}}],original=JSON.stringify(imported.map(p=>p.p)),writes=[],mouthCalls=[],rendered=[];
+let shape={jaw:.8,width:.7,round:1,teeth:0};
+const importedContext=vm.createContext({Math,WeakMap,Float32Array,NVBCCombat:{kind:()=> 'gareth'},NVCompanionMotion:{part:()=>({head:true})},NVWilliamsVoice:{pose:who=>{assert.equal(who,'gareth');return shape}},polarCanvas:{getContext:()=>({ARRAY_BUFFER:1,bindBuffer(){},bufferSubData:(target,offset,buffer)=>writes.push(Array.from(buffer))})},options:{M,draw:(g)=>rendered.push(g.pb),facePart:(p,m,lip)=>mouthCalls.push(lip)},parts:imported});
+vm.runInContext(fs.readFileSync('work/williams_gareth_speech.js','utf8')+';const speech=createWilliamsGarethSpeech(options);speech.render({}, {},parts,{}, {},true)',importedContext);
+assert.equal(mouthCalls.length,1);assert(!rendered.includes('mouth'));assert(writes.some(buffer=>buffer[1]<1.28));assert.equal(JSON.stringify(imported.map(p=>p.p)),original);
+shape={jaw:0,width:1,round:0,teeth:0};vm.runInContext('speech.render({}, {},parts,{}, {},false)',importedContext);assert(rendered.includes('mouth'));assert(Math.abs(writes.at(-1)[1]-1.28)<1e-6);assert.equal(JSON.stringify(imported.map(p=>p.p)),original);
+console.log('Passed imported Gareth single-mouth replacement, lower-face GPU deformation and neutral restoration without changing GLB vertex data.');

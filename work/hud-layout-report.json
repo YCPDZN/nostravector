@@ -1,0 +1,1566 @@
+[
+  {
+    "scenario": "antarctica",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 20,
+        "y": 20,
+        "right": 1346,
+        "bottom": 94
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 20,
+        "y": 108,
+        "right": 250,
+        "bottom": 289.625
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 20,
+        "y": 613.8125,
+        "right": 270,
+        "bottom": 748
+      },
+      {
+        "id": "hudContextDock",
+        "x": 284,
+        "y": 712,
+        "right": 1142,
+        "bottom": 748
+      },
+      {
+        "id": "hudMapDock",
+        "x": 1156,
+        "y": 303.625,
+        "right": 1346,
+        "bottom": 748
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "james",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "hazards",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "africa",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 20,
+        "y": 20,
+        "right": 1346,
+        "bottom": 94
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 20,
+        "y": 108,
+        "right": 250,
+        "bottom": 289.625
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 20,
+        "y": 613.8125,
+        "right": 270,
+        "bottom": 748
+      },
+      {
+        "id": "hudContextDock",
+        "x": 284,
+        "y": 712,
+        "right": 1142,
+        "bottom": 748
+      },
+      {
+        "id": "hudMapDock",
+        "x": 1156,
+        "y": 303.625,
+        "right": 1346,
+        "bottom": 748
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "space",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 20,
+        "y": 20,
+        "right": 1346,
+        "bottom": 94
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 20,
+        "y": 108,
+        "right": 250,
+        "bottom": 639.703125
+      },
+      {
+        "id": "hudAlerts",
+        "x": 264,
+        "y": 108,
+        "right": 1012,
+        "bottom": 139.5
+      },
+      {
+        "id": "hawthorneComms",
+        "x": 1026,
+        "y": 108,
+        "right": 1344,
+        "bottom": 435.0625
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 20,
+        "y": 653.703125,
+        "right": 270,
+        "bottom": 748
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "tools",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 20,
+        "y": 20,
+        "right": 1346,
+        "bottom": 94
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 20,
+        "y": 108,
+        "right": 250,
+        "bottom": 639.703125
+      },
+      {
+        "id": "hudAlerts",
+        "x": 264,
+        "y": 108,
+        "right": 1012,
+        "bottom": 139.5
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 20,
+        "y": 653.703125,
+        "right": 270,
+        "bottom": 748
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "tools-expanded",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 20,
+        "y": 20,
+        "right": 1346,
+        "bottom": 94
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 20,
+        "y": 108,
+        "right": 250,
+        "bottom": 639.703125
+      },
+      {
+        "id": "hudAlerts",
+        "x": 264,
+        "y": 108,
+        "right": 1012,
+        "bottom": 139.5
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 20,
+        "y": 653.703125,
+        "right": 270,
+        "bottom": 748
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "transit",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 20,
+        "y": 20,
+        "right": 1346,
+        "bottom": 94
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 20,
+        "y": 108,
+        "right": 250,
+        "bottom": 639.703125
+      },
+      {
+        "id": "hudAlerts",
+        "x": 264,
+        "y": 108,
+        "right": 1012,
+        "bottom": 139.5
+      },
+      {
+        "id": "hawthorneComms",
+        "x": 1026,
+        "y": 108,
+        "right": 1344,
+        "bottom": 435.0625
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 20,
+        "y": 653.703125,
+        "right": 270,
+        "bottom": 748
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "construction",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 20,
+        "y": 20,
+        "right": 1346,
+        "bottom": 94
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 20,
+        "y": 108,
+        "right": 250,
+        "bottom": 465.125
+      },
+      {
+        "id": "constructionGuide",
+        "x": 1026,
+        "y": 108,
+        "right": 1344,
+        "bottom": 302.3125
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 20,
+        "y": 625.015625,
+        "right": 270,
+        "bottom": 748
+      },
+      {
+        "id": "hudMapDock",
+        "x": 1156,
+        "y": 479.125,
+        "right": 1346,
+        "bottom": 748
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "inventory",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "quests",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "eris",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "boss",
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 20,
+        "y": 20,
+        "right": 1346,
+        "bottom": 94
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 20,
+        "y": 108,
+        "right": 250,
+        "bottom": 465.125
+      },
+      {
+        "id": "hudAlerts",
+        "x": 264,
+        "y": 108,
+        "right": 1012,
+        "bottom": 139.5
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 20,
+        "y": 625.015625,
+        "right": 270,
+        "bottom": 748
+      },
+      {
+        "id": "hudContextDock",
+        "x": 284,
+        "y": 588,
+        "right": 1142,
+        "bottom": 748
+      },
+      {
+        "id": "hudMapDock",
+        "x": 1156,
+        "y": 479.125,
+        "right": 1346,
+        "bottom": 748
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "antarctica",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 14,
+        "y": 14,
+        "right": 886,
+        "bottom": 63
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 14,
+        "y": 73,
+        "right": 214,
+        "bottom": 119.9375
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 14,
+        "y": 451.8125,
+        "right": 229,
+        "bottom": 586
+      },
+      {
+        "id": "hudContextDock",
+        "x": 239,
+        "y": 550,
+        "right": 711,
+        "bottom": 586
+      },
+      {
+        "id": "hudMapDock",
+        "x": 721,
+        "y": 129.9375,
+        "right": 886,
+        "bottom": 586
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "james",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "hazards",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "africa",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 14,
+        "y": 14,
+        "right": 886,
+        "bottom": 63
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 14,
+        "y": 73,
+        "right": 214,
+        "bottom": 140.9375
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 14,
+        "y": 451.8125,
+        "right": 229,
+        "bottom": 586
+      },
+      {
+        "id": "hudContextDock",
+        "x": 239,
+        "y": 550,
+        "right": 711,
+        "bottom": 586
+      },
+      {
+        "id": "hudMapDock",
+        "x": 721,
+        "y": 150.9375,
+        "right": 886,
+        "bottom": 586
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "space",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 14,
+        "y": 14,
+        "right": 886,
+        "bottom": 63
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 14,
+        "y": 73,
+        "right": 214,
+        "bottom": 481.703125
+      },
+      {
+        "id": "hudAlerts",
+        "x": 224,
+        "y": 73,
+        "right": 616,
+        "bottom": 104.5
+      },
+      {
+        "id": "hawthorneComms",
+        "x": 626,
+        "y": 73,
+        "right": 884,
+        "bottom": 403.375
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 14,
+        "y": 491.703125,
+        "right": 229,
+        "bottom": 586
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "tools",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 14,
+        "y": 14,
+        "right": 886,
+        "bottom": 63
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 14,
+        "y": 73,
+        "right": 214,
+        "bottom": 481.703125
+      },
+      {
+        "id": "hudAlerts",
+        "x": 224,
+        "y": 73,
+        "right": 616,
+        "bottom": 104.5
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 14,
+        "y": 491.703125,
+        "right": 229,
+        "bottom": 586
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "tools-expanded",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 14,
+        "y": 14,
+        "right": 886,
+        "bottom": 63
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 14,
+        "y": 73,
+        "right": 214,
+        "bottom": 481.703125
+      },
+      {
+        "id": "hudAlerts",
+        "x": 224,
+        "y": 73,
+        "right": 616,
+        "bottom": 104.5
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 14,
+        "y": 491.703125,
+        "right": 229,
+        "bottom": 586
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "transit",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 14,
+        "y": 14,
+        "right": 886,
+        "bottom": 63
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 14,
+        "y": 73,
+        "right": 214,
+        "bottom": 481.703125
+      },
+      {
+        "id": "hudAlerts",
+        "x": 224,
+        "y": 73,
+        "right": 616,
+        "bottom": 104.5
+      },
+      {
+        "id": "hawthorneComms",
+        "x": 626,
+        "y": 73,
+        "right": 884,
+        "bottom": 403.375
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 14,
+        "y": 491.703125,
+        "right": 229,
+        "bottom": 586
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "construction",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 14,
+        "y": 14,
+        "right": 886,
+        "bottom": 63
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 14,
+        "y": 73,
+        "right": 214,
+        "bottom": 320.9375
+      },
+      {
+        "id": "constructionGuide",
+        "x": 626,
+        "y": 73,
+        "right": 884,
+        "bottom": 267.3125
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 14,
+        "y": 463.015625,
+        "right": 229,
+        "bottom": 586
+      },
+      {
+        "id": "hudMapDock",
+        "x": 721,
+        "y": 330.9375,
+        "right": 886,
+        "bottom": 586
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "inventory",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "quests",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "eris",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "boss",
+    "size": {
+      "width": 900,
+      "height": 600
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 14,
+        "y": 14,
+        "right": 886,
+        "bottom": 63
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 14,
+        "y": 73,
+        "right": 214,
+        "bottom": 320.9375
+      },
+      {
+        "id": "hudAlerts",
+        "x": 224,
+        "y": 73,
+        "right": 616,
+        "bottom": 118
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 14,
+        "y": 463.015625,
+        "right": 229,
+        "bottom": 586
+      },
+      {
+        "id": "hudContextDock",
+        "x": 239,
+        "y": 426,
+        "right": 711,
+        "bottom": 586
+      },
+      {
+        "id": "hudMapDock",
+        "x": 721,
+        "y": 330.9375,
+        "right": 886,
+        "bottom": 586
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "antarctica",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 380,
+        "bottom": 99
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 107,
+        "right": 176.3125,
+        "bottom": 637.203125
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 703.203125,
+        "right": 191,
+        "bottom": 834
+      },
+      {
+        "id": "hudContextDock",
+        "x": 199,
+        "y": 798,
+        "right": 380,
+        "bottom": 834
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "james",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "hazards",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "africa",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 380,
+        "bottom": 99
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 107,
+        "right": 176.3125,
+        "bottom": 637.203125
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 703.203125,
+        "right": 191,
+        "bottom": 834
+      },
+      {
+        "id": "hudContextDock",
+        "x": 199,
+        "y": 798,
+        "right": 380,
+        "bottom": 834
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "space",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 380,
+        "bottom": 137
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 145,
+        "right": 176.3125,
+        "bottom": 652.40625
+      },
+      {
+        "id": "hudAlerts",
+        "x": 10,
+        "y": 660.40625,
+        "right": 380,
+        "bottom": 691.90625
+      },
+      {
+        "id": "hawthorneComms",
+        "x": 184.3125,
+        "y": 145,
+        "right": 378,
+        "bottom": 468.5625
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 749.90625,
+        "right": 191,
+        "bottom": 834
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "tools",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 380,
+        "bottom": 137
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 145,
+        "right": 176.3125,
+        "bottom": 652.40625
+      },
+      {
+        "id": "hudAlerts",
+        "x": 10,
+        "y": 660.40625,
+        "right": 380,
+        "bottom": 691.90625
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 749.90625,
+        "right": 191,
+        "bottom": 834
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "tools-expanded",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 380,
+        "bottom": 137
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 145,
+        "right": 176.3125,
+        "bottom": 652.40625
+      },
+      {
+        "id": "hudAlerts",
+        "x": 10,
+        "y": 660.40625,
+        "right": 380,
+        "bottom": 691.90625
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 749.90625,
+        "right": 191,
+        "bottom": 834
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "transit",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 380,
+        "bottom": 137
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 145,
+        "right": 176.3125,
+        "bottom": 604.40625
+      },
+      {
+        "id": "hudAlerts",
+        "x": 10,
+        "y": 612.40625,
+        "right": 380,
+        "bottom": 643.90625
+      },
+      {
+        "id": "hawthorneComms",
+        "x": 184.3125,
+        "y": 145,
+        "right": 378,
+        "bottom": 468.5625
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 749.90625,
+        "right": 191,
+        "bottom": 834
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "construction",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 380,
+        "bottom": 137
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 145,
+        "right": 176.3125,
+        "bottom": 661.609375
+      },
+      {
+        "id": "constructionGuide",
+        "x": 184.3125,
+        "y": 145,
+        "right": 378,
+        "bottom": 358.3125
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 727.609375,
+        "right": 191,
+        "bottom": 834
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "inventory",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "quests",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "eris",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "boss",
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 380,
+        "bottom": 137
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 145,
+        "right": 176.3125,
+        "bottom": 559
+      },
+      {
+        "id": "hudAlerts",
+        "x": 10,
+        "y": 567,
+        "right": 380,
+        "bottom": 612
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 727.609375,
+        "right": 191,
+        "bottom": 834
+      },
+      {
+        "id": "hudContextDock",
+        "x": 199,
+        "y": 670,
+        "right": 380,
+        "bottom": 834
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "antarctica",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 890,
+        "bottom": 59
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 67,
+        "right": 205,
+        "bottom": 138
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 362.203125,
+        "right": 225,
+        "bottom": 490
+      },
+      {
+        "id": "hudContextDock",
+        "x": 233,
+        "y": 454,
+        "right": 742,
+        "bottom": 490
+      },
+      {
+        "id": "hudMapDock",
+        "x": 750,
+        "y": 146,
+        "right": 890,
+        "bottom": 490
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "james",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "hazards",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "africa",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 890,
+        "bottom": 59
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 67,
+        "right": 205,
+        "bottom": 140
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 362.203125,
+        "right": 225,
+        "bottom": 490
+      },
+      {
+        "id": "hudContextDock",
+        "x": 233,
+        "y": 454,
+        "right": 742,
+        "bottom": 490
+      },
+      {
+        "id": "hudMapDock",
+        "x": 750,
+        "y": 148,
+        "right": 890,
+        "bottom": 490
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "space",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 890,
+        "bottom": 59
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 67,
+        "right": 205,
+        "bottom": 397.90625
+      },
+      {
+        "id": "hudAlerts",
+        "x": 213,
+        "y": 67,
+        "right": 632,
+        "bottom": 98.5
+      },
+      {
+        "id": "hawthorneComms",
+        "x": 640,
+        "y": 67,
+        "right": 888,
+        "bottom": 317.375
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 405.90625,
+        "right": 225,
+        "bottom": 490
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "tools",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 890,
+        "bottom": 59
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 67,
+        "right": 205,
+        "bottom": 397.90625
+      },
+      {
+        "id": "hudAlerts",
+        "x": 213,
+        "y": 67,
+        "right": 632,
+        "bottom": 98.5
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 405.90625,
+        "right": 225,
+        "bottom": 490
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "tools-expanded",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 890,
+        "bottom": 59
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 67,
+        "right": 205,
+        "bottom": 397.90625
+      },
+      {
+        "id": "hudAlerts",
+        "x": 213,
+        "y": 67,
+        "right": 632,
+        "bottom": 98.5
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 405.90625,
+        "right": 225,
+        "bottom": 490
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "transit",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 890,
+        "bottom": 59
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 67,
+        "right": 205,
+        "bottom": 397.90625
+      },
+      {
+        "id": "hudAlerts",
+        "x": 213,
+        "y": 67,
+        "right": 632,
+        "bottom": 98.5
+      },
+      {
+        "id": "hawthorneComms",
+        "x": 640,
+        "y": 67,
+        "right": 888,
+        "bottom": 317.375
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 405.90625,
+        "right": 225,
+        "bottom": 490
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "construction",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 890,
+        "bottom": 59
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 67,
+        "right": 205,
+        "bottom": 315
+      },
+      {
+        "id": "constructionGuide",
+        "x": 640,
+        "y": 67,
+        "right": 888,
+        "bottom": 261.3125
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 383.609375,
+        "right": 225,
+        "bottom": 490
+      },
+      {
+        "id": "hudMapDock",
+        "x": 750,
+        "y": 323,
+        "right": 890,
+        "bottom": 490
+      }
+    ],
+    "failures": []
+  },
+  {
+    "scenario": "inventory",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "quests",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "eris",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [],
+    "failures": []
+  },
+  {
+    "scenario": "boss",
+    "size": {
+      "width": 900,
+      "height": 500
+    },
+    "boxes": [
+      {
+        "id": "hudHeader",
+        "x": 10,
+        "y": 10,
+        "right": 890,
+        "bottom": 59
+      },
+      {
+        "id": "hudLeftDock",
+        "x": 10,
+        "y": 67,
+        "right": 205,
+        "bottom": 315
+      },
+      {
+        "id": "hudAlerts",
+        "x": 213,
+        "y": 67,
+        "right": 632,
+        "bottom": 112
+      },
+      {
+        "id": "hudVitalsDock",
+        "x": 10,
+        "y": 383.609375,
+        "right": 225,
+        "bottom": 490
+      },
+      {
+        "id": "hudContextDock",
+        "x": 233,
+        "y": 330,
+        "right": 742,
+        "bottom": 490
+      },
+      {
+        "id": "hudMapDock",
+        "x": 750,
+        "y": 323,
+        "right": 890,
+        "bottom": 490
+      }
+    ],
+    "failures": []
+  }
+]

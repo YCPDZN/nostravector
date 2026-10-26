@@ -1,0 +1,33 @@
+<dialog id="characterSelect" aria-labelledby="characterSelectTitle">
+<button class="close" aria-label="Close character selection">×</button>
+<div class="kicker">NOSTRAVECTOR / CREW REGISTRY</div><h2 id="characterSelectTitle" tabindex="-1">YOUR WANDERERS</h2>
+<p class="registry-copy">Choose whose journey to continue. Each Wanderer keeps their own appearance and progress.</p>
+<div class="registry-count" id="characterCount"></div><div id="characterList" class="character-list"></div>
+<p id="noCharacters" hidden>No Wanderers saved yet. Create a character to begin your first journey.</p>
+<p id="characterManagementStatus" class="save-management-status" role="status" aria-live="polite"></p>
+<div class="registry-actions"><button class="dialog-action" id="createCharacter">+ CREATE NEW CHARACTER</button><button class="dialog-action" data-close>RETURN TO MENU</button></div>
+<div class="erase-saves-row"><button class="dialog-action danger-action" id="eraseAllSaves">ERASE ALL SAVE DATA</button><p>Remove every saved Wanderer and their progress.</p></div>
+</dialog>
+<dialog id="saveManagement" aria-labelledby="saveManagementTitle" aria-describedby="saveManagementCopy saveManagementWarning">
+<button class="close" aria-label="Close save confirmation">×</button><div class="kicker">SAVE MANAGEMENT</div><h2 id="saveManagementTitle">ERASE SAVE DATA?</h2>
+<p id="saveManagementCopy"></p>
+<div id="chapterRestartOptions" hidden>
+<label for="restartWandererName">WANDERER NAME</label><input id="restartWandererName" maxlength="24" autocomplete="off">
+<label for="restartChapter">CHAPTER / STORY CHECKPOINT</label>
+<select id="restartChapter">
+<option value="1">Chapter 1 · Antarctica</option><option value="2">Chapter 2 · Africa</option><option value="3">Chapter 3 · Space exploration</option>
+<option value="31">Chapter 3 · Blockade of Janira Prime</option><option value="30">Chapter 3 · Before Hawthorne’s final fight</option>
+<option value="4">Chapter 4 · Before the alien attack</option><option value="41">CHAPTER 4 - Pre Final Boss</option><option value="5">Chapter 5 · Sandbox exploration</option>
+</select><p id="restartChapterDescription"></p>
+<div id="restartStoryChoices" hidden>
+<label for="restartOrion">Did you recruit Orion Mascar in Chapter 2?</label><select id="restartOrion"><option value="yes">YES</option><option value="no">NO</option></select>
+<label for="restartJames">Did you spare James Brown?</label><select id="restartJames"><option value="spare">SPARED</option><option value="kill">KILLED</option></select>
+<label for="restartNyrexia">Did you recruit Nyrexia before the coup?</label><select id="restartNyrexia"><option value="yes">YES</option><option value="no">NO</option></select>
+<div id="restartCommanderChoices"><label for="restartMalia">Did you spare Malia de Toro?</label><select id="restartMalia"><option value="spare">SPARED</option><option value="kill">KILLED</option></select>
+<label for="restartCroxian">Did you spare Croxian Mascar?</label><select id="restartCroxian"><option value="spare">SPARED</option><option value="kill">KILLED</option></select></div>
+<div id="restartOrionFate"><label for="restartOrionKilled">Did you kill Orion after Croxian’s death?</label><select id="restartOrionKilled"><option value="no">NO / STILL ALIVE</option><option value="yes">YES / DEFEATED</option></select><small>Available only if Croxian was killed.</small></div>
+</div><small>This replaces this character’s progress. Use SAVE AS first to keep a separate copy.</small>
+</div>
+<p id="saveManagementWarning" class="save-management-warning">This cannot be undone.</p><p id="saveManagementError" role="alert"></p>
+<div class="save-confirm-actions"><button class="dialog-action" id="cancelSaveChange" autofocus>CANCEL</button><button class="dialog-action danger-action" id="confirmSaveChange">ERASE SAVE DATA</button></div>
+</dialog>

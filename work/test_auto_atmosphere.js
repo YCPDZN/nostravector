@@ -1,0 +1,20 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const ctx=vm.createContext({console,Math,Number,JSON,Map,Set});const run=s=>vm.runInContext(s,ctx);
+for(const f of ['antarctica_core.js','antarctica_betrayal_core.js','africa_core.js','sol_catalog.js','planet_landscapes.js','space_core.js','world_flight.js','galaxy_core.js','cluster_core.js'])run(fs.readFileSync(__dirname+'/'+f,'utf8'));
+run('function scene(id){const s=NVAntarctica.fresh(125),b=NVSol.byId[id];Object.assign(s,{jamesIntroductionDone:true,bedRested:true,bedBuilt:true,dreamDone:true,betrayalStage:"complete",ferryEscaped:true,jamesGone:true,africaStarted:true,africaStage:"complete"});s.space=NVSpace.fresh();const p=s.space;p.system=b.system||"sol";p.phase="flight";p.body=id;p.target=NVGalaxy.worlds(s).find(q=>q.id!==id).id;p.position=b.position.map((v,i)=>v+(i===2?b.radius*1.15+9:0));NVSpace.pointAt(p,b.position);p.speed=100;p.throttle=1;return s;}let s;');
+for(const id of ['earth','moon','jupiter','saturn','uranus','neptune','janira-prime','janira-i',run('NVCluster.first("cluster-01").id')]){
+ run(`s=scene('${id}');NVSpace.step(s,.1,{boost:true});`);assert.equal(run('s.space.phase'),'descent',id);assert.equal(run('s.space.body'),id);assert.equal(run('s.space.target'),id,'The approached world replaces a different chart selection.');assert.ok(run('s.space.message').startsWith('ENTERING ATMOSPHERE'));assert.equal(run('s.space.hull'),100,'Entry replaces a terrain impact.');
+ run('var checkpoint=NVAntarctica.snapshot(s);s=NVAntarctica.restored({antarctica:checkpoint},"entry");for(let i=0;i<130&&s.space.phase==="descent";i++)NVSpace.step(s,.1);');assert.equal(run('s.space.phase'),'atmosphere');assert.equal(run('s.space.geo.global'),true);
+}
+// Sweep a high-speed segment entirely through a tiny moon and stop at its first entry.
+run('s=scene("deimos");let b=NVSol.byId.deimos,r=b.radius*1.15+8;let previous=b.position.map((v,i)=>v+(i===2?r+20:0));s.space.position=b.position.map((v,i)=>v-(i===2?r+20:0));');assert.equal(run('NVWorldFlight.autoEntry(s,previous)'),true);assert.equal(run('s.space.body'),'deimos');assert.ok(run('s.space.position[2]')>run('b.position[2]'));
+// Close flybys, outward movement and parked ships remain in manual space flight.
+run('s=scene("moon");b=NVSol.byId.moon;r=b.radius*1.15+8;previous=b.position.map((v,i)=>v+[r+2,0,20][i]);s.space.position=b.position.map((v,i)=>v+[r+2,0,-20][i]);');assert.equal(run('NVWorldFlight.autoEntry(s,previous)'),false);
+run('previous=b.position.map((v,i)=>v+(i===2?r-1:0));s.space.position=b.position.map((v,i)=>v+(i===2?r+10:0));');assert.equal(run('NVWorldFlight.autoEntry(s,previous)'),false);assert.equal(run('NVWorldFlight.autoEntry(s,s.space.position.slice())'),false);
+for(const condition of ['s.space.autopilot=true','s.space.warp={to:"cluster-01"}','s.space.phase="ascent"','s.space.hull=0']){run('s=scene("moon");previous=s.space.position.slice();s.space.position=NVSol.byId.moon.position.slice();'+condition);assert.equal(run('NVWorldFlight.autoEntry(s,previous)'),false,condition);}
+// Every registered system's star remains hazardous and cannot become a landing target.
+for(const system of ['sol','janira-proxima','cluster-01']){
+ run(`s=scene('${system==='sol'?'earth':system==='janira-proxima'?'janira-prime':run('NVCluster.first("cluster-01").id')}');s.space.system='${system}';s.space.position=[0,0,-90];s.space.yaw=0;s.space.pitch=0;s.space.speed=100;s.space.collisionCooldown=0;NVSpace.step(s,.1,{});`);assert.equal(run('s.space.hull'),76);assert.equal(run('s.space.phase'),'flight');assert.equal(run('s.space.message'),'SOLAR HEAT / RETREAT');
+}
+run('s=scene("earth");s.space.position=[0,0,-120];s.space.yaw=0;s.space.pitch=0;s.space.speed=3000;s.space.throttle=1;NVSpace.step(s,.1,{boost:true});');assert.ok(run('s.space.hull')<100,'Boosting across the star cannot skip solar damage.');assert.equal(run('s.space.phase'),'flight');
+console.log('Passed automatic unselected-world entry, moons and giants, all system types, swept tiny-moon entry, flyby/outward/idle gates, manual resume, free landing and star heat including boosted crossing.');

@@ -1,0 +1,192 @@
+[
+  {
+    "file": "audio/music/NOSTRAVECTOR MAIN MENU THEME.mp3",
+    "title": "NOSTRAVECTOR MAIN MENU THEME",
+    "duration": 176.688
+  },
+  {
+    "file": "audio/music/FREEROAM1.mp3",
+    "title": "WONDERS OF LANIAKEA",
+    "duration": 120.744
+  },
+  {
+    "file": "audio/music/FREEROAM2.mp3",
+    "title": "SOL",
+    "duration": 229.968
+  },
+  {
+    "file": "audio/music/FREEROAM3.mp3",
+    "title": "COSMOS",
+    "duration": 219.648
+  },
+  {
+    "file": "audio/music/WONDERS OF LANIAKEA - COMBAT VERSION.mp3",
+    "title": "WONDERS OF LANIAKEA (COMBAT VERSION)",
+    "duration": 60.048,
+    "role": "combat"
+  },
+  {
+    "file": "audio/music/PREDATOR 1.mp3",
+    "title": "RUN!",
+    "duration": 147.264,
+    "role": "predator"
+  },
+  {
+    "file": "audio/music/PREDATOR 2.mp3",
+    "title": "AMBUSH",
+    "duration": 97.104,
+    "role": "predator"
+  },
+  {
+    "file": "audio/music/PREDATOR 3.mp3",
+    "title": "DANGER IS COMING!",
+    "duration": 103.248,
+    "role": "predator"
+  },
+  {
+    "file": "audio/music/PREDATOR 4.mp3",
+    "title": "UNDER FIRE",
+    "duration": 138.048,
+    "role": "predator"
+  },
+  {
+    "file": "audio/music/SIEGE OF JANIRA PRIME - WONDERS OF LANIAKEA MOTIF.mp3",
+    "title": "SIEGE OF JANIRA PRIME",
+    "role": "siege",
+    "duration": 132.408,
+    "sha256": "fa503900cce37144988ab7107a2a677b3bda44c0a04c444c870c1349059df690"
+  },
+  {
+    "file": "audio/music/SIEGE OF MERCURY.mp3",
+    "title": "SIEGE OF MERCURY",
+    "role": "mercury",
+    "duration": 111.816,
+    "sha256": "aca2da0cd68080f72e67f488ff3c576cb91720a04434369117335d53c50b57dd"
+  },
+  {
+    "file": "audio/music/nostravector - main menu song chapter 4 onwards.mp3",
+    "title": "CATHARSIS",
+    "role": "menu-chapter4",
+    "duration": 199.632,
+    "sha256": "92d9e94220668ae772a05bdedcf82c4de73d8a6e5e0272f99fdbf51c0eab044e"
+  },
+  {
+    "file": "audio/music/IS THERE MORE OUT THERE.MP3",
+    "title": "IS THERE MORE OUT THERE?",
+    "role": "roam-chapter4",
+    "duration": 199.224,
+    "sha256": "747a50c439af3b6601fd30bdacf286911bcf5e141ef2812324ffca7b560cbbad"
+  },
+  {
+    "file": "audio/music/DARKNESS IN THE COSMOS.mp3",
+    "title": "DARKNESS IN THE COSMOS",
+    "role": "roam-chapter4",
+    "duration": 134.064,
+    "sha256": "1fa7645cfe294a06c7d8ce680dbae9d8b4f1b75fc90fda8d1444225ecc692202"
+  },
+  {
+    "file": "audio/music/YOU CHANGED, SO HAS THE GALAXY.mp3",
+    "title": "YOU CHANGED, SO HAS THE GALAXY",
+    "role": "roam-chapter4",
+    "duration": 160.08,
+    "sha256": "384358960e042e1c8dddfb5bad586f7dd5bcfe857824d77262facd758d308cac"
+  },
+  {
+    "file": "audio/music/2 YEARS LATER.mp3",
+    "title": "2 YEARS LATER",
+    "role": "roam-chapter4",
+    "duration": 142.68,
+    "sha256": "e7a3a58486b6a8f3c6be07bb15845cac71df96edc28d3de632a8df72e75c324f"
+  },
+  {
+    "file": "audio/music/THE VENGEFUL MASCAR.mp3",
+    "title": "THE VENGEFUL MASCAR",
+    "role": "mascar",
+    "duration": 164.064,
+    "sha256": "36f8fb88e001c0f56eb05d1fd3d11a05d24176431c16129dbd38d783cae83d84"
+  },
+  {
+    "file": "audio/music/HEAVENLY DRIFT - NOSTRAVECTOR VERSION.mp3",
+    "title": "HAVE I HEARD THIS BEFORE?",
+    "role": "mascar-piano",
+    "duration": 197.664,
+    "sha256": "d5a5735e75957cf8728b56ddd657ee1c8377ef250a53cb3de3b7871c468d41b1"
+  },
+  {
+    "file": "audio/crew-enemy/The Wrong Enemy.mp3",
+    "title": "THE WRONG ENEMY",
+    "role": "crew-enemy",
+    "duration": 169.272,
+    "sha256": "f3dea35a730b12583609b6f322f0b2ec8a3ac4e04ec4a892b9d473011891df61"
+  },
+  {
+    "file": "audio/faction-leaders/THE GUARDIAN OF HUMANITY.mp3",
+    "title": "THE GUARDIAN OF HUMANITY",
+    "role": "leader-darius",
+    "duration": 153.264,
+    "sha256": "5b8f0ae83790d1f9198bd2eae3d1756d2e4ab27270130cb39949e39bb2c8ba3b"
+  },
+  {
+    "file": "audio/faction-leaders/THE CHILD OF ERIS - VISHARA'S THEME SONG.mp3",
+    "title": "THE CHILD OF ERIS",
+    "role": "leader-vishara",
+    "duration": 124.872,
+    "sha256": "ec8e02022098fc2076f5e72d2a955033b47bd54dce6e25b16261de668c9e613f"
+  },
+  {
+    "file": "audio/faction-leaders/HAK CHOMPJAK - THE DESCENDANT OF SHAKHAK.mp3",
+    "title": "THE DESCENDANT OF SHAKHAK",
+    "role": "leader-hak",
+    "duration": 162.48,
+    "sha256": "ffa5e5c9912fc4b3d08a42a4339034f3860575d8074b3aebcd49d0f87e23d6f3"
+  },
+  {
+    "file": "audio/faction-leaders/THE PRIME GOOD.mp3",
+    "title": "THE PRIME GOOD",
+    "role": "leader-grek",
+    "duration": 162.48,
+    "sha256": "de77ab00140dae9d356649d4b2dd22655a887a436824340894afea951944b3af"
+  },
+  {
+    "file": "audio/faction-leaders/ARCHAMUS - THE LIGHT EGG.mp3",
+    "title": "ARCHAMUS - THE LIGHT EGG",
+    "role": "leader-archamus-light-egg",
+    "duration": 153.648,
+    "sha256": "9f6067331fa3803377b75b7a07a8989651f683bcfc9cd464e3a95624f775c3b2"
+  },
+  {
+    "file": "audio/music/FINAL BOSS THEME.mp3",
+    "title": "FINAL BOSS THEME",
+    "role": "catharsis-final",
+    "duration": 214.872,
+    "sha256": "16b95812e0303e44f5c51be1e0fbff991c8ef2476d0ff344148891937cc8eb00"
+  },
+  {
+    "file": "audio/nightmares/HAVE I HEARD THIS BEFORE.mp3",
+    "title": "HAVE I HEARD THIS BEFORE",
+    "role": "nightmare-orion",
+    "duration": 224.112,
+    "sha256": "f42d1ff7eee167ea3efa283ea3442d5c16fb588ef64b8b31feabc5a6066456bf"
+  },
+  {
+    "file": "audio/nightmares/OILKOUMENEUS.mp3",
+    "title": "OILKOUMENEUS",
+    "role": "nightmare-tyrotaronus",
+    "duration": 84.192,
+    "sha256": "4d7948aac89111770b3dc12de453bc00bdcb5ae38a3853751fd26c8d2c15514e"
+  },
+  {
+    "file": "audio/nightmares/HEAVENLY DRIFT REMIX.mp3",
+    "title": "HEAVENLY DRIFT (FROM PROJECT BC)",
+    "role": "nightmare-josiah",
+    "duration": 188.448,
+    "sha256": "23c07bb77e2b657973e81213b292d60f47fa9d6a1560906f002527fde593243f"
+  },
+  {
+    "file": "audio/nightmares/NOSTRAVECTOR.mp3",
+    "title": "NOSTRAVECTOR",
+    "role": "nightmare-zark",
+    "duration": 91.272,
+    "sha256": "768c157d766059feeeb147b6b1e62a42f48dc4b9cc319c2c85078157c0a2aab0"
+  }
+]

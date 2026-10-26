@@ -1,0 +1,187 @@
+{
+  "mercury": {
+    "page": "https://science.nasa.gov/resource/mercury-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/m/Mercury_1_4878.glb",
+    "images": [
+      "mercury-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "venus": {
+    "page": "https://science.nasa.gov/resource/venus-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/v/Venus_1_12103.glb",
+    "images": [
+      "venus-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "earth": {
+    "page": "https://science.nasa.gov/resource/earth-with-clouds-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/e/EarthClouds_1_12756.glb",
+    "images": [
+      "earth-0.png",
+      "earth-1.png"
+    ],
+    "baseColor": [
+      1
+    ]
+  },
+  "mars": {
+    "page": "https://science.nasa.gov/resource/planet-mars-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/gltf_files/24881_Mars_1_6792.glb",
+    "images": [
+      "mars-0.png",
+      "mars-1.png"
+    ],
+    "baseColor": [
+      1
+    ]
+  },
+  "jupiter": {
+    "page": "https://science.nasa.gov/resource/jupiter-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/j/Jupiter_1_142984.glb",
+    "images": [
+      "jupiter-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "saturn": {
+    "page": "https://science.nasa.gov/resource/saturn-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/s/Saturn_1_120536.glb",
+    "images": [
+      "saturn-0.png",
+      "saturn-1.png"
+    ],
+    "baseColor": [
+      0,
+      1
+    ]
+  },
+  "uranus": {
+    "page": "https://science.nasa.gov/resource/uranus-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/u/Uranus_1_51118.glb",
+    "images": [
+      "uranus-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "neptune": {
+    "page": "https://science.nasa.gov/resource/neptune-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/n/Neptune_1_49528.glb",
+    "images": [
+      "neptune-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "pluto": {
+    "page": "https://science.nasa.gov/resource/pluto-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/p/l/Pluto_1_2374.glb",
+    "images": [
+      "pluto-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "moon": {
+    "page": "https://svs.gsfc.nasa.gov/4720/",
+    "download": "https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_2k.jpg",
+    "images": [
+      "moon-0.jpg"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "europa": {
+    "page": "https://science.nasa.gov/resource/europa-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/e/Europa_1_3138.glb",
+    "images": [
+      "europa-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "io": {
+    "page": "https://science.nasa.gov/resource/io-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/i/Io_1_3643.glb",
+    "images": [
+      "io-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "ganymede": {
+    "page": "https://science.nasa.gov/resource/ganymede-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/g/Ganymede_1_5268.glb",
+    "images": [
+      "ganymede-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "callisto": {
+    "page": "https://science.nasa.gov/resource/callisto-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/c/Callisto_1_4821.glb",
+    "images": [
+      "callisto-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "titan": {
+    "page": "https://science.nasa.gov/resource/titan-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/t/Titan_1_5150.glb",
+    "images": [
+      "titan-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "triton": {
+    "page": "https://science.nasa.gov/resource/triton-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/t/Triton_1_2707.glb",
+    "images": [
+      "triton-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "charon": {
+    "page": "https://science.nasa.gov/resource/charon-3d-model/",
+    "download": "https://science.nasa.gov/wp-content/uploads/2023/09/Charon_1_2.glb",
+    "images": [
+      "charon-0.png"
+    ],
+    "baseColor": [
+      0
+    ]
+  },
+  "ceres": {
+    "page": "https://science.nasa.gov/resource/ceres-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/c/Ceres_1_1000.glb",
+    "images": [
+      "ceres-0.png",
+      "ceres-1.png"
+    ],
+    "baseColor": [
+      1
+    ]
+  }
+}

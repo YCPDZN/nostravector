@@ -1,0 +1,15 @@
+const vm=require('vm'),fs=require('fs'),assert=require('assert');const ctx=vm.createContext({});vm.runInContext(fs.readFileSync(__dirname+'/planet_render_stability.js','utf8'),ctx);const api=vm.runInContext('NVPlanetRender',ctx);
+const calls=[],gl={TEXTURE_2D:1,TEXTURE_WRAP_S:2,TEXTURE_WRAP_T:3,CLAMP_TO_EDGE:4,TEXTURE_MAG_FILTER:5,LINEAR:6,TEXTURE_MIN_FILTER:7,LINEAR_MIPMAP_LINEAR:8,texParameteri:(...v)=>calls.push(v),generateMipmap:()=>calls.push('mipmap'),getExtension:()=>null};
+api.texture(gl,1024,512);assert(calls.includes('mipmap'));assert(calls.some(v=>Array.isArray(v)&&v[1]===7&&v[2]===8));
+calls.length=0;api.texture(gl,1000,500);assert(!calls.includes('mipmap'));assert(calls.some(v=>Array.isArray(v)&&v[1]===7&&v[2]===6));
+const worlds=[{position:[0,0,0],radius:100}];assert.equal(api.near([0,0,0],worlds),.05);assert.equal(api.near([1000,0,0],worlds),2);assert(api.near([107,0,0],worlds)<=.05);
+console.log('Passed POT mipmaps, NPOT WebGL completeness, and close/distant depth precision.');
+const s={seed:12,x:0,z:0,space:{body:'earth',landingX:0,landingZ:0,landingElevation:10,geo:{global:true,lat:50,lon:15}}};
+const key=()=>api.terrainKey(s,false,'earth',false),europe=key();
+s.x=20;s.z=40;assert.equal(key(),europe,'Walking must reuse the terrain cache');
+s.space.geo.lat=-78;assert.notEqual(key(),europe,'A new geographic anchor invalidates the old terrain');
+const antarctica=key();s.space.landingElevation=25;assert.notEqual(key(),antarctica,'Landing pad elevation changes invalidate terrain');
+assert.notEqual(api.terrainKey(s,false,'mars',false),key());assert.notEqual(api.terrainKey(s,false,'earth',true),key());
+vm.runInContext('globalThis.NVVengefulMascar={anchor:s=>s.testAnchor};globalThis.NVKarribassaBosses={arena:()=>null};',ctx);
+s.eris={vengefulMascar:{stage:'hunt'}};s.testAnchor={x:1,z:2};const arena=key();s.testAnchor.x=100;assert.notEqual(key(),arena,'A relocated boss arena rebuilds its flattened terrain');
+console.log('Passed terrain cache invalidation for landing coordinates, elevation, world, ocean and relocated arenas without rebuilding while walking.');

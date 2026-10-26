@@ -1,0 +1,5 @@
+from pathlib import Path
+import shutil,hashlib,json
+w=Path('work');src=Path('C:/Users/HOME/Documents/NOSTRAVECTOR/laser sound.mp3');dest=w/'audio/player-laser.mp3';shutil.copyfile(src,dest);(w/'player_laser_audio.json').write_text(json.dumps({'file':'audio/player-laser.mp3','sha256':hashlib.sha256(src.read_bytes()).hexdigest()},indent=2),encoding='utf-8')
+p=w/'build_menu.py';s=p.read_text(encoding='utf-8');needle="js+='\\n'+(work/'orion_comms_renderer.js')";assert needle in s;s=s.replace(needle,"js+='\\n'+(work/'player_laser_pistol.js').read_text(encoding='utf-8').replace('__PLAYER_LASER_SOUND__',json.dumps('data:audio/mpeg;base64,'+base64.b64encode((work/'audio/player-laser.mp3').read_bytes()).decode()))\n"+needle);p.write_text(s,encoding='utf-8')
+p=w/'package_menu.py';s=p.read_text(encoding='utf-8').replace("==130+len(json.loads((work/'orion_boss_audio.json')", "==131+len(json.loads((work/'orion_boss_audio.json')").replace("'test_companion_combat_browser.js']", "'test_companion_combat_browser.js','player_laser_pistol.js','player_laser_audio.json','audio/player-laser.mp3']");p.write_text(s,encoding='utf-8')

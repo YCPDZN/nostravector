@@ -1,0 +1,27 @@
+[
+  {
+    "file": "audio/am-grek/AMG1.mp3",
+    "duration": 11.964,
+    "sha256": "54b85afcafcbb5c8f5401e622793d3d73ed0aae4e16a0e4840bf37ac854f9c0d"
+  },
+  {
+    "file": "audio/am-grek/AMG2.mp3",
+    "duration": 9.482,
+    "sha256": "7c7ce9bf8b95e9f858bcb45d1f390105b2af353eccf1f32fb702b3930f5f7ebb"
+  },
+  {
+    "file": "audio/am-grek/AMG3.mp3",
+    "duration": 9.718,
+    "sha256": "3958602ba7703585085f23f668a08260ae1d605d0cf8185666d6430203dac0d0"
+  },
+  {
+    "file": "audio/am-grek/AMG4.mp3",
+    "duration": 8.594,
+    "sha256": "edf852ded6c9772c3c33637537bfd4b90d685a8957d3f21b27d0fb0e8d656965"
+  },
+  {
+    "file": "audio/am-grek/AMG5.mp3",
+    "duration": 11.886,
+    "sha256": "8721caa728cdf4194a8c0e3b1ce6c40a816fb2189da4493d0dfe41ccc3504ddf"
+  }
+]

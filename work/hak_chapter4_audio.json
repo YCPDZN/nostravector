@@ -1,0 +1,62 @@
+[
+  {
+    "line": 0,
+    "file": "audio/hak-chapter4/HAKCH41.mp3",
+    "duration": 4.598,
+    "sha256": "3f9e079d54d0f7ef8f4c3c1cf04593f41c75dd76118aed8dcb53d1876fca305a"
+  },
+  {
+    "line": 1,
+    "file": "audio/hak-chapter4/HAKCH42.mp3",
+    "duration": 17.633,
+    "sha256": "1ef4231fb209ffbdc82b89b5a6bb070faecc71ab3ac132b4519eb5516eba86e0"
+  },
+  {
+    "line": 2,
+    "file": "audio/hak-chapter4/HAKCH43.mp3",
+    "duration": 9.874,
+    "sha256": "592e239604bc3a495bac799f6d6051ee9ece45e99be814d6f8a4a164f79b12f0"
+  },
+  {
+    "line": 3,
+    "file": "audio/hak-chapter4/HAKCH44.mp3",
+    "duration": 12.669,
+    "sha256": "2c16b7d478c321d656e46a2a924a456a5b10746f47fc64efa1bf09b6133b6805"
+  },
+  {
+    "line": 4,
+    "file": "audio/hak-chapter4/HAKCH45.mp3",
+    "duration": 14.681,
+    "sha256": "163d0acf2f3cccd944c776718b28d4d5d2a387e2737af90fc4aed3a201066fc5"
+  },
+  {
+    "line": 5,
+    "file": "audio/hak-chapter4/HAKCH46.mp3",
+    "duration": 11.468,
+    "sha256": "d2e10f47027b573569bdc94e6b8bf4061eba6f7f8754f65ffd0b2bca24d245e8"
+  },
+  {
+    "line": 6,
+    "file": "audio/hak-chapter4/HAKCH47.mp3",
+    "duration": 13.714,
+    "sha256": "4940530c14cb56d1186fd1f0598503ee8616baeb7a54a5916e4f175898187419"
+  },
+  {
+    "line": 7,
+    "file": "audio/hak-chapter4/HAKCH48.mp3",
+    "duration": 14.602,
+    "sha256": "fba03865a1db5e8771d55ab0f8d397f4235f323c4a670d9792bdd03936e206ec"
+  },
+  {
+    "line": 8,
+    "file": "audio/hak-chapter4/HAKCH49.mp3",
+    "duration": 13.009,
+    "sha256": "6ed11b9a6508784f07d6c74c4413d0d680b238a0020b1bb3ee01fde064d88fc4"
+  },
+  {
+    "line": 9,
+    "file": "audio/hak-chapter4/HAKCH410.mp3",
+    "duration": 15.491,
+    "sha256": "7939a48308c2de6608f2fe6542d85429c9da95865678e7bb59d5ab88495b83ee"
+  }
+]

@@ -1,0 +1,19 @@
+SUIT WARNING
+WEATHER WARNING! SUPER BLIZZARD INCOMING!
+
+NARRATOR — HAZARD TUTORIAL
+
+1. WEATHER CAN KILL
+Your suit has detected a super blizzard. Visibility will fall, and staying outside will drain your suit’s heat.
+
+2. WATCH YOUR SUIT HEAT
+Watch your suit heat gauge. The station and the rover protect you from the cold. At zero heat, your suit performs an emergency recovery at the station.
+
+3. SAVE YOUR STAMINA
+Sprinting drains stamina. Use it for short escapes, then walk to recover. Never exhaust yourself far from shelter.
+
+4. FIND YOUR WAY IN A WHITEOUT
+When the whiteout hides your path, follow the station beacon or open your field map with M. Landmarks may disappear; the beacon keeps pointing home.
+
+5. SHELTER IS SURVIVAL
+Get inside the station and let your heat recover. Stay with James while the storm passes. This super blizzard lasts five minutes of active game time.

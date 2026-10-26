@@ -1,0 +1,15 @@
+<aside id="ecologyHUD" aria-label="Habitat and wildlife scanner" hidden>
+  <div class="ecology-heading"><span>LIFE SURVEY</span><strong id="ecologyHabitat"></strong></div>
+  <p id="ecologySignals"></p>
+  <div class="ecology-health"><span>SUIT INTEGRITY</span><b id="ecologyHealthValue">100%</b></div><progress id="ecologyHealth" max="100" value="100" aria-label="Suit integrity"></progress>
+  <div class="ecology-buttons"><button id="scanSpecies" class="polar-button">SCAN / N</button><button id="openSpeciesGuide" class="polar-button">FIELD GUIDE / J</button><button id="repelWildlife" class="polar-button">REPELLENT / V</button></div>
+  <small id="ecologyPulseInfo">Repellent uses 15 stamina · 8 s recharge</small>
+  <button id="enterOceanHabitat" class="polar-button" hidden>UNDER-ICE OCEAN / U</button><small id="oceanAccessHint" hidden></small>
+</aside>
+<div id="ecologyNotice" role="status" hidden></div>
+<section id="speciesGuide" role="dialog" aria-modal="true" aria-label="Species field guide" hidden>
+  <div class="species-guide-top"><div><span class="space-eyebrow">EXPLORATION / BIOLOGICAL SURVEY</span><h2>THE LIVING WORLDS.</h2><p id="speciesGuideSummary"></p></div><button id="closeSpeciesGuide" class="polar-button">CLOSE / J</button></div>
+  <p class="species-guide-tip">Scan within 45 m to identify plants and animals. Names, anatomy and field notes for alien life are generated from this character’s world seed.</p>
+  <div id="speciesCards"></div>
+  <p class="species-guide-save">Discoveries and suit integrity are stored only when you manually choose SAVE GAME.</p>
+</section>

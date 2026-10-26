@@ -1,0 +1,9 @@
+from pathlib import Path
+f=Path(__file__).resolve().parent/'game_readme.txt';s=f.read_text(encoding='utf-8')
+s=s.replace('The game autosaves every 10 seconds, when paused, and when returning to the menu.', 'Expedition progress saves only when you press ESC > SAVE GAME. Timers, pauses, focus changes, closing the page, conversations, checkpoints, hazard recovery and returning to the menu never save progress. RETURN TO MAIN MENU discards changes made after your last manual save; Continue loads that save. The character creation and appearance Save buttons still save the character you explicitly create or edit.')
+s=s.replace('All twenty-seven clips', 'All twenty-eight clips').replace('SUIT.mp3 supplies the weather warning.', 'SUIT.mp3 supplies the weather warning; SUIT2.mp3 plays when heat depletion triggers emergency recovery.')
+s=s.replace('Lesson progress and warning state save per Wanderer', 'When you manually save, lesson progress and warning state save per Wanderer')
+s=s.replace('The storm reduces visibility and strengthens wind-driven snow', 'The super blizzard uses 8,000 wind-driven snow particles, pale fog with a range of approximately 8–13 metres, and moving foreground whiteout haze that obscures distant terrain and the sky')
+s=s.replace('The storm timer and heat are saved per character.', 'The storm timer and heat are included in each character’s manual save.')
+s=s.replace('All six files are embedded for offline playback. Suit heat depletion currently shows a text emergency-recovery notice and returns both companions to shelter; there is no supplied spoken depletion alert.', 'All seven hazard recordings are embedded for offline playback. SUIT2.mp3 accompanies the emergency-recovery notice at zero suit heat and the return of both companions to shelter. Recovery voice pauses with the game and stops on menu exit; PLAY SUIT ALERT is available if playback is blocked.')
+f.write_text(s,encoding='utf-8')

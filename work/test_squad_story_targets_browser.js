@@ -1,0 +1,40 @@
+const assert=require('node:assert/strict'),path=require('node:path'),{pathToFileURL}=require('node:url');
+const {chromium}=require('C:/Users/HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+(async()=>{const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader','--mute-audio']});try{
+ const p=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];p.on('pageerror',e=>errors.push(e.stack));await p.addInitScript(()=>{requestAnimationFrame=()=>0;setInterval=()=>0;const A=Audio;window.Audio=function(src){const a=new A(src);Object.defineProperty(a,'preload',{set:()=>a.setAttribute('preload','none')});return a;};});await p.goto(pathToFileURL(path.resolve('outputs/NOSTRAVECTOR_Main_Menu.html')).href,{waitUntil:'domcontentloaded',timeout:120000});assert.deepEqual(errors,[]);
+ await p.evaluate(async()=>{
+  creatingCharacter=true;writeGameSave({...DEFAULT_WANDERER,name:'Squad faction combat QA'});creatingCharacter=false;savedGame.progress=chapterRestartProgress(savedGame,41,{orion:true,nyrexia:true,james:'spare',malia:'spare',croxian:'spare'});startAntarctica();const s=polarState;s.featureChapter=4;s.car=null;s.aerialView=false;s.bedSleeping=false;
+  Object.assign(NVShipReward.ensure(s),{claimed:true,charonDecision:'decline',kiznaRecruited:true});NVKhazglar.ensure(s).reward.claimed=true;NVKhazglar.ensure(s).recruited=true;NVCombatCrew.recruit(s,'malia');NVCombatCrew.recruit(s,'croxian');
+  globalThis.squadCustom=NVCustomCrew.create(s,{name:'Squad scout',species:NVSpecies.preset('reptilian')}).npc.id;NVCombatCrew.configure(s,squadCustom,'laser','balanced');globalThis.squadBC=[];
+  for(const m of NVProjectBC.models.filter(m=>!m.id.includes('tank'))){await NVGLB.load(m.asset);const r=NVCustomCrew.create(s,{name:m.name,model:NVProjectBC.metadata(m),species:NVSpecies.preset('human')});if(!r.ok)throw Error(r.text);squadBC.push(r.npc.id);}
+  globalThis.squadBaseline=NVAntarctica.snapshot(s);
+  globalThis.squadWorld=(id,follow=['orion','khazglar',squadCustom],aridaxx=false)=>{
+   const s=NVAntarctica.restored({antarctica:structuredClone(squadBaseline)},'squad-test'),d=NVFactionLeaders.DEFINITIONS.find(d=>d.id===id),body=id==='archamus'?'malana-p1':aridaxx?'aridaxx':d.body,b=NVSol.byId[body];polarState=s;gamePaused=false;
+   s.eris.catharsisCoreRoute.briefed=aridaxx;s.featureChapter=4;s.car=null;s.aerialView=false;s.bedSleeping=false;s.jumpOffset=0;s.x=0;s.z=0;s.yaw=0;s.cameraYaw=0;s.cameraPitch=.15;
+   Object.assign(s.space,{phase:id==='archamus'?'flight':'landed',system:b.system||'sol',body:b.id,target:b.id,landingX:0,landingZ:0,geo:{global:true,lat:0,lon:0,altitude:0,heading:0,look:0},ecologyOcean:false,warp:null});NVShipInterior.ensure(s).active=false;NVArchiostal.ensure(s).active=id==='archamus';
+   const q=NVGalacticDiplomacy.ensure(s);q.enabled=true;NVGalacticDiplomacy.register(s);q.owners[b.id]=d.faction;q.relations[NVGalacticDiplomacy.key('CUSTOM',d.faction)]='WAR';
+   const t=NVFactionLeaders.local(s)[0],player=NVCombatSquad.player(s);player.x=t.x;player.z=t.z-25;player.yaw=0;player.pitch=.2;
+   for(const n of NVCombatSquad.crew(s))NVGovernance.ensure(s).roles[n.id]='ship';for(const id of follow)if(!NVGovernance.setRole(s,id,'follow'))throw Error('Missing follower '+id);
+   NVCompanionMotion.updateGround(s,0);NVCustomCrew.followStep(s,0);if(id==='archamus'){NVArchiostalPeople.state(s).last=null;NVArchiostalPeople.step(s,0);}NVFactionLeaders.begin(s);return s;
+  };
+  globalThis.squadTick=s=>{if(NVCombatSquad.station(s))NVArchiostal.move(s,.05,0,0,false,0);else{NVCustomCrew.step(s,.05);stepEcology(.05);}};
+ });
+
+ const results=await p.evaluate(()=>{const out=[];for(const id of ['orion','khazglar',squadCustom,...squadBC])for(const kind of ['guard','boss','governor']){
+ const s=NVAntarctica.restored({antarctica:structuredClone(squadBaseline)},'combat-regression');polarState=s;gamePaused=false;s.car=null;s.aerialView=false;s.bedSleeping=false;const body=kind==='governor'?'earth':'carax',b=NVSol.byId[body];Object.assign(s.space,{phase:'landed',system:b.system||'sol',body,target:body,landingX:0,landingZ:0,geo:{global:true,lat:0,lon:0,altitude:0,heading:0,look:0},ecologyOcean:false});NVShipInterior.ensure(s).active=false;NVArchiostal.ensure(s).active=false;
+ const route=NVCatharsisRoute.ensure(s);Object.assign(route,{finalStage:'active',zark:{heard:true,stage:'done'}});route.ending=NVCaraxEndings.fresh();route.assault=NVCarax.fresh();const a=NVCarax.ensure(s);a.deck=kind==='boss'?4:0;for(const f of a.guards)for(const g of f)g.hp=0;
+ const c=NVCarax.center(s);s.x=kind==='governor'?0:c.x;s.z=kind==='governor'?0:c.z-9;
+ for(const n of NVCombatSquad.crew(s))NVGovernance.ensure(s).roles[n.id]='ship';if(!NVGovernance.setRole(s,id,'follow'))throw Error('Cannot follow '+id);NVCompanionMotion.updateGround(s,0);NVCustomCrew.followStep(s,0);
+ let t;if(kind==='guard'){const g=a.guards[0][0];Object.assign(g,{hp:320,maxHp:320,x:0,z:5});t=NVCarax.targets(s)[0];}
+ if(kind==='boss'){for(const v of Object.values(NVCaraxBosses.ensure(s)))v.hp=0;const d=NVCaraxBosses.DEFS.find(d=>d.floor===4),v=NVCaraxBosses.ensure(s)[d.id];Object.assign(v,{hp:3000000,stage:'fighting',x:0,z:5});t=NVCaraxBosses.targets(s)[0];}
+ if(kind==='governor'){const q=NVGalacticDiplomacy.ensure(s);q.enabled=true;NVGalacticDiplomacy.register(s);q.relations[NVGalacticDiplomacy.key('CUSTOM','HUMAN')]='WAR';const g={id:'nyrexia',body:'earth',faction:'HUMAN',x:0,z:8,lat:0,lon:0,hp:70,maxHp:70,age:0,mode:'idle'};NVCrewDiplomacy.ensure(s).assignments.nyrexia=g;t=NVBCCombat.targets(s).find(t=>t.type==='foreign-governor');}
+ if(!t)throw Error('No real target '+kind);const hp=t.enemy.hp;for(let i=0;i<300;i++){NVCompanionCombat.step(s,.05);NVBCCombat.step(s,.05);}
+ out.push({id,kind,damage:hp-t.enemy.hp,returned:kind!=='governor'||!NVCrewDiplomacy.away(s,'nyrexia')});
+ }return out;});for(const r of results){assert(r.damage>0,JSON.stringify(r));assert(r.returned,JSON.stringify(r));}console.log('Real defender/governor/boss combat:',JSON.stringify(results));
+ const finishes=await p.evaluate(()=>{const s=NVAntarctica.restored({antarctica:structuredClone(squadBaseline)},'story-finishes');polarState=s;gamePaused=false;Object.assign(s.space,{body:'mercury',system:'sol',phase:'landed',geo:null,ecologyOcean:false});s.x=90;s.z=-110;s.aerialView=false;s.bedSleeping=false;s.car=null;NVShipInterior.ensure(s).active=false;NVArchiostal.ensure(s).active=false;
+ for(const n of NVCombatSquad.crew(s))NVGovernance.ensure(s).roles[n.id]='ship';NVGovernance.setRole(s,'khazglar','follow');
+ NVBrownBastion.ensure(s).done=true;NVSolWar.ensure(s).brownStory.tritonReached=true;s.eris.moonLoss.complete=true;NVSiegeOfSol.ensure(s).confronted=true;const pm=NVPontifex.ensure(s);Object.assign(pm,{alive:true,generation:1,hp:10,identity:'james-brown',body:'mercury',site:{x:90,z:-99,lat:0,lon:0,global:false},offset:{x:0,z:0}});if(!NVBCCombat.targets(s).some(t=>t.type==='pontifex'))throw Error('Missing Pontifex target');for(let i=0;i<200;i++)NVCompanionCombat.step(s,.05);const pontifex=!pm.alive&&pm.hp===0;
+ const war=NVSiegeOfSol.ensure(s);war.stage='war';war.confronted=false;war.boss.hp=1;if(!NVBCCombat.targets(s).some(t=>t.type==='hawthorne'))throw Error('Missing Hawthorne target');for(let i=0;i<200&&!war.confronted;i++)NVCompanionCombat.step(s,.05);const hawthorne=war.confronted&&war.finale.stage==='hawthorne';
+ const q=NVVengefulMascar.ensure(s);q.stage='hunt';q.form=1;q.enemy.hp=1;q.enemy.mode='idle';NVCompanionCombat.hit({type:'vengeful-orion',enemy:q.enemy},20,0,false,'khazglar');const frame=q.form===2&&q.enemy.mode==='transform'&&q.enemy.hp===1000000;return{pontifex,hawthorne,frame};});assert(finishes.pontifex&&finishes.hawthorne&&finishes.frame,JSON.stringify(finishes));console.log('Passed companion-triggered Pontifex death, Hawthorne finale and Mascar phase transition.');
+ assert.deepEqual(errors,[]);
+ }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,0 +1,142 @@
+[
+  {
+    "stage": "arrival",
+    "line": 0,
+    "file": "audio/orion-croxian/ORIONCROXIAN1.mp3",
+    "duration": 7.236,
+    "sha256": "265cd9b42100fcb2c700d05d1bd5198ff9df57d400d59a6d09fadb508e365409"
+  },
+  {
+    "stage": "arrival",
+    "line": 1,
+    "file": "audio/orion-croxian/ORIONCROXIAN2.mp3",
+    "duration": 7.079,
+    "sha256": "fd4bf5b9e79025ac61368f4af3dda90335b78388f85a07ef9726e7e93ceb7230"
+  },
+  {
+    "stage": "arrival",
+    "line": 2,
+    "file": "audio/orion-croxian/ORIONCROXIAN3.mp3",
+    "duration": 6.426,
+    "sha256": "d88a7ec05bb3c0ad8fd371f1c718120660c7f0d78c83933e44ccd78f9242682e"
+  },
+  {
+    "stage": "arrival",
+    "line": 3,
+    "file": "audio/orion-croxian/ORIONCROXIAN4.mp3",
+    "duration": 8.908,
+    "sha256": "453ae58ef79e2ffc11a0a86df3abafd73950dbffbd0682568ce4e53b56c81e76"
+  },
+  {
+    "stage": "arrival",
+    "line": 4,
+    "file": "audio/orion-croxian/ORIONCROXIAN5.mp3",
+    "duration": 7.158,
+    "sha256": "2da1a4784d77f5805f093e5d78f813af6b28dbd2529b14a6d3721c7f24e13586"
+  },
+  {
+    "stage": "arrival",
+    "line": 5,
+    "file": "audio/orion-croxian/ORIONCROXIAN6.mp3",
+    "duration": 7.811,
+    "sha256": "bcab77a9d719cd871f3b4ab2294fd9a8f7f4fcad285915e2ddc69c91cc0f8f87"
+  },
+  {
+    "stage": "arrival",
+    "line": 6,
+    "file": "audio/orion-croxian/ORIONCROXIAN7.mp3",
+    "duration": 7.158,
+    "sha256": "b2d43e77eb4001356df9fa35934a3ed2709477b6846c13b3b415e195f76caa8d"
+  },
+  {
+    "stage": "arrival",
+    "line": 7,
+    "file": "audio/orion-croxian/ORIONCROXIAN8.mp3",
+    "duration": 6.844,
+    "sha256": "7457b5a7dfc4b16b4bda085bc3a05c7ac265e3696847072fbb114f130b1d0ae3"
+  },
+  {
+    "stage": "arrival",
+    "line": 8,
+    "file": "audio/orion-croxian/ORIONCROXIAN9.mp3",
+    "duration": 7.236,
+    "sha256": "0d06be0b2a91eb5a1f13806fbe30b21dbeb485085e731f44fc8d281ed74571ed"
+  },
+  {
+    "stage": "arrival",
+    "line": 9,
+    "file": "audio/orion-croxian/ORIONCROXIAN10.mp3",
+    "duration": 8.829,
+    "sha256": "e386c4aef05051b6a86fcb394b8caec8e2f4cd3e5a63e45a0678da45cb6d913b"
+  },
+  {
+    "stage": "frame",
+    "line": 0,
+    "file": "audio/orion-croxian/ORIONCROXIANMINIBOSS1.mp3",
+    "duration": 7.001,
+    "sha256": "741fbb6948906341255d8446eacefdb6bcc1d6bc2cbef636540212f09e7c84f8"
+  },
+  {
+    "stage": "frame",
+    "line": 1,
+    "file": "audio/orion-croxian/ORIONCROXIANMINIBOSS2.mp3",
+    "duration": 6.766,
+    "sha256": "907fd6f45787cd6c6c2b17a80e9f4ed0cf255c240da2a9cc1e0aba0555943b87"
+  },
+  {
+    "stage": "frame",
+    "line": 2,
+    "file": "audio/orion-croxian/ORIONCROXIANMINIBOSS3.mp3",
+    "duration": 7.079,
+    "sha256": "4a54c28ada1330c8ef6cc6d01bb1f35980d7259ae9187c761fcd50903fc7473d"
+  },
+  {
+    "stage": "frame",
+    "line": 3,
+    "file": "audio/orion-croxian/ORIONCROXIANMINIBOSS4.mp3",
+    "duration": 6.766,
+    "sha256": "57667c7cb75af1841df5e95e612a6af9119093101e31c11356b98c68f2dd33f2"
+  },
+  {
+    "stage": "frame",
+    "line": 4,
+    "file": "audio/orion-croxian/ORIONCROXIANMINIBOSS5.mp3",
+    "duration": 6.844,
+    "sha256": "a707f244ac4175e0af297ba913987f33b41404b115ea69fa9c2f9b2536839738"
+  },
+  {
+    "stage": "frame",
+    "line": 5,
+    "file": "audio/orion-croxian/ORIONCROXIANMINIBOSS6.mp3",
+    "duration": 7.549,
+    "sha256": "73dda09918b5a31362ee73cfaf4d99c541079fd4693d304ce1bbd77715d9abe0"
+  },
+  {
+    "stage": "frame",
+    "line": 6,
+    "file": "audio/orion-croxian/ORIONCROXIANMINIBOSS7.mp3",
+    "duration": 7.706,
+    "sha256": "5f63ed696e678887334b943dcd1b8335f05ab6dbc83f2f91897609df0d2a5557"
+  },
+  {
+    "stage": "frame",
+    "line": 7,
+    "file": "audio/orion-croxian/ORIONCROXIANMINIBOSS8.mp3",
+    "duration": 7.236,
+    "sha256": "7873b5a559834f45f4528605b1f260974622976ee546a30eaf744fea05cb1d26"
+  },
+  {
+    "stage": "frame",
+    "line": 8,
+    "file": "audio/orion-croxian/ORIONCROXIANMINIBOSS9.mp3",
+    "duration": 7.889,
+    "sha256": "11f845e7a016d838bb83a8ea3ca18d364733fac555b9646fefeef708b7d67c13"
+  },
+  {
+    "stage": "frame",
+    "line": 9,
+    "file": "audio/orion-croxian/ORIONCROXIANMINIBOSS10.mp3",
+    "duration": 8.281,
+    "sha256": "4a90701ae589482fbd4f4b44a56fc9dcc3726cb254a8e026a3683953c0d531bc"
+  }
+]

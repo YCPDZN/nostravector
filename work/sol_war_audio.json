@@ -1,0 +1,72 @@
+[
+  {
+    "file": "audio/sol_war/BEEF1.mp3",
+    "duration": 9.091
+  },
+  {
+    "file": "audio/sol_war/BEEF2.mp3",
+    "duration": 8.359,
+    "speaker": "Darius Ancin",
+    "sha256": "aa00a6d4bdec65e9d09161bcd64edbe7b594d30bbd1597c097c690caec5bb106"
+  },
+  {
+    "file": "audio/sol_war/BEEF3.mp3",
+    "duration": 9.247
+  },
+  {
+    "file": "audio/sol_war/BEEF4.mp3",
+    "duration": 7.471,
+    "speaker": "Darius Ancin",
+    "sha256": "62bd0b1de9826d49ff617dc722b9423bd6906a263168492a7ad7ba6cdd034b4b"
+  },
+  {
+    "file": "audio/sol_war/BEEF5.mp3",
+    "duration": 8.516
+  },
+  {
+    "file": "audio/sol_war/BEEF6.mp3",
+    "duration": 7.314,
+    "speaker": "Darius Ancin",
+    "sha256": "4d9f35ed0f723c58d293d0a840e0e090a34eb6528dda225e20080d7ad4a289a5"
+  },
+  {
+    "file": "audio/sol_war/BEEF7.mp3",
+    "duration": 9.482
+  },
+  {
+    "file": "audio/sol_war/BEEF8.mp3",
+    "duration": 9.169,
+    "speaker": "Darius Ancin",
+    "sha256": "4f5d0d47e3350eac4ff6638b51cec380ec8f9df901f5e5d3ad74de9675cde1e0"
+  },
+  {
+    "file": "audio/sol_war/BEEF9.mp3",
+    "duration": 8.438
+  },
+  {
+    "file": "audio/sol_war/BEEF10.mp3",
+    "duration": 10.919,
+    "speaker": "Darius Ancin",
+    "sha256": "8e4b3344041dd5317e59a1c8614810cd735654027a1999acac33e693d0e42e35"
+  },
+  {
+    "file": "audio/sol_war/BEEF11.mp3",
+    "duration": 10.188
+  },
+  {
+    "file": "audio/sol_war/BEEF12.mp3",
+    "duration": 10.031
+  },
+  {
+    "file": "audio/sol_war/BEEF13.mp3",
+    "duration": 11.651
+  },
+  {
+    "file": "audio/sol_war/BEEF14.mp3",
+    "duration": 10.684
+  },
+  {
+    "file": "audio/sol_war/BEEF15.mp3",
+    "duration": 14.838
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "line": 0,
+    "file": "audio/tyrotaronus/TYRO1.mp3",
+    "duration": 13.009,
+    "sha256": "ceaf4780917cb463d1cc26bd1dbb67ee61100ae9d262af07b7fe9aef1716bb66"
+  },
+  {
+    "line": 1,
+    "file": "audio/tyrotaronus/TYRO2.mp3",
+    "duration": 11.311,
+    "sha256": "bbd1bbe64a2545ea9bf6cc630e2465793f1cbd02f2e19d0048de7ec55ceb1e76"
+  },
+  {
+    "line": 2,
+    "file": "audio/tyrotaronus/TYRO3.mp3",
+    "duration": 12.278,
+    "sha256": "40a8fe40e5e79fc8a13a8e39717e10cb4afe370cacd1e6df30f26b0589de5ace"
+  },
+  {
+    "line": 3,
+    "file": "audio/tyrotaronus/TYRO4.mp3",
+    "duration": 12.826,
+    "sha256": "9ca2b6248744823e746ddf6bad738b67e5a7e407fb61993bd8fd307947ea33ce"
+  },
+  {
+    "line": 4,
+    "file": "audio/tyrotaronus/TYRO5.mp3",
+    "duration": 12.278,
+    "sha256": "b35b25a16873901c53b444b5f207beab820b87de09afb1144b5cb98b4c749ba3"
+  },
+  {
+    "line": 5,
+    "file": "audio/tyrotaronus/TYRO6.mp3",
+    "duration": 13.793,
+    "sha256": "9547ba1f0475136bf575c204d4bf3a4d43cac21c5c68bd68d3652b2459801d72"
+  },
+  {
+    "line": 6,
+    "file": "audio/tyrotaronus/TYRO7.mp3",
+    "duration": 10.527,
+    "sha256": "58ea69771a5d15138b27610248f58f79a40d2d97fb10ad518d495c4ca9a4ad8c"
+  },
+  {
+    "line": 7,
+    "file": "audio/tyrotaronus/TYRO8.mp3",
+    "duration": 9.874,
+    "sha256": "c7755fa2605f64d6df5946d35ee8ef9f7f1d80f72f8114cfa39d7572b78ddb99"
+  },
+  {
+    "line": 8,
+    "file": "audio/tyrotaronus/TYRO9.mp3",
+    "duration": 13.244,
+    "sha256": "e823f511d1dedd69061908c4723be69a3969a55258da0ca3ad720719c83265b9"
+  },
+  {
+    "line": 9,
+    "file": "audio/tyrotaronus/TYRO10.mp3",
+    "duration": 14.759,
+    "sha256": "6c522e5e12542b47a659940c81baaba45b2c8d6376c2a93272686f1d345e78e0"
+  }
+]

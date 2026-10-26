@@ -1,0 +1,12 @@
+const NVBrownMission=(()=>{
+ const resolved=s=>!!s.eris?.khazglar?.reward?.charonDecision||s.eris?.khazglar?.reward?.charonRecruited===true;
+ function phase(s){if(!resolved(s))return'locked';const q=NVBrownStory.ensure(s);return q.brownDefeated?'complete':!q.tritonReached?'triton':!NVMoonLoss.ensure(s).complete?'base':'brown';}
+ function step(s){if(!resolved(s))return;const q=NVBrownStory.ensure(s),r=NVShipReward.ensure(s);if(!q.questStarted){q.questStarted=true;if(NVSurfaceNavigation.current(s)?.id==='charon-station')NVSurfaceNavigation.clear(s);}r.crewAssigned=true;r.crewArrived=true;NVMoonLoss.step(s);if((s.space?.system||'sol')==='sol'&&s.space.body==='triton'&&['landed','cockpit'].includes(s.space.phase)&&!s.space.ecologyOcean)q.tritonReached=true;const journal=NVEris.ensure(s).quests;if(!q.brownDefeated&&journal)journal.completed=journal.completed.filter(id=>id!=='pontifex');NVQuests.update(s);}
+ function waypoint(s){const stage=phase(s),p=s.space;if(['locked','complete'].includes(stage)||!p||(p.system||'sol')!=='sol')return null;const id=stage==='brown'?'earth':'triton',label=stage==='brown'?'Research station · Imperia bastion / James Brown':'Triton · Secure your new base';
+  if(p.body===id&&p.phase==='landed'){if(stage==='brown'){const n=NVPontifex.local(s);return n?{x:n.x,z:n.z,label}:null;}const base=NVMoonLoss.local(s);return base?{x:base.x+9,z:base.z-7,label:'Triton relay · Take over the base'}:null;}
+  if(p.body===id&&['atmosphere','ascent','descent'].includes(p.phase)){if(stage==='brown'){const boss=NVPontifex.ensure(s),site=boss.site||{lat:-78,lon:20,x:0,z:NVAntarctica.STATION.z-65};return{geo:{lat:site.lat+site.z/24000,lon:NVWorldFlight.wrap(site.lon+site.x/(24000*Math.max(.05,Math.cos(site.lat*Math.PI/180))))},label};}const q=NVMoonLoss.ensure(s),g=NVWorldFlight.ensure(s);return{geo:q.lat!==null?{lat:q.lat+(q.z-q.anchorZ)/24000,lon:NVWorldFlight.wrap(q.lon+(q.x-q.anchorX)/(24000*Math.max(.05,Math.cos(q.lat*Math.PI/180))))}:{lat:g.lat,lon:g.lon},label:q.site?'Triton relay · Land nearby':'Land on Triton'};}
+  if(p.body===id&&p.phase==='cockpit')return{x:p.landingX,z:p.landingZ,label:stage==='brown'?'Launch · Fly to Antarctica':'Exit ship · Find the Triton relay'};
+  if(['landed','cockpit','off'].includes(p.phase))return{x:p.landingX,z:p.landingZ,label:'Return to ship · '+label};const body=NVSol.byId[id];return{space:true,position:body.position,radius:body.radius,label};
+ }
+ return{resolved,phase,step,waypoint};
+})();

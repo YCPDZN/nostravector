@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/antarctica_renderer.js');s=p.read_text(encoding='utf-8').replace("const armed=!isJames&&entity===safelyPlayer()&&typeof NVPlayerPistol!=='undefined'&&NVPlayerPistol.playable(entity),shot=armed?NVPlayerPistol.state(entity):null;", "const armed=!isJames&&list===hero&&typeof NVPlayerPistol!=='undefined'&&safelyPlayer()&&NVPlayerPistol.playable(safelyPlayer()),shot=armed?NVPlayerPistol.state(safelyPlayer()):null;");p.write_text(s,encoding='utf-8')

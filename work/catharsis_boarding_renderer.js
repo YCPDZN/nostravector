@@ -1,0 +1,18 @@
+function createCatharsisBoardingDraw({M,mesh,draw}){
+ const math={...M,scale:M.s,rx:NVCompanionMotion.rx,rz:NVCompanionMotion.rz},cube=mesh({p:[[-.5,-.5,-.5],[.5,-.5,-.5],[.5,.5,-.5],[-.5,.5,-.5],[-.5,-.5,.5],[.5,-.5,.5],[.5,.5,.5],[-.5,.5,.5]],n:[[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]],f:[0,2,1,0,3,2,4,5,6,4,6,7,0,1,5,0,5,4,3,7,6,3,6,2,0,4,7,0,7,3,1,2,6,1,6,5],c:[1,1,1]});
+ const box=(x,y,z,sx,sy,sz,c,yaw=0,e=0)=>draw(cube,M.mul(M.t(x,y,z),M.mul(M.ry(yaw),M.s(sx,sy,sz))),c,e);
+ const bridgeDraw=(part,root,color,unused,emission=0)=>draw(part,root,color,emission),options={M:math,mesh,draw:bridgeDraw,object:box,ground:()=>0},weapons=createCompanionCombatScenery(options),bc=createBCCombatScenery(options);
+ let aliens=null;function models(){return aliens||(aliens=Chapter4IntruderModel.meshes.map(p=>{const raw=p.p.flat(),norm=p.n.flat(),points=[],normals=[];for(let i=0;i<raw.length;i+=3){points.push(raw.slice(i,i+3).map(v=>v*.42));normals.push(norm.slice(i,i+3));}return mesh({...p,p:points,n:normals,c:p.color||p.c});}));}
+ function crewWeapons(s,n,parts,root,motion){if(!NVCatharsisBoarding.active(s)||n.hp<=0)return;if(n.custom&&NVBCCombat.kind(NVCustomCrew.record(s,n.id)))bc.weapons(s,NVCustomCrew.record(s,n.id),parts,root,motion);else weapons.weapons(s,n.id,n,root,motion,parts);}
+ function render(s,time){if(!NVCatharsisBoarding.active(s))return;const b=NVCatharsisBoarding.ensure(s),q=NVShipInterior.ensure(s),y=q.y,parts=models();
+  for(const a of b.enemies){if(a.hp<=0)continue;const mode=['slash','recover'].includes(a.mode)?'cleave':a.mode==='windup'?'slam':null,pose=NVCompanionMotion.pose(parts,'catharsis-boarder',time,a.speed,a.phase,mode?{companion:true,mode,elapsed:a.elapsed,duration:.9}:null),scale=a.alpha?1.18:1,root=M.mul(M.t(a.x,y,a.z),M.mul(M.ry(a.yaw),M.s(scale,scale,scale)));for(const p of parts)draw(p,M.mul(root,NVCompanionMotion.part(pose,p)),p.color);
+   box(a.x,y+2.35,a.z,1.15,.06,.06,[.13,.09,.1]);box(a.x-(1-a.hp/a.maxHp)*.575,y+2.35,a.z,1.15*a.hp/a.maxHp,.06,.065,a.alpha?[1,.55,.16]:[.7,.18,.24]);
+   if(a.mode==='windup')for(let i=1;i<=5;i++)box(a.x+a.dx*i*.55,y+.045,a.z+a.dz*i*.55,.16,.035,.38,[.55,.13,.12],a.yaw,.15);
+  }
+  for(const e of NVCatharsisBoarding.state(s).effects){if(e.type==='wave'){const r=e.age*16;for(let i=0;i<20;i++){const angle=i/20*Math.PI*2;box(e.from.x+Math.sin(angle)*r,y+.12,e.from.z+Math.cos(angle)*r,.25,.05,.6,e.color,angle,.2);}continue;}if(!e.to)continue;const dx=e.to.x-e.from.x,dz=e.to.z-e.from.z,len=Math.hypot(dx,dz),yaw=Math.atan2(dx,dz);if(e.type==='chain'){for(let i=0;i<Math.min(32,Math.ceil(len*3));i++){const t=i/Math.min(32,Math.ceil(len*3));box(e.from.x+dx*t,y+1.1-Math.sin(t*Math.PI)*.2,e.from.z+dz*t,.12,.1,.2,e.color,yaw,.1);}}else if(e.type==='laser'){const t=Math.min(1,e.age/.15);box(e.from.x+dx*t,y+1.15,e.from.z+dz*t,.04,.04,.85,e.color,yaw,.35);}else for(let i=0;i<5;i++){const angle=yaw+(i/4-.5)*1.2;box(e.from.x+Math.sin(angle),y+1,e.from.z+Math.cos(angle),.12,.08,.3,e.color,angle,.15);}}
+  // View-space rifle: attached to the camera, with damped recoil and a short muzzle glow.
+  const r=NVCatharsisBoarding.state(s),root=M.mul(M.t(q.x,y+1.65,q.z),M.mul(M.ry(q.yaw),NVCompanionMotion.rx(q.pitch))),piece=(x,yy,z,sx,sy,sz,c,e=0)=>draw(cube,M.mul(root,M.mul(M.t(x,yy,z+r.recoil*.055),M.s(sx,sy,sz))),c,e);
+  piece(.26,-.28,-.58,.13,.14,.55,[.12,.17,.20]);piece(.26,-.3,-.31,.16,.18,.2,[.23,.28,.29]);piece(.26,-.38,-.43,.075,.19,.1,[.14,.18,.2]);piece(.26,-.2,-.57,.07,.07,.18,[.25,.33,.37]);piece(.26,-.27,-.91,.05,.05,.2,[.35,.5,.55]);if(r.flash>0)piece(.26,-.27,-1.04,.07,.07,.16,[.45,.85,1],.8);
+ }
+ return{render,crewWeapons};
+}

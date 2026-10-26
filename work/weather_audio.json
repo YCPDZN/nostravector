@@ -1,0 +1,12 @@
+[
+  {
+    "type": "firestorm",
+    "file": "audio/weather/FIRESTORM.mp3",
+    "duration": 3.866
+  },
+  {
+    "type": "duststorm",
+    "file": "audio/weather/DUSTSTORM.mp3",
+    "duration": 3.788
+  }
+]

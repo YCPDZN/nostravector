@@ -1,0 +1,162 @@
+[
+  {
+    "leader": "darius",
+    "line": 0,
+    "text": "I kicked Hawthorne out because he failed to see how organised we are. He became a liability, so I removed him. Do not make me explain your departure the same way.",
+    "file": "audio/darius-boss/ANCIN1.mp3",
+    "duration": 11.076,
+    "sha256": "8066b56a4b3b21fa26912ef69a9e1649b48229b83af74aa87b9c0fc8c4466d8e"
+  },
+  {
+    "leader": "darius",
+    "line": 1,
+    "text": "Thomas needed parades, statues, crowds chanting his name. I prefer officials who understand an instruction the first time.",
+    "file": "audio/darius-boss/ANCIN2.mp3",
+    "duration": 9.482,
+    "sha256": "f80c1fb80396089f0865065b51ddc9316085a1c4dd2241fbefd27c886a9afd3c"
+  },
+  {
+    "leader": "darius",
+    "line": 2,
+    "text": "You thought we opposed Hawthorne because he was ruthless? We opposed him because he was reckless. There is a considerable difference.",
+    "file": "audio/darius-boss/ANCIN3.mp3",
+    "duration": 8.516,
+    "sha256": "6ba3b6bf220b74703dbab2592ce60396f0d5a54584847a39e485eb8a4e32dd18"
+  },
+  {
+    "leader": "darius",
+    "line": 3,
+    "text": "He announced every ambition before he had the means to achieve it. By the time he declared himself indispensable, I had already replaced his people.",
+    "file": "audio/darius-boss/ANCIN4.mp3",
+    "duration": 10.031,
+    "sha256": "073edc36257e55b1fab825e06d8b64d0078a3585b7985a2c3b885e2ca158b9c1"
+  },
+  {
+    "leader": "darius",
+    "line": 4,
+    "text": "The Federation survived because someone was willing to decide who could be sacrificed. You were spared those meetings.",
+    "file": "audio/darius-boss/ANCIN5.mp3",
+    "duration": 8.124,
+    "sha256": "72b69249d99cf23edaca1159a56da5e04b99f51b329ad56816d02afa1011b54a"
+  },
+  {
+    "leader": "darius",
+    "line": 5,
+    "text": "I never intended for you to live past Antarctica, you know. When they reported that you had awakened, I assumed the cold would finish what we started.",
+    "file": "audio/darius-boss/ANCIN6.mp3",
+    "duration": 9.482,
+    "sha256": "11b6215d92810801c0efa907ce4f91644a1b7464e689ae93745c81adb24030ae"
+  },
+  {
+    "leader": "darius",
+    "line": 6,
+    "text": "YOU WERE SUPPOSED TO WAKE UP ALONE, CONFUSED, WITH NOTHING BUT ICE BETWEEN YOU AND THE NEAREST LIVING SOUL!",
+    "file": "audio/darius-boss/ANCIN7.mp3",
+    "duration": 6.844,
+    "sha256": "ebaa6fd0de70c2065f09dc5427a3c3e2530644d30bd87ee63f59ea57a280ccb0"
+  },
+  {
+    "leader": "darius",
+    "line": 7,
+    "text": "THEN BROWN FOUND YOU. ONE UNSCHEDULED ACT OF KINDNESS, AND SUDDENLY I HAD A SURVIVOR WHERE THERE SHOULD HAVE BEEN A BODY!",
+    "file": "audio/darius-boss/ANCIN8.mp3",
+    "duration": 7.471,
+    "sha256": "9fffc9e6efdfdb454040892e0955d492ee7acdd241e2e0aaad388e9ba6e07180"
+  },
+  {
+    "leader": "darius",
+    "line": 8,
+    "text": "DO YOU KNOW HOW MANY REPORTS I BURIED? HOW MANY PEOPLE I HAD TO REASSURE THAT YOU WOULD NEVER MAKE IT OFF THAT CONTINENT?",
+    "file": "audio/darius-boss/ANCIN9.mp3",
+    "duration": 7.001,
+    "sha256": "3f5a5ccccc77c5b567bcedfa2d1175a9bf2a6e7f3fca48472d5553a338442c15"
+  },
+  {
+    "leader": "darius",
+    "line": 9,
+    "text": "I SHOULD HAVE SENT SOMEONE TO THAT RESEARCH STATION THE MOMENT YOU OPENED YOUR EYES! I WILL NOT LEAVE YOUR DEATH TO THE WEATHER AGAIN!",
+    "file": "audio/darius-boss/ANCIN10.mp3",
+    "duration": 6.922,
+    "sha256": "fcb0d436c5325075a8504cfee8bd61051acb332619378209d005df0559adc2fd"
+  },
+  {
+    "leader": "vishara",
+    "line": 0,
+    "text": "I have been in charge of this dwarf planet for over a billion years. You are hardly the first invader to mistake it for an easy conquest.",
+    "file": "audio/vishara-boss/VISHARA1.mp3",
+    "duration": 7.967,
+    "sha256": "f6e082ee2cf1271e729eed9ea9f794636610c4d7668f8aede8c760566a278d2e"
+  },
+  {
+    "leader": "vishara",
+    "line": 1,
+    "text": "I welcomed you into my court, Wanderer. Was that merely an opportunity to study its defences?",
+    "file": "audio/vishara-boss/VISHARA2.mp3",
+    "duration": 6.113,
+    "sha256": "f73a24d7ca0a9d1a3f6676397cb866117924f25e3f671542f3c48a5d2438cbaa"
+  },
+  {
+    "leader": "vishara",
+    "line": 2,
+    "text": "Hawthorne wanted my throne. Alexia betrayed my trust. Tell me—what excuse have you brought?",
+    "file": "audio/vishara-boss/VISHARA3.mp3",
+    "duration": 7.079,
+    "sha256": "015b0a566fe2ff11c1a1cd2f75e9bef09b8c36c419ae4ea3693aa79d0c85d42d"
+  },
+  {
+    "leader": "vishara",
+    "line": 3,
+    "text": "These people survived exile and occupation. I will not ask them to endure you as well.",
+    "file": "audio/vishara-boss/VISHARA4.mp3",
+    "duration": 6.348,
+    "sha256": "4a23869a7644287c1d3ca76f52829c6993396d202b5d0a41e3cf8d9ecdd93040"
+  },
+  {
+    "leader": "vishara",
+    "line": 4,
+    "text": "You feel that cold creeping through your armour? Keep fighting. It will reach your hands soon.",
+    "file": "audio/vishara-boss/VISHARA5.mp3",
+    "duration": 5.878,
+    "sha256": "d3a1a0cf5fcba6eaff5bb4049dbce308e190d2a64bcadb63f546edcf7cbc55f7"
+  },
+  {
+    "leader": "vishara",
+    "line": 5,
+    "text": "I remember when your ancestors had yet to discover fire. Age has taught me patience, but you are exhausting it.",
+    "file": "audio/vishara-boss/VISHARA6.mp3",
+    "duration": 7.549,
+    "sha256": "796936f2839332aa8e450a4b7adf5f4a42fd529cc4f0631fe47970e87e7510f0"
+  },
+  {
+    "leader": "vishara",
+    "line": 6,
+    "text": "Look behind you. Those soldiers once cheered your arrival. Now they are defending their homes against you.",
+    "file": "audio/vishara-boss/VISHARA7.mp3",
+    "duration": 7.236,
+    "sha256": "23286f85a4c484e3a323a6c10d1a8d0a398c642a18ef8ea795ca85a44a862535"
+  },
+  {
+    "leader": "vishara",
+    "line": 7,
+    "text": "Do not mistake my restraint for weakness. There are parts of this palace I am willing to bury beneath the ice.",
+    "file": "audio/vishara-boss/VISHARA8.mp3",
+    "duration": 6.844,
+    "sha256": "f17407c6f36938b01f6b90a96ea5b8a2dfeca97df58511191cfc24e3647b90f9"
+  },
+  {
+    "leader": "vishara",
+    "line": 8,
+    "text": "We could have faced the darkness together. Instead, you have given it one less battle to fight.",
+    "file": "audio/vishara-boss/VISHARA9.mp3",
+    "duration": 5.956,
+    "sha256": "4a3ce406ffc1c02151bd10913c47107e898bdffce564a0916db3b79ceb7f03be"
+  },
+  {
+    "leader": "vishara",
+    "line": 9,
+    "text": "Come, then. If you insist on taking Eris, you will have to get past its empress.",
+    "file": "audio/vishara-boss/VISHARA10.mp3",
+    "duration": 5.486,
+    "sha256": "f3a407334d4ce9206272cea466306ecc444eee050cddcd38946d0dca5d0b0f74"
+  }
+]

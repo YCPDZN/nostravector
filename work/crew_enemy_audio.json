@@ -1,0 +1,212 @@
+[
+  {
+    "profile": "orion",
+    "line": 0,
+    "file": "audio/crew-enemy/ORIONHOSTILE1.mp3",
+    "duration": 7.079,
+    "sha256": "8a18650353e497f835bcd8f35a1d4a95ba90aa09f8d6841218383148bd157644"
+  },
+  {
+    "profile": "orion",
+    "line": 1,
+    "file": "audio/crew-enemy/ORIONHOSTILE2.mp3",
+    "duration": 5.721,
+    "sha256": "3bba4c5fe8b288f65bb1001b426d28688ba8b0d0040aba63aab50821706b9299"
+  },
+  {
+    "profile": "khazglar",
+    "line": 0,
+    "file": "audio/crew-enemy/KHAZGLARHOSTILE1.mp3",
+    "duration": 6.766,
+    "sha256": "24c5735823dbe992acfa51670a2b3a95f3c3fe5939ae116b92f76193bef93e66"
+  },
+  {
+    "profile": "khazglar",
+    "line": 1,
+    "file": "audio/crew-enemy/KHAZGLARHOSTILE2.mp3",
+    "duration": 7.001,
+    "sha256": "a34982bf61da8aa49ec502112a778f0026d3bebf2273766b9b9c07ed170c76e3"
+  },
+  {
+    "profile": "williams",
+    "line": 0,
+    "file": "audio/crew-enemy/JWILLIAMSHOSTILE1.mp3",
+    "duration": 4.598,
+    "sha256": "a38fe132509211e23fb19784e6a417037b72787c416e33bc71e5ceb5bd2c7b5c"
+  },
+  {
+    "profile": "williams",
+    "line": 1,
+    "file": "audio/crew-enemy/JWILLIAMSHOSTILE2.mp3",
+    "duration": 6.687,
+    "sha256": "2f21f1a17af10ffdc21a38fb0a9c47ad6987349e53d5e54dc90b3da43fd691dc"
+  },
+  {
+    "profile": "nyrexia",
+    "line": 0,
+    "file": "audio/crew-enemy/NYREXIAHOSTILE1.mp3",
+    "duration": 6.922,
+    "sha256": "0a8935a119fb8def0302eb0691f4958244bf6b4010a18c585af113dc8cf23ebf"
+  },
+  {
+    "profile": "nyrexia",
+    "line": 1,
+    "file": "audio/crew-enemy/NYREXIAHOSTILE2.mp3",
+    "duration": 6.922,
+    "sha256": "ac45d9434866c373d2ad9cd07df4f93beb1b527a13e666c383c6188f0e652103"
+  },
+  {
+    "profile": "charon",
+    "line": 0,
+    "file": "audio/crew-enemy/CHARONHOSTILE1.mp3",
+    "duration": 5.956,
+    "sha256": "43f3b1726fe83b0b698e5328621d6b2813117f60ac98f36c086cfcdefe2c290f"
+  },
+  {
+    "profile": "charon",
+    "line": 1,
+    "file": "audio/crew-enemy/CHARONHOSTILE2.mp3",
+    "duration": 6.766,
+    "sha256": "ee4de16a5fa35677183171da17fed73726f16612ea99ab3d7b97855485f48b7b"
+  },
+  {
+    "profile": "kizna",
+    "line": 0,
+    "file": "audio/crew-enemy/KIZNAHOSTILE1.mp3",
+    "duration": 6.922,
+    "sha256": "adb54048a922c239d501c6d2d1ca0bf5996d509c3ab1e617b329fa4cde939964"
+  },
+  {
+    "profile": "kizna",
+    "line": 1,
+    "file": "audio/crew-enemy/KIZNAHOSTILE2.mp3",
+    "duration": 7.079,
+    "sha256": "f1aa78c1dd9247c7e923a56d8032bca4e7f4047565750014b57b6b6690db710e"
+  },
+  {
+    "profile": "james",
+    "line": 0,
+    "file": "audio/crew-enemy/JAMESHOSTILE1.mp3",
+    "duration": 6.113,
+    "sha256": "38928837b121c86dc68d7ae4727699f50ffb3b7633c2dadd567b531bbe8b852d"
+  },
+  {
+    "profile": "james",
+    "line": 1,
+    "file": "audio/crew-enemy/JAMESHOSTILE2.mp3",
+    "duration": 5.956,
+    "sha256": "be3ab509849752303e0170590b5fd13510a6b34c82a6e9a6abf21c9a27fa64c2"
+  },
+  {
+    "profile": "croxian",
+    "line": 0,
+    "file": "audio/crew-enemy/CROXIANHOSTILE1.mp3",
+    "duration": 6.844,
+    "sha256": "2ee4399c5bc06c6aa49063f2b2ab4db21c9f105525fbc5f4cad4fd13b7f695cd"
+  },
+  {
+    "profile": "croxian",
+    "line": 1,
+    "file": "audio/crew-enemy/CROXIANHOSTILE2.mp3",
+    "duration": 6.766,
+    "sha256": "f1461e49ffdcfd535d86b7324bd6dd513de94bf08c3f34e6e5637a54d197e1ea"
+  },
+  {
+    "profile": "malia",
+    "line": 0,
+    "file": "audio/crew-enemy/MALIAHOSTILE1.mp3",
+    "duration": 5.799,
+    "sha256": "0c8ca2aa0911596a4f33d79403469d047a9b1c9e0d035d90cabd338fe19858f2"
+  },
+  {
+    "profile": "malia",
+    "line": 1,
+    "file": "audio/crew-enemy/MALIAHOSTILE2.mp3",
+    "duration": 6.191,
+    "sha256": "ad338ff8ba5e0e3db266c358ee4626f5b20b719ed7726bbea3d950f1ec4a9944"
+  },
+  {
+    "profile": "josiah",
+    "line": 0,
+    "file": "audio/crew-enemy/JOSIAHRICHARDSHOSTILE1.mp3",
+    "duration": 6.348,
+    "sha256": "6a98dc24868893be6c3ef26eb4746dd98a52ecceb44fa7bb7ba7acdd6bf6d842"
+  },
+  {
+    "profile": "josiah",
+    "line": 1,
+    "file": "audio/crew-enemy/JOSIAHRICHARDSHOSTILE2.mp3",
+    "duration": 6.034,
+    "sha256": "ac13dca865dcfc5d648890610ca359d62878210c6f8967a414229fdb56407a19"
+  },
+  {
+    "profile": "peter",
+    "line": 0,
+    "file": "audio/crew-enemy/PETERHOSTILE1.mp3",
+    "duration": 5.251,
+    "sha256": "401e259e27e2fbc1223acc11675dffce6900e812f142eec086bc0cadaefa0c36"
+  },
+  {
+    "profile": "peter",
+    "line": 1,
+    "file": "audio/crew-enemy/PETERHOSTILE2.mp3",
+    "duration": 6.348,
+    "sha256": "960453f4b308af6516cfddbb6109f247ed4d83244cf3759f06f316db50c1c463"
+  },
+  {
+    "profile": "gareth",
+    "line": 0,
+    "file": "audio/crew-enemy/GARETHHOSTILE1.mp3",
+    "duration": 6.426,
+    "sha256": "ec449128ffcff66f58be73cfba21e394952ddd1f86159cd93bc5919012791570"
+  },
+  {
+    "profile": "gareth",
+    "line": 1,
+    "file": "audio/crew-enemy/GARETHHOSTILE2.mp3",
+    "duration": 5.068,
+    "sha256": "09f795700df93fc3b0b25bc1e1d1ac1913a541f873a8dc97311ae38617a393e0"
+  },
+  {
+    "profile": "pontifex",
+    "line": 0,
+    "file": "audio/crew-enemy/PONTIFEXHOSTILE1.mp3",
+    "duration": 5.721,
+    "sha256": "fa4e8b5e8c02cac871eb1fa0053d251aa000b663de23c22fbe833288673acf58"
+  },
+  {
+    "profile": "pontifex",
+    "line": 1,
+    "file": "audio/crew-enemy/PONTIFEXHOSTILE2.mp3",
+    "duration": 7.001,
+    "sha256": "a153231949aea4940ef35bf879589992867b0ab7cb04e8d7536f42a176add4d2"
+  },
+  {
+    "profile": "custom",
+    "line": 0,
+    "file": "audio/crew-enemy/CUSTOMHOSTILE1.mp3",
+    "duration": 5.486,
+    "sha256": "53e53b983628a76cdb06b73a5e11f832be95c73f38e25e2d69defddc4c75c6b2"
+  },
+  {
+    "profile": "custom",
+    "line": 1,
+    "file": "audio/crew-enemy/CUSTOMHOSTILE2.mp3",
+    "duration": 7.079,
+    "sha256": "e380fab0a2d1dc8540414253a8b62bd14cecc117e1a28dec5ff6cb8699e0ac1d"
+  },
+  {
+    "profile": "tyrotaronus",
+    "line": 0,
+    "file": "audio/crew-enemy/TYROTARONUSHOSTILE1.mp3",
+    "duration": 9.091,
+    "sha256": "f08f91392a930a5392380ee8b78ca3c1ddec67162e86a0fc4c3c57e44750bed4"
+  },
+  {
+    "profile": "tyrotaronus",
+    "line": 1,
+    "file": "audio/crew-enemy/TYROTARONUSHOSTILE2.mp3",
+    "duration": 10.998,
+    "sha256": "e3058b2a552a2fde5e3afb89433e7cb59865bb5d04151f8a376f31933fa0d846"
+  }
+]

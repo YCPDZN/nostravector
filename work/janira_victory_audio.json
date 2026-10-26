@@ -1,0 +1,32 @@
+[
+  {
+    "line": 0,
+    "file": "audio/janira-victory/POSTJANIRA1.mp3",
+    "duration": 4.127,
+    "sha256": "4fbaa2d538c569f69e07e7565516ba03266991fd872e6ef8d8747f46ff3fb3d9"
+  },
+  {
+    "line": 1,
+    "file": "audio/janira-victory/POSTJANIRA2.mp3",
+    "duration": 9.796,
+    "sha256": "c4e8eeccc1b72d8b7a1232b834fe278be6ff19ab0836ae2871361a9dd9638a5b"
+  },
+  {
+    "line": 2,
+    "file": "audio/janira-victory/POSTJANIRA3.mp3",
+    "duration": 10.684,
+    "sha256": "2e93ebf414a2d9e564ca50bb78278892422c92a346d5aada1fe6ae590cb5d149"
+  },
+  {
+    "line": 3,
+    "file": "audio/janira-victory/POSTJANIRA4.mp3",
+    "duration": 12.434,
+    "sha256": "abacb19e7717047fc155283553b7d93b32365e3359dbc605b6a861f74a1893d6"
+  },
+  {
+    "line": 4,
+    "file": "audio/janira-victory/POSTJANIRA5.mp3",
+    "duration": 14.028,
+    "sha256": "0cc7bc4aa66f7344c4de2ce4edab9d378e2e281cdda93aad48743d1048c03e34"
+  }
+]

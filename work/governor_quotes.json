@@ -1,0 +1,12 @@
+[
+  {"id":"materials","kind":"help","text":"I could use your help with a few repairs. We're short of metal. Could you spare ten units to keep the work moving?"},
+  {"id":"housing-report","kind":"report","text":"We've finished a new housing block. Seeing people finally settle into their own homes makes all the hard work worthwhile."},
+  {"id":"housing-plan","kind":"proposal","text":"I've drawn up plans to expand the housing district. Do I have your approval, or would you rather we focus our efforts elsewhere?"},
+  {"id":"power-report","kind":"report","text":"I've checked the power grid and the reserve generators. Everything is running properly. For once, I can give you some good news without asking for anything."},
+  {"id":"public-meeting","kind":"proposal","text":"A few settlers have been arguing over how things are run. I'd like to hold a public meeting and hear them out. Are you happy for me to handle it?"},
+  {"id":"trade-route","kind":"proposal","text":"Some traders have offered us a regular supply route. It could save us a lot of trouble. Shall I approve the agreement, or turn them down?"},
+  {"id":"patrol-report","kind":"report","text":"The patrols have checked the perimeter. Nothing unusual to report. I'm not complaining; a quiet day is a good day around here."},
+  {"id":"garden-plan","kind":"proposal","text":"Would you approve a covered garden for the settlement? A little greenery and somewhere peaceful to sit could do everyone some good."},
+  {"id":"salvage-plan","kind":"help","text":"Our survey team found some abandoned equipment nearby. It might still be useful. Can you help me decide: send a salvage crew, or leave it alone?"},
+  {"id":"settlement-report","kind":"report","text":"Nothing urgent today. The settlement is finding its feet, and people keep asking when you'll visit again. You're still welcome here, even when there's nothing that needs fixing."}
+]

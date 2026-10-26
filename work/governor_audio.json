@@ -1,0 +1,1352 @@
+[
+  {
+    "key": "orion:materials",
+    "profile": "orion",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/ORION1.mp3",
+    "duration": 9.091,
+    "sha256": "01349dc26b91354dd4b6fed9f10dc0606f1bd520aff35e5894073927eca93312"
+  },
+  {
+    "key": "orion:housing-report",
+    "profile": "orion",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/ORION2.mp3",
+    "duration": 8.124,
+    "sha256": "e7e47f6e77f74d1828ebd8b4db230db8396cdc3e5ecef71c4a8be4e26b4af241"
+  },
+  {
+    "key": "orion:housing-plan",
+    "profile": "orion",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/ORION3.mp3",
+    "duration": 10.371,
+    "sha256": "e50227b5b28eb4f352fecadc53914608686589d2e94d8608b74bb1e8b770ff0f"
+  },
+  {
+    "key": "orion:power-report",
+    "profile": "orion",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/ORION4.mp3",
+    "duration": 10.998,
+    "sha256": "f45b0c8195a928ad664cbcc1f08c805f41b8d521ab24471ee8904586ffe8035b"
+  },
+  {
+    "key": "orion:public-meeting",
+    "profile": "orion",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/ORION5.mp3",
+    "duration": 9.953,
+    "sha256": "1b448b5be8dd54ea38dbd9681dcd077439bf248fce9b7568488b10d78ecc4faf"
+  },
+  {
+    "key": "orion:trade-route",
+    "profile": "orion",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/ORION6.mp3",
+    "duration": 10.188,
+    "sha256": "72ac76b48736a2658783460b1b7e94c8e899998f3fb40324672cca4622bfcd74"
+  },
+  {
+    "key": "orion:patrol-report",
+    "profile": "orion",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/ORION7.mp3",
+    "duration": 12.199,
+    "sha256": "ab1ee9c07fbf3623282e00aada8ef11f28d8df8cb63617466c80525b1e1293df"
+  },
+  {
+    "key": "orion:garden-plan",
+    "profile": "orion",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/ORION8.mp3",
+    "duration": 10.449,
+    "sha256": "c9ec889d814be99ed979174aec6ba3575bd93a85add67656c501f79b7e72d80f"
+  },
+  {
+    "key": "orion:salvage-plan",
+    "profile": "orion",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/ORION9.mp3",
+    "duration": 10.266,
+    "sha256": "ecaa9a3b9517abe4b0beb5fd379106e92daabd0c993b879f910f2cc2af842dec"
+  },
+  {
+    "key": "orion:settlement-report",
+    "profile": "orion",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/ORION10.mp3",
+    "duration": 9.874,
+    "sha256": "5ac6a56519caa77714e802e7d8446329ca1f86252851aaef29ec7a181e5a68f6"
+  },
+  {
+    "key": "charon:materials",
+    "profile": "charon",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/CHARON1.mp3",
+    "duration": 7.314,
+    "sha256": "82fca45530b670729ee7f54b28d401ebcc6b94cf46685fffd6c7cc0531a04ec3"
+  },
+  {
+    "key": "charon:housing-report",
+    "profile": "charon",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/CHARON2.mp3",
+    "duration": 8.594,
+    "sha256": "d639810e3bd8009c7fc23790fa421b67f077975e69c75ed3aa141d846e262e95"
+  },
+  {
+    "key": "charon:housing-plan",
+    "profile": "charon",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/CHARON3.mp3",
+    "duration": 8.046,
+    "sha256": "a2e6276bcf179115e7fd1ddf1ac5a3ea1dfd8ab683b7e42a09fc4a9977cde1b5"
+  },
+  {
+    "key": "charon:power-report",
+    "profile": "charon",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/CHARON4.mp3",
+    "duration": 7.001,
+    "sha256": "cd9674b31284e1c1077d4dc3563d0d8f555b237b37926020b06c884b5d75a9b7"
+  },
+  {
+    "key": "charon:public-meeting",
+    "profile": "charon",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/CHARON5.mp3",
+    "duration": 8.908,
+    "sha256": "851ef6b10b885c4567943366988dc9b8c35190ed73725244ce450434469ccca5"
+  },
+  {
+    "key": "charon:trade-route",
+    "profile": "charon",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/CHARON6.mp3",
+    "duration": 6.844,
+    "sha256": "d34e89c90890d47ec06eaab6e5ad1380715de6ecca37753f23badf223b8857ea"
+  },
+  {
+    "key": "charon:patrol-report",
+    "profile": "charon",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/CHARON7.mp3",
+    "duration": 8.359,
+    "sha256": "efc8e14a4b61e0d4fba16d8dcc18002142e4f0b07cb7fcbfa3b8e9205c08fee3"
+  },
+  {
+    "key": "charon:garden-plan",
+    "profile": "charon",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/CHARON8.mp3",
+    "duration": 7.158,
+    "sha256": "bd49a2de62a3471e1310bc17625e82a2f658f9fb06ae2e3a698d57bc584bc0ad"
+  },
+  {
+    "key": "charon:salvage-plan",
+    "profile": "charon",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/CHARON9.mp3",
+    "duration": 7.706,
+    "sha256": "3f83b9c612dba694b149dd508a43baadff08e2c882a31b703685171ef0f8f7de"
+  },
+  {
+    "key": "charon:settlement-report",
+    "profile": "charon",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/CHARON10.mp3",
+    "duration": 7.158,
+    "sha256": "6d7ffaf35147e68ba9cec9c42e94b6e9b5d3f2fe8ec78c1b93d1416775b45c8e"
+  },
+  {
+    "key": "custom-species:materials",
+    "profile": "custom-species",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/CUSTOM1.mp3",
+    "duration": 5.721,
+    "sha256": "f2aa7d969e82b2ca784d49afd693995645935e935b8e66fe3959e1b65184ceb9"
+  },
+  {
+    "key": "custom-species:housing-report",
+    "profile": "custom-species",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/CUSTOM2.mp3",
+    "duration": 6.687,
+    "sha256": "59568aad46dd9bccbfab610ede147f73ed4e29726801b1fcdcfcdd6460a2fe4e"
+  },
+  {
+    "key": "custom-species:housing-plan",
+    "profile": "custom-species",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/CUSTOM3.mp3",
+    "duration": 5.878,
+    "sha256": "01b53fde792deb76791f37623ff062b6052d3f1834035643498ef891483c2eae"
+  },
+  {
+    "key": "custom-species:power-report",
+    "profile": "custom-species",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/CUSTOM4.mp3",
+    "duration": 6.034,
+    "sha256": "d01c296cdef874657d661d055e91837518c4985fbf18c0f0f1ef91eaeaa8a5d1"
+  },
+  {
+    "key": "custom-species:public-meeting",
+    "profile": "custom-species",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/CUSTOM5.mp3",
+    "duration": 6.531,
+    "sha256": "44f159727189fc0f2a36b309ed8da94c960f75c27cbe8a8cf91545e547bbe9b6"
+  },
+  {
+    "key": "custom-species:trade-route",
+    "profile": "custom-species",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/CUSTOM6.mp3",
+    "duration": 6.191,
+    "sha256": "358ac3a9e08cb26d91cd57016940803f162fe8f375feae4c9b09ebeb6f1b7381"
+  },
+  {
+    "key": "custom-species:patrol-report",
+    "profile": "custom-species",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/CUSTOM7.mp3",
+    "duration": 5.721,
+    "sha256": "560b10362f9b82a9980ad81536ee9b0ac22018009962310ec50b0c5c03398c0a"
+  },
+  {
+    "key": "custom-species:garden-plan",
+    "profile": "custom-species",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/CUSTOM8.mp3",
+    "duration": 4.598,
+    "sha256": "4c80ea619d16030c3f529f9e812516980b2176f7fa6dc081f1bdb47eaeb43e88"
+  },
+  {
+    "key": "custom-species:salvage-plan",
+    "profile": "custom-species",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/CUSTOM9.mp3",
+    "duration": 6.191,
+    "sha256": "99cd9db5c2a99c92248c5afc107a28e503dc5be4ffe3e3985eb9a8599814f979"
+  },
+  {
+    "key": "custom-species:settlement-report",
+    "profile": "custom-species",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/CUSTOM10.mp3",
+    "duration": 7.471,
+    "sha256": "f0300e53a4773ed0a2c5283b2ae48860f3054dcabd7d16f04a93f1fac6b1c0a8"
+  },
+  {
+    "key": "custom-english:materials",
+    "profile": "custom-english",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/CUSTOMENGLISH1.mp3",
+    "duration": 6.531,
+    "sha256": "37212f1aff32b5ea0c0dc32f383bae35dbd81ff2b87f2f3b61f12e1e5a89e51d"
+  },
+  {
+    "key": "custom-english:housing-report",
+    "profile": "custom-english",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/CUSTOMENGLISH2.mp3",
+    "duration": 7.001,
+    "sha256": "de16fdfd9020c7cbadf00b3534a4b289e1c0221812631edff8f5d9af5b4a227c"
+  },
+  {
+    "key": "custom-english:housing-plan",
+    "profile": "custom-english",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/CUSTOMENGLISH3.mp3",
+    "duration": 7.236,
+    "sha256": "24e7415088e30365fdb2eb9c5a8e202532ba89cc9d3d25be93f96ed29713355e"
+  },
+  {
+    "key": "custom-english:power-report",
+    "profile": "custom-english",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/CUSTOMENGLISH4.mp3",
+    "duration": 7.236,
+    "sha256": "f89c4148a53dc0bab96a6e7fcb624bedfb149a395002704963b36163fa81bedd"
+  },
+  {
+    "key": "custom-english:public-meeting",
+    "profile": "custom-english",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/CUSTOMENGLISH5.mp3",
+    "duration": 7.889,
+    "sha256": "7a27122a8ba5fac5093ab56b053a15f84372c62cfe54aec36677bd98eefad98d"
+  },
+  {
+    "key": "custom-english:trade-route",
+    "profile": "custom-english",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/CUSTOMENGLISH6.mp3",
+    "duration": 7.236,
+    "sha256": "170254a2528ceb655c2ee1e2ffb05ea1427060e19da1493e3d9041a3dd305315"
+  },
+  {
+    "key": "custom-english:patrol-report",
+    "profile": "custom-english",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/CUSTOMENGLISH7.mp3",
+    "duration": 6.609,
+    "sha256": "776e7f1945d033d31b9cda50e8bcd07819302a2df7587c667af6d5ee969cb994"
+  },
+  {
+    "key": "custom-english:garden-plan",
+    "profile": "custom-english",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/CUSTOMENGLISH8.mp3",
+    "duration": 6.687,
+    "sha256": "f4cc18f6eca961b2e6188aecd22cbc46c81c852ee557d3ca5b12ced1c27dc347"
+  },
+  {
+    "key": "custom-english:salvage-plan",
+    "profile": "custom-english",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/CUSTOMENGLISH9.mp3",
+    "duration": 8.046,
+    "sha256": "2fb71ece73ea63eddd7d7079d98a377eee033a7ecbbee3cd56d86f16413ed5a3"
+  },
+  {
+    "key": "custom-english:settlement-report",
+    "profile": "custom-english",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/CUSTOMENGLISH10.mp3",
+    "duration": 8.516,
+    "sha256": "e9989c5ee19281758e1675ba81eda0cfc700e4c8ad9c25eaffc49f93593299a5"
+  },
+  {
+    "key": "gareth:materials",
+    "profile": "gareth",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/GOVERNORGARETH1.mp3",
+    "duration": 7.967,
+    "sha256": "25611a8782e711bea051786a3bcd3ec51e4c2c41ec6da71acd2d9cc0c6582ff2"
+  },
+  {
+    "key": "gareth:housing-report",
+    "profile": "gareth",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/GOVERNORGARETH2.mp3",
+    "duration": 6.844,
+    "sha256": "7feade8aa63f8ad3fce1c6753ce747f8a39cf0f826d23ef0c796b4eb56cb7858"
+  },
+  {
+    "key": "gareth:housing-plan",
+    "profile": "gareth",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/GOVERNORGARETH3.mp3",
+    "duration": 7.811,
+    "sha256": "cb4e7688f496c81e11f8d8c5abdb27d551b6f9597e4e214b506c7692750c7109"
+  },
+  {
+    "key": "gareth:power-report",
+    "profile": "gareth",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/GOVERNORGARETH4.mp3",
+    "duration": 7.236,
+    "sha256": "30c1a0848b2b0ebfcd911a7be00717e0d00c91622e914622f2fe7e2579c50b12"
+  },
+  {
+    "key": "gareth:public-meeting",
+    "profile": "gareth",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/GOVERNORGARETH5.mp3",
+    "duration": 6.113,
+    "sha256": "125386ea469e8f3899a62ba1ce3b773b8df5baa022731834e3897c21fc498bf1"
+  },
+  {
+    "key": "gareth:trade-route",
+    "profile": "gareth",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/GOVERNORGARETH6.mp3",
+    "duration": 8.751,
+    "sha256": "d20abfc713c2e0436e080932754132725e41e62760e2c65b730b2e6837a9bdd3"
+  },
+  {
+    "key": "gareth:patrol-report",
+    "profile": "gareth",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/GOVERNORGARETH7.mp3",
+    "duration": 7.628,
+    "sha256": "ca7543adb3fb166daa88bd05bd6a9c4afc8e482edd846ac87dffd667221a0ee9"
+  },
+  {
+    "key": "gareth:garden-plan",
+    "profile": "gareth",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/GOVERNORGARETH8.mp3",
+    "duration": 9.482,
+    "sha256": "4f7cfe346c07be85b1df776b728d5fe2720d72c779d53f7aeea8d98fffd4e010"
+  },
+  {
+    "key": "gareth:salvage-plan",
+    "profile": "gareth",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/GOVERNORGARETH9.mp3",
+    "duration": 7.811,
+    "sha256": "6e8e319577b6146e7b355e981dc634d9adedf7029e6f78e1ddef4533fb0c99b8"
+  },
+  {
+    "key": "gareth:settlement-report",
+    "profile": "gareth",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/GOVERNORGARETH10.mp3",
+    "duration": 8.751,
+    "sha256": "04ddf56f468a79984e79cedd1d65933cf84d1aa98fd1fd8b18721beb07ab647c"
+  },
+  {
+    "key": "josiah:materials",
+    "profile": "josiah",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/GOVERNORJOSIAH1.mp3",
+    "duration": 7.236,
+    "sha256": "c771b0b4df7ecf01ef1852ad14d3a188c896d5fea96bf5adb35caf7baaef86ce"
+  },
+  {
+    "key": "josiah:housing-report",
+    "profile": "josiah",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/GOVERNORJOSIAH2.mp3",
+    "duration": 7.393,
+    "sha256": "ec8d1ae9f42b2e08f03194a614f2894447d2964f86f92810b86016912414d841"
+  },
+  {
+    "key": "josiah:housing-plan",
+    "profile": "josiah",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/GOVERNORJOSIAH3.mp3",
+    "duration": 6.922,
+    "sha256": "4db49b1a99cfa23d95672da56628bca3a8c86a2cb247009b52d20b224783a2bc"
+  },
+  {
+    "key": "josiah:power-report",
+    "profile": "josiah",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/GOVERNORJOSIAH4.mp3",
+    "duration": 7.236,
+    "sha256": "e51cdfaf8238503678814a4a0363375b85d8c40b1c882602cda01147b55dd2f6"
+  },
+  {
+    "key": "josiah:public-meeting",
+    "profile": "josiah",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/GOVERNORJOSIAH5.mp3",
+    "duration": 6.687,
+    "sha256": "a257eddc4b7f37f8ad077d1434b1a89faaf9dee733fbad9a49519c5d51db608a"
+  },
+  {
+    "key": "josiah:trade-route",
+    "profile": "josiah",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/GOVERNORJOSIAH6.mp3",
+    "duration": 6.687,
+    "sha256": "2706b0b37c9c44e26b96d5b972ebad6971918d6d28acbf7de6d8472451193bdf"
+  },
+  {
+    "key": "josiah:patrol-report",
+    "profile": "josiah",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/GOVERNORJOSIAH7.mp3",
+    "duration": 7.889,
+    "sha256": "8c6c4800db2d2cff3780c27c7b25752428268f969cd5279e9ac8dd7a1f881a0b"
+  },
+  {
+    "key": "josiah:garden-plan",
+    "profile": "josiah",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/GOVERNORJOSIAH8.mp3",
+    "duration": 6.766,
+    "sha256": "f1abfcb253aafaf39a4419e8dd8292f6b516d637605af48ca6581190d1d78595"
+  },
+  {
+    "key": "josiah:salvage-plan",
+    "profile": "josiah",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/GOVERNORJOSIAH9.mp3",
+    "duration": 7.628,
+    "sha256": "8fb754b7d9b0ee7b31134951fb6edad70a8be5801bf189a6f237ed13cdbdfe0e"
+  },
+  {
+    "key": "josiah:settlement-report",
+    "profile": "josiah",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/GOVERNORJOSIAH10.mp3",
+    "duration": 8.594,
+    "sha256": "f7f425899bceb3354facaf9633342656f90d323daec9b11ff3b6c0ea67203e45"
+  },
+  {
+    "key": "peter:materials",
+    "profile": "peter",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/GOVERNORPETER1.mp3",
+    "duration": 7.811,
+    "sha256": "721b4c1a58cfd75e09269a809bd7c1cc3dd5ee4e6e44f0c40253376d854f09e0"
+  },
+  {
+    "key": "peter:housing-report",
+    "profile": "peter",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/GOVERNORPETER2.mp3",
+    "duration": 6.034,
+    "sha256": "833c2fcb0ad59a2e0a59e5da35e55a0fb68ed865e85e29096f37f2bbf6122e47"
+  },
+  {
+    "key": "peter:housing-plan",
+    "profile": "peter",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/GOVERNORPETER3.mp3",
+    "duration": 5.956,
+    "sha256": "2ac0e79fb7122114d56c32012ca19e33a4ae196a96d89bdb5e071f0b148d5f9e"
+  },
+  {
+    "key": "peter:power-report",
+    "profile": "peter",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/GOVERNORPETER4.mp3",
+    "duration": 7.549,
+    "sha256": "ee1c407c0bba1e244a7f19b27b678f29bb9315467eb9f407d5d6221e93ed8db6"
+  },
+  {
+    "key": "peter:public-meeting",
+    "profile": "peter",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/GOVERNORPETER5.mp3",
+    "duration": 7.549,
+    "sha256": "3266a17c5328a9c9a12c73c02b4aacd735fbfd9a3a61a602ef6f0e12063235d9"
+  },
+  {
+    "key": "peter:trade-route",
+    "profile": "peter",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/GOVERNORPETER6.mp3",
+    "duration": 5.799,
+    "sha256": "d88e4c068767ec87c5f7c4dd1ad77db32d09923115bb6907f91a5b95f0270309"
+  },
+  {
+    "key": "peter:patrol-report",
+    "profile": "peter",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/GOVERNORPETER7.mp3",
+    "duration": 6.687,
+    "sha256": "2a9645fe442faa71e4b06c6a875a740fdfced4ad42e2a63d05095c1b9e87fb08"
+  },
+  {
+    "key": "peter:garden-plan",
+    "profile": "peter",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/GOVERNORPETER8.mp3",
+    "duration": 6.191,
+    "sha256": "800b31754de40e62c862c36c6ae51344e9c301d47a5812193194e2164fe25a6a"
+  },
+  {
+    "key": "peter:salvage-plan",
+    "profile": "peter",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/GOVERNORPETER9.mp3",
+    "duration": 6.113,
+    "sha256": "9463a529bc92ee1ae9bbc43c381b56ce36094791287209fc7b22278847df2f93"
+  },
+  {
+    "key": "peter:settlement-report",
+    "profile": "peter",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/GOVERNORPETER10.mp3",
+    "duration": 8.202,
+    "sha256": "1bb169eec8d8e76035dab74b5a969c55a08942f7e8a227aaed03253b76e86a51"
+  },
+  {
+    "key": "james:materials",
+    "profile": "james",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/JAMES1.mp3",
+    "duration": 7.001,
+    "sha256": "173135229b6bfe16555e67aa7a5762e19d0c8bc16b6774b7f1890e3a6a6d5129"
+  },
+  {
+    "key": "james:housing-report",
+    "profile": "james",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/JAMES2.mp3",
+    "duration": 7.236,
+    "sha256": "1814ada8f62a583343088a224cad228b8e6f61518f7ca76f4f7ee7fee15e24ad"
+  },
+  {
+    "key": "james:housing-plan",
+    "profile": "james",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/JAMES3.mp3",
+    "duration": 7.889,
+    "sha256": "04e0d7bf1d106d9a166e99c3a07e8992efa80f622e6c432ff474aafc227fb06c"
+  },
+  {
+    "key": "james:power-report",
+    "profile": "james",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/JAMES4.mp3",
+    "duration": 7.001,
+    "sha256": "933c0c7e994449af134da4000e4f4983368b006c244c4e02d8330282e04521de"
+  },
+  {
+    "key": "james:public-meeting",
+    "profile": "james",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/JAMES5.mp3",
+    "duration": 8.046,
+    "sha256": "05bac7b0ec2e413b0426836d27b6ca1a6c1281e7c57873a4aa263b1dedac1753"
+  },
+  {
+    "key": "james:trade-route",
+    "profile": "james",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/JAMES6.mp3",
+    "duration": 7.471,
+    "sha256": "5b269897bbb530e4533aa5d6638f5c31a922a14a96eb326fd1e3e85f34733b56"
+  },
+  {
+    "key": "james:patrol-report",
+    "profile": "james",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/JAMES7.mp3",
+    "duration": 7.236,
+    "sha256": "4735e0798bfa6a17a45ca636b5ff4aa1f243d189a73e6b29a531bca046d615d2"
+  },
+  {
+    "key": "james:garden-plan",
+    "profile": "james",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/JAMES8.mp3",
+    "duration": 9.091,
+    "sha256": "327948011f9a1bfa3369ab1eb2071dbceaf4b4151d7f27e420613ed4541897ac"
+  },
+  {
+    "key": "james:salvage-plan",
+    "profile": "james",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/JAMES9.mp3",
+    "duration": 8.908,
+    "sha256": "6cb2ac3ab099a5e8c29f8a96cdea8e7ba3b582ebf7a0715c28e584ea3ec2b668"
+  },
+  {
+    "key": "james:settlement-report",
+    "profile": "james",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/JAMES10.mp3",
+    "duration": 8.281,
+    "sha256": "40b98ee68b68c422ec1b3cc474c26194ea2095367c58b30e71cf22d701053702"
+  },
+  {
+    "key": "khazglar:materials",
+    "profile": "khazglar",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/KHAZGLAR1.mp3",
+    "duration": 7.158,
+    "sha256": "f8eaa458d87827ea00a64cbdc7f9712674ced8b78ca0eda3c986122ab88204b5"
+  },
+  {
+    "key": "khazglar:housing-report",
+    "profile": "khazglar",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/KHAZGLAR2.mp3",
+    "duration": 9.169,
+    "sha256": "0f7e06dd45af0955d2e34cf51e2fc8ead1347aa4c758694b7234e6df4ad85877"
+  },
+  {
+    "key": "khazglar:housing-plan",
+    "profile": "khazglar",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/KHAZGLAR3.mp3",
+    "duration": 8.202,
+    "sha256": "77766c7e5bc1152f4212a9ca830347e833e666d8195d6185d7ebbb37bf3bbf08"
+  },
+  {
+    "key": "khazglar:power-report",
+    "profile": "khazglar",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/KHAZGLAR4.mp3",
+    "duration": 9.326,
+    "sha256": "a8f04dc1b27a3ec5271ecf3d5ae6a3e2739abb801393c5ff4e00329931f8666d"
+  },
+  {
+    "key": "khazglar:public-meeting",
+    "profile": "khazglar",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/KHAZGLAR5.mp3",
+    "duration": 8.986,
+    "sha256": "235695cc609377fdbfcceeba54c3ed0c960ecf8852a6497e794a20afd119cf0d"
+  },
+  {
+    "key": "khazglar:trade-route",
+    "profile": "khazglar",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/KHAZGLAR6.mp3",
+    "duration": 8.046,
+    "sha256": "901b2529f5e729c0944b9a6c7c34eb06194d5f83962df69d6064dea8517087a9"
+  },
+  {
+    "key": "khazglar:patrol-report",
+    "profile": "khazglar",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/KHAZGLAR7.mp3",
+    "duration": 9.247,
+    "sha256": "b038b2b11922461c8ac01b690bff06d1b8effdaf577725c4fe72ae3165683949"
+  },
+  {
+    "key": "khazglar:garden-plan",
+    "profile": "khazglar",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/KHAZGLAR8.mp3",
+    "duration": 9.169,
+    "sha256": "59cfdfb7f5998ecfe347b7898436250327d2b435f6de3329eaf2582655637c38"
+  },
+  {
+    "key": "khazglar:salvage-plan",
+    "profile": "khazglar",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/KHAZGLAR9.mp3",
+    "duration": 8.202,
+    "sha256": "9f68b6f2b31ed421c04cc3d69432c36523dc58e076c9abd1a770647ce435f05b"
+  },
+  {
+    "key": "khazglar:settlement-report",
+    "profile": "khazglar",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/KHAZGLAR10.mp3",
+    "duration": 8.751,
+    "sha256": "5f073e8eeba3f5fe3c436935e487c6aef61bbaca19f6cba930ad0ed757e1551a"
+  },
+  {
+    "key": "kizna:materials",
+    "profile": "kizna",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/KIZNA1.mp3",
+    "duration": 7.236,
+    "sha256": "0b38334bb5a19cd9f8c47b86c63103cd87dc4aaf78d36d45129d646ace6f7cfd"
+  },
+  {
+    "key": "kizna:housing-report",
+    "profile": "kizna",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/KIZNA2.mp3",
+    "duration": 9.326,
+    "sha256": "58f8c8aa50d4dc32babec4af902a1b0f2fd02b945b42927be8c13856b20d51ca"
+  },
+  {
+    "key": "kizna:housing-plan",
+    "profile": "kizna",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/KIZNA3.mp3",
+    "duration": 7.967,
+    "sha256": "71d227a4fa919cc62ac0b626e3169be7116ca6b9548358b437e553bcf95239d9"
+  },
+  {
+    "key": "kizna:power-report",
+    "profile": "kizna",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/KIZNA4.mp3",
+    "duration": 9.874,
+    "sha256": "cfa8c7e83d8795dcd2a981a87d119e39f1db3539fddd4dc982941a7536957632"
+  },
+  {
+    "key": "kizna:public-meeting",
+    "profile": "kizna",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/KIZNA5.mp3",
+    "duration": 7.967,
+    "sha256": "2103fa505667ee8628bb5fffd7a6d1994bcc623955cef597b4bc621be5ffdb65"
+  },
+  {
+    "key": "kizna:trade-route",
+    "profile": "kizna",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/KIZNA6.mp3",
+    "duration": 8.438,
+    "sha256": "b2b537efbe58970afaeea1adcdc066dcd784162ce9cae76b38be3ee88b71f84a"
+  },
+  {
+    "key": "kizna:patrol-report",
+    "profile": "kizna",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/KIZNA7.mp3",
+    "duration": 9.247,
+    "sha256": "1957061405203cbb6b01a2dbdc24aa1403dc42b2c9d3944b00929f45090dd610"
+  },
+  {
+    "key": "kizna:garden-plan",
+    "profile": "kizna",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/KIZNA8.mp3",
+    "duration": 8.359,
+    "sha256": "51bf6386c16c994a53c3da31ab5468f3e2e9add285e1515d4e5ccfa303a8d1bf"
+  },
+  {
+    "key": "kizna:salvage-plan",
+    "profile": "kizna",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/KIZNA9.mp3",
+    "duration": 9.482,
+    "sha256": "6b7622ef4be93c23233c027f6db3021ded8b6ac5d2f912507faf63a460ff3ae7"
+  },
+  {
+    "key": "kizna:settlement-report",
+    "profile": "kizna",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/KIZNA10.mp3",
+    "duration": 9.561,
+    "sha256": "303d3c87ce26ec63c15c492a004cf7f249dc7b9226c59801f61d94b39231bd2b"
+  },
+  {
+    "key": "nyrexia:materials",
+    "profile": "nyrexia",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/NYREXIA1.mp3",
+    "duration": 7.236,
+    "sha256": "349ea8ec34967214694457045ff056b44ce397096540c798a42048a8b25672d2"
+  },
+  {
+    "key": "nyrexia:housing-report",
+    "profile": "nyrexia",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/NYREXIA2.mp3",
+    "duration": 8.281,
+    "sha256": "c9f98d4c5cda6cb269dbec13b8b672c957ab5646bed924d8bfd305102c92c753"
+  },
+  {
+    "key": "nyrexia:housing-plan",
+    "profile": "nyrexia",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/NYREXIA3.mp3",
+    "duration": 7.811,
+    "sha256": "64b0c051b87d23fbcfe36b3c4436dcd77c31836cbabe942aaf7f814564f1cc82"
+  },
+  {
+    "key": "nyrexia:power-report",
+    "profile": "nyrexia",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/NYREXIA4.mp3",
+    "duration": 6.609,
+    "sha256": "839f29a06a6d9b8cbb9bcd8f2729bc883048f4a06227b601fe41ffadeeb4e285"
+  },
+  {
+    "key": "nyrexia:public-meeting",
+    "profile": "nyrexia",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/NYREXIA5.mp3",
+    "duration": 8.202,
+    "sha256": "30b98610ff514caf8ef5dd3203a2d1cfcee88e1814b4a8064c6707dfc48230cb"
+  },
+  {
+    "key": "nyrexia:trade-route",
+    "profile": "nyrexia",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/NYREXIA6.mp3",
+    "duration": 7.158,
+    "sha256": "d181074aaba9143d20f430d9ee0f111d23e5aa5dd664653ca1200e94f13736dc"
+  },
+  {
+    "key": "nyrexia:patrol-report",
+    "profile": "nyrexia",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/NYREXIA7.mp3",
+    "duration": 6.531,
+    "sha256": "14cf5c5d864b0be8dc0058143901ddc1e0919afba1fbeacbd4ed186206d5e2da"
+  },
+  {
+    "key": "nyrexia:garden-plan",
+    "profile": "nyrexia",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/NYREXIA8.mp3",
+    "duration": 8.751,
+    "sha256": "d42ff2e6cabdcc77b2e47db09854318f06c6e0f665e186f0e6cd38e993550635"
+  },
+  {
+    "key": "nyrexia:salvage-plan",
+    "profile": "nyrexia",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/NYREXIA9.mp3",
+    "duration": 8.124,
+    "sha256": "c5dafcced8871452f22e406c2ae42777c825ae21e7ccc509110a1da4063b5aed"
+  },
+  {
+    "key": "nyrexia:settlement-report",
+    "profile": "nyrexia",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/NYREXIA10.mp3",
+    "duration": 9.169,
+    "sha256": "2a6c78dde6ba771d5e3ef77c13d09a3530cde079871866f746c328ee735665fc"
+  },
+  {
+    "key": "croxian:materials",
+    "profile": "croxian",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/CROXIANGOVERNOR1.mp3",
+    "duration": 11.651,
+    "sha256": "eb5c14c32e9a67f5d18e649a935280ffd5a7e70fdb220a1e1de6ea2f3be89778"
+  },
+  {
+    "key": "croxian:housing-report",
+    "profile": "croxian",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/CROXIANGOVERNOR2.mp3",
+    "duration": 11.076,
+    "sha256": "9a0d3abb61dad35010729e7f5f0f28bfe4db99f40153fa66b066500a8198b12c"
+  },
+  {
+    "key": "croxian:housing-plan",
+    "profile": "croxian",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/CROXIANGOVERNOR3.mp3",
+    "duration": 8.751,
+    "sha256": "75890a0ccd7dc94bd3c8dae5d9bdf5d747e3649aac05740638d51b127d952570"
+  },
+  {
+    "key": "croxian:power-report",
+    "profile": "croxian",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/CROXIANGOVERNOR4.mp3",
+    "duration": 11.076,
+    "sha256": "3041a318d9d1920e53f6e83ecd52f85533d461c0e9247986ccd05f8a5cf91a05"
+  },
+  {
+    "key": "croxian:public-meeting",
+    "profile": "croxian",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/CROXIANGOVERNOR5.mp3",
+    "duration": 11.389,
+    "sha256": "0a3e143248e18dbfdd9dca0e6afcc764563fc2cc3367d04b39191669afd16c8b"
+  },
+  {
+    "key": "croxian:trade-route",
+    "profile": "croxian",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/CROXIANGOVERNOR6.mp3",
+    "duration": 10.371,
+    "sha256": "14925a7e8ece958a8ecdb805645c1ce183a6ff730b5bddeceb52870cf8d49b4b"
+  },
+  {
+    "key": "croxian:patrol-report",
+    "profile": "croxian",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/CROXIANGOVERNOR7.mp3",
+    "duration": 10.606,
+    "sha256": "392d91e7374a20122c5bf1a6556397305b92c90a97dc964ca841dc37dd87b1e9"
+  },
+  {
+    "key": "croxian:garden-plan",
+    "profile": "croxian",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/CROXIANGOVERNOR8.mp3",
+    "duration": 9.169,
+    "sha256": "d52f947ced2191a3ee666f64464ebaf301993c0fccfecce8f1df8496f7e98b32"
+  },
+  {
+    "key": "croxian:salvage-plan",
+    "profile": "croxian",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/CROXIANGOVERNOR9.mp3",
+    "duration": 10.998,
+    "sha256": "e3555a5a5ddbf679fb1ea7c9c2a5b11f6503ed55f697bb8d1868f6a05a59bf0b"
+  },
+  {
+    "key": "croxian:settlement-report",
+    "profile": "croxian",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/CROXIANGOVERNOR10.mp3",
+    "duration": 9.639,
+    "sha256": "967438444e1e9c1b2369b85ee44092a16efddcbd7165d1eb47ead0700628aee1"
+  },
+  {
+    "key": "malia:materials",
+    "profile": "malia",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/MALIAGOVERNOR1.mp3",
+    "duration": 8.594,
+    "sha256": "6c07ae4037a21d12606d8162262f99d623a4399894219386f1c64432da6c1390"
+  },
+  {
+    "key": "malia:housing-report",
+    "profile": "malia",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/MALIAGOVERNOR2.mp3",
+    "duration": 9.718,
+    "sha256": "772d859b57f1181df7724dca570e021af77219885c843dfaec7317eb507b6a06"
+  },
+  {
+    "key": "malia:housing-plan",
+    "profile": "malia",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/MALIAGOVERNOR3.mp3",
+    "duration": 9.639,
+    "sha256": "36f24b1d1bfba974d288d2565846b60707713f45e0e7f548909950f3aa60ff21"
+  },
+  {
+    "key": "malia:power-report",
+    "profile": "malia",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/MALIAGOVERNOR4.mp3",
+    "duration": 8.202,
+    "sha256": "217c678610333f7464a3b2ffac6a7db3b507e2cb616b11ca5c802402d0c783df"
+  },
+  {
+    "key": "malia:public-meeting",
+    "profile": "malia",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/MALIAGOVERNOR5.mp3",
+    "duration": 9.482,
+    "sha256": "a5036fd1e75c296c4cff04f7416c797f0a141d15a0cd04522ceeb7bdd8cdacb8"
+  },
+  {
+    "key": "malia:trade-route",
+    "profile": "malia",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/MALIAGOVERNOR6.mp3",
+    "duration": 8.516,
+    "sha256": "4d7533a58e605c242c7d6455cd925e7a8ec5034b95fb36df620c37f1519721fc"
+  },
+  {
+    "key": "malia:patrol-report",
+    "profile": "malia",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/MALIAGOVERNOR7.mp3",
+    "duration": 9.639,
+    "sha256": "1df20f51141a388287047e2c779f6c4eeb1850e952f83ce7b706f99a3feeeda6"
+  },
+  {
+    "key": "malia:garden-plan",
+    "profile": "malia",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/MALIAGOVERNOR8.mp3",
+    "duration": 8.829,
+    "sha256": "70370790ed0c1fbca371813b804ac964bc6e93d150ad782438e2f883c7be10a2"
+  },
+  {
+    "key": "malia:salvage-plan",
+    "profile": "malia",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/MALIAGOVERNOR9.mp3",
+    "duration": 9.639,
+    "sha256": "84578b3cc623acbd4da224f083f35f14275158d59748d2f4bbde27ed39b7c7f0"
+  },
+  {
+    "key": "malia:settlement-report",
+    "profile": "malia",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/MALIAGOVERNOR10.mp3",
+    "duration": 11.651,
+    "sha256": "ce41e4289b78d26b92bc8f47582efde8a8ca444ea9ffd60c6fe1cab79ca30030"
+  },
+  {
+    "key": "williams:materials",
+    "profile": "williams",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/JOSIAHGOVERNOR1.mp3",
+    "duration": 9.796,
+    "sha256": "b97751adbb7b5a29c9d6de099030ddb528b50ca8cbaaff1630c121361f5429c3"
+  },
+  {
+    "key": "williams:housing-report",
+    "profile": "williams",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/JOSIAHGOVERNOR2.mp3",
+    "duration": 10.031,
+    "sha256": "a09e4ed50b2ce318b498cc3f9e6391e9ae2352695736b39aceaf07c540b0cef9"
+  },
+  {
+    "key": "williams:housing-plan",
+    "profile": "williams",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/JOSIAHGOVERNOR3.mp3",
+    "duration": 9.796,
+    "sha256": "9f93a0b5441a75f188cf8966411bff4cb8b7fff98bf5d9cdd8a3c89d6c1a9481"
+  },
+  {
+    "key": "williams:power-report",
+    "profile": "williams",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/JOSIAHGOVERNOR4.mp3",
+    "duration": 10.684,
+    "sha256": "6546f23fb7ade0516d9494f6dc77ec21d65f572fff7b2f8f433baaea4c7dfc50"
+  },
+  {
+    "key": "williams:public-meeting",
+    "profile": "williams",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/JOSIAHGOVERNOR5.mp3",
+    "duration": 10.449,
+    "sha256": "bd78a9485a183c44386bff420f2423d9ea89b11241c1662e5955a3e345fe21ea"
+  },
+  {
+    "key": "williams:trade-route",
+    "profile": "williams",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/JOSIAHGOVERNOR6.mp3",
+    "duration": 10.188,
+    "sha256": "b82ae2fed87789fc8231bbd3ed270f268376acba8f812519b63631a47435d636"
+  },
+  {
+    "key": "williams:patrol-report",
+    "profile": "williams",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/JOSIAHGOVERNOR7.mp3",
+    "duration": 10.188,
+    "sha256": "dd3fa27b19ee2399214972a13466d95b27ccb8424291b69223f49dfb614a715b"
+  },
+  {
+    "key": "williams:garden-plan",
+    "profile": "williams",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/JOSIAHGOVERNOR8.mp3",
+    "duration": 9.404,
+    "sha256": "3205e5472dd0731a993f95f370a2f40a46e490b0e621e2cece2f2c648d36d446"
+  },
+  {
+    "key": "williams:salvage-plan",
+    "profile": "williams",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/JOSIAHGOVERNOR9.mp3",
+    "duration": 9.874,
+    "sha256": "eed9dac7746848c36a6fb79a28d9682e3f83c74d45f65a4d01d515cdac8c8cb5"
+  },
+  {
+    "key": "williams:settlement-report",
+    "profile": "williams",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/JOSIAHGOVERNOR10.mp3",
+    "duration": 12.748,
+    "sha256": "c217a2b184e2f057d167f28c590415e30f716c6b64882aff43788bfd63296e73"
+  },
+  {
+    "key": "tyrotaronus:materials",
+    "profile": "tyrotaronus",
+    "line": 1,
+    "id": "materials",
+    "file": "audio/governors/TYROTARONUSGOVERNOR1.mp3",
+    "duration": 10.684,
+    "sha256": "f26783c63131fb89d62c518cc517ae54b0a49451918185939b9b37d6004b0869"
+  },
+  {
+    "key": "tyrotaronus:housing-report",
+    "profile": "tyrotaronus",
+    "line": 2,
+    "id": "housing-report",
+    "file": "audio/governors/TYROTARONUSGOVERNOR2.mp3",
+    "duration": 12.356,
+    "sha256": "39183b22ef70157d81d0dad407eef61102be8b4fc7b37fbc1d5e764cd78773ba"
+  },
+  {
+    "key": "tyrotaronus:housing-plan",
+    "profile": "tyrotaronus",
+    "line": 3,
+    "id": "housing-plan",
+    "file": "audio/governors/TYROTARONUSGOVERNOR3.mp3",
+    "duration": 11.964,
+    "sha256": "4e9e25b5d40a3944dc316a8e8eb13539fe98d800cfaf3b6880d7f88eaaffa1f4"
+  },
+  {
+    "key": "tyrotaronus:power-report",
+    "profile": "tyrotaronus",
+    "line": 4,
+    "id": "power-report",
+    "file": "audio/governors/TYROTARONUSGOVERNOR4.mp3",
+    "duration": 11.233,
+    "sha256": "9e0cd21545c79fc6b2faabc28045693e1268b977cd6e5ee1cc4ab1d789cf5840"
+  },
+  {
+    "key": "tyrotaronus:public-meeting",
+    "profile": "tyrotaronus",
+    "line": 5,
+    "id": "public-meeting",
+    "file": "audio/governors/TYROTARONUSGOVERNOR5.mp3",
+    "duration": 9.639,
+    "sha256": "f287ae20a887b3bf496fe07a0fc9e133aa34147f52860e6a27f9e6bc3fa9ec11"
+  },
+  {
+    "key": "tyrotaronus:trade-route",
+    "profile": "tyrotaronus",
+    "line": 6,
+    "id": "trade-route",
+    "file": "audio/governors/TYROTARONUSGOVERNOR6.mp3",
+    "duration": 10.606,
+    "sha256": "d59ae605defaeaa9567fe2195fe5119a972856aaf49b5f9b4074e52dd29d12e2"
+  },
+  {
+    "key": "tyrotaronus:patrol-report",
+    "profile": "tyrotaronus",
+    "line": 7,
+    "id": "patrol-report",
+    "file": "audio/governors/TYROTARONUSGOVERNOR7.mp3",
+    "duration": 11.807,
+    "sha256": "c7c395340c3c38a718b189a072cb27215b88bef05676658c0c425822e3bf1477"
+  },
+  {
+    "key": "tyrotaronus:garden-plan",
+    "profile": "tyrotaronus",
+    "line": 8,
+    "id": "garden-plan",
+    "file": "audio/governors/TYROTARONUSGOVERNOR8.mp3",
+    "duration": 9.639,
+    "sha256": "07e4e98d170e8202229d366aa84556646f47509f2af52f4d0df0e8abde1dec31"
+  },
+  {
+    "key": "tyrotaronus:salvage-plan",
+    "profile": "tyrotaronus",
+    "line": 9,
+    "id": "salvage-plan",
+    "file": "audio/governors/TYROTARONUSGOVERNOR9.mp3",
+    "duration": 11.076,
+    "sha256": "9e0f7126918c4d8c2dcf3b2440e1733c8d0b1748ff8fec105101bf1586e08bf0"
+  },
+  {
+    "key": "tyrotaronus:settlement-report",
+    "profile": "tyrotaronus",
+    "line": 10,
+    "id": "settlement-report",
+    "file": "audio/governors/TYROTARONUSGOVERNOR10.mp3",
+    "duration": 13.558,
+    "sha256": "3b396792a0ec934d4b6081ac314fd81cc5672fca5aa252214863650dce3e4a48"
+  }
+]

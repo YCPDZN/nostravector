@@ -1,0 +1,62 @@
+[
+  {
+    "line": 0,
+    "file": "audio/lord-zark/LORDZARKH1.mp3",
+    "duration": 15.073,
+    "sha256": "503e8338f125eeb15e8f7236c50598b2baecabf4cf007da13684349df46f431a"
+  },
+  {
+    "line": 1,
+    "file": "audio/lord-zark/LORDZARKH2.mp3",
+    "duration": 12.042,
+    "sha256": "ceee0909fa818a8c296e510b32774678081105eef3dd1863e7a1d620693b14b1"
+  },
+  {
+    "line": 2,
+    "file": "audio/lord-zark/LORDZARKH3.mp3",
+    "duration": 14.838,
+    "sha256": "534c16c9f070d8d542eb4daa7b8504f241df0f6a6b80e3de31f3be32ad905d9e"
+  },
+  {
+    "line": 3,
+    "file": "audio/lord-zark/LORDZARKH4.mp3",
+    "duration": 17.006,
+    "sha256": "faafc467888ba6f9acfc44917a46a43e53bcd17c6864f9dba783d0bfa3d469b0"
+  },
+  {
+    "line": 4,
+    "file": "audio/lord-zark/LORDZARKH5.mp3",
+    "duration": 14.106,
+    "sha256": "cb47f3ac04f38786c0f1cf659253f0e75d64c2d0f0a083068b10a87e6f5a50f7"
+  },
+  {
+    "line": 5,
+    "file": "audio/lord-zark/LORDZARKH6.mp3",
+    "duration": 13.949,
+    "sha256": "191ce9e67710b4b2416c260357f527fbcd4732d0eb089e73d3c23fe013f4f82d"
+  },
+  {
+    "line": 6,
+    "file": "audio/lord-zark/LORDZARKH7.mp3",
+    "duration": 17.633,
+    "sha256": "8960df5c72a56d1b4d366eb23c468e77dfb6c1074fa0385420f507c1ca2f86a2"
+  },
+  {
+    "line": 7,
+    "file": "audio/lord-zark/LORDZARKH8.mp3",
+    "duration": 11.886,
+    "sha256": "c67abb250817fa67723821237bfca814a629ff475466171c4377613c952fb8c5"
+  },
+  {
+    "line": 8,
+    "file": "audio/lord-zark/LORDZARKH9.mp3",
+    "duration": 17.006,
+    "sha256": "4331caf414ac4a6e2ef7a6766ef551f892523751ac4c0812c019ad047c5f5f0e"
+  },
+  {
+    "line": 9,
+    "file": "audio/lord-zark/LORDZARKH10.mp3",
+    "duration": 13.322,
+    "sha256": "622e1885cf6794302d2d3586f4d9c048143818ae705c1a766f5aaa8a49a6a85b"
+  }
+]

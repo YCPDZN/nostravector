@@ -1,0 +1,104 @@
+[
+  {
+    "key": "josiah:0",
+    "file": "audio/project-bc-combat/JOSIAH1.mp3",
+    "duration": 4.127,
+    "sha256": "ebdf9a9384bd5bb908fe5d6fc6efe2ecafcc530f77fa3632985c8991febcc6f4"
+  },
+  {
+    "key": "josiah:1",
+    "file": "audio/project-bc-combat/JOSIAH2.mp3",
+    "duration": 4.833,
+    "sha256": "e89737a938dcdd72ab0d10f9d20881200a8b1ef69d42760004a36ded6e49a8e0"
+  },
+  {
+    "key": "josiah:2",
+    "file": "audio/project-bc-combat/JOSIAH3.mp3",
+    "duration": 3.866,
+    "sha256": "68090533fe8d12786cb9c89b72a08f0fa6020345a319e5ef0f6a001cc6e6ceb7"
+  },
+  {
+    "key": "josiah:3",
+    "file": "audio/project-bc-combat/JOSIAH4.mp3",
+    "duration": 3.004,
+    "sha256": "6d04b973afca0db0c866138c3f02aef6434989834b69913d6be95da1ade6590d"
+  },
+  {
+    "key": "josiah:4",
+    "file": "audio/project-bc-combat/JOSIAH5.mp3",
+    "duration": 4.049,
+    "sha256": "71566ce25aa6b0ff52940634e9e857c63e7e334781fb3c34af0637e84db37e07"
+  },
+  {
+    "key": "peter:0",
+    "file": "audio/project-bc-combat/PETER1.mp3",
+    "duration": 2.429,
+    "sha256": "d05da5f942a6a0e60ec0bad1b45506b8552b36e7690fd178d5e00e290386ca2a"
+  },
+  {
+    "key": "peter:1",
+    "file": "audio/project-bc-combat/PETER2.mp3",
+    "duration": 3.709,
+    "sha256": "5d152aff2dc7880d5bc27b119a5291f5b424896fc0b4fcd621983ddbc7a82f86"
+  },
+  {
+    "key": "peter:2",
+    "file": "audio/project-bc-combat/PETER3.mp3",
+    "duration": 3.866,
+    "sha256": "b6f50c93689f1adb706766e162170ba5e6fa21f27fb213bb516fe2c0c9c8eeef"
+  },
+  {
+    "key": "peter:3",
+    "file": "audio/project-bc-combat/PETER4.mp3",
+    "duration": 3.082,
+    "sha256": "8b88eb2e8db57df76fa1b1885cdae99f5e83618615f6af61ccb3ea1268c7ca5a"
+  },
+  {
+    "key": "peter:4",
+    "file": "audio/project-bc-combat/PETER5.mp3",
+    "duration": 4.284,
+    "sha256": "013d7a8d67a480581c62669de7960fc9d2f40b0ae0ebf740f77af4de0700296c"
+  },
+  {
+    "key": "gareth:0",
+    "file": "audio/project-bc-combat/GARETH1.mp3",
+    "duration": 2.926,
+    "sha256": "6f61c51f7bd111f008024cbefd4bca32707474c53ace09301a58032e48e4825e"
+  },
+  {
+    "key": "gareth:1",
+    "file": "audio/project-bc-combat/GARETH2.mp3",
+    "duration": 3.553,
+    "sha256": "aa56c48b3c4fb93ad9a44ef5ba60ea819c0dfcfbe6a4dac954d00502e2214bff"
+  },
+  {
+    "key": "gareth:2",
+    "file": "audio/project-bc-combat/GARETH3.mp3",
+    "duration": 2.847,
+    "sha256": "08c3779b5c1a56593ddf9b2a5d082ae8f65b7c45ef13b3ec7ff740b576771dca"
+  },
+  {
+    "key": "gareth:3",
+    "file": "audio/project-bc-combat/GARETH4.mp3",
+    "duration": 4.441,
+    "sha256": "73dd33c64dd47e1a20fef19b73842b0d6ebf2db506dd8d417a9da99059df3740"
+  },
+  {
+    "key": "gareth:4",
+    "file": "audio/project-bc-combat/GARETH5.mp3",
+    "duration": 5.329,
+    "sha256": "7c63172538bed67d1c626db37b0dd391b3f7fbd7b6d777cce52df316d4976426"
+  },
+  {
+    "key": "josiah:heaven",
+    "file": "audio/project-bc-combat/JOSIAH6.mp3",
+    "duration": 2.273,
+    "sha256": "49aeba40b027682f492db6f5c9ec1cc5d1cec6e77a9b162132e9d10947af51b7"
+  },
+  {
+    "key": "gareth:trip",
+    "file": "audio/project-bc-combat/GARETHPAIN.mp3",
+    "duration": 1.959,
+    "sha256": "90e9b0a1d85340b428e3eb2222cca3f7a3fd808b74b240827e8f91a85f55e410"
+  }
+]
