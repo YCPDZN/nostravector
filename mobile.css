@@ -116,6 +116,9 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  html:not([data-mobile-game=true]){height:100%;overflow:hidden!important}
  html:not([data-mobile-game=true])>body{height:100%;overflow-y:auto!important;-webkit-overflow-scrolling:touch;overscroll-behavior-y:none}
  #menu header{padding:22px 0 0!important;gap:8px}
+ /* Late-game menu: companion labels are placed for desktop and land on the buttons; the faction panel joins the page flow. */
+ #menu :is(#menuCrewCount,.menu-crew-card,.custom-crew-menu-card){display:none!important}
+ #menu #playerFactionBox{position:relative!important;inset:auto!important;transform:none!important;width:auto!important;max-width:none!important;margin:16px 0 0!important;z-index:2}
  #menu .left{position:relative!important;inset:auto!important;width:100%!important;max-width:none;margin-top:24px}
  #menu h1{font-size:clamp(32px,10vw,46px)!important;margin:14px 0!important;line-height:1.07!important;overflow-wrap:anywhere}
  #menu .tagline{font-size:9px;line-height:1.6;margin:8px 0 16px!important;letter-spacing:1.2px}
@@ -174,8 +177,13 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #menu .left{position:relative!important;top:auto!important;left:4%!important;margin-top:24px;width:46%!important}
  #menu header{padding-top:16px!important}#menu h1{font-size:32px!important}
  #menu .menu-nav{margin-top:0!important;width:100%}
+ #menu :is(#menuCrewCount,.menu-crew-card,.custom-crew-menu-card){display:none!important}
+ #menu #playerFactionBox{position:relative!important;inset:auto!important;transform:none!important;left:4%!important;width:46%!important;max-width:none!important;margin:16px 0 0!important;z-index:2}
  #menu .subject,#menu[data-has-party=true] .subject{left:56%!important;top:110px!important;width:40%!important;transform:none!important;text-align:left!important}
  #menu .earth-label{right:4%!important;top:272px!important;width:38%!important}
  #menu .menu-companion{left:56%!important;top:165px!important;width:40%!important}
  #menu footer{position:relative!important;margin-top:24px;bottom:auto!important}
+}
+@media(max-width:360px){
+ #menu .brand>div:last-child{display:none}
 }
