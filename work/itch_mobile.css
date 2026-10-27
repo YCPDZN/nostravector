@@ -75,10 +75,14 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #spaceCockpit h2{font-size:19px}
  #spaceCockpit .space-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px}
  #spaceCockpit .space-actions button{min-height:44px;width:100%;font-size:9px!important}
- #shipInterior>header,#archiostalStation>header{top:8px!important;left:8px!important;right:66px!important;gap:6px!important;padding:8px!important;align-items:flex-start!important}
- #shipInterior header>div:last-child,#archiostalStation header>div:last-child{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px}
+ /* Interior/station header: title, then one sideways-scrolling row of actions (wrapping ran them into the panels below). */
+ #shipInterior>header,#archiostalStation>header{top:8px!important;left:8px!important;right:66px!important;gap:6px!important;padding:8px!important;flex-direction:column!important;align-items:stretch!important}
+ #shipInterior header>div:last-child,#archiostalStation header>div:last-child{display:flex;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:4px;overflow-x:auto;scrollbar-width:none;max-width:100%}
+ #shipInterior header>div:last-child>button,#archiostalStation header>div:last-child>button{flex:0 0 auto}
+ #shipDiplomacyShortcuts{top:108px!important;left:10px!important;right:10px!important;bottom:auto!important;transform:none!important;flex-wrap:nowrap!important;overflow-x:auto;gap:6px}
+ #shipDiplomacyShortcuts>button{flex:0 0 auto}
  #shipInterior header button,#archiostalStation header button{font-size:9px!important;padding:6px!important}
- #shipInterior>aside{left:10px!important;top:116px!important;width:180px!important;max-height:120px;overflow:auto;pointer-events:auto;font-size:9px}
+ #shipInterior>aside{left:10px!important;top:160px!important;width:180px!important;max-height:120px;overflow:auto;pointer-events:auto;font-size:9px}
  #interiorDeckGuide,#interiorDirections{display:none}
  #shipInterior>footer{bottom:220px!important;left:12px!important;right:12px!important;padding:7px!important}
  #shipInterior footer small,#archiostalStation>footer{display:none!important}
@@ -176,7 +180,11 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #hudAlerts{top:64px!important;width:48%!important}
  #spaceCockpit{bottom:8px!important;left:210px!important;width:calc(100% - 222px)!important;max-height:calc(var(--nv-mobile-height,100dvh) - 72px)!important}
  #spaceCockpit h2{font-size:15px;margin:4px 0}#spaceCockpit p{font-size:9px;margin:4px 0}
- #shipInterior>aside{top:78px!important;max-height:75px;width:160px!important}
+ #shipInterior>header,#archiostalStation>header{flex-direction:row!important;flex-wrap:nowrap!important;align-items:center!important}
+ #shipInterior>header>div:first-child,#archiostalStation>header>div:first-child{flex:0 0 auto;max-width:34%}
+ #shipInterior header>div:last-child,#archiostalStation header>div:last-child{flex:1 1 auto;min-width:0}
+ #shipDiplomacyShortcuts{top:74px!important;right:auto!important}
+ #shipInterior>aside{top:124px!important;max-height:75px;width:160px!important}
  #shipInterior>footer{bottom:145px!important;left:auto!important;width:230px!important}
  #archiostalInformation{top:82px!important;max-height:70px;width:170px!important}
  #galaxySheet .galaxy-view{height:240px!important;min-height:200px}
