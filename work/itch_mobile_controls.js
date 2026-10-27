@@ -64,7 +64,7 @@ const NVTouch=(()=>{
  },{capture:true,passive:false});
  for(const type of ['pointerup','pointercancel'])window.addEventListener(type,e=>{if(!look||look.id!==e.pointerId)return;if(look.moved){spacePlanetPointer=null;e.preventDefault();e.stopImmediatePropagation();}look=null;},true);
  function refresh(force=false){
-  const now=performance.now();if(!force&&now-lastRefresh<100)return;lastRefresh=now;document.body.dataset.touchControls=enabled?'on':'off';document.body.dataset.mobileGame=String(gameActive);$m('nvTouchStatus').textContent=enabled?'ON':'OFF';toggle.setAttribute('aria-pressed',String(enabled));
+  const now=performance.now();if(!force&&now-lastRefresh<100)return;lastRefresh=now;document.body.dataset.touchControls=enabled?'on':'off';document.body.dataset.mobileGame=document.documentElement.dataset.mobileGame=String(gameActive);$m('nvTouchStatus').textContent=enabled?'ON':'OFF';toggle.setAttribute('aria-pressed',String(enabled));
   if(enabled){mission.tabIndex=0;mission.setAttribute('role','button');mission.setAttribute('aria-label','Show or hide objective details');}else{mission.removeAttribute('tabindex');mission.removeAttribute('role');}
   const mode=context(),off=blocked();root.hidden=off;if(off){release();lastMode=mode;return;}if(mode!==lastMode){release();lastMode=mode;}root.dataset.mode=mode;
   const flight=mode==='flight',rover=mode==='rover',interior=mode==='interior';

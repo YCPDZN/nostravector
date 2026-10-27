@@ -39,6 +39,8 @@ python work/build_itch_mobile_export.py --pack --dist outputs/itch-mobile-new --
 
 Upload the resulting ZIP to itch.io as an HTML game. Keep `index.html` at the ZIP root.
 
+On the itch.io game page, tick "Mobile friendly" (either orientation works; landscape gives more room) and "Click to launch in fullscreen" so phones get the whole screen. After changing the mobile layer or the intro, run `node work/test_itch_mobile_menu_intro_browser.js` from the repo root; it checks that the main menu scrolls by touch inside a no-scroll iframe and that the Milky Way intro keeps going when narration audio is blocked or slow.
+
 Some historical asset-import and browser QA scripts reference the original development machine. The standalone build uses the checked-in source assets; optional QA tools may need their runtime paths adjusted.
 
 No open-source license is granted by this repository. Game code, characters, music and recordings retain their existing ownership and permissions.
