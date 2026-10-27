@@ -70,6 +70,7 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #spaceCockpit{width:calc(100% - 24px)!important;max-width:500px;left:12px!important;right:12px!important;bottom:max(12px,env(safe-area-inset-bottom))!important;top:auto!important;transform:none!important;padding:14px!important;max-height:calc(var(--nv-mobile-height,100dvh) - 330px);overflow-y:auto;overscroll-behavior:contain}
  #antarctica:is([data-mode=space-cockpit],[data-mode=space-disabled]) #hudVitalsDock{display:none!important}
  #antarctica[data-mode=space-disabled] #hudLeftDock{display:none!important}
+ #antarctica #archiostalWardDirectory,#antarctica:not(.x) #archiostalWardDirectory{z-index:150!important;max-height:calc(var(--nv-mobile-height,100dvh) - 120px);overflow-y:auto}
  #spaceDisabled{z-index:40;max-height:calc(var(--nv-mobile-height,100dvh) - 24px);overflow-y:auto}
  #spaceCockpit h2{font-size:19px}
  #spaceCockpit .space-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px}
