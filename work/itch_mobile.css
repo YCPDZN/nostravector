@@ -120,6 +120,7 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  /* Late-game menu: companion labels are placed for desktop and land on the buttons; the faction panel joins the page flow. */
  #menu :is(#menuCrewCount,.menu-crew-card,.custom-crew-menu-card){display:none!important}
  #menu #playerFactionBox{position:relative!important;inset:auto!important;transform:none!important;width:auto!important;max-width:none!important;margin:16px 0 0!important;z-index:2}
+ #beamNightmareVitals{top:256px!important}
  #menu .left{position:relative!important;inset:auto!important;width:100%!important;max-width:none;margin-top:24px}
  #menu h1{font-size:clamp(32px,10vw,46px)!important;margin:14px 0!important;line-height:1.07!important;overflow-wrap:anywhere}
  #menu .tagline{font-size:9px;line-height:1.6;margin:8px 0 16px!important;letter-spacing:1.2px}
@@ -161,6 +162,14 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #hudVitalsDock progress{height:4px}
  #hudRightDock{top:64px!important;width:140px!important;max-height:calc(var(--nv-mobile-height,100dvh) - 200px)!important}
  #mascarOrbitalComms{top:56px!important;bottom:auto!important;left:200px!important;right:12px!important;transform:none!important;width:auto!important;max-height:calc(var(--nv-mobile-height,100dvh) - 200px);overflow-y:auto}
+ /* Beam nightmare: give each panel its own area on a short screen. */
+ #caraxEndingScene{top:0!important;bottom:0!important;height:auto!important;max-height:none!important}
+ #beamNightmareBossPanel{top:8px!important;left:8px!important;width:230px!important;max-height:104px;overflow:hidden;padding:8px!important}
+ #beamNightmareVitals{top:118px!important;left:8px!important;bottom:auto!important;width:230px!important;max-height:72px;overflow:hidden;padding:6px 8px!important}
+ #beamNightmareTools{top:8px!important;right:8px!important;left:auto!important;width:auto!important;max-width:calc(100% - 256px)!important;max-height:100px;overflow:auto;padding:6px!important}
+ #beamNightmareComms{top:auto!important;bottom:104px!important;left:250px!important;right:8px!important;transform:none!important;width:auto!important;max-height:calc(var(--nv-mobile-height,100dvh) - 220px);overflow:auto;padding:8px!important}
+ #beamNightmareMission,#beamNightmareCompass{display:none!important}
+ #beamNightmareTouch{top:auto!important;bottom:max(8px,env(safe-area-inset-bottom))!important}
  #hudContextDock{bottom:150px!important;max-height:100px}
  #cleanHUD #hudContextDock :is(#solFinalBoss,#mascarCombatPanel,#karribassaBossPanel,#pontifexCombat,#baseAssaultHUD){top:64px!important;left:auto!important;width:min(300px,40vw)!important;max-height:calc(var(--nv-mobile-height,100dvh) - 200px)}
  #hudTools{top:60px!important;max-height:calc(100dvh - 72px)}
