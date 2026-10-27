@@ -4625,11 +4625,11 @@
     "files": [
       {
         "path": "mobile.css",
-        "sha256": "eda761d06d047e859c5bfaa94c1eac1d85cb049c4b921ea377c3d336658f9916"
+        "sha256": "2a01536f70297cc28aae492d9b854384cabd3c2e1f7c7770bde5b989e1ae9b41"
       },
       {
         "path": "mobile.js",
-        "sha256": "bbced542578b81376254d74165985740e76f0638d6ea5e8721be4d133a39f1a1"
+        "sha256": "cd4284136ca38bab4dece83833c416b9b89c3f60d90dde336938022477c60210"
       }
     ]
   }

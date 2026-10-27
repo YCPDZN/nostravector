@@ -21,6 +21,7 @@
 #nvMobileUse,#nvMobileFire{grid-column:1/-1}
 #nvMobileUse{font-size:9px!important;min-height:44px!important;overflow-wrap:anywhere}
 #nvMobileFire{background:#3f3149e8!important;border-color:#edc29caa!important;min-height:52px!important}
+#nvMobileControls[data-looked=true] #nvMobileLookHint{display:none}
 #nvMobileLookHint{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);font-size:7px;letter-spacing:.5px;color:#c5e6ef9c;text-align:center;width:90px;pointer-events:none}
 body[data-gameplay-era=chapter4] #nvMobileControls{--touch-bg:#301321e8;--touch-line:#d688a8aa;--touch-active:#7b3455}
 #nvTouchStatus{margin-left:auto;color:var(--cyan)}
@@ -40,12 +41,12 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #antarctica [role=dialog],#galacticDiplomacy>article{max-height:calc(100dvh - 16px);overflow:auto;overscroll-behavior:contain}
  .world-sheet-card{max-height:calc(100dvh - 24px);overflow:auto!important;max-width:calc(100vw - 24px)}
  #hudToolbar{top:64px!important;left:max(12px,env(safe-area-inset-left))!important;right:12px!important;display:flex!important;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:6px!important;overflow-x:auto;max-width:calc(100vw - 24px);scrollbar-width:none;padding-bottom:4px;pointer-events:auto;touch-action:pan-x}
- #hudToolbar>*{flex:0 0 auto!important;max-width:220px}
+ #hudToolbar>*,#cleanHUD #hudToolbar button{flex:0 0 auto!important;width:auto!important;max-width:220px}
  #hudToolbar button{font-size:10px!important;padding:8px 10px!important;white-space:nowrap;min-height:44px}
  #hudToolbar::-webkit-scrollbar{display:none}
  #hudLocationSlot .polar-top{top:max(12px,env(safe-area-inset-top))!important;left:max(12px,env(safe-area-inset-left))!important;max-width:calc(100vw - 80px)!important}
  #hudLocationSlot h2{font-size:16px!important;letter-spacing:1px!important}
- #cleanHUD #hudLeftDock{left:12px!important;top:118px!important;width:190px!important;max-height:calc(100% - 310px)!important;overflow:auto;scrollbar-width:thin}
+ #cleanHUD #hudLeftDock{left:12px!important;top:118px!important;width:190px!important;max-height:max(120px,calc(var(--nv-mobile-height,100dvh) - 372px))!important;overflow:auto;scrollbar-width:thin}
  #hudVitalsDock{left:12px!important;bottom:156px!important;width:150px!important;padding:8px!important;max-height:125px;overflow:auto}
  #hudVitalsDock .space-stat-row strong{font-size:13px!important}
  #hudVitalsDock button{font-size:9px!important}
@@ -139,6 +140,8 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #hudLocationSlot h2{font-size:14px!important}
  #cleanHUD #hudLeftDock{top:64px!important;width:180px!important;max-height:calc(100dvh - 180px)!important}
  #hudLeftDock>.space-route-card{display:none!important}
+ /* Top-aligned so a briefing taller than the screen scrolls; grid centring would push its top out of reach. */
+ #africaTransition{overflow-y:auto!important;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;align-items:start!important}
  #hudVitalsDock,body[data-touch-controls=on] #cleanHUD #hudVitalsDock{left:118px!important;bottom:12px!important;top:auto!important;width:135px!important;max-height:80px!important;padding:6px!important}
  #hudVitalsDock progress{height:4px}
  #hudRightDock{top:64px!important;width:140px!important}

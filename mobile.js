@@ -56,6 +56,10 @@ const NVTouch=(()=>{
  toggle.onclick=()=>{enabled=!enabled;release();refresh(true);};
  const mission=$m('hudMission');mission.addEventListener('click',()=>{if(!enabled)return;const on=document.body.dataset.mobileDetails!=='true';document.body.dataset.mobileDetails=String(on);mission.setAttribute('aria-expanded',String(on));});
  mission.addEventListener('keydown',e=>{if(enabled&&['Enter','Space'].includes(e.code)){e.preventDefault();e.stopPropagation();mission.click();}});
+ // The look hint shares the bottom centre with the waypoint label; retire it once the player has dragged the view.
+ const lookSeen=()=>{root.dataset.looked='true';try{localStorage.setItem('nvTouchLookSeen','1');}catch{}};
+ try{if(localStorage.getItem('nvTouchLookSeen'))root.dataset.looked='true';}catch{}
+ window.addEventListener('pointermove',e=>{if(e.pointerType==='touch'&&e.buttons&&e.target.tagName==='CANVAS'&&root.dataset.looked!=='true'&&!blocked())lookSeen();},true);
  // Ground/station/interior canvases already support touch dragging. Add it to flight too.
  window.addEventListener('pointerdown',e=>{if(!enabled||e.pointerType!=='touch'||blocked()||e.target!==polarCanvas||context()!=='flight')return;look={id:e.pointerId,x:e.clientX,y:e.clientY,startX:e.clientX,startY:e.clientY,moved:false};try{polarCanvas.setPointerCapture(e.pointerId);}catch{}} ,true);
  window.addEventListener('pointermove',e=>{if(!look||look.id!==e.pointerId)return;if(blocked()){look=null;return;}const dx=e.clientX-look.x,dy=e.clientY-look.y;if(Math.hypot(e.clientX-look.startX,e.clientY-look.startY)>6)look.moved=true;
