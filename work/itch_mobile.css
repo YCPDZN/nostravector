@@ -5,6 +5,10 @@
  body[data-mobile-game=true] #nowPlaying{display:none!important}
  #hudVitalsDock .polar-vitals{position:static!important;width:auto!important;max-width:100%!important;padding:0!important;border:0!important;background:none!important}
  #hudVitalsDock .polar-controls,#hudVitalsDock .world-save-status,#hudVitalsDock #playerLaserPistol{display:none!important}
+ /* The touch FIRE button holds Z, which already fires these panel weapons. */
+ body[data-touch-controls=on] :is(#fireRewardTurrets,#solFinalFire,#mascarFire,#karribassaFire,#imperiaFire,#firePontifex){display:none!important}
+ /* Combat panels live in the in-flow context dock, which is too narrow on phones; pin them under the toolbar instead. */
+ #cleanHUD #hudContextDock :is(#solFinalBoss,#mascarCombatPanel,#karribassaBossPanel,#pontifexCombat,#baseAssaultHUD){position:fixed!important;top:118px!important;left:12px!important;right:12px!important;bottom:auto!important;transform:none!important;width:auto!important;max-width:none!important;max-height:34vh;overflow:auto;z-index:30;margin:0!important}
 }
 @media(max-width:600px){body[data-touch-controls=on]:not([data-mobile-game=true]) #nowPlaying{position:relative!important;top:auto!important;right:auto!important;left:auto!important;margin:12px 16px!important;max-width:calc(100% - 32px)!important}}
 #nvMobileControls[hidden],#nvMobileControls [hidden]{display:none!important}
@@ -21,6 +25,7 @@
 #nvMobileUse,#nvMobileFire{grid-column:1/-1}
 #nvMobileUse{font-size:9px!important;min-height:44px!important;overflow-wrap:anywhere}
 #nvMobileFire{background:#3f3149e8!important;border-color:#edc29caa!important;min-height:52px!important}
+#nvMobileControls[data-looked=true] #nvMobileLookHint{display:none}
 #nvMobileLookHint{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);font-size:7px;letter-spacing:.5px;color:#c5e6ef9c;text-align:center;width:90px;pointer-events:none}
 body[data-gameplay-era=chapter4] #nvMobileControls{--touch-bg:#301321e8;--touch-line:#d688a8aa;--touch-active:#7b3455}
 #nvTouchStatus{margin-left:auto;color:var(--cyan)}
@@ -40,19 +45,20 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #antarctica [role=dialog],#galacticDiplomacy>article{max-height:calc(100dvh - 16px);overflow:auto;overscroll-behavior:contain}
  .world-sheet-card{max-height:calc(100dvh - 24px);overflow:auto!important;max-width:calc(100vw - 24px)}
  #hudToolbar{top:64px!important;left:max(12px,env(safe-area-inset-left))!important;right:12px!important;display:flex!important;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:6px!important;overflow-x:auto;max-width:calc(100vw - 24px);scrollbar-width:none;padding-bottom:4px;pointer-events:auto;touch-action:pan-x}
- #hudToolbar>*{flex:0 0 auto!important;max-width:220px}
+ #hudToolbar>*,#cleanHUD #hudToolbar button{flex:0 0 auto!important;width:auto!important;max-width:220px}
  #hudToolbar button{font-size:10px!important;padding:8px 10px!important;white-space:nowrap;min-height:44px}
  #hudToolbar::-webkit-scrollbar{display:none}
  #hudLocationSlot .polar-top{top:max(12px,env(safe-area-inset-top))!important;left:max(12px,env(safe-area-inset-left))!important;max-width:calc(100vw - 80px)!important}
  #hudLocationSlot h2{font-size:16px!important;letter-spacing:1px!important}
- #cleanHUD #hudLeftDock{left:12px!important;top:118px!important;width:190px!important;max-height:calc(100% - 310px)!important;overflow:auto;scrollbar-width:thin}
+ #cleanHUD #hudLeftDock{left:12px!important;top:118px!important;width:190px!important;max-height:max(110px,calc(var(--nv-mobile-height,100dvh) - 400px))!important;overflow:auto;scrollbar-width:thin}
  #hudVitalsDock{left:12px!important;bottom:156px!important;width:150px!important;padding:8px!important;max-height:125px;overflow:auto}
  #hudVitalsDock .space-stat-row strong{font-size:13px!important}
  #hudVitalsDock button{font-size:9px!important}
  #hudVitalsDock .space-actions,#hudVitalsDock .space-telemetry>small{display:none}
  #hudContextDock{bottom:220px!important;right:12px!important;left:auto!important;transform:none!important;max-width:160px!important;max-height:30vh;overflow:auto}
  #hudContextDock #hudInteract{display:none!important}
- #hudRightDock{top:118px!important;right:12px!important;width:150px!important;max-width:40vw!important}
+ /* Stop above the action buttons (about 190px tall in portrait); taller panels such as Hawthorne's comms scroll. */
+ #hudRightDock{top:118px!important;right:12px!important;width:150px!important;max-width:40vw!important;max-height:calc(var(--nv-mobile-height,100dvh) - 318px)!important;overflow-y:auto!important}
  #hudRightDock #nowPlaying{display:none!important}
  #hudTools{top:112px!important;left:12px!important;right:12px!important;bottom:12px!important;width:auto!important;max-height:calc(100dvh - 124px);overflow:auto;z-index:20!important;touch-action:pan-y}
  #hudTools button{font-size:12px!important;min-height:44px!important}
@@ -60,13 +66,23 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #missionWaypoint{top:calc(50% - 55px)!important;max-width:125px!important}
  #missionWaypoint strong{font-size:8px!important}
  #earthMinimap,#planetMinimap{display:none!important}
- #spaceCockpit{width:calc(100% - 24px)!important;max-width:500px;left:12px!important;right:12px!important;bottom:220px!important;transform:none!important;padding:14px!important}
+ /* The cockpit is a menu: touch controls and the hull panel step aside, so it sits low and scrolls if needed. */
+ #spaceCockpit{width:calc(100% - 24px)!important;max-width:500px;left:12px!important;right:12px!important;bottom:max(12px,env(safe-area-inset-bottom))!important;top:auto!important;transform:none!important;padding:14px!important;max-height:calc(var(--nv-mobile-height,100dvh) - 330px);overflow-y:auto;overscroll-behavior:contain}
+ #antarctica:is([data-mode=space-cockpit],[data-mode=space-disabled]) #hudVitalsDock{display:none!important}
+ #antarctica[data-mode=space-disabled] #hudLeftDock{display:none!important}
+ #antarctica #archiostalWardDirectory,#antarctica:not(.x) #archiostalWardDirectory{z-index:150!important;max-height:calc(var(--nv-mobile-height,100dvh) - 120px);overflow-y:auto}
+ #spaceDisabled{z-index:40;max-height:calc(var(--nv-mobile-height,100dvh) - 24px);overflow-y:auto}
  #spaceCockpit h2{font-size:19px}
- #spaceCockpit .space-actions{display:flex;flex-wrap:wrap;gap:6px}
- #shipInterior>header,#archiostalStation>header{top:8px!important;left:8px!important;right:66px!important;gap:6px!important;padding:8px!important;align-items:flex-start!important}
- #shipInterior header>div:last-child,#archiostalStation header>div:last-child{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px}
+ #spaceCockpit .space-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+ #spaceCockpit .space-actions button{min-height:44px;width:100%;font-size:9px!important}
+ /* Interior/station header: title, then one sideways-scrolling row of actions (wrapping ran them into the panels below). */
+ #shipInterior>header,#archiostalStation>header{top:8px!important;left:8px!important;right:66px!important;gap:6px!important;padding:8px!important;flex-direction:column!important;align-items:stretch!important}
+ #shipInterior header>div:last-child,#archiostalStation header>div:last-child{display:flex;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:4px;overflow-x:auto;scrollbar-width:none;max-width:100%}
+ #shipInterior header>div:last-child>button,#archiostalStation header>div:last-child>button{flex:0 0 auto}
+ #shipDiplomacyShortcuts{top:108px!important;left:10px!important;right:10px!important;bottom:auto!important;transform:none!important;flex-wrap:nowrap!important;overflow-x:auto;gap:6px}
+ #shipDiplomacyShortcuts>button{flex:0 0 auto}
  #shipInterior header button,#archiostalStation header button{font-size:9px!important;padding:6px!important}
- #shipInterior>aside{left:10px!important;top:116px!important;width:180px!important;max-height:120px;overflow:auto;pointer-events:auto;font-size:9px}
+ #shipInterior>aside{left:10px!important;top:160px!important;width:180px!important;max-height:120px;overflow:auto;pointer-events:auto;font-size:9px}
  #interiorDeckGuide,#interiorDirections{display:none}
  #shipInterior>footer{bottom:220px!important;left:12px!important;right:12px!important;padding:7px!important}
  #shipInterior footer small,#archiostalStation>footer{display:none!important}
@@ -101,7 +117,14 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
 }
 @media(max-width:600px){
  #menu{height:auto!important;min-height:100dvh!important;padding:0 16px 20px;overflow:hidden}
+ /* The game hides body overflow; until play starts, body scrolls as an element so the whole menu is reachable even in an embed that blocks frame scrolling. */
+ html:not([data-mobile-game=true]){height:100%;overflow:hidden!important}
+ html:not([data-mobile-game=true])>body{height:100%;overflow-y:auto!important;-webkit-overflow-scrolling:touch;overscroll-behavior-y:none}
  #menu header{padding:22px 0 0!important;gap:8px}
+ /* Late-game menu: companion labels are placed for desktop and land on the buttons; the faction panel joins the page flow. */
+ #menu :is(#menuCrewCount,.menu-crew-card,.custom-crew-menu-card){display:none!important}
+ #menu #playerFactionBox{position:relative!important;inset:auto!important;transform:none!important;width:auto!important;max-width:none!important;margin:16px 0 0!important;z-index:2}
+ #beamNightmareVitals{top:256px!important}
  #menu .left{position:relative!important;inset:auto!important;width:100%!important;max-width:none;margin-top:24px}
  #menu h1{font-size:clamp(32px,10vw,46px)!important;margin:14px 0!important;line-height:1.07!important;overflow-wrap:anywhere}
  #menu .tagline{font-size:9px;line-height:1.6;margin:8px 0 16px!important;letter-spacing:1.2px}
@@ -132,27 +155,53 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #nvMobileUse{grid-column:1/-1;min-height:40px!important}
  #nvMobileJump,#nvMobileRun{min-height:44px}
  #nvMobileLookHint{bottom:10px}
- #hudToolbar{top:8px!important;left:210px!important;right:66px!important;max-width:calc(100vw - 276px)!important}
+ #hudToolbar{top:8px!important;left:210px!important;right:66px!important;max-width:calc(100vw - 276px)!important;margin-right:54px!important}
  #hudLocationSlot h2{font-size:14px!important}
  #cleanHUD #hudLeftDock{top:64px!important;width:180px!important;max-height:calc(100dvh - 180px)!important}
- #hudLeftDock>.space-route-card{display:none!important}
- #hudVitalsDock{left:118px!important;bottom:12px!important;width:135px!important;max-height:80px!important;padding:6px!important}
+ /* Keep the route card: it holds Enter Atmosphere, docking and the charts. Only its secondary text goes. */
+ #hudLeftDock .space-route-card p,#hudLeftDock .space-route-card .space-eyebrow{display:none!important}
+ /* Top-aligned so a briefing taller than the screen scrolls; grid centring would push its top out of reach. */
+ #africaTransition{overflow-y:auto!important;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;align-items:start!important}
+ #hudVitalsDock,body[data-touch-controls=on] #cleanHUD #hudVitalsDock{left:118px!important;bottom:12px!important;top:auto!important;width:135px!important;max-height:80px!important;padding:6px!important}
  #hudVitalsDock progress{height:4px}
- #hudRightDock{top:64px!important;width:140px!important}
+ #hudRightDock{top:64px!important;width:140px!important;max-height:calc(var(--nv-mobile-height,100dvh) - 200px)!important}
+ #mascarOrbitalComms{top:56px!important;bottom:auto!important;left:200px!important;right:12px!important;transform:none!important;width:auto!important;max-height:calc(var(--nv-mobile-height,100dvh) - 200px);overflow-y:auto}
+ /* Beam nightmare: give each panel its own area on a short screen. */
+ #caraxEndingScene{top:0!important;bottom:0!important;height:auto!important;max-height:none!important}
+ #beamNightmareBossPanel{top:8px!important;left:8px!important;width:230px!important;max-height:104px;overflow:hidden;padding:8px!important}
+ #beamNightmareVitals{top:118px!important;left:8px!important;bottom:auto!important;width:230px!important;max-height:72px;overflow:hidden;padding:6px 8px!important}
+ #beamNightmareTools{top:8px!important;right:8px!important;left:auto!important;width:auto!important;max-width:calc(100% - 256px)!important;max-height:100px;overflow:auto;padding:6px!important}
+ #beamNightmareComms{top:auto!important;bottom:104px!important;left:250px!important;right:8px!important;transform:none!important;width:auto!important;max-height:calc(var(--nv-mobile-height,100dvh) - 220px);overflow:auto;padding:8px!important}
+ #beamNightmareMission,#beamNightmareCompass{display:none!important}
+ #beamNightmareTouch{top:auto!important;bottom:max(8px,env(safe-area-inset-bottom))!important}
  #hudContextDock{bottom:150px!important;max-height:100px}
+ #cleanHUD #hudContextDock :is(#solFinalBoss,#mascarCombatPanel,#karribassaBossPanel,#pontifexCombat,#baseAssaultHUD){top:64px!important;left:auto!important;width:min(300px,40vw)!important;max-height:calc(var(--nv-mobile-height,100dvh) - 200px)}
  #hudTools{top:60px!important;max-height:calc(100dvh - 72px)}
  #hudAlerts{top:64px!important;width:48%!important}
- #spaceCockpit{bottom:140px!important;left:220px!important;width:calc(100% - 410px)!important}
- #shipInterior>aside{top:78px!important;max-height:75px;width:160px!important}
+ #spaceCockpit{bottom:8px!important;left:210px!important;width:calc(100% - 222px)!important;max-height:calc(var(--nv-mobile-height,100dvh) - 72px)!important}
+ #spaceCockpit h2{font-size:15px;margin:4px 0}#spaceCockpit p{font-size:9px;margin:4px 0}
+ #shipInterior>header,#archiostalStation>header{flex-direction:row!important;flex-wrap:nowrap!important;align-items:center!important}
+ #shipInterior>header>div:first-child,#archiostalStation>header>div:first-child{flex:0 0 auto;max-width:34%}
+ #shipInterior header>div:last-child,#archiostalStation header>div:last-child{flex:1 1 auto;min-width:0}
+ #shipDiplomacyShortcuts{top:74px!important;right:auto!important}
+ #shipInterior>aside{top:124px!important;max-height:75px;width:160px!important}
  #shipInterior>footer{bottom:145px!important;left:auto!important;width:230px!important}
  #archiostalInformation{top:82px!important;max-height:70px;width:170px!important}
  #galaxySheet .galaxy-view{height:240px!important;min-height:200px}
- #menu{height:auto!important;min-height:100dvh!important;overflow:auto;padding-bottom:80px}
+ /* body stays overflow:hidden, so the menu itself scrolls; its 3D backdrop stays put behind it. */
+ #menu{height:var(--nv-mobile-height,100dvh)!important;min-height:0!important;overflow-x:hidden!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding-bottom:80px}
+ #menu>.starfield,#menu>#scene{position:fixed!important;inset:0!important;width:100%!important;height:var(--nv-mobile-height,100dvh)!important}
+ #menu .menu-nav{max-height:none!important;overflow:visible!important}
  #menu .left{position:relative!important;top:auto!important;left:4%!important;margin-top:24px;width:46%!important}
  #menu header{padding-top:16px!important}#menu h1{font-size:32px!important}
  #menu .menu-nav{margin-top:0!important;width:100%}
+ #menu :is(#menuCrewCount,.menu-crew-card,.custom-crew-menu-card){display:none!important}
+ #menu #playerFactionBox{position:relative!important;inset:auto!important;transform:none!important;left:4%!important;width:46%!important;max-width:none!important;margin:16px 0 0!important;z-index:2}
  #menu .subject,#menu[data-has-party=true] .subject{left:56%!important;top:110px!important;width:40%!important;transform:none!important;text-align:left!important}
- #menu .earth-label{right:4%!important;top:210px!important;width:38%!important}
+ #menu .earth-label{right:4%!important;top:272px!important;width:38%!important}
  #menu .menu-companion{left:56%!important;top:165px!important;width:40%!important}
  #menu footer{position:relative!important;margin-top:24px;bottom:auto!important}
+}
+@media(max-width:360px){
+ #menu .brand>div:last-child{display:none}
 }

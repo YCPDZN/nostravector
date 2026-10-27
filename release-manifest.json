@@ -12,7 +12,7 @@
     "0 audio preload assignments made lazy",
     "Responsive mobile layout and context-aware touch controls"
   ],
-  "index_sha256": "5711ab5bfb83b27a22a965206b572e32f9cf2b9bd71738e73eab40da6b380acb",
+  "index_sha256": "975083a91b7d9a0840fcdd8b083e1e44a21cf538e2a36b56654a90cc12e2597f",
   "audio": [
     {
       "path": "assets/audio/0001-ffa53a19e30c0b13.mp3",
@@ -4625,11 +4625,11 @@
     "files": [
       {
         "path": "mobile.css",
-        "sha256": "713a38d279752fb9e14918e541c4ee2ce68f4d5a10679f9b7e6bf52bb536e73d"
+        "sha256": "04dc67323ecfdca486223db154e559f9733e2a40c5bc65709caf14c2d74751f2"
       },
       {
         "path": "mobile.js",
-        "sha256": "a0a5e4f84b941e3683bae1f37f833a7ea26eb2a738ac53adb0abc1d7ddbbd15d"
+        "sha256": "0a99ad249b2477f3315fd598088b5eba3f94c2fda457f8718fe57a0b1a7362f1"
       }
     ]
   }

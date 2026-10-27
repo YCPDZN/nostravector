@@ -19,6 +19,7 @@ const NVTouch=(()=>{
  function blocked(){
   if(!enabled||!gameActive||!polarState||gamePaused||document.hidden)return true;
   if(galaxyOpen||spaceChartOpen||hudToolsOpen||!$m('inventorySheet').hidden)return true;
+  if(['cockpit','disabled'].includes(polarState.space?.phase))return true; // Their panels handle launch, repair and tow.
   if(document.querySelector('dialog[open]')||[...document.querySelectorAll('[role="dialog"]')].some(visible))return true;
   if(visible($m('archiostalWardDirectory'))||shipCrewBoardOpen||charonBriefingOpen)return true;
   if(polarScreen.classList.contains('hud-cinematic')||(!['station','interior'].includes(context())&&cleanHUDRoot.hidden))return true;
@@ -56,6 +57,10 @@ const NVTouch=(()=>{
  toggle.onclick=()=>{enabled=!enabled;release();refresh(true);};
  const mission=$m('hudMission');mission.addEventListener('click',()=>{if(!enabled)return;const on=document.body.dataset.mobileDetails!=='true';document.body.dataset.mobileDetails=String(on);mission.setAttribute('aria-expanded',String(on));});
  mission.addEventListener('keydown',e=>{if(enabled&&['Enter','Space'].includes(e.code)){e.preventDefault();e.stopPropagation();mission.click();}});
+ // The look hint shares the bottom centre with the waypoint label; retire it once the player has dragged the view.
+ const lookSeen=()=>{root.dataset.looked='true';try{localStorage.setItem('nvTouchLookSeen','1');}catch{}};
+ try{if(localStorage.getItem('nvTouchLookSeen'))root.dataset.looked='true';}catch{}
+ window.addEventListener('pointermove',e=>{if(e.pointerType==='touch'&&e.buttons&&e.target.tagName==='CANVAS'&&root.dataset.looked!=='true'&&!blocked())lookSeen();},true);
  // Ground/station/interior canvases already support touch dragging. Add it to flight too.
  window.addEventListener('pointerdown',e=>{if(!enabled||e.pointerType!=='touch'||blocked()||e.target!==polarCanvas||context()!=='flight')return;look={id:e.pointerId,x:e.clientX,y:e.clientY,startX:e.clientX,startY:e.clientY,moved:false};try{polarCanvas.setPointerCapture(e.pointerId);}catch{}} ,true);
  window.addEventListener('pointermove',e=>{if(!look||look.id!==e.pointerId)return;if(blocked()){look=null;return;}const dx=e.clientX-look.x,dy=e.clientY-look.y;if(Math.hypot(e.clientX-look.startX,e.clientY-look.startY)>6)look.moved=true;
@@ -64,7 +69,7 @@ const NVTouch=(()=>{
  },{capture:true,passive:false});
  for(const type of ['pointerup','pointercancel'])window.addEventListener(type,e=>{if(!look||look.id!==e.pointerId)return;if(look.moved){spacePlanetPointer=null;e.preventDefault();e.stopImmediatePropagation();}look=null;},true);
  function refresh(force=false){
-  const now=performance.now();if(!force&&now-lastRefresh<100)return;lastRefresh=now;document.body.dataset.touchControls=enabled?'on':'off';document.body.dataset.mobileGame=String(gameActive);$m('nvTouchStatus').textContent=enabled?'ON':'OFF';toggle.setAttribute('aria-pressed',String(enabled));
+  const now=performance.now();if(!force&&now-lastRefresh<100)return;lastRefresh=now;document.body.dataset.touchControls=enabled?'on':'off';document.body.dataset.mobileGame=document.documentElement.dataset.mobileGame=String(gameActive);$m('nvTouchStatus').textContent=enabled?'ON':'OFF';toggle.setAttribute('aria-pressed',String(enabled));
   if(enabled){mission.tabIndex=0;mission.setAttribute('role','button');mission.setAttribute('aria-label','Show or hide objective details');}else{mission.removeAttribute('tabindex');mission.removeAttribute('role');}
   const mode=context(),off=blocked();root.hidden=off;if(off){release();lastMode=mode;return;}if(mode!==lastMode){release();lastMode=mode;}root.dataset.mode=mode;
   const flight=mode==='flight',rover=mode==='rover',interior=mode==='interior';
