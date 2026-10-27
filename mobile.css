@@ -5,6 +5,10 @@
  body[data-mobile-game=true] #nowPlaying{display:none!important}
  #hudVitalsDock .polar-vitals{position:static!important;width:auto!important;max-width:100%!important;padding:0!important;border:0!important;background:none!important}
  #hudVitalsDock .polar-controls,#hudVitalsDock .world-save-status,#hudVitalsDock #playerLaserPistol{display:none!important}
+ /* The touch FIRE button holds Z, which already fires these panel weapons. */
+ body[data-touch-controls=on] :is(#fireRewardTurrets,#solFinalFire,#mascarFire,#karribassaFire,#imperiaFire,#firePontifex){display:none!important}
+ /* Combat panels live in the in-flow context dock, which is too narrow on phones; pin them under the toolbar instead. */
+ #cleanHUD #hudContextDock :is(#solFinalBoss,#mascarCombatPanel,#karribassaBossPanel,#pontifexCombat,#baseAssaultHUD){position:fixed!important;top:118px!important;left:12px!important;right:12px!important;bottom:auto!important;transform:none!important;width:auto!important;max-width:none!important;max-height:34vh;overflow:auto;z-index:30;margin:0!important}
 }
 @media(max-width:600px){body[data-touch-controls=on]:not([data-mobile-game=true]) #nowPlaying{position:relative!important;top:auto!important;right:auto!important;left:auto!important;margin:12px 16px!important;max-width:calc(100% - 32px)!important}}
 #nvMobileControls[hidden],#nvMobileControls [hidden]{display:none!important}
@@ -46,14 +50,15 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #hudToolbar::-webkit-scrollbar{display:none}
  #hudLocationSlot .polar-top{top:max(12px,env(safe-area-inset-top))!important;left:max(12px,env(safe-area-inset-left))!important;max-width:calc(100vw - 80px)!important}
  #hudLocationSlot h2{font-size:16px!important;letter-spacing:1px!important}
- #cleanHUD #hudLeftDock{left:12px!important;top:118px!important;width:190px!important;max-height:max(120px,calc(var(--nv-mobile-height,100dvh) - 372px))!important;overflow:auto;scrollbar-width:thin}
+ #cleanHUD #hudLeftDock{left:12px!important;top:118px!important;width:190px!important;max-height:max(110px,calc(var(--nv-mobile-height,100dvh) - 400px))!important;overflow:auto;scrollbar-width:thin}
  #hudVitalsDock{left:12px!important;bottom:156px!important;width:150px!important;padding:8px!important;max-height:125px;overflow:auto}
  #hudVitalsDock .space-stat-row strong{font-size:13px!important}
  #hudVitalsDock button{font-size:9px!important}
  #hudVitalsDock .space-actions,#hudVitalsDock .space-telemetry>small{display:none}
  #hudContextDock{bottom:220px!important;right:12px!important;left:auto!important;transform:none!important;max-width:160px!important;max-height:30vh;overflow:auto}
  #hudContextDock #hudInteract{display:none!important}
- #hudRightDock{top:118px!important;right:12px!important;width:150px!important;max-width:40vw!important}
+ /* Stop above the action buttons (about 190px tall in portrait); taller panels such as Hawthorne's comms scroll. */
+ #hudRightDock{top:118px!important;right:12px!important;width:150px!important;max-width:40vw!important;max-height:calc(var(--nv-mobile-height,100dvh) - 318px)!important;overflow-y:auto!important}
  #hudRightDock #nowPlaying{display:none!important}
  #hudTools{top:112px!important;left:12px!important;right:12px!important;bottom:12px!important;width:auto!important;max-height:calc(100dvh - 124px);overflow:auto;z-index:20!important;touch-action:pan-y}
  #hudTools button{font-size:12px!important;min-height:44px!important}
@@ -61,9 +66,14 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #missionWaypoint{top:calc(50% - 55px)!important;max-width:125px!important}
  #missionWaypoint strong{font-size:8px!important}
  #earthMinimap,#planetMinimap{display:none!important}
- #spaceCockpit{width:calc(100% - 24px)!important;max-width:500px;left:12px!important;right:12px!important;bottom:220px!important;transform:none!important;padding:14px!important}
+ /* The cockpit is a menu: touch controls and the hull panel step aside, so it sits low and scrolls if needed. */
+ #spaceCockpit{width:calc(100% - 24px)!important;max-width:500px;left:12px!important;right:12px!important;bottom:max(12px,env(safe-area-inset-bottom))!important;top:auto!important;transform:none!important;padding:14px!important;max-height:calc(var(--nv-mobile-height,100dvh) - 330px);overflow-y:auto;overscroll-behavior:contain}
+ #antarctica:is([data-mode=space-cockpit],[data-mode=space-disabled]) #hudVitalsDock{display:none!important}
+ #antarctica[data-mode=space-disabled] #hudLeftDock{display:none!important}
+ #spaceDisabled{z-index:40;max-height:calc(var(--nv-mobile-height,100dvh) - 24px);overflow-y:auto}
  #spaceCockpit h2{font-size:19px}
- #spaceCockpit .space-actions{display:flex;flex-wrap:wrap;gap:6px}
+ #spaceCockpit .space-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+ #spaceCockpit .space-actions button{min-height:44px;width:100%;font-size:9px!important}
  #shipInterior>header,#archiostalStation>header{top:8px!important;left:8px!important;right:66px!important;gap:6px!important;padding:8px!important;align-items:flex-start!important}
  #shipInterior header>div:last-child,#archiostalStation header>div:last-child{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px}
  #shipInterior header button,#archiostalStation header button{font-size:9px!important;padding:6px!important}
@@ -139,16 +149,20 @@ body[data-mobile-details=true] #hudMission::after{content:'TAP TO COLLAPSE'}
  #hudToolbar{top:8px!important;left:210px!important;right:66px!important;max-width:calc(100vw - 276px)!important;margin-right:54px!important}
  #hudLocationSlot h2{font-size:14px!important}
  #cleanHUD #hudLeftDock{top:64px!important;width:180px!important;max-height:calc(100dvh - 180px)!important}
- #hudLeftDock>.space-route-card{display:none!important}
+ /* Keep the route card: it holds Enter Atmosphere, docking and the charts. Only its secondary text goes. */
+ #hudLeftDock .space-route-card p,#hudLeftDock .space-route-card .space-eyebrow{display:none!important}
  /* Top-aligned so a briefing taller than the screen scrolls; grid centring would push its top out of reach. */
  #africaTransition{overflow-y:auto!important;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;align-items:start!important}
  #hudVitalsDock,body[data-touch-controls=on] #cleanHUD #hudVitalsDock{left:118px!important;bottom:12px!important;top:auto!important;width:135px!important;max-height:80px!important;padding:6px!important}
  #hudVitalsDock progress{height:4px}
- #hudRightDock{top:64px!important;width:140px!important}
+ #hudRightDock{top:64px!important;width:140px!important;max-height:calc(var(--nv-mobile-height,100dvh) - 200px)!important}
+ #mascarOrbitalComms{top:56px!important;bottom:auto!important;left:200px!important;right:12px!important;transform:none!important;width:auto!important;max-height:calc(var(--nv-mobile-height,100dvh) - 200px);overflow-y:auto}
  #hudContextDock{bottom:150px!important;max-height:100px}
+ #cleanHUD #hudContextDock :is(#solFinalBoss,#mascarCombatPanel,#karribassaBossPanel,#pontifexCombat,#baseAssaultHUD){top:64px!important;left:auto!important;width:min(300px,40vw)!important;max-height:calc(var(--nv-mobile-height,100dvh) - 200px)}
  #hudTools{top:60px!important;max-height:calc(100dvh - 72px)}
  #hudAlerts{top:64px!important;width:48%!important}
- #spaceCockpit{bottom:140px!important;left:220px!important;width:calc(100% - 410px)!important}
+ #spaceCockpit{bottom:8px!important;left:210px!important;width:calc(100% - 222px)!important;max-height:calc(var(--nv-mobile-height,100dvh) - 72px)!important}
+ #spaceCockpit h2{font-size:15px;margin:4px 0}#spaceCockpit p{font-size:9px;margin:4px 0}
  #shipInterior>aside{top:78px!important;max-height:75px;width:160px!important}
  #shipInterior>footer{bottom:145px!important;left:auto!important;width:230px!important}
  #archiostalInformation{top:82px!important;max-height:70px;width:170px!important}

@@ -19,6 +19,7 @@ const NVTouch=(()=>{
  function blocked(){
   if(!enabled||!gameActive||!polarState||gamePaused||document.hidden)return true;
   if(galaxyOpen||spaceChartOpen||hudToolsOpen||!$m('inventorySheet').hidden)return true;
+  if(['cockpit','disabled'].includes(polarState.space?.phase))return true; // Their panels handle launch, repair and tow.
   if(document.querySelector('dialog[open]')||[...document.querySelectorAll('[role="dialog"]')].some(visible))return true;
   if(visible($m('archiostalWardDirectory'))||shipCrewBoardOpen||charonBriefingOpen)return true;
   if(polarScreen.classList.contains('hud-cinematic')||(!['station','interior'].includes(context())&&cleanHUDRoot.hidden))return true;
